@@ -1,0 +1,24 @@
+{
+  "name": "card-transaction-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "5-minute 16:9 explainer: How a credit card transaction clears in 2 seconds (Remotion)",
+  "scripts": {
+    "start": "remotion studio",
+    "preview": "remotion studio",
+    "render": "remotion render src/index.ts CardTransaction out/card-transaction.mp4",
+    "still": "remotion still src/index.ts CardTransaction out/frame.png --frame=4000",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.538",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.9.3"
+  }
+}
