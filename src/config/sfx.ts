@@ -3,7 +3,17 @@ import {FPS} from './types';
 import {buildTiming, sceneStarts} from '../lib/timing';
 import {beatFrames} from '../lib/heart';
 
-export type SfxCue = {file: string; from: number; volume: number; durationInFrames: number};
+export type SfxCue = {
+  file: string;
+  from: number;
+  volume: number;
+  durationInFrames: number;
+  /** Folder under /public (default "audio"). */
+  dir?: string;
+  loop?: boolean;
+  fadeIn?: number;
+  fadeOut?: number;
+};
 
 /** Sound-effect placement derived from the same scene timing the visuals use. */
 export const buildSfx = (scenes: SceneConfig[]): SfxCue[] => {

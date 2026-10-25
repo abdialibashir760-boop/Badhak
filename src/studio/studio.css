@@ -82,3 +82,6 @@ button, input, textarea { font: inherit; color: inherit; }
 .code { background: #0d0d0f; border: 1px solid var(--line); border-radius: 6px; padding: 10px; margin: 0; font-size: 12px; overflow: auto; color: #bdb9b2; }
 code { background: #1b1b1e; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
 @media (max-width: 1000px) { .main { grid-template-columns: 1fr; } .right { border-left: 0; border-top: 1px solid var(--line); } .stage { width: 100%; } }
+
+.title select { background: transparent; border: 1px solid var(--line); border-radius: 6px; color: #cfcac2; font: italic 18px 'Cormorant Garamond', Georgia, serif; padding: 4px 10px; max-width: 100%; }
+.title select option { background: #131315; font-style: normal; }

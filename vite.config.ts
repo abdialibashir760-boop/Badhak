@@ -87,15 +87,19 @@ const studioApi = (): Plugin => {
           }
           if (req.method === 'POST' && url.pathname === '/api/render') {
             if (job.state === 'running') return json(res, 409, {error: 'A render is already running.'});
-            const props = JSON.parse((await readBody(req, 5 * 1024 * 1024)).toString('utf8'));
-            if (!Array.isArray(props?.scenes) || props.scenes.length !== 10) return json(res, 400, {error: 'Invalid project props (expected 10 scenes).'});
+            const body = JSON.parse((await readBody(req, 5 * 1024 * 1024)).toString('utf8'));
+            // Accepts {composition, props} or a bare props object (legacy: the first film).
+            const composition: string = body?.props ? body.composition : 'ZihniOyunu';
+            const props = body?.props ?? body;
+            if (!['ZihniOyunu', 'StoneAge'].includes(composition)) return json(res, 400, {error: `Unknown composition "${composition}".`});
+            if (!Array.isArray(props?.scenes) || props.scenes.length < 1) return json(res, 400, {error: 'Invalid project props (expected a list of scenes).'});
             if (typeof props.narrationSrc === 'string' && props.narrationSrc.startsWith('blob:')) return json(res, 400, {error: 'Narration is only loaded in the browser (blob URL). Re-import it so it can be uploaded.'});
             mkdirSync(outDir, {recursive: true});
-            const propsFile = join(outDir, 'props.json');
+            const propsFile = join(outDir, `${composition}-props.json`);
             writeFileSync(propsFile, JSON.stringify(props, null, 2));
-            const file = `zihni-oyunu-${Date.now()}.mp4`;
+            const file = `${composition === 'StoneAge' ? 'stone-age' : 'zihni-oyunu'}-${Date.now()}.mp4`;
             Object.assign(job, {state: 'running', progress: 0, message: 'Bundling…', file: null, log: []});
-            child = spawn('npx', ['remotion', 'render', 'src/index.ts', 'ZihniOyunu', join('out', file), `--props=${propsFile}`], {cwd: root, env: process.env, shell: false});
+            child = spawn('npx', ['remotion', 'render', 'src/index.ts', composition, join('out', file), `--props=${propsFile}`], {cwd: root, env: process.env, shell: false});
             const onData = (d: Buffer) => {
               const text = d.toString();
               job.log = [...job.log, ...text.split(/[\r\n]+/).filter(Boolean)].slice(-30);

@@ -1,4 +1,11 @@
-# ZİHNİ OYUNU — "Why Your Mind Turns Every Conversation Into a Test"
+# ZİHNİ OYUNU — programmatic animated films (Remotion + React + TypeScript)
+
+Two films live in this repo and share one preview studio and render pipeline:
+
+1. **"Why Your Mind Turns Every Conversation Into a Test"** (composition `ZihniOyunu`) — see below.
+2. **"What If You Woke Up in the Stone Age?"** (composition `StoneAge`, 3:40) — see [Film 2](#film-2--what-if-you-woke-up-in-the-stone-age).
+
+## Film 1 — Why Your Mind Turns Every Conversation Into a Test
 
 A ~90 s psychology explainer built entirely from code: Remotion + React + TypeScript, procedural SVG stick figures,
 deterministic frame-based animation, a browser preview studio, and a real MP4 render pipeline. No paid APIs, no keys.
@@ -43,4 +50,42 @@ script text (weighted by word length and punctuation), so with a real recording 
 ```bash
 npm run typecheck && npm run lint && npm test      # unit tests (timing/subtitle engine)
 node tests/e2e.cjs                                 # browser test of the studio (needs `npm run studio` running)
+```
+
+---
+
+## Film 2 — What If You Woke Up in the Stone Age?
+
+A 3:40 animated documentary-comedy starring **your uploaded character** (`assets/character-source.jpg`).
+Seven scenes follow the storyboard timings. Narration: [NARRATION.md](NARRATION.md). Historical notes: [HISTORY.md](HISTORY.md).
+
+```bash
+npm run studio                 # then open http://127.0.0.1:5173/?film=stone   (or pick the film in the header)
+npm run render:stone           # -> out/stone-age.mp4   (≈20 min on 4 cores)
+npm run render:stone:props     # uses out/stone-props.json downloaded from the studio's Render tab
+```
+
+### How your character is used
+* `scripts/cutout.py` (OpenCV GrabCut) cuts the figure out of the subway background → `public/stone/character.png`, the **untouched artwork** used for the wake-up hero shot.
+* `scripts/headsprite.py` extracts your head + beanie as `public/stone/head.png` and erases the painted face so expressions can be redrawn.
+* `src/stone/figures/Hero.tsx` rigs the character: **your head artwork**, black limbs at the artwork's line weight, a hand-drawn cloak in the artwork's colours, expressions drawn as vector overlays (eyes, brows, mouth, sweat) in the artwork's style. Extra poses/expressions are therefore *additions in the artwork's style*, not new character designs.
+* To swap in different art: replace `assets/character-source.jpg`, adjust the seed rectangle in `cutout.py` / `headsprite.py`, run both scripts.
+
+### Editing
+| What | Where |
+|---|---|
+| Scene timings, narration, `[pause:1.5]` beats | `src/stone/config.ts` or live in the studio |
+| Scene choreography (keyed to narration words, e.g. `tm.at('supermarket')`) | `src/stone/scenes/S1…S7*.tsx` |
+| Scenery, props, animals, fire | `src/stone/art/` |
+| Characters | `src/stone/figures/` (`Hero`, `Local`, `skeleton.ts` poses) |
+| Sound placement | `src/stone/sfx.ts` (sounds synthesised by `npm run audio:stone`) |
+| "Survival odds" counter | `src/stone/Hud.tsx` |
+
+### Voice-over
+No TTS service is used. A placeholder voice is generated offline with espeak-ng + MBROLA (`node scripts/make-stone-narration.mjs`; needs `apt install espeak-ng mbrola mbrola-us2`). Replace it by importing your own recording in the studio (*Audio & effects*) and clicking **Fit scene durations to audio**.
+
+### Checks
+```bash
+npm test                       # unit tests (timing, pause tokens, narration keywords, assets, sfx)
+node tests/e2e-stone.cjs       # browser test of the studio with the Stone Age film (studio must be running)
 ```

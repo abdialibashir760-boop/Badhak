@@ -26,7 +26,7 @@ const clockSecs = async (page) => {
   await page.screenshot({path: 'out/e2e-1-load.png'});
   check('studio loads with preview', await page.locator('.stage').isVisible());
   check('timeline shows 10 scenes', (await page.locator('.timeline .seg').count()) === 10);
-  check('total duration displayed', /\/ 01:3\d/.test(await page.locator('.clock').innerText()), await page.locator('.clock').innerText());
+  check('total duration displayed', /\/ 01:40/.test(await page.locator('.clock').innerText()), await page.locator('.clock').innerText());
 
   // Play / pause
   const t0 = await clockSecs(page);
@@ -45,7 +45,7 @@ const clockSecs = async (page) => {
   await page.mouse.click(box.x + box.width * 0.5, box.y + 20);
   await page.waitForTimeout(500);
   const mid = await clockSecs(page);
-  check('timeline click scrubs to ~50%', mid > 40 && mid < 50, `${mid}s`);
+  check('timeline click scrubs to ~50%', mid > 45 && mid < 56, `${mid}s`);
   check('scene 5/6 highlighted at midpoint', /seg on/.test(await page.locator('.timeline .seg.on .n').evaluate((e) => e.parentElement.className)));
   await page.screenshot({path: 'out/e2e-2-scrub.png'});
 
@@ -53,7 +53,7 @@ const clockSecs = async (page) => {
   await page.locator('.sceneBtn', {hasText: 'The Body Joins In'}).click();
   await page.waitForTimeout(400);
   const s6 = await clockSecs(page);
-  check('selecting a scene seeks to its start', Math.abs(s6 - 42.5) < 0.6, `${s6}s`);
+  check('selecting a scene seeks to its start', Math.abs(s6 - 45.7) < 0.6, `${s6}s`);
   await page.getByRole('button', {name: /Replay scene 6/}).click();
   await page.waitForTimeout(1500);
   check('replay scene plays from the scene start', (await clockSecs(page)) > s6 + 0.8);

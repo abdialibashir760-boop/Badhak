@@ -65,10 +65,17 @@ export const buildTiming = (scene: SceneConfig): SceneTiming => {
   const speechStart = Math.round(scene.leadSec * FPS);
   const speechEnd = Math.max(speechStart + 10, dur - Math.round(scene.tailSec * FPS));
 
-  // Tokenise, tracking *emphasis* across tokens.
+  // Tokenise, tracking *emphasis* across tokens. `[pause:1.5]` inserts 1.5 s of silence (and ends the subtitle cue).
   let emph = false;
-  const tokens: {text: string; emph: boolean; weight: number; sentenceEnd: boolean}[] = [];
+  type Tok = {text: string; emph: boolean; weight: number; sentenceEnd: boolean; pauseFrames: number};
+  const tokens: Tok[] = [];
   for (const raw of scene.narration.trim().split(/\s+/).filter(Boolean)) {
+    const pm = /^\[pause:([\d.]+)\]$/.exec(raw);
+    if (pm) {
+      if (tokens.length) tokens[tokens.length - 1].sentenceEnd = true;
+      tokens.push({text: '', emph: false, weight: 0, sentenceEnd: false, pauseFrames: Math.round(parseFloat(pm[1]) * FPS)});
+      continue;
+    }
     const startsEmph = raw.startsWith('*') || emph;
     const toggles = (raw.match(/\*/g) ?? []).length;
     const text = clean(raw);
@@ -80,26 +87,35 @@ export const buildTiming = (scene: SceneConfig): SceneTiming => {
       emph: startsEmph,
       weight: Math.max(3, text.length + 1) + (sentenceEnd ? 7 : comma ? 3 : 0),
       sentenceEnd,
+      pauseFrames: 0,
     });
     if (toggles % 2 === 1) emph = !emph;
   }
 
+  const pauseTotal = tokens.reduce((n, t) => n + t.pauseFrames, 0);
   const totalW = tokens.reduce((n, t) => n + t.weight, 0) || 1;
-  const span = speechEnd - speechStart;
+  const span = Math.max(10, speechEnd - speechStart - pauseTotal);
   let cursor = speechStart;
-  const words: Word[] = tokens.map((t) => {
+  const words: Word[] = [];
+  const wordTokens: Tok[] = [];
+  for (const t of tokens) {
+    if (t.pauseFrames) {
+      cursor += t.pauseFrames;
+      continue;
+    }
     const start = cursor;
     cursor += (t.weight / totalW) * span;
     const pause = t.sentenceEnd ? 0.22 : 0;
-    return {text: t.text, emph: t.emph, start, end: cursor - (cursor - start) * pause};
-  });
+    words.push({text: t.text, emph: t.emph, start, end: cursor - (cursor - start) * pause});
+    wordTokens.push(t);
+  }
 
   // Sentences -> cues.
   const sentences: Word[][] = [];
   let cur: Word[] = [];
   words.forEach((w, i) => {
     cur.push(w);
-    if (tokens[i].sentenceEnd) {
+    if (wordTokens[i].sentenceEnd) {
       sentences.push(cur);
       cur = [];
     }

@@ -17,13 +17,14 @@ import '@fontsource/cormorant-garamond/latin-ext-700-italic.css';
 import '@fontsource/inter/latin-500.css';
 import '@fontsource/inter/latin-ext-500.css';
 import {HEIGHT, VideoProps, WIDTH} from '../config/types';
-import {buildSfx} from '../config/sfx';
-import {buildTiming, sceneFrames, sceneStarts, totalFrames} from '../lib/timing';
+import {buildSfx as buildZihniSfx, type SfxCue} from '../config/sfx';
+import {buildTiming, sceneFrames, sceneStarts, totalFrames, type SceneTiming} from '../lib/timing';
 import {FxContext} from '../components/Stage';
 import {Grain, Subtitles} from '../components/Overlays';
-import {Transition} from '../components/Transitions';
+import {Transition, type TransitionSpec} from '../components/Transitions';
 import {easeIn, easeOut, seg} from '../lib/anim';
 import {SCENE_COMPONENTS} from '../scenes';
+import type {SceneProps} from '../scenes/types';
 import {BOUNDARIES} from './transitions';
 
 const FONT_FACES = [
@@ -49,16 +50,30 @@ const useFonts = () => {
 /** Resolve a user-supplied audio path: absolute/blob URLs pass through, others live under /public. */
 export const resolveSrc = (src: string) => (/^(https?:|blob:|data:|\/)/.test(src) ? src : staticFile(src));
 
-const SceneShell: React.FC<{index: number; props: VideoProps}> = ({index, props}) => {
+export type FilmDef = {
+  sceneComponents: React.FC<SceneProps>[];
+  /** Transition between scene i and i+1. */
+  boundaries: TransitionSpec[];
+  buildSfx: (scenes: VideoProps['scenes']) => SfxCue[];
+  /** Looping music bed used when no music file is imported (path under /public). */
+  defaultMusic: string | null;
+  /** Film-grain strength (default 0.11). */
+  grainAmount?: number;
+  /** Optional overlay drawn above every scene (e.g. a HUD). */
+  overlay?: React.FC<{frame: number; scene: number; dur: number; tm: SceneTiming}>;
+};
+
+const SceneShell: React.FC<{index: number; props: VideoProps; def: FilmDef}> = ({index, props, def}) => {
   const frame = useCurrentFrame();
   const scene = props.scenes[index];
   const dur = sceneFrames(scene);
   const tm = useMemo(() => buildTiming(scene), [scene]);
-  const Comp = SCENE_COMPONENTS[index];
-  const { settings } = props;
+  const Comp = def.sceneComponents[index];
+  const Overlay = def.overlay;
+  const {settings} = props;
 
-  const exitSpec = BOUNDARIES[index];
-  const enterSpec = index > 0 ? BOUNDARIES[index - 1] : {kind: 'pulse' as const, frames: 24};
+  const exitSpec = def.boundaries[index];
+  const enterSpec = index > 0 ? def.boundaries[index - 1] : {kind: 'pulse' as const, frames: 24};
   const eFrames = exitSpec?.frames ?? 36;
   const exitAmt = exitSpec
     ? seg(frame, dur - eFrames, dur - 1, easeIn)
@@ -68,6 +83,7 @@ const SceneShell: React.FC<{index: number; props: VideoProps}> = ({index, props}
   return (
     <div style={{position: 'absolute', inset: 0, background: '#000', overflow: 'hidden'}}>
       {Comp ? <Comp frame={frame} dur={dur} p={frame / dur} tm={tm} /> : null}
+      {Overlay ? <Overlay frame={frame} scene={index} dur={dur} tm={tm} /> : null}
       {settings.subtitles ? <Subtitles cues={tm.cues} frame={frame} /> : null}
       {exitAmt > 0 && exitSpec ? <Transition spec={exitSpec} amount={exitAmt} frame={frame} /> : null}
       {exitAmt > 0 && !exitSpec ? <div style={{position: 'absolute', inset: 0, background: '#000', opacity: exitAmt}} /> : null}
@@ -76,41 +92,63 @@ const SceneShell: React.FC<{index: number; props: VideoProps}> = ({index, props}
   );
 };
 
-export const Video: React.FC<VideoProps> = (props) => {
-  useFonts();
-  const frame = useCurrentFrame();
-  const {scenes, settings} = props;
-  const starts = useMemo(() => sceneStarts(scenes), [scenes]);
-  const total = totalFrames(scenes);
-  const sfx = useMemo(() => buildSfx(scenes), [scenes]);
+export const createVideo = (def: FilmDef): React.FC<VideoProps> => {
+  const Film: React.FC<VideoProps> = (props) => {
+    useFonts();
+    const frame = useCurrentFrame();
+    const {scenes, settings} = props;
+    const starts = useMemo(() => sceneStarts(scenes), [scenes]);
+    const total = totalFrames(scenes);
+    const sfx = useMemo(() => def.buildSfx(scenes), [scenes]);
+    const musicSrc = props.musicSrc ? resolveSrc(props.musicSrc) : def.defaultMusic ? staticFile(def.defaultMusic) : null;
 
-  const musicVol = (f: number) =>
-    settings.musicVolume * interpolate(f, [0, 60, total - 90, total], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+    const musicVol = (f: number) =>
+      settings.musicVolume * interpolate(f, [0, 60, total - 90, total], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
 
-  return (
-    <FxContext.Provider value={{effects: settings.effects}}>
-      <div style={{position: 'absolute', inset: 0, background: '#000', width: WIDTH, height: HEIGHT, overflow: 'hidden'}}>
-        {scenes.map((s, i) => (
-          <Sequence key={s.id} from={starts[i]} durationInFrames={sceneFrames(s)} layout="none">
-            <SceneShell index={i} props={props} />
-          </Sequence>
-        ))}
-        {settings.grain ? <Grain frame={frame} /> : null}
+    return (
+      <FxContext.Provider value={{effects: settings.effects}}>
+        <div style={{position: 'absolute', inset: 0, background: '#000', width: WIDTH, height: HEIGHT, overflow: 'hidden'}}>
+          {scenes.map((s, i) => (
+            <Sequence key={s.id} from={starts[i]} durationInFrames={sceneFrames(s)} layout="none">
+              <SceneShell index={i} props={props} def={def} />
+            </Sequence>
+          ))}
+          {settings.grain ? <Grain frame={frame} amount={def.grainAmount} /> : null}
 
-        {settings.music ? <Audio src={props.musicSrc ? resolveSrc(props.musicSrc) : staticFile('audio/ambient.wav')} loop volume={musicVol} /> : null}
-        {settings.sfx
-          ? sfx.map((c, i) => (
-              <Sequence key={i} from={Math.max(0, c.from)} durationInFrames={c.durationInFrames} layout="none">
-                <Audio src={staticFile(`audio/${c.file}`)} volume={c.volume * settings.sfxVolume} />
-              </Sequence>
-            ))
-          : null}
-        {props.narrationSrc ? (
-          <Sequence from={Math.max(0, Math.round(props.narrationOffsetSec * 30))} layout="none">
-            <Audio src={resolveSrc(props.narrationSrc)} volume={settings.narrationVolume} />
-          </Sequence>
-        ) : null}
-      </div>
-    </FxContext.Provider>
-  );
+          {settings.music && musicSrc ? <Audio src={musicSrc} loop volume={musicVol} /> : null}
+          {settings.sfx
+            ? sfx.map((c, i) => (
+                <Sequence key={i} from={Math.max(0, c.from)} durationInFrames={c.durationInFrames} layout="none">
+                  <Audio
+                    src={staticFile(`${c.dir ?? 'audio'}/${c.file}`)}
+                    loop={c.loop}
+                    volume={(f) =>
+                      c.volume *
+                      settings.sfxVolume *
+                      interpolate(f, [0, c.fadeIn ?? 1, c.durationInFrames - (c.fadeOut ?? 1), c.durationInFrames], [c.fadeIn ? 0 : 1, 1, 1, c.fadeOut ? 0 : 1], {
+                        extrapolateLeft: 'clamp',
+                        extrapolateRight: 'clamp',
+                      })
+                    }
+                  />
+                </Sequence>
+              ))
+            : null}
+          {props.narrationSrc ? (
+            <Sequence from={Math.max(0, Math.round(props.narrationOffsetSec * 30))} layout="none">
+              <Audio src={resolveSrc(props.narrationSrc)} volume={settings.narrationVolume} />
+            </Sequence>
+          ) : null}
+        </div>
+      </FxContext.Provider>
+    );
+  };
+  return Film;
 };
+
+export const Video = createVideo({
+  sceneComponents: SCENE_COMPONENTS,
+  boundaries: BOUNDARIES,
+  buildSfx: buildZihniSfx,
+  defaultMusic: 'audio/ambient.wav',
+});

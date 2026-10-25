@@ -1,7 +1,6 @@
 import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {Player, type PlayerRef} from '@remotion/player';
-import {Video} from '../video/Video';
-import {DEFAULT_SCENES} from '../config/defaults';
+import {FILMS, currentFilm, type FilmEntry} from './films';
 import {FPS, HEIGHT, WIDTH, type VideoProps} from '../config/types';
 import {buildTiming, fitScenesToAudio, sceneFrames, sceneStarts, totalFrames} from '../lib/timing';
 import {audioDuration, useProject} from './store';
@@ -54,7 +53,8 @@ const currentScene = (starts: number[], frame: number) => {
 type Tab = 'script' | 'audio' | 'render';
 
 export const Studio: React.FC = () => {
-  const {project, updateScene, setScenes, updateSettings, patch, reset} = useProject();
+  const film = useMemo(() => currentFilm(), []);
+  const {project, updateScene, setScenes, updateSettings, patch, reset} = useProject(film.id, film.defaults);
   const playerRef = useRef<PlayerRef>(null);
   const frame = usePlayerFrame(playerRef);
   const playing = usePlaying(playerRef);
@@ -149,7 +149,21 @@ export const Studio: React.FC = () => {
         <div className="brand">
           <span className="mark" /> ZİHNİ OYUNU <em>preview studio</em>
         </div>
-        <div className="title">Why Your Mind Turns Every Conversation Into a Test</div>
+        <div className="title">
+          <select
+            aria-label="Film"
+            value={film.id}
+            onChange={(e) => {
+              window.location.search = `?film=${e.target.value}`;
+            }}
+          >
+            {FILMS.map((f) => (
+              <option key={f.id} value={f.id}>
+                {f.title}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="meta">
           1920×1080 · {FPS} fps · {total} frames · {fmt(total)}
         </div>
@@ -161,7 +175,7 @@ export const Studio: React.FC = () => {
             <div className="stage" onClick={toggle} title="Click to play / pause">
               <Player
                 ref={playerRef}
-                component={Video as unknown as React.FC<Record<string, unknown>>}
+                component={film.component as unknown as React.FC<Record<string, unknown>>}
                 inputProps={inputProps}
                 durationInFrames={total}
                 compositionWidth={WIDTH}
@@ -170,6 +184,7 @@ export const Studio: React.FC = () => {
                 controls={false}
                 clickToPlay={false}
                 acknowledgeRemotionLicense
+                numberOfSharedAudioTags={24}
                 style={{width: '100%', height: '100%'}}
                 errorFallback={({error}) => <div className="err">Preview error: {error.message}</div>}
               />
@@ -254,7 +269,7 @@ export const Studio: React.FC = () => {
                 ))}
               </ol>
               <div className="row">
-                <button className="btn" onClick={() => updateScene(selected, DEFAULT_SCENES[selected])}>
+                <button className="btn" onClick={() => updateScene(selected, film.defaults.scenes[selected])}>
                   Reset this scene
                 </button>
                 <button className="btn" onClick={reset}>
@@ -305,7 +320,7 @@ export const Studio: React.FC = () => {
             </div>
           ) : null}
 
-          {tab === 'render' ? <RenderPanel project={project} setNotice={setNotice} /> : null}
+          {tab === 'render' ? <RenderPanel project={project} film={film} setNotice={setNotice} /> : null}
         </aside>
       </main>
     </div>
@@ -404,7 +419,7 @@ const Slider: React.FC<{label: string; value: number; onChange: (v: number) => v
 
 type Job = {state: 'idle' | 'running' | 'done' | 'error'; progress: number; message: string; file: string | null};
 
-const RenderPanel: React.FC<{project: VideoProps; setNotice: (n: {kind: 'error' | 'ok'; text: string} | null) => void}> = ({project, setNotice}) => {
+const RenderPanel: React.FC<{project: VideoProps; film: FilmEntry; setNotice: (n: {kind: 'error' | 'ok'; text: string} | null) => void}> = ({project, film, setNotice}) => {
   const [job, setJob] = useState<Job>({state: 'idle', progress: 0, message: '', file: null});
   const [api, setApi] = useState<'unknown' | 'ok' | 'missing'>('unknown');
   const json = useMemo(() => JSON.stringify(project, null, 2), [project]);
@@ -435,7 +450,7 @@ const RenderPanel: React.FC<{project: VideoProps; setNotice: (n: {kind: 'error' 
   const start = async () => {
     setNotice(null);
     try {
-      const r = await fetch('/api/render', {method: 'POST', body: json});
+      const r = await fetch('/api/render', {method: 'POST', body: JSON.stringify({composition: film.composition, props: project})});
       const d = await r.json();
       if (!r.ok) throw new Error(d.error ?? r.statusText);
       setJob({state: 'running', progress: 0, message: 'Starting…', file: null});
@@ -446,7 +461,7 @@ const RenderPanel: React.FC<{project: VideoProps; setNotice: (n: {kind: 'error' 
   const download = () => {
     const a = document.createElement('a');
     a.href = URL.createObjectURL(new Blob([json], {type: 'application/json'}));
-    a.download = 'props.json';
+    a.download = film.propsFile.split('/').pop() ?? 'props.json';
     a.click();
   };
   const frames = totalFrames(project.scenes);
@@ -488,10 +503,10 @@ const RenderPanel: React.FC<{project: VideoProps; setNotice: (n: {kind: 'error' 
       <button className="btn" onClick={download}>
         Download props.json
       </button>
-      <pre className="code">{`# save it as out/props.json, then:
-npm run render:props
+      <pre className="code">{`# save it as ${film.propsFile}, then:
+${film.renderPropsScript}
 # or render the built-in defaults:
-npm run render`}</pre>
+${film.renderScript}`}</pre>
     </div>
   );
 };
