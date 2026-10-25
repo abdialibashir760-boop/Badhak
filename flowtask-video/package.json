@@ -1,0 +1,24 @@
+{
+  "name": "flowtask-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "15-second 9:16 YouTube Short for FlowTask AI, built with Remotion",
+  "scripts": {
+    "start": "remotion studio",
+    "preview": "remotion studio",
+    "render": "remotion render src/index.ts FlowTaskAI out/flowtask-ai.mp4",
+    "still": "remotion still src/index.ts FlowTaskAI out/poster.png --frame=320",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.538",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.9.3"
+  }
+}
