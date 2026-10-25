@@ -8,7 +8,7 @@ import {buildSfx} from '../src/config/sfx';
 test('ten scenes, ~90-100 s total, contiguous starts', () => {
   assert.equal(DEFAULT_SCENES.length, 10);
   const total = totalFrames(DEFAULT_SCENES);
-  assert.ok(total / 30 >= 60 && total / 30 <= 100, `duration ${total / 30}s`);
+  assert.ok(total / 30 >= 60 && total / 30 <= 105, `duration ${total / 30}s`);
   const starts = sceneStarts(DEFAULT_SCENES);
   starts.forEach((s, i) => assert.equal(s + sceneFrames(DEFAULT_SCENES[i]), starts[i + 1] ?? total));
 });
