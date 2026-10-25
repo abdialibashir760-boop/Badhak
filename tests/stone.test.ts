@@ -51,3 +51,18 @@ test('stone sfx reference generated files and stay inside the film', () => {
     assert.ok(existsSync(`public/${c.dir ?? 'audio'}/${c.file}`), `${c.dir}/${c.file}`);
   }
 });
+
+test('measured sentence times from the recording drive the timing exactly', () => {
+  for (const s of STONE_SCENES) {
+    assert.ok(s.sentenceSec && s.sentenceSec.length > 0, `${s.id} has measured sentences`);
+    const tm = buildTiming(s);
+    assert.ok(Math.abs(tm.words[0].start - s.sentenceSec![0][0] * 30) < 1, `${s.id} first word`);
+    assert.ok(Math.abs(tm.words.at(-1)!.end - s.sentenceSec!.at(-1)![1] * 30) < 1, `${s.id} last word`);
+    // sentences are in order and never overlap
+    s.sentenceSec!.forEach(([a, b], i) => {
+      assert.ok(b > a);
+      if (i) assert.ok(a > s.sentenceSec![i - 1][1]);
+    });
+  }
+  assert.ok(existsSync('public/stone/audio/voiceover.mp3'));
+});

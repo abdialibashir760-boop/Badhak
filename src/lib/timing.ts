@@ -92,22 +92,54 @@ export const buildTiming = (scene: SceneConfig): SceneTiming => {
     if (toggles % 2 === 1) emph = !emph;
   }
 
-  const pauseTotal = tokens.reduce((n, t) => n + t.pauseFrames, 0);
-  const totalW = tokens.reduce((n, t) => n + t.weight, 0) || 1;
-  const span = Math.max(10, speechEnd - speechStart - pauseTotal);
-  let cursor = speechStart;
+  // Group token indices into sentences (a pause also ends a sentence).
+  const sentenceIdx: number[][] = [];
+  {
+    let cur: number[] = [];
+    tokens.forEach((t, i) => {
+      if (t.pauseFrames) return;
+      cur.push(i);
+      if (t.sentenceEnd) {
+        sentenceIdx.push(cur);
+        cur = [];
+      }
+    });
+    if (cur.length) sentenceIdx.push(cur);
+  }
+  const measured = scene.sentenceSec && scene.sentenceSec.length === sentenceIdx.length ? scene.sentenceSec : null;
+
   const words: Word[] = [];
   const wordTokens: Tok[] = [];
-  for (const t of tokens) {
-    if (t.pauseFrames) {
-      cursor += t.pauseFrames;
-      continue;
+  if (measured) {
+    // Exact sentence times from a recording; words spread by weight within each sentence.
+    sentenceIdx.forEach((idxs, si) => {
+      const a = measured[si][0] * FPS;
+      const b = measured[si][1] * FPS;
+      const w = idxs.reduce((n, i) => n + tokens[i].weight, 0) || 1;
+      let c = a;
+      idxs.forEach((i) => {
+        const start = c;
+        c += ((b - a) * tokens[i].weight) / w;
+        words.push({text: tokens[i].text, emph: tokens[i].emph, start, end: i === idxs[idxs.length - 1] ? b : c});
+        wordTokens.push(tokens[i]);
+      });
+    });
+  } else {
+    const pauseTotal = tokens.reduce((n, t) => n + t.pauseFrames, 0);
+    const totalW = tokens.reduce((n, t) => n + t.weight, 0) || 1;
+    const span = Math.max(10, speechEnd - speechStart - pauseTotal);
+    let cursor = speechStart;
+    for (const t of tokens) {
+      if (t.pauseFrames) {
+        cursor += t.pauseFrames;
+        continue;
+      }
+      const start = cursor;
+      cursor += (t.weight / totalW) * span;
+      const pause = t.sentenceEnd ? 0.22 : 0;
+      words.push({text: t.text, emph: t.emph, start, end: cursor - (cursor - start) * pause});
+      wordTokens.push(t);
     }
-    const start = cursor;
-    cursor += (t.weight / totalW) * span;
-    const pause = t.sentenceEnd ? 0.22 : 0;
-    words.push({text: t.text, emph: t.emph, start, end: cursor - (cursor - start) * pause});
-    wordTokens.push(t);
   }
 
   // Sentences -> cues.

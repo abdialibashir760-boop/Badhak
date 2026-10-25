@@ -37,6 +37,8 @@ But tomorrow brings another challenge. [pause] And the Stone Age has no emergenc
 ---
 
 ## Recording / generating the voice-over
+*The current film uses a recording of exactly this script (40 sentences). If you re-record, keep the sentences and their order.*
+
 * Read the text **without** the scene headings, timestamps or bracketed notes (tools read them aloud).
 * The placeholder voice in the MP4 is synthetic (espeak-ng + MBROLA). To replace it, record or generate the script, import the file in the studio (*Audio & effects → Import narration*), click **Fit scene durations to audio**, then re-render. Visuals and sound effects are placed from narration keywords, so they follow the new timing.
 * Every scene's silent gaps are intentional: the picture plays its jokes there.

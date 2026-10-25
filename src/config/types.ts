@@ -9,6 +9,11 @@ export type SceneConfig = {
   leadSec: number;
   /** Silence after the last word, seconds. */
   tailSec: number;
+  /**
+   * Optional measured [start, end] of every sentence (seconds from scene start), e.g. from a real recording.
+   * When the count matches the narration's sentences, subtitles and visuals use these exact times.
+   */
+  sentenceSec?: Array<[number, number]>;
 };
 
 export type Settings = {

@@ -82,7 +82,13 @@ npm run render:stone:props     # uses out/stone-props.json downloaded from the s
 | "Survival odds" counter | `src/stone/Hud.tsx` |
 
 ### Voice-over
-No TTS service is used. A placeholder voice is generated offline with espeak-ng + MBROLA (`node scripts/make-stone-narration.mjs`; needs `apt install espeak-ng mbrola mbrola-us2`). Replace it by importing your own recording in the studio (*Audio & effects*) and clicking **Fit scene durations to audio**.
+The film uses the supplied recording (`assets/voice/stone-voiceover-source.mp3`). `node scripts/make-stone-voice.mjs` finds its 40 sentences, drops any spoken preamble, lays them on the storyboard timeline with the film's designed pauses (`[pause:x]` in `src/stone/config.ts`; spare scene time widens the gaps) and **measures every sentence** into `src/stone/voice-timing.json`. Subtitles, kinetic text, gags and sound effects are keyed to those measured times (`tm.at('supermarket')` etc.), so picture and voice stay in sync.
+
+To use a different recording: regenerate it from [NARRATION.md](NARRATION.md) (same 40 sentences, in order), then
+```bash
+node scripts/make-stone-voice.mjs path/to/new-recording.mp3     # needs ffmpeg
+```
+A fully offline robotic placeholder voice is still available via `node scripts/make-stone-narration.mjs` (espeak-ng + MBROLA).
 
 ### Checks
 ```bash
