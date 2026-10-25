@@ -1,0 +1,39 @@
+{
+  "name": "zihni-oyunu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zihni Oyunu — programmatic psychology motion-graphics demo (Remotion + React + TypeScript)",
+  "type": "module",
+  "scripts": {
+    "studio": "vite",
+    "remotion": "remotion studio src/index.ts",
+    "audio": "node scripts/make-audio.mjs",
+    "render": "remotion render src/index.ts ZihniOyunu out/zihni-oyunu.mp4",
+    "render:props": "remotion render src/index.ts ZihniOyunu out/zihni-oyunu.mp4 --props=out/props.json",
+    "still": "remotion still src/index.ts ZihniOyunu out/still.png --frame=300",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src vite.config.ts scripts",
+    "test": "node tests/run.mjs"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "@remotion/cli": "4.0.538",
+    "@remotion/player": "4.0.538",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vite": "^5.4.21"
+  }
+}
