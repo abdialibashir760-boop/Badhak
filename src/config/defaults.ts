@@ -96,8 +96,8 @@ export const DEFAULT_SETTINGS: Settings = {
   effects: true,
   music: true,
   sfx: true,
-  musicVolume: 0.35,
-  sfxVolume: 0.6,
+  musicVolume: 0.7,
+  sfxVolume: 0.8,
   narrationVolume: 1,
 };
 
