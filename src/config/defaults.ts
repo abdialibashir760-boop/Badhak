@@ -42,7 +42,7 @@ export const DEFAULT_SCENES: SceneConfig[] = [
   {
     id: 'loop',
     title: 'Inside the Thought Loop',
-    durationSec: 8.9,
+    durationSec: 7.8,
     leadSec: 0.6,
     tailSec: 0.6,
     narration: 'Researchers call this repetitive replaying *rumination.* It can feel like problem solving, yet the loop rarely goes anywhere.',
@@ -50,7 +50,7 @@ export const DEFAULT_SCENES: SceneConfig[] = [
   {
     id: 'body',
     title: 'The Body Joins In',
-    durationSec: 9.7,
+    durationSec: 11.5,
     leadSec: 0.5,
     tailSec: 0.6,
     narration: "The body joins in. Shoulders tighten. The heart quickens. Breathing turns shallow. It is bracing for a judgment that hasn't arrived.",

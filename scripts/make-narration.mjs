@@ -4,7 +4,7 @@
 // Usage: node scripts/make-narration.mjs [voice=mb-us1] [wpm=135]
 import {build} from 'esbuild';
 import {spawnSync} from 'node:child_process';
-import {mkdirSync, writeFileSync} from 'node:fs';
+import {copyFileSync, existsSync, mkdirSync, writeFileSync} from 'node:fs';
 
 const voice = process.argv[2] ?? 'mb-us1';
 const wpm = process.argv[3] ?? '135';
@@ -22,7 +22,10 @@ const durOf = (f) => parseFloat(run('ffprobe', ['-v', 'error', '-show_entries', 
 
 const scenes = DEFAULT_SCENES.map((s, i) => {
   const wav = `out/narration/s${i}.wav`;
-  run('espeak-ng', ['-v', voice, '-s', wpm, '-g', '3', '-w', wav, s.narration.replace(/\*/g, '')]);
+  // A real recording at public/audio/voice/<scene-id>.wav overrides the synthetic voice for that scene.
+  const real = `public/audio/voice/${s.id}.wav`;
+  if (existsSync(real)) copyFileSync(real, wav);
+  else run('espeak-ng', ['-v', voice, '-s', wpm, '-g', '3', '-w', wav, s.narration.replace(/\*/g, '')]);
   const speech = durOf(wav);
   const durationSec = Math.ceil((s.leadSec + speech + s.tailSec) * 10) / 10;
   return {...s, speech, durationSec};
