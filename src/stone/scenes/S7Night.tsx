@@ -2,6 +2,7 @@ import React from 'react';
 import {Camera, HandDrawn, Particles, Vignette} from '../../components/Stage';
 import {Svg} from '../../scenes/kit';
 import type {SceneProps} from '../../scenes/types';
+import {useKeys, useText} from '../i18n';
 import {clamp, easeInOut, easeOut, kf, lerp, seg} from '../../lib/anim';
 import {lerpPose, walkPose, type Pose} from '../../lib/pose';
 import {GROUND_Y} from '../art/Backdrop';
@@ -19,10 +20,12 @@ const ARCH = `M 1230,${GROUND_Y + 70} L 1230,470 C 1230,230 1420,130 1560,130 C 
 const WALL_CLIP = `M -400,-200 H 2400 V 1300 H -400 Z ${ARCH}`;
 
 export const S7Night: React.FC<SceneProps> = ({frame, dur, tm}) => {
+  const K = useKeys(tm);
+  const TX = useText();
   const tod = lerp(0.84, 1.0, seg(frame, 0, 300));
-  const tFlute = tm.at('flute', 0.28);
-  const tTomorrow = tm.at('tomorrow', 0.58);
-  const tHot = tm.at('hotline', 0.88);
+  const tFlute = K.at('flute', 0.28);
+  const tTomorrow = K.at('tomorrow', 0.58);
+  const tHot = K.at('hotline', 0.88);
   const f = flicker(frame);
   const L = LOOKS;
 
@@ -133,9 +136,9 @@ export const S7Night: React.FC<SceneProps> = ({frame, dur, tm}) => {
           textShadow: '0 4px 30px #000',
         }}
       >
-        COULD YOU SURVIVE
+        {TX.ending[0]}
         <br />
-        <span style={{color: '#e0a43a', fontStyle: 'italic'}}>YOUR FIRST DAY?</span>
+        <span style={{color: '#e0a43a', fontStyle: 'italic'}}>{TX.ending[1]}</span>
       </div>
     </>
   );

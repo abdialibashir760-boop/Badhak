@@ -1,14 +1,16 @@
 // Builds the Stone Age voice-over track from a recording whose sentences follow the script, and measures
 // every sentence so subtitles + visuals land exactly on the spoken words.
-//   node scripts/make-stone-voice.mjs [assets/voice/stone-voiceover-source.mp3]
+//   node scripts/make-stone-voice.mjs [recording.mp3] [en|tr]      (defaults: the English source, 'en')
 // 1. finds the sentence-sized speech segments (skipping any spoken preamble before "Imagine waking up…")
 // 2. re-lays them on the storyboard timeline with the film's designed pauses ([pause:x] in src/stone/config.ts)
-// 3. writes public/stone/audio/voiceover.mp3 and src/stone/voice-timing.json
+// 3. writes public/stone/audio/voiceover[-tr].mp3 and src/stone/voice-timing.<lang>.json
 import {build} from 'esbuild';
 import {spawnSync} from 'node:child_process';
 import {mkdirSync, writeFileSync} from 'node:fs';
 
 const src = process.argv[2] ?? 'assets/voice/stone-voiceover-source.mp3';
+const lang = process.argv[3] ?? 'en';
+if (!['en', 'tr'].includes(lang)) throw new Error('language must be en or tr');
 const DEFAULT_GAP = 0.8; // between sentences with no explicit [pause:x]
 const PAD_IN = 0.08;
 const PAD_OUT = 0.14;
@@ -22,10 +24,10 @@ const run = (cmd, args) => {
 };
 
 const r = await build({entryPoints: ['src/stone/config.ts'], bundle: true, write: false, format: 'esm', platform: 'node', loader: {'.json': 'json'}});
-const {STONE_SCENES} = await import(`data:text/javascript;base64,${Buffer.from(r.outputFiles[0].text).toString('base64')}`);
+const {BASE_SCENES} = await import(`data:text/javascript;base64,${Buffer.from(r.outputFiles[0].text).toString('base64')}`);
 
 // sentences per scene, with the pause that follows each (seconds)
-const scenes = STONE_SCENES.map((s) => {
+const scenes = BASE_SCENES[lang].map((s) => {
   const sentences = [];
   const re = /([^.!?]*[.!?]+\*?)\s*(\[pause:([\d.]+)\])?/g;
   let m;
@@ -94,7 +96,7 @@ for (const sc of scenes) {
 }
 if (problems.length) throw new Error(problems.join('\n'));
 const mix = `${filters.join(';')};${filters.map((_, i) => `[a${i}]`).join('')}amix=inputs=${filters.length}:normalize=0:duration=longest,apad=whole_dur=${sceneStart},atrim=0:${sceneStart},loudnorm=I=-16:TP=-1.5,aresample=44100[out]`;
-run('ffmpeg', ['-y', '-loglevel', 'error', ...inputs, '-filter_complex', mix, '-map', '[out]', '-ac', '1', '-b:a', '160k', 'public/stone/audio/voiceover.mp3']);
-writeFileSync('src/stone/voice-timing.json', JSON.stringify(timing, null, 1));
+run('ffmpeg', ['-y', '-loglevel', 'error', ...inputs, '-filter_complex', mix, '-map', '[out]', '-ac', '1', '-b:a', '160k', lang === 'en' ? 'public/stone/audio/voiceover.mp3' : `public/stone/audio/voiceover-${lang}.mp3`]);
+writeFileSync(`src/stone/voice-timing.${lang}.json`, JSON.stringify(timing, null, 1));
 for (const [id, v] of Object.entries(timing)) console.log(`${id.padEnd(7)} lead ${v.leadSec}s  tail ${v.tailSec}s  ${v.sentenceSec.length} sentences`);
 console.log(`voice-over: ${sceneStart}s, ${total} sentences laid on the storyboard timeline`);

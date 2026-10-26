@@ -1,6 +1,7 @@
 import type {SceneConfig} from '../config/types';
 import type {SfxCue} from '../config/sfx';
 import {buildTiming, sceneStarts} from '../lib/timing';
+import {keysFor, type Lang} from './i18n';
 
 const S = 'stone/audio';
 
@@ -8,11 +9,12 @@ const S = 'stone/audio';
  * Sound design for the Stone Age film, placed from the same narration keywords the visuals use,
  * so edited timing/text keeps sound and picture in sync.
  */
-export const buildStoneSfx = (scenes: SceneConfig[]): SfxCue[] => {
+export const buildStoneSfx = (scenes: SceneConfig[], lang: Lang = 'en'): SfxCue[] => {
   const starts = sceneStarts(scenes);
   const tms = scenes.map((s) => buildTiming(s));
   const out: SfxCue[] = [];
-  const at = (i: number, kw: string, fb: number, nth = 0) => starts[i] + Math.round(tms[i].at(kw, fb, nth));
+  const keys = tms.map((t) => keysFor(lang, t));
+  const at = (i: number, kw: string, fb: number, nth = 0) => starts[i] + Math.round(keys[i].at(kw, fb, nth));
   const end = (i: number) => starts[i] + tms[i].dur;
   const cue = (c: SfxCue) => out.push({...c, from: Math.max(0, c.from)});
   const steps = (from: number, to: number, every: number, volume = 0.45) => {

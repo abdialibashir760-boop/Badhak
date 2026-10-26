@@ -3,6 +3,7 @@ import {Camera, HandDrawn, Parallax, Vignette} from '../../components/Stage';
 import {KineticText} from '../../components/Overlays';
 import {Svg} from '../../scenes/kit';
 import type {SceneProps} from '../../scenes/types';
+import {useKeys, useText} from '../i18n';
 import {clamp, easeInOut, easeOut, kf, lerp, seg} from '../../lib/anim';
 import {lerpPose} from '../../lib/pose';
 import {Backdrop, Foreground, GROUND_Y} from '../art/Backdrop';
@@ -13,12 +14,14 @@ import {POSES} from '../figures/skeleton';
 const HX = 900;
 
 export const S1Wake: React.FC<SceneProps> = ({frame, dur, tm}) => {
+  const K = useKeys(tm);
+  const TX = useText();
   const tod = lerp(0.0, 0.1, frame / dur);
-  const tHouses = tm.at('houses', 0.28);
-  const tPhones = tm.at('phones', 0.36);
-  const tElec = tm.at('electricity', 0.42);
-  const tTrees = tm.at('trees', 0.55);
-  const tBig = tm.at('biggest', 0.7);
+  const tHouses = K.at('houses', 0.28);
+  const tPhones = K.at('phones', 0.36);
+  const tElec = K.at('electricity', 0.42);
+  const tTrees = K.at('trees', 0.55);
+  const tBig = K.at('biggest', 0.7);
   const tArt = tTrees - 6;
 
   // waking: lying -> sitting up -> groggy look around -> frantic pat-down -> look up
@@ -70,23 +73,13 @@ export const S1Wake: React.FC<SceneProps> = ({frame, dur, tm}) => {
       {frame > titleIn - 4 ? <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0) 42%)', opacity: seg(frame, titleIn - 4, titleIn + 20)}} /> : null}
       <KineticText
         frame={frame}
-        y={170}
-        size={108}
+        y={TX.titleY}
+        size={TX.titleSize}
         tracking={0.07}
         gap={0.24}
         maxWidth={1700}
         opacity={1 - clamp((frame - (dur - 22)) / 20)}
-        words={[
-          {text: 'WHAT', at: titleIn},
-          {text: 'IF', at: titleIn + 6},
-          {text: 'YOU', at: titleIn + 12},
-          {text: 'WOKE', at: titleIn + 18},
-          {text: 'UP', at: titleIn + 24},
-          {text: 'IN', at: titleIn + 32},
-          {text: 'THE', at: titleIn + 38},
-          {text: 'STONE', at: titleIn + 46, color: '#e0a43a', italic: true},
-          {text: 'AGE?', at: titleIn + 52, color: '#e0a43a', italic: true},
-        ]}
+        words={TX.title.map((text, i) => ({text, at: titleIn + Math.round(i * (52 / Math.max(1, TX.title.length - 1))), color: TX.titleAccent.includes(i) ? '#e0a43a' : undefined, italic: TX.titleAccent.includes(i)}))}
       />
     </>
   );

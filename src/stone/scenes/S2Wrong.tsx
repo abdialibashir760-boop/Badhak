@@ -3,6 +3,7 @@ import {Camera, HandDrawn, Parallax, Vignette} from '../../components/Stage';
 import {SmallCaps} from '../../components/Overlays';
 import {Svg} from '../../scenes/kit';
 import type {SceneProps} from '../../scenes/types';
+import {useKeys, useText} from '../i18n';
 import {clamp, easeInOut, easeOut, lerp, seg} from '../../lib/anim';
 import {lerpPose, walkPose} from '../../lib/pose';
 import {Backdrop, Foreground, GROUND_Y} from '../art/Backdrop';
@@ -15,11 +16,13 @@ import {POSES} from '../figures/skeleton';
 const STRIDE = 1.37; // hero legs are longer than the stick figure the walk cycle was tuned for
 
 export const S2Wrong: React.FC<SceneProps> = ({frame, dur, tm}) => {
+  const K = useKeys(tm);
+  const TX = useText();
   const tod = lerp(0.1, 0.22, frame / dur);
-  const tModern = tm.at('Modern', 0.28);
-  const tThou = tm.at('thousands', 0.36);
-  const tSuper = tm.at('supermarket', 0.52);
-  const tPlus = tm.at('plus', 0.75);
+  const tModern = K.at('Modern', 0.28);
+  const tThou = K.at('thousands', 0.36);
+  const tSuper = K.at('supermarket', 0.52);
+  const tPlus = K.at('plus', 0.75);
   const shotB = tModern - 12;
   const shotC = tThou + 40;
   const shotD = tSuper - 16;
@@ -105,8 +108,8 @@ export const S2Wrong: React.FC<SceneProps> = ({frame, dur, tm}) => {
         {/* location tag */}
         <g opacity={seg(frame, 40, 70) * (1 - seg(frame, shotB - 20, shotB))}>
           <rect x={72} y={64} width={4} height={74} fill="#e0a43a" />
-          <SmallCaps text="WESTERN EUROPE · c. 30,000 YEARS AGO" x={96} y={92} size={22} align="left" color="#e8e0cf" spacing={0.28} />
-          <SmallCaps text="LATE ICE AGE · SCENES ARE ARTISTIC RECONSTRUCTIONS" x={96} y={126} size={15} align="left" color="#a9a79f" spacing={0.24} />
+          <SmallCaps text={TX.place} x={96} y={92} size={22} align="left" color="#e8e0cf" spacing={0.28} />
+          <SmallCaps text={TX.placeNote} x={96} y={126} size={15} align="left" color="#a9a79f" spacing={0.24} />
         </g>
       </Svg>
       <PaintOverlay />

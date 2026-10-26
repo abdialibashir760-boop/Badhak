@@ -1,8 +1,8 @@
 import type React from 'react';
 import {DEFAULT_PROPS} from '../config/defaults';
 import type {VideoProps} from '../config/types';
-import {STONE_PROPS} from '../stone/config';
-import {StoneVideo} from '../stone/StoneVideo';
+import {STONE_PROPS, STONE_PROPS_TR} from '../stone/config';
+import {StoneVideo, StoneVideoTR} from '../stone/StoneVideo';
 import {Video} from '../video/Video';
 
 export type FilmEntry = {
@@ -38,6 +38,16 @@ export const FILMS: FilmEntry[] = [
     renderScript: 'npm run render:stone',
     renderPropsScript: 'npm run render:stone:props',
     propsFile: 'out/stone-props.json',
+  },
+  {
+    id: 'stone-tr',
+    composition: 'StoneAgeTR',
+    title: 'Taş Devrinde Uyansaydın Ne Olurdu? (Türkçe)',
+    component: StoneVideoTR,
+    defaults: STONE_PROPS_TR,
+    renderScript: 'npm run render:stone-tr',
+    renderPropsScript: 'npm run render:stone-tr:props',
+    propsFile: 'out/stone-tr-props.json',
   },
 ];
 

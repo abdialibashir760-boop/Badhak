@@ -2,6 +2,7 @@ import React from 'react';
 import {Camera, HandDrawn, Parallax, Vignette} from '../../components/Stage';
 import {Svg} from '../../scenes/kit';
 import type {SceneProps} from '../../scenes/types';
+import {useKeys} from '../i18n';
 import {clamp, easeInOut, easeOut, kf, lerp, rng, seg} from '../../lib/anim';
 import {lerpPose, walkPose, type Pose} from '../../lib/pose';
 import {Backdrop, Foreground, GROUND_Y} from '../art/Backdrop';
@@ -29,13 +30,14 @@ const Bush: React.FC<{x: number; y: number; s?: number; sway?: number; berries?:
 };
 
 export const S5Wolf: React.FC<SceneProps> = ({frame, dur, tm}) => {
+  const K = useKeys(tm);
   const tod = lerp(0.55, 0.7, frame / dur);
-  const tNotice = tm.at('notice', 0.05);
-  const tWatching = tm.at('watching', 0.12);
-  const tSudden = tm.at('Suddenly', 0.3);
-  const tOut = tm.at('Out', 0.5);
-  const tBack = tm.at('back', 0.62);
-  const tWolves = tm.at('Wolves', 0.78);
+  const tNotice = K.at('notice', 0.05);
+  const tWatching = K.at('watching', 0.12);
+  const tSudden = K.at('Suddenly', 0.3);
+  const tOut = K.at('Out', 0.5);
+  const tBack = K.at('back', 0.62);
+  const tWolves = K.at('Wolves', 0.78);
   const slow = 0.55; // suspense plays in slow motion
   const sf = frame * slow;
 

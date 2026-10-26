@@ -90,6 +90,14 @@ node scripts/make-stone-voice.mjs path/to/new-recording.mp3     # needs ffmpeg
 ```
 A fully offline robotic placeholder voice is still available via `node scripts/make-stone-narration.mjs` (espeak-ng + MBROLA).
 
+### Turkish version (`StoneAgeTR`)
+Same film with Turkish voice-over, subtitles and on-screen text (title, location tag, shout, growl, odds counter, final question). Script: [NARRATION.tr.md](NARRATION.tr.md). Language lives in `src/stone/i18n.ts` (strings + the Turkish word each visual/sound cue hangs on) and `src/stone/config.ts` (per-language narration).
+```bash
+npm run studio                 # ?film=stone-tr
+npm run render:stone-tr        # -> out/tas-devri.mp4
+node scripts/make-stone-voice.mjs assets/voice/stone-voiceover-tr-source.mp3 tr   # rebuild voice + timing from the recording
+```
+
 ### Checks
 ```bash
 npm test                       # unit tests (timing, pause tokens, narration keywords, assets, sfx)

@@ -2,6 +2,7 @@ import React from 'react';
 import {Camera, HandDrawn, Parallax, Particles, Vignette} from '../../components/Stage';
 import {Svg} from '../../scenes/kit';
 import type {SceneProps} from '../../scenes/types';
+import {useKeys} from '../i18n';
 import {clamp, easeInOut, easeOut, lerp, seg} from '../../lib/anim';
 import {lerpPose, walkPose, type Pose} from '../../lib/pose';
 import {Backdrop, Foreground, GROUND_Y} from '../art/Backdrop';
@@ -24,12 +25,13 @@ const Sticks: React.FC<{x: number; y: number; n?: number; s?: number; rot?: numb
 );
 
 export const S6Learn: React.FC<SceneProps> = ({frame, dur, tm}) => {
+  const K = useKeys(tm);
   const tod = lerp(0.6, 0.76, frame / dur);
-  const tMake = tm.at('Make', 0.45);
-  const tShape = tm.at('Shape', 0.55);
-  const tBuild = tm.at('Build', 0.66);
-  const tShare = tm.at('Share', 0.78);
-  const tRecon = tm.at('reconstruct', 0.88);
+  const tMake = K.at('Make', 0.45);
+  const tShape = K.at('Shape', 0.55);
+  const tBuild = K.at('Build', 0.66);
+  const tShare = K.at('Share', 0.78);
+  const tRecon = K.at('reconstruct', 0.88);
   const L = LOOKS;
 
   type Shot = 'wood' | 'fire' | 'stone' | 'shelter' | 'share';

@@ -2,6 +2,7 @@ import React from 'react';
 import {Camera, HandDrawn, Parallax, Particles, Vignette} from '../../components/Stage';
 import {Svg} from '../../scenes/kit';
 import type {SceneProps} from '../../scenes/types';
+import {useKeys, useText} from '../i18n';
 import {easeInOut, easeOut, easeOutBack, lerp, seg} from '../../lib/anim';
 import {lerpPose, type Pose} from '../../lib/pose';
 import {Backdrop, Foreground, GROUND_Y} from '../art/Backdrop';
@@ -17,15 +18,17 @@ import {POSES} from '../figures/skeleton';
 const FX = 1330;
 
 export const S4Food: React.FC<SceneProps> = ({frame, dur, tm}) => {
+  const K = useKeys(tm);
+  const TX = useText();
   const tod = lerp(0.4, 0.5, frame / dur);
-  const tStomach = tm.at('stomach', 0.1);
-  const tShops = tm.at('shops', 0.22);
-  const tSnacks = tm.at('snacks', 0.27);
-  const tApps = tm.at('apps', 0.31);
-  const tKnow = tm.at('Finding', 0.4);
-  const tArch = tm.at('Archaeologists', 0.6);
-  const tNever = tm.at('never', 0.82, 1);
-  const tFridge = tm.at('fridge', 0.9);
+  const tStomach = K.at('stomach', 0.1);
+  const tShops = K.at('shops', 0.22);
+  const tSnacks = K.at('snacks', 0.27);
+  const tApps = K.at('apps', 0.31);
+  const tKnow = K.at('Finding', 0.4);
+  const tArch = K.at('Archaeologists', 0.6);
+  const tNever = K.at('never', 0.82, 1);
+  const tFridge = K.at('fridge', 0.9);
   const tBerry = Math.min(dur - 150, tFridge + 70);
 
   const osc = Math.sin(frame * 0.3);
@@ -127,7 +130,7 @@ export const S4Food: React.FC<SceneProps> = ({frame, dur, tm}) => {
           </HandDrawn>
           {growl > 0.2 ? (
             <text x={heroX + 20} y={GROUND_Y - 190} textAnchor="middle" fontFamily="'Cormorant Garamond', serif" fontWeight={700} fontStyle="italic" fontSize={74} fill="#e0a43a" stroke="#0d0907" strokeWidth={5} paintOrder="stroke" opacity={growl} transform={`rotate(${-5 + osc * 2.5} ${heroX} ${GROUND_Y - 190}) translate(${osc * 3},0)`}>
-              GRRRROWL
+              {TX.growl}
             </text>
           ) : null}
           <Parallax depth={1.1}>

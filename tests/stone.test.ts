@@ -1,7 +1,8 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {existsSync, statSync} from 'node:fs';
-import {STONE_SCENES} from '../src/stone/config';
+import {STONE_SCENES, STONE_SCENES_TR} from '../src/stone/config';
+import {keysFor} from '../src/stone/i18n';
 import {buildTiming, sceneFrames, totalFrames} from '../src/lib/timing';
 import {buildStoneSfx} from '../src/stone/sfx';
 
@@ -65,4 +66,45 @@ test('measured sentence times from the recording drive the timing exactly', () =
     });
   }
   assert.ok(existsSync('public/stone/audio/voiceover.mp3'));
+});
+
+const MUST: Record<string, string[]> = {
+  wake: ['houses', 'phones', 'electricity', 'trees', 'biggest'],
+  wrong: ['Modern', 'thousands', 'supermarket', 'plus'],
+  locals: ['skills', 'landscape', 'tracks', 'tools', 'restaurant', 'louder'],
+  food: ['stomach', 'shops', 'snacks', 'apps', 'Finding', 'Archaeologists', 'fridge'],
+  wolf: ['notice', 'watching', 'Suddenly', 'Out', 'back', 'Wolves'],
+  learn: ['Make', 'Shape', 'Build', 'Share', 'reconstruct'],
+  night: ['flute', 'tomorrow', 'hotline'],
+};
+
+test('Turkish version: same 40 sentences, measured times, and every cue word is found in the narration', () => {
+  assert.deepEqual(STONE_SCENES_TR.map((s) => s.id), STONE_SCENES.map((s) => s.id));
+  let n = 0;
+  for (const s of STONE_SCENES_TR) {
+    const tm = buildTiming(s);
+    assert.ok(s.sentenceSec && s.sentenceSec.length > 0, `${s.id} has measured sentences`);
+    n += s.sentenceSec!.length;
+    assert.equal(s.sentenceSec!.length, STONE_SCENES.find((e) => e.id === s.id)!.sentenceSec!.length, `${s.id} sentence count matches English`);
+    const keys = keysFor('tr', tm);
+    for (const kw of MUST[s.id]) assert.notEqual(keys.find(kw, kw === 'never' ? 1 : 0), undefined, `${s.id}: "${kw}" not found in Turkish narration`);
+    assert.ok(tm.words.at(-1)!.end <= sceneFrames(s));
+  }
+  assert.equal(n, 40);
+  assert.ok(existsSync('public/stone/audio/voiceover-tr.mp3'));
+});
+
+test('Turkish cue words come in the same story order as English', () => {
+  for (const s of STONE_SCENES_TR) {
+    const tm = buildTiming(s);
+    const keys = keysFor('tr', tm);
+    const order = MUST[s.id].map((k) => keys.find(k) ?? -1);
+    if (s.id === 'wolf') order.splice(0, 2); // notice/watching are one phrase; their relative order may differ by language
+    assert.deepEqual([...order].sort((a, b) => a - b), order, `${s.id} cue order`);
+  }
+});
+
+test('Turkish sfx stay inside the film', () => {
+  const total = totalFrames(STONE_SCENES_TR);
+  for (const c of buildStoneSfx(STONE_SCENES_TR, 'tr')) assert.ok(c.from < total, `${c.file}@${c.from}`);
 });

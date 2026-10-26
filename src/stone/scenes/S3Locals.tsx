@@ -2,6 +2,7 @@ import React from 'react';
 import {Camera, HandDrawn, Parallax, Particles, Vignette} from '../../components/Stage';
 import {Svg} from '../../scenes/kit';
 import type {SceneProps} from '../../scenes/types';
+import {useKeys, useText} from '../i18n';
 import {easeInOut, easeOut, easeOutBack, lerp, seg} from '../../lib/anim';
 import {lerpPose, walkPose, type Pose} from '../../lib/pose';
 import {Backdrop, Foreground, GROUND_Y} from '../art/Backdrop';
@@ -19,13 +20,15 @@ const STRIDE = 1.37;
 const GX = 620; // where the hero stops
 
 export const S3Locals: React.FC<SceneProps> = ({frame, dur, tm}) => {
+  const K = useKeys(tm);
+  const TX = useText();
   const tod = lerp(0.3, 0.4, frame / dur);
-  const tSkills = tm.at('skills', 0.2);
-  const tLand = tm.at('landscape', 0.3);
-  const tTracks = tm.at('tracks', 0.4);
-  const tTools = tm.at('tools', 0.5);
-  const tRest = tm.at('restaurant', 0.68);
-  const tLouder = tm.at('louder', 0.9);
+  const tSkills = K.at('skills', 0.2);
+  const tLand = K.at('landscape', 0.3);
+  const tTracks = K.at('tracks', 0.4);
+  const tTools = K.at('tools', 0.5);
+  const tRest = K.at('restaurant', 0.68);
+  const tLouder = K.at('louder', 0.9);
 
   // hero walks in, stops, waves
   const walkT = seg(frame, 20, 190, easeInOut);
@@ -131,7 +134,7 @@ export const S3Locals: React.FC<SceneProps> = ({frame, dur, tm}) => {
           {frame > tLouder - 4 && frame < tLouder + 70 ? (
             <g opacity={seg(frame, tLouder - 4, tLouder + 4) * (1 - seg(frame, tLouder + 50, tLouder + 70))}>
               <text x={hx + 330} y={GROUND_Y - 470} textAnchor="middle" fontFamily="'Cormorant Garamond', serif" fontWeight={700} fontSize={104} fill="#f2ead8" stroke="#0d0907" strokeWidth={6} paintOrder="stroke" transform={`rotate(${-6 + Math.sin(frame * 1.9) * 1.5} ${hx + 330} ${GROUND_Y - 470})`} letterSpacing={4}>
-                RESTAURANT!!!
+                {TX.shout}
               </text>
               {[-1, 1].map((s) => (
                 <path key={s} d={`M ${hx + 120 + s * 90},${GROUND_Y - 380} l ${s * 40},-30 M ${hx + 120 + s * 100},${GROUND_Y - 330} l ${s * 54},0`} stroke="#f2ead8" strokeWidth={6} strokeLinecap="round" />
@@ -145,7 +148,7 @@ export const S3Locals: React.FC<SceneProps> = ({frame, dur, tm}) => {
         </Camera>
         {/* tag when the elder is introduced */}
         <g opacity={seg(frame, tSkills + 10, tSkills + 30) * (1 - seg(frame, tSkills + 90, tSkills + 110))}>
-          <SmallCaps text="MODERN HUMANS, LIKE YOU — JUST BETTER PREPARED" x={960} y={150} size={20} color="#e8e0cf" spacing={0.3} />
+          <SmallCaps text={TX.locals} x={960} y={150} size={20} color="#e8e0cf" spacing={0.3} />
         </g>
       </Svg>
       <PaintOverlay />

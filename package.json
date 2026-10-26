@@ -10,6 +10,8 @@
     "audio": "node scripts/make-audio.mjs",
     "audio:stone": "node scripts/make-stone-audio.mjs",
     "render:stone": "remotion render src/index.ts StoneAge out/stone-age.mp4",
+    "render:stone-tr": "remotion render src/index.ts StoneAgeTR out/tas-devri.mp4",
+    "render:stone-tr:props": "remotion render src/index.ts StoneAgeTR out/tas-devri.mp4 --props=out/stone-tr-props.json",
     "render:stone:props": "remotion render src/index.ts StoneAge out/stone-age.mp4 --props=out/stone-props.json",
     "render": "remotion render src/index.ts ZihniOyunu out/zihni-oyunu.mp4",
     "render:props": "remotion render src/index.ts ZihniOyunu out/zihni-oyunu.mp4 --props=out/props.json",
