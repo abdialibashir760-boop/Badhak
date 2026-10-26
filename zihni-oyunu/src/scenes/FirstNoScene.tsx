@@ -9,6 +9,7 @@ import { Dust, PaperBackground } from "../components/PaperBackground";
 import { Bubble, Floor } from "../components/Props";
 import { useGF } from "../components/SceneFrame";
 import { Stickman } from "../components/Stickman";
+import { T } from "../data/strings";
 import { ev, sceneRanges } from "../data/timing";
 import { C, FONT_SERIF } from "../theme";
 import { kf, noise, prog } from "../utils/animation";
@@ -156,7 +157,7 @@ export const FirstNoScene: React.FC = () => {
           {bubbleA > 0.01 && (
             <g opacity={bubbleA}>
               <Bubble x={HX + 30} y={J.head[1] - 150} w={560} h={110} tail={[-10, 100]} />
-              <text x={HX + 30} y={J.head[1] - 134} textAnchor="middle" fontFamily={FONT_SERIF} fontSize={48} fontWeight={600} fill={C.ink}>I’m sorry, I can’t today.</text>
+              <text x={HX + 30} y={J.head[1] - 134} textAnchor="middle" fontFamily={FONT_SERIF} fontSize={48} fontWeight={600} fill={C.ink}>{T.say}</text>
             </g>
           )}
           {/* impulses to take it back */}
@@ -170,7 +171,7 @@ export const FirstNoScene: React.FC = () => {
           {f >= calm && f < end && <Light x={1060} y={206} on={warm * 0.6} size={22} frame={f} seed={4} tone={0.6} />}
         </World>
       </CameraMotion>
-      <Caption text="Discomfort does not automatically mean danger." from={danger} to={danger + 160} at="lower" size={56} italic />
+      <Caption text={T.danger} from={danger} to={danger + 160} at="lower" size={56} italic />
     </AbsoluteFill>
   );
 };

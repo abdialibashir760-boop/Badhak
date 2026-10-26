@@ -12,6 +12,7 @@ import { ShadowHand } from "../components/ShadowHands";
 import { Stickman } from "../components/Stickman";
 import { Tangle, Threads, ThreadDef, Wrap } from "../components/ThreadSystem";
 import { segPts, WRAP_ORDER } from "../components/BoundHero";
+import { T } from "../data/strings";
 import { ev, sceneRanges } from "../data/timing";
 import { C } from "../theme";
 import { clamp, hash, kf, prog } from "../utils/animation";
@@ -178,7 +179,7 @@ export const DisappearingScene: React.FC = () => {
           {f >= tangle && <g opacity={prog(f, tangle, 40)}><path d={`M ${standX - 600} ${G + 6} Q ${standX} ${G - 40} ${standX + 600} ${G + 6}`} stroke={C.ink} strokeWidth={1.6} fill="none" opacity={0.6} /></g>}
         </World>
       </CameraMotion>
-      <Caption text="Guilt is a feeling, not always a verdict." from={vText} to={vText + 150} at="upper" size={60} italic color="#f2efe6" plate="38,38,35" />
+      <Caption text={T.guilt} from={vText} to={vText + 150} at="upper" size={60} italic color="#f2efe6" plate="38,38,35" />
     </AbsoluteFill>
   );
 };

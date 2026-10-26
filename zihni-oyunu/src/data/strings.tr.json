@@ -1,0 +1,11 @@
+{
+  "lang": "tr",
+  "relief": "Rahatlama her zaman mutluluk değildir.",
+  "question": "En son ne zaman kendini suçlu\nhissetmeden hayır dedin?",
+  "title": ["SEVİLMENİN", "HAPİSHANESİ"],
+  "guilt": "Suçluluk bir duygudur,\nher zaman bir hüküm değildir.",
+  "danger": "Rahatsızlık, otomatik olarak tehlike demek değildir.",
+  "say": "Üzgünüm, bugün yapamam.",
+  "final": "Sevilmek için kendini\nterk etmek zorunda değilsin.",
+  "logo": "ZİHNİ OYUNU"
+}

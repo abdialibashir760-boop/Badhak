@@ -14,6 +14,10 @@ def decode(path):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-f", "f32le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True).stdout
     return np.frombuffer(raw, dtype=np.float32)
 
+LANG = os.environ.get("LANG_ID", "en")
+# Turkish recordings have ~1.1 s of dead air between sentences: trim to a natural length.
+TRIM = {"tr": {"gap": 0.42, "inner": 0.28}}.get(LANG)
+
 def place(sb, al):
     """Return placed (start,end) seconds for every sentence on the final timeline."""
     sents = al["sentences"]
@@ -22,10 +26,15 @@ def place(sb, al):
         if prev is None:
             start = t
         else:
-            gap = sb["fileGap"] if s["file"] != prev["file"] else s["start"] - prev["end"]
+            gap = TRIM["gap"] if TRIM else (sb["fileGap"] if s["file"] != prev["file"] else s["start"] - prev["end"])
             start = placed[-1][1] + gap
         start += sb["extraPause"].get(str(s["i"]), 0.0)
-        placed.append((start, start + (s["end"] - s["start"])))
+        if TRIM:
+            ps = s["parts"]
+            dur = sum(b - a for a, b in ps) + sum(min(ps[q + 1][0] - ps[q][1], TRIM["inner"]) for q in range(len(ps) - 1))
+        else:
+            dur = s["end"] - s["start"]
+        placed.append((start, start + dur))
         prev = s
     return placed
 

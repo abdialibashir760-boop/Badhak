@@ -8,6 +8,7 @@ import { useGF } from "../components/SceneFrame";
 import { ShadowHand, HandKind } from "../components/ShadowHands";
 import { Stickman } from "../components/Stickman";
 import { Threads, Wrap, ThreadDef } from "../components/ThreadSystem";
+import { T } from "../data/strings";
 import { ev, sec } from "../data/timing";
 import { C, FONT_SERIF } from "../theme";
 import { clamp, prog } from "../utils/animation";
@@ -118,13 +119,13 @@ export const OpeningScene: React.FC = () => {
         </CameraMotion>
       </AbsoluteFill>
 
-      <Caption text="Relief is not always happiness." from={ev("opening.relief")} to={freezeF - 6} at="lower" size={46} italic />
-      <Caption text={"When was the last time you said no\nwithout feeling guilty?"} from={questionF} to={titleF - 8} at="upper" size={62} fadeIn={36} />
+      <Caption text={T.relief} from={ev("opening.relief")} to={freezeF - 6} at="lower" size={46} italic />
+      <Caption text={T.question} from={questionF} to={titleF - 8} at="upper" size={62} fadeIn={36} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", opacity: prog(f, titleF, 36) * (1 - prog(f, titleF + sec(2.9), 14)) }}>
         <div style={{ fontFamily: FONT_SERIF, fontWeight: 600, fontSize: 112, letterSpacing: `${0.2 - 0.12 * prog(f, titleF, 90)}em`, color: C.ink, textAlign: "center", lineHeight: 1.1 }}>
-          THE PRISON
+          {T.title[0]}
           <br />
-          OF BEING LIKED
+          {T.title[1]}
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

@@ -1,770 +1,770 @@
 {
  "fps": 30,
- "totalSeconds": 321.80199999999985,
- "totalFrames": 9654,
+ "totalSeconds": 355.09328199999976,
+ "totalFrames": 10653,
  "sentences": [
   {
    "i": 0,
-   "text": "Someone asks you for a favor.",
+   "text": "Biri senden bir iyilik istiyor.",
    "start": 3.2,
-   "end": 4.666
+   "end": 4.94
   },
   {
    "i": 1,
-   "text": "You don’t want to do it.",
-   "start": 5.1,
-   "end": 5.814
+   "text": "Yapmak istemiyorsun.",
+   "start": 5.36,
+   "end": 6.575
   },
   {
    "i": 2,
-   "text": "You’re tired.",
-   "start": 6.256,
-   "end": 6.72
+   "text": "Yorgunsun.",
+   "start": 6.995,
+   "end": 7.676
   },
   {
    "i": 3,
-   "text": "You have your own problems.",
-   "start": 7.166,
-   "end": 8.236
+   "text": "Kendi sorunların var.",
+   "start": 8.096,
+   "end": 9.297
   },
   {
    "i": 4,
-   "text": "But before you can even think, your mouth says, ‘Of course.’",
-   "start": 8.696,
-   "end": 12.115
+   "text": "Ama daha düşünmene fırsat kalmadan ağzından şu çıkıyor: ‘Tabii.’",
+   "start": 9.717,
+   "end": 13.317
   },
   {
    "i": 5,
-   "text": "And the moment you agree, you feel something strange.",
-   "start": 12.674,
-   "end": 15.411
+   "text": "Ve kabul ettiğin an, tuhaf bir şey hissediyorsun.",
+   "start": 13.737,
+   "end": 16.345
   },
   {
    "i": 6,
-   "text": "Not happiness.",
-   "start": 16.153,
-   "end": 16.852
+   "text": "Mutluluk değil.",
+   "start": 17.065,
+   "end": 17.779
   },
   {
    "i": 7,
-   "text": "Relief.",
-   "start": 17.8,
-   "end": 18.186
+   "text": "Rahatlama.",
+   "start": 18.699,
+   "end": 19.325
   },
   {
    "i": 8,
-   "text": "Because, for a few seconds, you know they’re not disappointed in you.",
-   "start": 19.021,
-   "end": 22.588
+   "text": "Çünkü birkaç saniyeliğine, onları hayal kırıklığına uğratmadığını biliyorsun.",
+   "start": 20.095,
+   "end": 24.259
   },
   {
    "i": 9,
-   "text": "But what if the thing you’re trying so hard to avoid isn’t disappointing someone, but the feeling that comes afterward?",
-   "start": 23.022,
-   "end": 28.699
+   "text": "Peki ya kaçınmaya çalıştığın şey birini hayal kırıklığına uğratmak değil de, sonrasında hissettiğin duyguysa?",
+   "start": 24.679,
+   "end": 30.409
   },
   {
    "i": 10,
-   "text": "You probably know this feeling.",
-   "start": 32.541,
-   "end": 33.708
+   "text": "Bu hissi muhtemelen tanıyorsun.",
+   "start": 34.229,
+   "end": 36.024
   },
   {
    "i": 11,
-   "text": "A coworker asks you to cover a shift.",
-   "start": 34.176,
-   "end": 36.002
+   "text": "Bir iş arkadaşın vardiyasına bakmanı istiyor.",
+   "start": 36.444,
+   "end": 38.983
   },
   {
    "i": 12,
-   "text": "You’re exhausted, but you agree.",
-   "start": 36.45,
-   "end": 38.093
+   "text": "Bitkinsin ama kabul ediyorsun.",
+   "start": 39.403,
+   "end": 41.173
   },
   {
    "i": 13,
-   "text": "A friend calls when you desperately need time alone, and you answer.",
-   "start": 38.493,
-   "end": 41.944
+   "text": "Bir arkadaşın, tek başına kalmaya çok ihtiyacın olduğu bir anda arıyor ve sen açıyorsun.",
+   "start": 41.593,
+   "end": 46.377
   },
   {
    "i": 14,
-   "text": "Someone makes a joke that hurts you, and instead of saying anything, you laugh along.",
-   "start": 42.395,
-   "end": 47.763
+   "text": "Biri seni kıran bir espri yapıyor ve hiçbir şey söylemek yerine sen de gülüyorsun.",
+   "start": 46.797,
+   "end": 51.145
   },
   {
    "i": 15,
-   "text": "Later, when you’re alone, you replay the interaction.",
-   "start": 48.178,
-   "end": 50.724
+   "text": "Sonra, yalnız kaldığında, o anı zihninde tekrar tekrar oynatıyorsun.",
+   "start": 51.565,
+   "end": 55.675
   },
   {
    "i": 16,
-   "text": "You think about what you should have said.",
-   "start": 51.147,
-   "end": 52.529
+   "text": "Ne söylemen gerektiğini düşünüyorsun.",
+   "start": 56.095,
+   "end": 58.107
   },
   {
    "i": 17,
-   "text": "You feel frustrated with yourself.",
-   "start": 52.967,
-   "end": 54.45
+   "text": "Kendine kızıyorsun.",
+   "start": 58.527,
+   "end": 59.613
   },
   {
    "i": 18,
-   "text": "And the next time it happens, you do the same thing again.",
-   "start": 54.946,
-   "end": 58.282
+   "text": "Ve bir dahaki sefer aynı şey olduğunda, yine aynısını yapıyorsun.",
+   "start": 60.033,
+   "end": 63.625
   },
   {
    "i": 19,
-   "text": "Why?",
-   "start": 59.334,
-   "end": 59.991
+   "text": "Neden?",
+   "start": 64.645,
+   "end": 65.038
   },
   {
    "i": 20,
-   "text": "For some people, keeping others happy becomes a way of managing the fear of rejection, conflict, or disapproval.",
-   "start": 61.123,
-   "end": 66.611
+   "text": "Bazı insanlar için başkalarını memnun etmek, reddedilme, çatışma ya da onaylanmama korkusunu yönetmenin bir yoluna dönüşür.",
+   "start": 66.158,
+   "end": 72.96
   },
   {
    "i": 21,
-   "text": "The mind learns a pattern.",
-   "start": 67.041,
-   "end": 68.117
+   "text": "Zihin bir örüntü öğrenir.",
+   "start": 73.38,
+   "end": 74.837
   },
   {
    "i": 22,
-   "text": "If I agree, perhaps they won’t be upset.",
-   "start": 68.564,
-   "end": 70.763
+   "text": "Kabul edersem, belki üzülmezler.",
+   "start": 75.257,
+   "end": 77.335
   },
   {
    "i": 23,
-   "text": "If I help, perhaps they’ll still need me.",
-   "start": 71.214,
-   "end": 73.142
+   "text": "Yardım edersem, belki bana yine de ihtiyaç duyarlar.",
+   "start": 77.755,
+   "end": 80.868
   },
   {
    "i": 24,
-   "text": "If I never make things difficult, perhaps I won’t lose the relationship.",
-   "start": 73.567,
-   "end": 77.115
+   "text": "Hiçbir şeyi zorlaştırmazsam, belki bu ilişkiyi kaybetmem.",
+   "start": 81.288,
+   "end": 84.614
   },
   {
    "i": 25,
-   "text": "And when the other person smiles, you feel relief.",
-   "start": 77.626,
-   "end": 80.117
+   "text": "Ve karşındaki gülümsediğinde rahatlıyorsun.",
+   "start": 85.034,
+   "end": 87.415
   },
   {
    "i": 26,
-   "text": "That relief can reinforce the behavior.",
-   "start": 80.647,
-   "end": 82.813
+   "text": "Bu rahatlama davranışı pekiştirebilir.",
+   "start": 87.835,
+   "end": 89.868
   },
   {
    "i": 27,
-   "text": "You learn to reach for approval whenever discomfort appears.",
-   "start": 83.256,
-   "end": 86.2
+   "text": "Rahatsızlık ortaya çıktığında onay arayışına yöneliyorsun.",
+   "start": 90.288,
+   "end": 93.268
   },
   {
    "i": 28,
-   "text": "Eventually, you may stop asking whether you actually want to do something.",
-   "start": 86.646,
-   "end": 90.083
+   "text": "Zamanla, bir şeyi gerçekten isteyip istemediğini sormayı bırakabilirsin.",
+   "start": 93.688,
+   "end": 97.406
   },
   {
    "i": 29,
-   "text": "Instead, you ask yourself what will keep everyone happy.",
-   "start": 90.543,
-   "end": 93.632
+   "text": "Bunun yerine kendine, herkesi neyin mutlu edeceğini soruyorsun.",
+   "start": 97.826,
+   "end": 101.182
   },
   {
    "i": 30,
-   "text": "Imagine that every approving look creates a little light.",
-   "start": 94.646,
-   "end": 97.5
+   "text": "Her onaylayan bakışın küçük bir ışık yarattığını hayal et.",
+   "start": 102.202,
+   "end": 105.178
   },
   {
    "i": 31,
-   "text": "You begin chasing those lights.",
-   "start": 97.953,
-   "end": 99.455
+   "text": "O ışıkların peşinden koşmaya başlıyorsun.",
+   "start": 105.598,
+   "end": 107.979
   },
   {
    "i": 32,
-   "text": "When someone smiles, you feel worthy.",
-   "start": 99.917,
-   "end": 102.042
+   "text": "Biri gülümsediğinde kendini değerli hissediyorsun.",
+   "start": 108.399,
+   "end": 110.922
   },
   {
    "i": 33,
-   "text": "When someone looks disappointed, you feel as if something is wrong with you.",
-   "start": 102.455,
-   "end": 105.905
+   "text": "Biri hayal kırıklığına uğramış göründüğünde, sanki sende bir sorun varmış gibi hissediyorsun.",
+   "start": 111.342,
+   "end": 116.312
   },
   {
    "i": 34,
-   "text": "So you work harder.",
-   "start": 106.333,
-   "end": 107.149
+   "text": "O yüzden daha çok çabalıyorsun.",
+   "start": 116.732,
+   "end": 118.489
   },
   {
    "i": 35,
-   "text": "You explain yourself.",
-   "start": 107.588,
-   "end": 108.456
+   "text": "Kendini açıklıyorsun.",
+   "start": 118.909,
+   "end": 120.083
   },
   {
    "i": 36,
-   "text": "You apologize even when you haven’t done anything wrong.",
-   "start": 108.941,
-   "end": 111.967
+   "text": "Hiçbir yanlış yapmadığın halde özür diliyorsun.",
+   "start": 120.503,
+   "end": 123.199
   },
   {
    "i": 37,
-   "text": "You try to repair feelings that may not even be your responsibility to fix.",
-   "start": 112.442,
-   "end": 116.57
+   "text": "Belki de senin sorumluluğunda bile olmayan duyguları onarmaya çalışıyorsun.",
+   "start": 123.619,
+   "end": 127.536
   },
   {
    "i": 38,
-   "text": "But there is a problem with building your sense of worth this way.",
-   "start": 117.417,
-   "end": 119.986
+   "text": "Ama öz değerini bu şekilde inşa etmenin bir sorunu var.",
+   "start": 128.356,
+   "end": 131.326
   },
   {
    "i": 39,
-   "text": "Other people’s reactions are not under your control.",
-   "start": 120.387,
-   "end": 122.841
+   "text": "Başkalarının tepkileri senin kontrolünde değil.",
+   "start": 131.746,
+   "end": 134.149
   },
   {
    "i": 40,
-   "text": "People can misunderstand you.",
-   "start": 123.269,
-   "end": 124.563
+   "text": "İnsanlar seni yanlış anlayabilir.",
+   "start": 134.569,
+   "end": 136.56
   },
   {
    "i": 41,
-   "text": "They can have a bad day.",
-   "start": 124.983,
-   "end": 125.934
+   "text": "Kötü bir gün geçiriyor olabilirler.",
+   "start": 136.98,
+   "end": 138.861
   },
   {
    "i": 42,
-   "text": "They can disagree with you, even when you have done nothing wrong.",
-   "start": 126.347,
-   "end": 129.354
+   "text": "Hiçbir yanlış yapmamış olsan bile seninle aynı fikirde olmayabilirler.",
+   "start": 139.281,
+   "end": 143.31
   },
   {
    "i": 43,
-   "text": "And if every negative reaction feels like a verdict on your character, you will never feel completely safe.",
-   "start": 129.82,
-   "end": 135.349
+   "text": "Ve her olumsuz tepki karakterin hakkında verilmiş bir hüküm gibi hissettiriyorsa, kendini hiçbir zaman tam olarak güvende hissetmeyeceksin.",
+   "start": 143.73,
+   "end": 150.959
   },
   {
    "i": 44,
-   "text": "There will always be another light to chase.",
-   "start": 135.844,
-   "end": 137.95
+   "text": "Peşinden koşacak hep başka bir ışık olacak.",
+   "start": 151.379,
+   "end": 153.776
   },
   {
    "i": 45,
-   "text": "And while you’re busy chasing those lights, something else begins to happen.",
-   "start": 138.401,
-   "end": 142.001
+   "text": "Ve sen bu ışıkların peşinden koşmakla meşgulken, başka bir şey olmaya başlıyor.",
+   "start": 154.196,
+   "end": 158.639
   },
   {
    "i": 46,
-   "text": "You postpone your own plans.",
-   "start": 143.064,
-   "end": 144.375
+   "text": "Kendi planlarını erteliyorsun.",
+   "start": 159.659,
+   "end": 161.373
   },
   {
    "i": 47,
-   "text": "You ignore your exhaustion.",
-   "start": 144.829,
-   "end": 146.199
+   "text": "Yorgunluğunu görmezden geliyorsun.",
+   "start": 161.793,
+   "end": 163.724
   },
   {
    "i": 48,
-   "text": "You hide your opinions.",
-   "start": 146.627,
-   "end": 147.613
+   "text": "Fikirlerini saklıyorsun.",
+   "start": 164.144,
+   "end": 165.482
   },
   {
    "i": 49,
-   "text": "Sometimes you don’t even know what you want anymore.",
-   "start": 148.071,
-   "end": 150.138
+   "text": "Bazen artık ne istediğini bile bilmiyorsun.",
+   "start": 165.902,
+   "end": 168.291
   },
   {
    "i": 50,
-   "text": "You become so familiar with asking what everyone else needs that asking what you need feels strangely uncomfortable.",
-   "start": 150.578,
-   "end": 156.591
+   "text": "Herkesin neye ihtiyacı olduğunu sormaya o kadar alışıyorsun ki, kendi ihtiyacını sormak tuhaf biçimde rahatsız edici geliyor.",
+   "start": 168.711,
+   "end": 175.346
   },
   {
    "i": 51,
-   "text": "You might even feel guilty when you finally choose yourself.",
-   "start": 157.029,
-   "end": 159.789
+   "text": "Sonunda kendini seçtiğinde suçlu bile hissedebilirsin.",
+   "start": 175.766,
+   "end": 178.612
   },
   {
    "i": 52,
-   "text": "And that guilt can be confusing.",
-   "start": 160.301,
-   "end": 161.724
+   "text": "Ve bu suçluluk kafa karıştırıcı olabilir.",
+   "start": 179.032,
+   "end": 181.21
   },
   {
    "i": 53,
-   "text": "You may interpret it as proof that you’ve done something wrong.",
-   "start": 162.159,
-   "end": 164.606
+   "text": "Bunu, yanlış bir şey yaptığının kanıtı olarak yorumlayabilirsin.",
+   "start": 181.63,
+   "end": 184.873
   },
   {
    "i": 54,
-   "text": "But guilt is a feeling, not always a verdict.",
-   "start": 165.458,
-   "end": 168.073
+   "text": "Ama suçluluk bir duygudur, her zaman bir hüküm değildir.",
+   "start": 185.693,
+   "end": 188.704
   },
   {
    "i": 55,
-   "text": "Sometimes it appears because you’ve violated your values.",
-   "start": 168.533,
-   "end": 171.235
+   "text": "Bazen değerlerini ihlal ettiğin için ortaya çıkar.",
+   "start": 189.124,
+   "end": 191.831
   },
   {
    "i": 56,
-   "text": "Other times, it appears because you’re doing something unfamiliar.",
-   "start": 171.683,
-   "end": 174.886
+   "text": "Bazen de alışık olmadığın bir şey yaptığın için.",
+   "start": 192.251,
+   "end": 194.745
   },
   {
    "i": 57,
-   "text": "If you’ve spent years avoiding disappointment, setting a reasonable boundary may feel wrong before it begins to feel natural.",
-   "start": 175.386,
-   "end": 182.698
+   "text": "Yıllarca hayal kırıklığından kaçındıysan, makul bir sınır koymak, doğal gelmeye başlamadan önce yanlış gelebilir.",
+   "start": 195.165,
+   "end": 201.413
   },
   {
    "i": 58,
-   "text": "Now imagine a different moment.",
-   "start": 184.498,
-   "end": 185.914
+   "text": "Şimdi farklı bir an hayal et.",
+   "start": 203.133,
+   "end": 204.81
   },
   {
    "i": 59,
-   "text": "Someone asks you for another favor.",
-   "start": 186.369,
-   "end": 187.964
+   "text": "Biri senden bir iyilik daha istiyor.",
+   "start": 205.23,
+   "end": 207.194
   },
   {
    "i": 60,
-   "text": "You are tired.",
-   "start": 188.401,
-   "end": 188.977
+   "text": "Yorgunsun.",
+   "start": 207.614,
+   "end": 208.295
   },
   {
    "i": 61,
-   "text": "You don’t have the energy.",
-   "start": 189.426,
-   "end": 190.489
+   "text": "Enerjin yok.",
+   "start": 208.715,
+   "end": 209.538
   },
   {
    "i": 62,
-   "text": "The familiar answer rises to your mouth.",
-   "start": 190.907,
-   "end": 192.817
+   "text": "Alıştığın cevap ağzına geliyor.",
+   "start": 209.958,
+   "end": 211.688
   },
   {
    "i": 63,
-   "text": "Of course.",
-   "start": 193.357,
-   "end": 193.864
+   "text": "Tabii.",
+   "start": 212.108,
+   "end": 212.47
   },
   {
    "i": 64,
-   "text": "But this time, you pause.",
-   "start": 195.222,
-   "end": 196.291
+   "text": "Ama bu sefer duraksıyorsun.",
+   "start": 213.79,
+   "end": 215.402
   },
   {
    "i": 65,
-   "text": "You notice the tension in your chest.",
-   "start": 196.739,
-   "end": 198.264
+   "text": "Göğsündeki gerginliği fark ediyorsun.",
+   "start": 215.822,
+   "end": 217.934
   },
   {
    "i": 66,
-   "text": "You notice the fear that they might be disappointed.",
-   "start": 198.793,
-   "end": 200.802
+   "text": "Onların hayal kırıklığına uğrayabileceği korkusunu fark ediyorsun.",
+   "start": 218.354,
+   "end": 221.676
   },
   {
    "i": 67,
-   "text": "And instead of immediately trying to make that feeling disappear, you allow it to be there.",
-   "start": 201.236,
-   "end": 204.282
+   "text": "Ve o duyguyu hemen yok etmeye çalışmak yerine, orada olmasına izin veriyorsun.",
+   "start": 222.096,
+   "end": 226.553
   },
   {
    "i": 68,
-   "text": "Then you say:",
-   "start": 204.655,
-   "end": 205.744
+   "text": "Sonra şunu söylüyorsun:",
+   "start": 226.973,
+   "end": 228.434
   },
   {
    "i": 69,
-   "text": "‘I’m sorry, I can’t today.’",
-   "start": 206.892,
-   "end": 209.264
+   "text": "‘Üzgünüm, bugün yapamam.’",
+   "start": 229.554,
+   "end": 231.053
   },
   {
    "i": 70,
-   "text": "The other person looks disappointed.",
-   "start": 211.193,
-   "end": 212.722
+   "text": "Karşındaki hayal kırıklığına uğramış görünüyor.",
+   "start": 232.873,
+   "end": 235.36
   },
   {
    "i": 71,
-   "text": "And for a moment, you feel the urge to take it back.",
-   "start": 213.16,
-   "end": 215.817
+   "text": "Ve bir an için, söylediğini geri almak istiyorsun.",
+   "start": 235.78,
+   "end": 238.1
   },
   {
    "i": 72,
-   "text": "You want to explain more.",
-   "start": 216.26,
-   "end": 217.164
+   "text": "Daha fazla açıklamak istiyorsun.",
+   "start": 238.52,
+   "end": 240.349
   },
   {
    "i": 73,
-   "text": "You want to offer another favor.",
-   "start": 217.6,
-   "end": 218.856
+   "text": "Başka bir iyilik teklif etmek istiyorsun.",
+   "start": 240.769,
+   "end": 242.94
   },
   {
    "i": 74,
-   "text": "You want to make absolutely certain they still like you.",
-   "start": 219.301,
-   "end": 221.574
+   "text": "Hâlâ senden hoşlandıklarından kesinlikle emin olmak istiyorsun.",
+   "start": 243.36,
+   "end": 247.05
   },
   {
    "i": 75,
-   "text": "But you wait.",
-   "start": 222.904,
-   "end": 223.396
+   "text": "Ama bekliyorsun.",
+   "start": 248.37,
+   "end": 249.295
   },
   {
    "i": 76,
-   "text": "You breathe.",
-   "start": 224.335,
-   "end": 224.785
+   "text": "Nefes alıyorsun.",
+   "start": 250.215,
+   "end": 251.142
   },
   {
    "i": 77,
-   "text": "You allow the moment to exist without treating it like an emergency.",
-   "start": 226.814,
-   "end": 230.255
+   "text": "O anın var olmasına, onu bir acil durummuş gibi görmeden izin veriyorsun.",
+   "start": 253.162,
+   "end": 257.368
   },
   {
    "i": 78,
-   "text": "Maybe the other person understands.",
-   "start": 230.673,
-   "end": 232.279
+   "text": "Belki karşındaki anlar.",
+   "start": 257.788,
+   "end": 259.26
   },
   {
    "i": 79,
-   "text": "Maybe they don’t.",
-   "start": 232.738,
-   "end": 234.304
+   "text": "Belki anlamaz.",
+   "start": 259.68,
+   "end": 260.684
   },
   {
    "i": 80,
-   "text": "Either way, you have learned something important.",
-   "start": 234.682,
-   "end": 235.902
+   "text": "Her iki durumda da önemli bir şey öğrendin.",
+   "start": 261.104,
+   "end": 263.13
   },
   {
    "i": 81,
-   "text": "Discomfort does not automatically mean danger.",
-   "start": 237.249,
-   "end": 239.591
+   "text": "Rahatsızlık, otomatik olarak tehlike demek değildir.",
+   "start": 264.45,
+   "end": 267.267
   },
   {
    "i": 82,
-   "text": "And another person’s disappointment does not automatically mean you have done something wrong.",
-   "start": 240.02,
-   "end": 244.141
+   "text": "Ve bir başkasının hayal kırıklığı, otomatik olarak senin yanlış bir şey yaptığın anlamına gelmez.",
+   "start": 267.687,
+   "end": 272.809
   },
   {
    "i": 83,
-   "text": "This doesn’t mean you should stop helping people.",
-   "start": 245.708,
-   "end": 247.614
+   "text": "Bu, insanlara yardım etmeyi bırakman gerektiği anlamına gelmez.",
+   "start": 274.329,
+   "end": 277.89
   },
   {
    "i": 84,
-   "text": "It doesn’t mean every request deserves a no.",
-   "start": 248.051,
-   "end": 250.424
+   "text": "Her isteğin bir hayır hak ettiği anlamına da gelmez.",
+   "start": 278.31,
+   "end": 281.052
   },
   {
    "i": 85,
-   "text": "And it certainly doesn’t mean you should stop caring.",
-   "start": 250.849,
-   "end": 252.88
+   "text": "Ve kesinlikle önemsemeyi bırakman gerektiği anlamına gelmez.",
+   "start": 281.472,
+   "end": 284.792
   },
   {
    "i": 86,
-   "text": "It means your kindness can become a choice rather than a reflex driven by fear.",
-   "start": 253.357,
-   "end": 257.507
+   "text": "Bu, nezaketinin korkuyla yönlendirilen bir refleks yerine bir seçim olabileceği anlamına gelir.",
+   "start": 285.212,
+   "end": 290.226
   },
   {
    "i": 87,
-   "text": "You can help because you genuinely want to.",
-   "start": 257.954,
-   "end": 259.893
+   "text": "Gerçekten istediğin için yardım edebilirsin.",
+   "start": 290.646,
+   "end": 293.022
   },
   {
    "i": 88,
-   "text": "You can listen without becoming responsible for fixing every problem.",
-   "start": 260.29,
-   "end": 263.768
+   "text": "Her sorunu çözmekten sorumlu olmadan dinleyebilirsin.",
+   "start": 293.442,
+   "end": 296.343
   },
   {
    "i": 89,
-   "text": "You can care about someone’s feelings without allowing those feelings to determine every decision you make.",
-   "start": 264.237,
-   "end": 269.552
+   "text": "Birinin duygularını önemseyebilirsin, ama o duyguların verdiğin her kararı belirlemesine izin vermek zorunda değilsin.",
+   "start": 296.763,
+   "end": 302.959
   },
   {
    "i": 90,
-   "text": "And when you make a mistake, you can take responsibility without turning yourself into a bad person.",
-   "start": 269.998,
-   "end": 275.242
+   "text": "Ve bir hata yaptığında, kendini kötü biri haline getirmeden sorumluluğunu alabilirsin.",
+   "start": 303.379,
+   "end": 307.848
   },
   {
    "i": 91,
-   "text": "The next time you feel the urge to agree immediately, give yourself a moment.",
-   "start": 276.598,
-   "end": 280.609
+   "text": "Bir dahaki sefere hemen kabul etme isteği hissettiğinde, kendine bir an tanı.",
+   "start": 309.168,
+   "end": 313.297
   },
   {
    "i": 92,
-   "text": "Ask yourself:",
-   "start": 281.058,
-   "end": 281.652
+   "text": "Kendine sor:",
+   "start": 313.717,
+   "end": 314.418
   },
   {
    "i": 93,
-   "text": "If I knew this person wouldn’t be upset with me, what would I actually choose?",
-   "start": 282.125,
-   "end": 285.728
+   "text": "Bu kişinin bana kızmayacağını bilseydim, gerçekte ne seçerdim?",
+   "start": 314.838,
+   "end": 318.276
   },
   {
    "i": 94,
-   "text": "You don’t have to change your entire life today.",
-   "start": 286.592,
-   "end": 288.609
+   "text": "Hayatını bugün baştan değiştirmek zorunda değilsin.",
+   "start": 319.096,
+   "end": 321.8
   },
   {
    "i": 95,
-   "text": "You can begin with one honest answer.",
-   "start": 289.012,
-   "end": 290.646
+   "text": "Tek bir dürüst cevapla başlayabilirsin.",
+   "start": 322.22,
+   "end": 324.284
   },
   {
    "i": 96,
-   "text": "One reasonable boundary.",
-   "start": 291.092,
-   "end": 292.342
+   "text": "Makul bir sınırla.",
+   "start": 324.704,
+   "end": 325.785
   },
   {
    "i": 97,
-   "text": "One moment in which you allow someone else to have their feelings without abandoning your own needs.",
-   "start": 292.768,
-   "end": 297.669
+   "text": "Başkasının duygularını yaşamasına, kendi ihtiyaçlarını terk etmeden izin verdiğin tek bir anla.",
+   "start": 326.205,
+   "end": 331.332
   },
   {
    "i": 98,
-   "text": "Because the goal isn’t to become someone who never disappoints anyone.",
-   "start": 299.03,
-   "end": 302.252
+   "text": "Çünkü amaç, hiç kimseyi hayal kırıklığına uğratmayan biri olmak değil.",
+   "start": 332.652,
+   "end": 336.48
   },
   {
    "i": 99,
-   "text": "It’s to become someone who no longer abandons himself just to be liked.",
-   "start": 302.711,
-   "end": 306.802
+   "text": "Amaç, sırf sevilmek için kendini terk etmeyen biri olmak.",
+   "start": 336.9,
+   "end": 340.093
   }
  ],
  "events": {
   "opening.r1": 3.3,
   "opening.n1": 3.92,
-  "opening.r2": 5.1,
-  "opening.n2": 5.72,
-  "opening.r3": 6.156,
-  "opening.n3": 6.776,
-  "opening.r4": 7.266,
-  "opening.n4": 7.886,
-  "opening.r5": 8.796,
-  "opening.n5": 9.416,
-  "opening.r6": 10.696,
-  "opening.n6": 11.316,
-  "opening.r7": 12.774,
-  "opening.n7": 13.394,
-  "opening.r8": 14.274,
-  "opening.n8": 14.894,
-  "opening.r9": 16.153,
-  "opening.n9": 16.773,
-  "opening.r10": 17.7,
-  "opening.n10": 18.32,
-  "opening.r11": 19.221,
-  "opening.n11": 19.841,
-  "opening.r12": 20.021,
-  "opening.n12": 20.641,
-  "opening.r13": 20.821,
-  "opening.n13": 21.441,
-  "opening.r14": 21.521,
-  "opening.n14": 22.141,
-  "opening.freeze": 22.922,
-  "opening.question": 23.222,
-  "opening.title": 29.199,
-  "opening.relief": 17.8,
-  "response.a_walk": 32.741,
-  "response.a_ask": 34.676,
-  "response.a_nod": 37.35,
-  "response.pan_b": 38.243,
-  "response.b_ring": 38.743,
-  "response.b_look": 39.693,
-  "response.b_reach": 40.393,
-  "response.b_answer": 41.393,
-  "response.pan_c": 42.095,
-  "response.c_joke": 42.595,
-  "response.c_hurt": 43.795,
-  "response.c_laugh": 45.595,
-  "response.pan_d": 47.928,
-  "response.d_alone": 48.178,
-  "response.d_replay1": 48.578,
-  "response.d_replay2": 49.378,
-  "response.d_replay3": 50.178,
-  "response.d_think": 51.147,
-  "response.d_frus": 52.967,
-  "response.d_again": 55.546,
-  "response.d_again2": 57.246,
-  "response.why": 59.334,
-  "response.f_rej": 62.123,
-  "response.f_conf": 63.723,
-  "response.f_dis": 65.123,
-  "response.learn": 67.041,
-  "response.f_p1": 68.764,
-  "response.f_p2": 71.414,
-  "response.f_p3": 73.767,
-  "response.smile": 78.526,
-  "response.loop": 80.847,
-  "response.reach": 83.656,
-  "response.ask": 87.146,
-  "response.every": 91.043,
-  "approval.l1": 95.146,
-  "approval.l2": 96.346,
-  "approval.chase": 97.953,
-  "approval.smile1": 100.217,
-  "approval.disap1": 102.955,
-  "approval.fast": 104.855,
-  "approval.explain": 107.588,
-  "approval.apol": 109.041,
-  "approval.repair": 112.642,
-  "approval.borrowed": 117.917,
-  "approval.q": 123.369,
-  "approval.cloud": 125.083,
-  "approval.cross": 126.747,
-  "approval.verdict": 130.42,
-  "approval.flood": 136.044,
-  "approval.slow": 138.601,
-  "disappearing.ticket": 143.064,
-  "disappearing.drop": 143.864,
-  "disappearing.clock": 144.829,
-  "disappearing.mouth": 146.627,
-  "disappearing.choice": 148.171,
-  "disappearing.look1": 148.771,
-  "disappearing.look2": 149.471,
-  "disappearing.mirror": 150.578,
-  "disappearing.masks0": 151.478,
-  "disappearing.masksEnd": 154.178,
-  "disappearing.rm1": 154.678,
-  "disappearing.rm2": 155.278,
-  "disappearing.rm3": 155.778,
-  "disappearing.guilt": 157.229,
-  "disappearing.confuse": 160.501,
-  "disappearing.proof": 162.459,
-  "disappearing.verdictText": 165.458,
-  "disappearing.cloud": 166.358,
-  "disappearing.values": 168.533,
-  "disappearing.unfam": 171.683,
-  "disappearing.tangle": 175.386,
-  "disappearing.breathe": 178.186,
-  "firstNo.enter": 184.798,
-  "firstNo.ask": 186.669,
-  "firstNo.tired": 188.401,
-  "firstNo.energy": 189.426,
-  "firstNo.rises": 190.907,
-  "firstNo.course": 193.357,
-  "firstNo.pause": 195.322,
-  "firstNo.chest": 196.839,
-  "firstNo.fear": 198.993,
-  "firstNo.allow": 201.636,
-  "firstNo.raise": 204.755,
-  "firstNo.say": 207.242,
-  "firstNo.leave": 211.393,
-  "firstNo.urge": 213.46,
-  "firstNo.impulse1": 216.36,
-  "firstNo.impulse2": 217.7,
-  "firstNo.impulse3": 219.401,
-  "firstNo.wait": 222.904,
-  "firstNo.breathe": 224.335,
-  "firstNo.calm": 227.214,
-  "firstNo.maybe1": 230.873,
-  "firstNo.maybe2": 232.738,
-  "firstNo.learned": 234.682,
-  "firstNo.danger": 237.249,
-  "firstNo.loosen": 240.52,
-  "resolution.ask": 245.908,
-  "resolution.sched": 248.151,
-  "resolution.decide": 249.551,
-  "resolution.help": 251.049,
-  "resolution.caring": 251.849,
-  "resolution.pan2": 252.857,
-  "resolution.fall": 253.357,
-  "resolution.masks": 255.357,
-  "resolution.pan3": 257.654,
-  "resolution.tea": 258.254,
-  "resolution.sit": 260.29,
-  "resolution.cloudStay": 261.89,
-  "resolution.pan4": 263.837,
-  "resolution.decline": 264.637,
-  "resolution.react": 266.637,
-  "resolution.plan": 268.037,
-  "resolution.mistake": 270.298,
-  "resolution.sorry": 271.998,
-  "resolution.clean": 273.198,
-  "final.ask": 281.058,
-  "final.own": 282.525,
-  "final.small": 286.592,
-  "final.honest": 289.312,
-  "final.line": 291.292,
-  "final.feel": 293.168,
-  "final.threads": 299.33,
-  "final.hold": 304.211,
-  "final.textIn": 307.702,
-  "final.textOut": 313.002,
-  "final.white": 313.202,
-  "final.logo": 315.802
+  "opening.r2": 5.36,
+  "opening.n2": 5.98,
+  "opening.r3": 6.895,
+  "opening.n3": 7.515,
+  "opening.r4": 8.196,
+  "opening.n4": 8.816,
+  "opening.r5": 9.817,
+  "opening.n5": 10.437,
+  "opening.r6": 11.717,
+  "opening.n6": 12.337,
+  "opening.r7": 13.837,
+  "opening.n7": 14.457,
+  "opening.r8": 15.337,
+  "opening.n8": 15.957,
+  "opening.r9": 17.065,
+  "opening.n9": 17.685,
+  "opening.r10": 18.599,
+  "opening.n10": 19.219,
+  "opening.r11": 20.295,
+  "opening.n11": 20.915,
+  "opening.r12": 21.095,
+  "opening.n12": 21.715,
+  "opening.r13": 21.895,
+  "opening.n13": 22.515,
+  "opening.r14": 22.595,
+  "opening.n14": 23.215,
+  "opening.freeze": 24.579,
+  "opening.question": 24.879,
+  "opening.title": 30.909,
+  "opening.relief": 18.699,
+  "response.a_walk": 34.429,
+  "response.a_ask": 36.944,
+  "response.a_nod": 40.303,
+  "response.pan_b": 41.343,
+  "response.b_ring": 41.843,
+  "response.b_look": 42.793,
+  "response.b_reach": 43.493,
+  "response.b_answer": 44.493,
+  "response.pan_c": 46.497,
+  "response.c_joke": 46.997,
+  "response.c_hurt": 48.197,
+  "response.c_laugh": 49.997,
+  "response.pan_d": 51.315,
+  "response.d_alone": 51.565,
+  "response.d_replay1": 51.965,
+  "response.d_replay2": 52.765,
+  "response.d_replay3": 53.565,
+  "response.d_think": 56.095,
+  "response.d_frus": 58.527,
+  "response.d_again": 60.633,
+  "response.d_again2": 62.333,
+  "response.why": 64.645,
+  "response.f_rej": 67.158,
+  "response.f_conf": 68.758,
+  "response.f_dis": 70.158,
+  "response.learn": 73.38,
+  "response.f_p1": 75.457,
+  "response.f_p2": 77.955,
+  "response.f_p3": 81.488,
+  "response.smile": 85.934,
+  "response.loop": 88.035,
+  "response.reach": 90.688,
+  "response.ask": 94.188,
+  "response.every": 98.326,
+  "approval.l1": 102.702,
+  "approval.l2": 103.902,
+  "approval.chase": 105.598,
+  "approval.smile1": 108.699,
+  "approval.disap1": 111.842,
+  "approval.fast": 113.742,
+  "approval.explain": 118.909,
+  "approval.apol": 120.603,
+  "approval.repair": 123.819,
+  "approval.borrowed": 128.856,
+  "approval.q": 134.669,
+  "approval.cloud": 137.08,
+  "approval.cross": 139.681,
+  "approval.verdict": 144.33,
+  "approval.flood": 151.579,
+  "approval.slow": 154.396,
+  "disappearing.ticket": 159.659,
+  "disappearing.drop": 160.459,
+  "disappearing.clock": 161.793,
+  "disappearing.mouth": 164.144,
+  "disappearing.choice": 166.002,
+  "disappearing.look1": 166.602,
+  "disappearing.look2": 167.302,
+  "disappearing.mirror": 168.711,
+  "disappearing.masks0": 169.611,
+  "disappearing.masksEnd": 172.311,
+  "disappearing.rm1": 172.811,
+  "disappearing.rm2": 173.411,
+  "disappearing.rm3": 173.911,
+  "disappearing.guilt": 175.966,
+  "disappearing.confuse": 179.232,
+  "disappearing.proof": 181.93,
+  "disappearing.verdictText": 185.693,
+  "disappearing.cloud": 186.593,
+  "disappearing.values": 189.124,
+  "disappearing.unfam": 192.251,
+  "disappearing.tangle": 195.165,
+  "disappearing.breathe": 197.965,
+  "firstNo.enter": 203.433,
+  "firstNo.ask": 205.53,
+  "firstNo.tired": 207.614,
+  "firstNo.energy": 208.715,
+  "firstNo.rises": 209.958,
+  "firstNo.course": 212.108,
+  "firstNo.pause": 213.89,
+  "firstNo.chest": 215.922,
+  "firstNo.fear": 218.554,
+  "firstNo.allow": 222.496,
+  "firstNo.raise": 227.073,
+  "firstNo.say": 229.904,
+  "firstNo.leave": 233.073,
+  "firstNo.urge": 236.08,
+  "firstNo.impulse1": 238.62,
+  "firstNo.impulse2": 240.869,
+  "firstNo.impulse3": 243.46,
+  "firstNo.wait": 248.37,
+  "firstNo.breathe": 250.215,
+  "firstNo.calm": 253.562,
+  "firstNo.maybe1": 257.988,
+  "firstNo.maybe2": 259.68,
+  "firstNo.learned": 261.104,
+  "firstNo.danger": 264.45,
+  "firstNo.loosen": 268.187,
+  "resolution.ask": 274.529,
+  "resolution.sched": 278.41,
+  "resolution.decide": 279.81,
+  "resolution.help": 281.672,
+  "resolution.caring": 282.472,
+  "resolution.pan2": 284.712,
+  "resolution.fall": 285.212,
+  "resolution.masks": 287.212,
+  "resolution.pan3": 290.346,
+  "resolution.tea": 290.946,
+  "resolution.sit": 293.442,
+  "resolution.cloudStay": 295.042,
+  "resolution.pan4": 296.363,
+  "resolution.decline": 297.163,
+  "resolution.react": 299.163,
+  "resolution.plan": 300.563,
+  "resolution.mistake": 303.679,
+  "resolution.sorry": 305.379,
+  "resolution.clean": 306.579,
+  "final.ask": 313.717,
+  "final.own": 315.238,
+  "final.small": 319.096,
+  "final.honest": 322.52,
+  "final.line": 324.904,
+  "final.feel": 326.605,
+  "final.threads": 332.952,
+  "final.hold": 338.4,
+  "final.textIn": 340.993,
+  "final.textOut": 346.293,
+  "final.white": 346.493,
+  "final.logo": 349.093
  },
  "scenes": [
   {
@@ -773,27 +773,27 @@
   },
   {
    "id": "response",
-   "start": 32.541
+   "start": 34.229
   },
   {
    "id": "approval",
-   "start": 94.046
+   "start": 101.602
   },
   {
    "id": "disappearing",
-   "start": 142.464
+   "start": 159.059
   },
   {
    "id": "firstNo",
-   "start": 183.198
+   "start": 201.833
   },
   {
    "id": "resolution",
-   "start": 244.608
+   "start": 273.229
   },
   {
    "id": "final",
-   "start": 275.698
+   "start": 308.268
   }
  ],
  "sfx": [
@@ -810,781 +810,781 @@
    "id": "opening.n1"
   },
   {
-   "t": 5.1,
+   "t": 5.36,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r2"
   },
   {
-   "t": 5.72,
+   "t": 5.98,
    "kind": "nodthread",
    "g": 0.5,
    "id": "opening.n2"
   },
   {
-   "t": 6.156,
+   "t": 6.895,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r3"
   },
   {
-   "t": 6.776,
+   "t": 7.515,
    "kind": "nod",
    "g": 0.5,
    "id": "opening.n3"
   },
   {
-   "t": 7.266,
+   "t": 8.196,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r4"
   },
   {
-   "t": 7.886,
+   "t": 8.816,
    "kind": "nodthread",
    "g": 0.5,
    "id": "opening.n4"
   },
   {
-   "t": 8.796,
+   "t": 9.817,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r5"
   },
   {
-   "t": 9.416,
+   "t": 10.437,
    "kind": "nod",
    "g": 0.5,
    "id": "opening.n5"
   },
   {
-   "t": 10.696,
+   "t": 11.717,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r6"
   },
   {
-   "t": 11.316,
+   "t": 12.337,
    "kind": "nodthread",
    "g": 0.5,
    "id": "opening.n6"
   },
   {
-   "t": 12.774,
+   "t": 13.837,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r7"
   },
   {
-   "t": 13.394,
+   "t": 14.457,
    "kind": "nod",
    "g": 0.5,
    "id": "opening.n7"
   },
   {
-   "t": 14.274,
+   "t": 15.337,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r8"
   },
   {
-   "t": 14.894,
+   "t": 15.957,
    "kind": "nodthread",
    "g": 0.5,
    "id": "opening.n8"
   },
   {
-   "t": 16.153,
+   "t": 17.065,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r9"
   },
   {
-   "t": 16.773,
+   "t": 17.685,
    "kind": "nod",
    "g": 0.5,
    "id": "opening.n9"
   },
   {
-   "t": 17.7,
+   "t": 18.599,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r10"
   },
   {
-   "t": 18.32,
+   "t": 19.219,
    "kind": "nodthread",
    "g": 0.5,
    "id": "opening.n10"
   },
   {
-   "t": 19.221,
+   "t": 20.295,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r11"
   },
   {
-   "t": 19.841,
+   "t": 20.915,
    "kind": "nod",
    "g": 0.5,
    "id": "opening.n11"
   },
   {
-   "t": 20.021,
+   "t": 21.095,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r12"
   },
   {
-   "t": 20.641,
+   "t": 21.715,
    "kind": "nodthread",
    "g": 0.5,
    "id": "opening.n12"
   },
   {
-   "t": 20.821,
+   "t": 21.895,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r13"
   },
   {
-   "t": 21.441,
+   "t": 22.515,
    "kind": "nod",
    "g": 0.5,
    "id": "opening.n13"
   },
   {
-   "t": 21.521,
+   "t": 22.595,
    "kind": "whoosh",
    "g": 0.55,
    "id": "opening.r14"
   },
   {
-   "t": 22.141,
+   "t": 23.215,
    "kind": "nodthread",
    "g": 0.5,
    "id": "opening.n14"
   },
   {
-   "t": 22.922,
+   "t": 24.579,
    "kind": "freeze",
    "g": 1.0,
    "id": "opening.freeze"
   },
   {
-   "t": 29.199,
+   "t": 30.909,
    "kind": "title",
    "g": 1.0,
    "id": "opening.title"
   },
   {
-   "t": 32.741,
+   "t": 34.429,
    "kind": "steps",
    "g": 0.5,
    "id": "response.a_walk"
   },
   {
-   "t": 34.676,
+   "t": 36.944,
    "kind": "whoosh",
    "g": 0.3,
    "id": "response.a_ask"
   },
   {
-   "t": 37.35,
+   "t": 40.303,
    "kind": "nodthread",
    "g": 0.7,
    "id": "response.a_nod"
   },
   {
-   "t": 38.243,
+   "t": 41.343,
    "kind": "swish",
    "g": 0.6,
    "id": "response.pan_b"
   },
   {
-   "t": 38.743,
+   "t": 41.843,
    "kind": "buzz",
    "g": 0.7,
    "id": "response.b_ring"
   },
   {
-   "t": 41.393,
+   "t": 44.493,
    "kind": "nodthread",
    "g": 0.6,
    "id": "response.b_answer"
   },
   {
-   "t": 42.095,
+   "t": 46.497,
    "kind": "swish",
    "g": 0.6,
    "id": "response.pan_c"
   },
   {
-   "t": 43.795,
+   "t": 48.197,
    "kind": "hurt",
    "g": 0.6,
    "id": "response.c_hurt"
   },
   {
-   "t": 45.595,
+   "t": 49.997,
    "kind": "nodthread",
    "g": 0.6,
    "id": "response.c_laugh"
   },
   {
-   "t": 47.928,
+   "t": 51.315,
    "kind": "swish",
    "g": 0.6,
    "id": "response.pan_d"
   },
   {
-   "t": 48.178,
+   "t": 51.565,
    "kind": "drone_shift",
    "g": 0.5,
    "id": "response.d_alone"
   },
   {
-   "t": 48.578,
+   "t": 51.965,
    "kind": "bubble",
    "g": 0.4,
    "id": "response.d_replay1"
   },
   {
-   "t": 49.378,
+   "t": 52.765,
    "kind": "bubble",
    "g": 0.4,
    "id": "response.d_replay2"
   },
   {
-   "t": 50.178,
+   "t": 53.565,
    "kind": "bubble",
    "g": 0.4,
    "id": "response.d_replay3"
   },
   {
-   "t": 51.147,
+   "t": 56.095,
    "kind": "scribble",
    "g": 0.4,
    "id": "response.d_think"
   },
   {
-   "t": 52.967,
+   "t": 58.527,
    "kind": "hurt",
    "g": 0.5,
    "id": "response.d_frus"
   },
   {
-   "t": 55.546,
+   "t": 60.633,
    "kind": "nodthread",
    "g": 0.7,
    "id": "response.d_again"
   },
   {
-   "t": 57.246,
+   "t": 62.333,
    "kind": "nodthread",
    "g": 0.7,
    "id": "response.d_again2"
   },
   {
-   "t": 59.334,
+   "t": 64.645,
    "kind": "why",
    "g": 0.6,
    "id": "response.why"
   },
   {
-   "t": 62.123,
+   "t": 67.158,
    "kind": "bubble",
    "g": 0.5,
    "id": "response.f_rej"
   },
   {
-   "t": 63.723,
+   "t": 68.758,
    "kind": "zap",
    "g": 0.4,
    "id": "response.f_conf"
   },
   {
-   "t": 65.123,
+   "t": 70.158,
    "kind": "bubble",
    "g": 0.5,
    "id": "response.f_dis"
   },
   {
-   "t": 67.041,
+   "t": 73.38,
    "kind": "loop",
    "g": 0.5,
    "id": "response.learn"
   },
   {
-   "t": 68.764,
+   "t": 75.457,
    "kind": "bubble",
    "g": 0.4,
    "id": "response.f_p1"
   },
   {
-   "t": 71.414,
+   "t": 77.955,
    "kind": "bubble",
    "g": 0.4,
    "id": "response.f_p2"
   },
   {
-   "t": 73.767,
+   "t": 81.488,
    "kind": "bubble",
    "g": 0.4,
    "id": "response.f_p3"
   },
   {
-   "t": 78.526,
+   "t": 85.934,
    "kind": "light",
    "g": 0.6,
    "id": "response.smile"
   },
   {
-   "t": 83.656,
+   "t": 90.688,
    "kind": "thread",
    "g": 0.5,
    "id": "response.reach"
   },
   {
-   "t": 87.146,
+   "t": 94.188,
    "kind": "bubble",
    "g": 0.4,
    "id": "response.ask"
   },
   {
-   "t": 91.043,
+   "t": 98.326,
    "kind": "bubble",
    "g": 0.5,
    "id": "response.every"
   },
   {
-   "t": 95.146,
+   "t": 102.702,
    "kind": "light",
    "g": 0.8,
    "id": "approval.l1"
   },
   {
-   "t": 96.346,
+   "t": 103.902,
    "kind": "light",
    "g": 0.7,
    "id": "approval.l2"
   },
   {
-   "t": 97.953,
+   "t": 105.598,
    "kind": "chase",
    "g": 0.6,
    "id": "approval.chase"
   },
   {
-   "t": 100.217,
+   "t": 108.699,
    "kind": "light",
    "g": 0.8,
    "id": "approval.smile1"
   },
   {
-   "t": 102.955,
+   "t": 111.842,
    "kind": "lightoff",
    "g": 0.8,
    "id": "approval.disap1"
   },
   {
-   "t": 104.855,
+   "t": 113.742,
    "kind": "pulse_start",
    "g": 0.6,
    "id": "approval.fast"
   },
   {
-   "t": 107.588,
+   "t": 118.909,
    "kind": "bubble",
    "g": 0.5,
    "id": "approval.explain"
   },
   {
-   "t": 109.041,
+   "t": 120.603,
    "kind": "bubble",
    "g": 0.5,
    "id": "approval.apol"
   },
   {
-   "t": 112.642,
+   "t": 123.819,
    "kind": "thread",
    "g": 0.5,
    "id": "approval.repair"
   },
   {
-   "t": 117.917,
+   "t": 128.856,
    "kind": "thread",
    "g": 0.6,
    "id": "approval.borrowed"
   },
   {
-   "t": 123.369,
+   "t": 134.669,
    "kind": "bubble",
    "g": 0.5,
    "id": "approval.q"
   },
   {
-   "t": 125.083,
+   "t": 137.08,
    "kind": "bubble",
    "g": 0.5,
    "id": "approval.cloud"
   },
   {
-   "t": 126.747,
+   "t": 139.681,
    "kind": "bubble",
    "g": 0.5,
    "id": "approval.cross"
   },
   {
-   "t": 130.42,
+   "t": 144.33,
    "kind": "hit",
    "g": 0.8,
    "id": "approval.verdict"
   },
   {
-   "t": 136.044,
+   "t": 151.579,
    "kind": "flood",
    "g": 0.8,
    "id": "approval.flood"
   },
   {
-   "t": 138.601,
+   "t": 154.396,
    "kind": "breath",
    "g": 0.5,
    "id": "approval.slow"
   },
   {
-   "t": 143.064,
+   "t": 159.659,
    "kind": "whoosh",
    "g": 0.5,
    "id": "disappearing.ticket"
   },
   {
-   "t": 143.864,
+   "t": 160.459,
    "kind": "drop",
    "g": 0.6,
    "id": "disappearing.drop"
   },
   {
-   "t": 144.829,
+   "t": 161.793,
    "kind": "tick_start",
    "g": 0.6,
    "id": "disappearing.clock"
   },
   {
-   "t": 146.627,
+   "t": 164.144,
    "kind": "hurt",
    "g": 0.4,
    "id": "disappearing.mouth"
   },
   {
-   "t": 148.171,
+   "t": 166.002,
    "kind": "bubble",
    "g": 0.4,
    "id": "disappearing.choice"
   },
   {
-   "t": 150.578,
+   "t": 168.711,
    "kind": "mirror",
    "g": 0.6,
    "id": "disappearing.mirror"
   },
   {
-   "t": 151.478,
+   "t": 169.611,
    "kind": "mask",
    "g": 0.5,
    "id": "disappearing.masks0"
   },
   {
-   "t": 154.678,
+   "t": 172.811,
    "kind": "mask",
    "g": 0.7,
    "id": "disappearing.rm1"
   },
   {
-   "t": 155.278,
+   "t": 173.411,
    "kind": "mask",
    "g": 0.7,
    "id": "disappearing.rm2"
   },
   {
-   "t": 155.778,
+   "t": 173.911,
    "kind": "mask",
    "g": 0.7,
    "id": "disappearing.rm3"
   },
   {
-   "t": 157.229,
+   "t": 175.966,
    "kind": "weight",
    "g": 0.7,
    "id": "disappearing.guilt"
   },
   {
-   "t": 166.358,
+   "t": 186.593,
    "kind": "release",
    "g": 0.5,
    "id": "disappearing.cloud"
   },
   {
-   "t": 175.386,
+   "t": 195.165,
    "kind": "thread",
    "g": 0.5,
    "id": "disappearing.tangle"
   },
   {
-   "t": 184.798,
+   "t": 203.433,
    "kind": "steps",
    "g": 0.5,
    "id": "firstNo.enter"
   },
   {
-   "t": 186.669,
+   "t": 205.53,
    "kind": "bubble",
    "g": 0.4,
    "id": "firstNo.ask"
   },
   {
-   "t": 190.907,
+   "t": 209.958,
    "kind": "thread",
    "g": 0.6,
    "id": "firstNo.rises"
   },
   {
-   "t": 193.357,
+   "t": 212.108,
    "kind": "low_hit",
    "g": 0.6,
    "id": "firstNo.course"
   },
   {
-   "t": 195.322,
+   "t": 213.89,
    "kind": "freeze",
    "g": 0.7,
    "id": "firstNo.pause"
   },
   {
-   "t": 196.839,
+   "t": 215.922,
    "kind": "heartbeat",
    "g": 0.8,
    "id": "firstNo.chest"
   },
   {
-   "t": 198.993,
+   "t": 218.554,
    "kind": "bubble",
    "g": 0.4,
    "id": "firstNo.fear"
   },
   {
-   "t": 201.636,
+   "t": 222.496,
    "kind": "breath",
    "g": 0.5,
    "id": "firstNo.allow"
   },
   {
-   "t": 204.755,
+   "t": 227.073,
    "kind": "rise",
    "g": 0.6,
    "id": "firstNo.raise"
   },
   {
-   "t": 207.242,
+   "t": 229.904,
    "kind": "say",
    "g": 0.6,
    "id": "firstNo.say"
   },
   {
-   "t": 211.393,
+   "t": 233.073,
    "kind": "steps",
    "g": 0.4,
    "id": "firstNo.leave"
   },
   {
-   "t": 213.46,
+   "t": 236.08,
    "kind": "thread",
    "g": 0.9,
    "id": "firstNo.urge"
   },
   {
-   "t": 216.36,
+   "t": 238.62,
    "kind": "bubble",
    "g": 0.4,
    "id": "firstNo.impulse1"
   },
   {
-   "t": 217.7,
+   "t": 240.869,
    "kind": "bubble",
    "g": 0.4,
    "id": "firstNo.impulse2"
   },
   {
-   "t": 219.401,
+   "t": 243.46,
    "kind": "bubble",
    "g": 0.4,
    "id": "firstNo.impulse3"
   },
   {
-   "t": 222.904,
+   "t": 248.37,
    "kind": "settle",
    "g": 0.6,
    "id": "firstNo.wait"
   },
   {
-   "t": 224.335,
+   "t": 250.215,
    "kind": "breath",
    "g": 0.7,
    "id": "firstNo.breathe"
   },
   {
-   "t": 227.214,
+   "t": 253.562,
    "kind": "breath",
    "g": 0.5,
    "id": "firstNo.calm"
   },
   {
-   "t": 234.682,
+   "t": 261.104,
    "kind": "chord",
    "g": 0.5,
    "id": "firstNo.learned"
   },
   {
-   "t": 240.52,
+   "t": 268.187,
    "kind": "loosen",
    "g": 0.9,
    "id": "firstNo.loosen"
   },
   {
-   "t": 245.908,
+   "t": 274.529,
    "kind": "steps",
    "g": 0.4,
    "id": "resolution.ask"
   },
   {
-   "t": 248.151,
+   "t": 278.41,
    "kind": "bubble",
    "g": 0.4,
    "id": "resolution.sched"
   },
   {
-   "t": 249.551,
+   "t": 279.81,
    "kind": "light_soft",
    "g": 0.6,
    "id": "resolution.decide"
   },
   {
-   "t": 251.049,
+   "t": 281.672,
    "kind": "lift",
    "g": 0.5,
    "id": "resolution.help"
   },
   {
-   "t": 251.849,
+   "t": 282.472,
    "kind": "light_soft",
    "g": 0.5,
    "id": "resolution.caring"
   },
   {
-   "t": 252.857,
+   "t": 284.712,
    "kind": "swish_soft",
    "g": 0.5,
    "id": "resolution.pan2"
   },
   {
-   "t": 253.357,
+   "t": 285.212,
    "kind": "loosen",
    "g": 0.9,
    "id": "resolution.fall"
   },
   {
-   "t": 255.357,
+   "t": 287.212,
    "kind": "mask",
    "g": 0.5,
    "id": "resolution.masks"
   },
   {
-   "t": 257.654,
+   "t": 290.346,
    "kind": "swish_soft",
    "g": 0.5,
    "id": "resolution.pan3"
   },
   {
-   "t": 258.254,
+   "t": 290.946,
    "kind": "light_soft",
    "g": 0.5,
    "id": "resolution.tea"
   },
   {
-   "t": 263.837,
+   "t": 296.363,
    "kind": "swish_soft",
    "g": 0.5,
    "id": "resolution.pan4"
   },
   {
-   "t": 264.637,
+   "t": 297.163,
    "kind": "bubble",
    "g": 0.3,
    "id": "resolution.decline"
   },
   {
-   "t": 266.637,
+   "t": 299.163,
    "kind": "light_soft",
    "g": 0.4,
    "id": "resolution.react"
   },
   {
-   "t": 270.298,
+   "t": 303.679,
    "kind": "drop",
    "g": 0.5,
    "id": "resolution.mistake"
   },
   {
-   "t": 281.058,
+   "t": 313.717,
    "kind": "bubble",
    "g": 0.4,
    "id": "final.ask"
   },
   {
-   "t": 282.525,
+   "t": 315.238,
    "kind": "light_soft",
    "g": 0.6,
    "id": "final.own"
   },
   {
-   "t": 289.312,
+   "t": 322.52,
    "kind": "light_soft",
    "g": 0.6,
    "id": "final.honest"
   },
   {
-   "t": 291.292,
+   "t": 324.904,
    "kind": "line",
    "g": 0.5,
    "id": "final.line"
   },
   {
-   "t": 293.168,
+   "t": 326.605,
    "kind": "bubble",
    "g": 0.3,
    "id": "final.feel"
   },
   {
-   "t": 299.33,
+   "t": 332.952,
    "kind": "loosen",
    "g": 0.8,
    "id": "final.threads"
   },
   {
-   "t": 307.702,
+   "t": 340.993,
    "kind": "chord_final",
    "g": 0.9,
    "id": "final.textIn"
   },
   {
-   "t": 313.202,
+   "t": 346.493,
    "kind": "swell_white",
    "g": 0.8,
    "id": "final.white"
   },
   {
-   "t": 315.802,
+   "t": 349.093,
    "kind": "logo",
    "g": 0.8,
    "id": "final.logo"

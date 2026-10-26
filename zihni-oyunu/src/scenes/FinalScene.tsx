@@ -9,6 +9,7 @@ import { Floor } from "../components/Props";
 import { useGF } from "../components/SceneFrame";
 import { Stickman } from "../components/Stickman";
 import { FloorThread } from "../components/ThreadSystem";
+import { T } from "../data/strings";
 import { ev, sceneRanges, TOTAL_FRAMES } from "../data/timing";
 import { C, FONT_SERIF } from "../theme";
 import { hash, prog } from "../utils/animation";
@@ -90,7 +91,7 @@ export const FinalScene: React.FC = () => {
         </CameraMotion>
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "#fbfaf6", opacity: whiteA }} />
-      <Caption text={"You don’t have to abandon\nyourself to be loved."} from={textIn} to={textOut + 30} at="upper" size={78} fadeIn={48} fadeOut={44} />
+      <Caption text={T.final} from={textIn} to={textOut + 30} at="upper" size={78} fadeIn={48} fadeOut={44} />
       <LogoCard f={f} logo={logo} />
     </AbsoluteFill>
   );
@@ -101,7 +102,7 @@ const LogoCard: React.FC<{ f: number; logo: number }> = ({ f, logo }) => {
   if (a <= 0) return null;
   return (
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", opacity: a }}>
-      <div style={{ fontFamily: FONT_SERIF, fontWeight: 600, fontSize: 96, letterSpacing: `${0.36 - 0.14 * prog(f, logo, 120)}em`, color: C.ink, paddingLeft: "0.3em" }}>ZIHNI OYUNU</div>
+      <div style={{ fontFamily: FONT_SERIF, fontWeight: 600, fontSize: 96, letterSpacing: `${0.36 - 0.14 * prog(f, logo, 120)}em`, color: C.ink, paddingLeft: "0.3em" }}>{T.logo}</div>
     </AbsoluteFill>
   );
 };
