@@ -6,6 +6,7 @@ import {totalFrames} from './lib/timing';
 import {Video} from './video/Video';
 import {StoneVideo, StoneVideoTR} from './stone/StoneVideo';
 import {STONE_PROPS, STONE_PROPS_TR} from './stone/config';
+import {Thumbnail} from './stone/Thumbnail';
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -38,6 +39,15 @@ export const RemotionRoot: React.FC = () => (
     durationInFrames={totalFrames(STONE_PROPS_TR.scenes)}
     defaultProps={STONE_PROPS_TR as unknown as Record<string, unknown>}
     calculateMetadata={({props}) => ({durationInFrames: totalFrames((props as unknown as VideoProps).scenes)})}
+  />
+  <Composition
+    id="Thumbnail"
+    component={Thumbnail as React.FC<Record<string, unknown>>}
+    width={1280}
+    height={720}
+    fps={FPS}
+    durationInFrames={1}
+    defaultProps={{lang: 'en', variant: 'A'}}
   />
   </>
 );
