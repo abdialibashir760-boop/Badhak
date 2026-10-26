@@ -1,0 +1,99 @@
+# Zihni Oyunu — *Why You Need Everyone to Like You*
+
+A 5½-minute cinematic psychology film about people-pleasing, built entirely in
+[Remotion](https://www.remotion.dev/) (React + TypeScript + SVG). 1920 × 1080, 30 fps, H.264 + AAC.
+
+Alternative title on screen: **THE PRISON OF BEING LIKED**.
+
+```
+render.sh                      repeatable render (final / preview / audio+final)
+src/
+  index.ts, Root.tsx, Video.tsx  one master composition ("ZihniOyunu") that sequences the scenes
+  scenes/                        OpeningScene, AutomaticYesScene, ApprovalScene, DisappearingScene,
+                                 FirstNoScene, ResolutionScene, FinalScene
+  components/                    Stickman (rig + faces + masks), BoundHero, ThreadSystem, ShadowHands,
+                                 ApprovalLights, Mirror, Mask, Glyphs, Props, CameraMotion,
+                                 Caption, PaperBackground (+ film grain), SceneFrame
+  utils/                         animation.ts (interpolation helpers), rig.ts (poses + joints)
+  data/
+    storyboard.json              scene → narration-sentence mapping, lead-in/tail, extra pauses
+    events.json                  every authored beat: "scene.name" → sentence + offset (+ optional sfx)
+    timing.json                  GENERATED: sentence times, event times, sfx cues, total frames
+    timing.ts                    typed access (sStart(), ev(), sceneRanges, …)
+scripts/
+  align.py                       matches script sentences to the supplied recordings (silence analysis + DP)
+  timeline.py, build_timing.py   places sentences on the master timeline, writes timing.json + work/vo.wav
+  synth_audio.py                 original music bed + sound effects (numpy), ducked under the narration
+  build_audio.sh                 runs the three steps above and encodes public/audio/*.mp3
+  make_textures.py               procedural paper texture + grain tiles → public/images
+  stills.sh, montage.py          QA helpers (render single frames, contact sheets)
+public/
+  audio/vo1.mp3, vo2.mp3         the two supplied narration recordings (inputs)
+  audio/narration|music|sfx.mp3  generated stems used by the composition
+  fonts/                         Cormorant Garamond (SIL OFL)
+  images/                        paper + grain textures (generated)
+dist/                            final MP4 + contact sheet
+```
+
+## How the film is timed
+
+Everything is driven by the actual narration. `scripts/align.py` finds the ~0.45 s pauses in the two
+recordings and assigns the 100 script sentences to them; `scripts/build_timing.py` then lays the sentences
+on one timeline (adding deliberate pauses at emotional beats – see `extraPause` in
+`src/data/storyboard.json`) and writes `src/data/timing.json`. Scenes and animation cues read their
+frames from that file (`sStart(sentence)`, `ev("scene.event")`), so if the narration changes, re-run
+`scripts/build_audio.sh` and the visuals follow. No spoken sentence is ever cut.
+
+To retime a beat, edit its `s` (sentence index) / `o` (offset in seconds) in `src/data/events.json`.
+
+## Requirements
+
+* Node 18+ and npm (`npm install`)
+* Python 3 with `numpy` and `Pillow` (audio + textures only – not needed to render)
+* `ffmpeg` / `ffprobe` on the PATH
+* A Chrome/Chromium. Remotion downloads one automatically; in an offline sandbox set
+  `REMOTION_BROWSER_EXECUTABLE=/path/to/chrome` (`render.sh` also auto-detects `/opt/pw-browsers`).
+
+## Commands
+
+```bash
+npm install
+npm run start              # Remotion Studio (live preview)
+npm run typecheck          # tsc --noEmit
+./render.sh preview        # dist/preview-540p.mp4  (half-res, fast)
+./render.sh                # dist/zihni-oyunu-people-pleasing.mp4 (1080p, 30 fps)
+./render.sh audio          # rebuild narration/music/sfx first, then render
+```
+
+Only the Remotion composition id `ZihniOyunu` exists. The duration, fps and size come from
+`src/data/timing.json` / `src/data/storyboard.json`, not from hard-coded numbers.
+
+## Visual system
+
+* **Stickman** – one SVG rig used in every scene (absolute limb angles, ground-locked feet, breathing,
+  tremble, "line boil" re-rolled every 3 frames so the ink looks hand-drawn). Faces and masks are drawn
+  from pose parameters; secondary characters reuse the rig with hair/cap/glasses variants.
+  *No reference image of the character was supplied (see Limitations).*
+* **Symbols** – the mask (`SmilingMask`), the threads (`ThreadSystem`, `BoundHero`), the lights
+  (`ApprovalLights`, the only warm colour in the film), the mirror (`Mirror`), the open space (white
+  environments, `FinalScene`).
+* **Camera** – `CameraMotion` applies world-space centre + zoom keyframes with a trace of handheld drift
+  and motion blur on whip-pans. Scenes cross-fade over 14 frames on a paper background (no black gaps).
+* **Colour arc** – bright but oppressive → grey, vignetted, constricted (`PaperBackground dark/constrict`)
+  → spacious, warm and white again.
+
+## Audio
+
+All music and effects are generated by `scripts/synth_audio.py` (original, no third-party samples):
+a low drone with a held minor second, string pads, a heartbeat-like pulse that speeds up during the
+approval chase, a near-silent refusal (music drops to zero for the sentence "I'm sorry, I can't today."),
+and soft piano + warm pad for the resolution. The music is side-chain ducked under the narration offline
+and the three stems are balanced so their sum does not clip (mix ≈ −18 LUFS, true peak ≈ −1.4 dBFS).
+
+## Limitations
+
+* No stickman reference image was supplied, so the character is an original SVG design.
+* The narration is the supplied recordings; the music/sfx are simple synthesised stand-ins, not a
+  professional score. Swap `public/audio/music.mp3` / `sfx.mp3` for licensed material if desired.
+* The script is presented as *one possible pattern* (as requested); on-screen text is limited to the
+  lines listed in the brief plus the spoken sentence "I'm sorry, I can't today." in the first-refusal bubble.

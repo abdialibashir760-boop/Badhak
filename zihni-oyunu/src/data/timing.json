@@ -1,0 +1,1593 @@
+{
+ "fps": 30,
+ "totalSeconds": 321.80199999999985,
+ "totalFrames": 9654,
+ "sentences": [
+  {
+   "i": 0,
+   "text": "Someone asks you for a favor.",
+   "start": 3.2,
+   "end": 4.666
+  },
+  {
+   "i": 1,
+   "text": "You don’t want to do it.",
+   "start": 5.1,
+   "end": 5.814
+  },
+  {
+   "i": 2,
+   "text": "You’re tired.",
+   "start": 6.256,
+   "end": 6.72
+  },
+  {
+   "i": 3,
+   "text": "You have your own problems.",
+   "start": 7.166,
+   "end": 8.236
+  },
+  {
+   "i": 4,
+   "text": "But before you can even think, your mouth says, ‘Of course.’",
+   "start": 8.696,
+   "end": 12.115
+  },
+  {
+   "i": 5,
+   "text": "And the moment you agree, you feel something strange.",
+   "start": 12.674,
+   "end": 15.411
+  },
+  {
+   "i": 6,
+   "text": "Not happiness.",
+   "start": 16.153,
+   "end": 16.852
+  },
+  {
+   "i": 7,
+   "text": "Relief.",
+   "start": 17.8,
+   "end": 18.186
+  },
+  {
+   "i": 8,
+   "text": "Because, for a few seconds, you know they’re not disappointed in you.",
+   "start": 19.021,
+   "end": 22.588
+  },
+  {
+   "i": 9,
+   "text": "But what if the thing you’re trying so hard to avoid isn’t disappointing someone, but the feeling that comes afterward?",
+   "start": 23.022,
+   "end": 28.699
+  },
+  {
+   "i": 10,
+   "text": "You probably know this feeling.",
+   "start": 32.541,
+   "end": 33.708
+  },
+  {
+   "i": 11,
+   "text": "A coworker asks you to cover a shift.",
+   "start": 34.176,
+   "end": 36.002
+  },
+  {
+   "i": 12,
+   "text": "You’re exhausted, but you agree.",
+   "start": 36.45,
+   "end": 38.093
+  },
+  {
+   "i": 13,
+   "text": "A friend calls when you desperately need time alone, and you answer.",
+   "start": 38.493,
+   "end": 41.944
+  },
+  {
+   "i": 14,
+   "text": "Someone makes a joke that hurts you, and instead of saying anything, you laugh along.",
+   "start": 42.395,
+   "end": 47.763
+  },
+  {
+   "i": 15,
+   "text": "Later, when you’re alone, you replay the interaction.",
+   "start": 48.178,
+   "end": 50.724
+  },
+  {
+   "i": 16,
+   "text": "You think about what you should have said.",
+   "start": 51.147,
+   "end": 52.529
+  },
+  {
+   "i": 17,
+   "text": "You feel frustrated with yourself.",
+   "start": 52.967,
+   "end": 54.45
+  },
+  {
+   "i": 18,
+   "text": "And the next time it happens, you do the same thing again.",
+   "start": 54.946,
+   "end": 58.282
+  },
+  {
+   "i": 19,
+   "text": "Why?",
+   "start": 59.334,
+   "end": 59.991
+  },
+  {
+   "i": 20,
+   "text": "For some people, keeping others happy becomes a way of managing the fear of rejection, conflict, or disapproval.",
+   "start": 61.123,
+   "end": 66.611
+  },
+  {
+   "i": 21,
+   "text": "The mind learns a pattern.",
+   "start": 67.041,
+   "end": 68.117
+  },
+  {
+   "i": 22,
+   "text": "If I agree, perhaps they won’t be upset.",
+   "start": 68.564,
+   "end": 70.763
+  },
+  {
+   "i": 23,
+   "text": "If I help, perhaps they’ll still need me.",
+   "start": 71.214,
+   "end": 73.142
+  },
+  {
+   "i": 24,
+   "text": "If I never make things difficult, perhaps I won’t lose the relationship.",
+   "start": 73.567,
+   "end": 77.115
+  },
+  {
+   "i": 25,
+   "text": "And when the other person smiles, you feel relief.",
+   "start": 77.626,
+   "end": 80.117
+  },
+  {
+   "i": 26,
+   "text": "That relief can reinforce the behavior.",
+   "start": 80.647,
+   "end": 82.813
+  },
+  {
+   "i": 27,
+   "text": "You learn to reach for approval whenever discomfort appears.",
+   "start": 83.256,
+   "end": 86.2
+  },
+  {
+   "i": 28,
+   "text": "Eventually, you may stop asking whether you actually want to do something.",
+   "start": 86.646,
+   "end": 90.083
+  },
+  {
+   "i": 29,
+   "text": "Instead, you ask yourself what will keep everyone happy.",
+   "start": 90.543,
+   "end": 93.632
+  },
+  {
+   "i": 30,
+   "text": "Imagine that every approving look creates a little light.",
+   "start": 94.646,
+   "end": 97.5
+  },
+  {
+   "i": 31,
+   "text": "You begin chasing those lights.",
+   "start": 97.953,
+   "end": 99.455
+  },
+  {
+   "i": 32,
+   "text": "When someone smiles, you feel worthy.",
+   "start": 99.917,
+   "end": 102.042
+  },
+  {
+   "i": 33,
+   "text": "When someone looks disappointed, you feel as if something is wrong with you.",
+   "start": 102.455,
+   "end": 105.905
+  },
+  {
+   "i": 34,
+   "text": "So you work harder.",
+   "start": 106.333,
+   "end": 107.149
+  },
+  {
+   "i": 35,
+   "text": "You explain yourself.",
+   "start": 107.588,
+   "end": 108.456
+  },
+  {
+   "i": 36,
+   "text": "You apologize even when you haven’t done anything wrong.",
+   "start": 108.941,
+   "end": 111.967
+  },
+  {
+   "i": 37,
+   "text": "You try to repair feelings that may not even be your responsibility to fix.",
+   "start": 112.442,
+   "end": 116.57
+  },
+  {
+   "i": 38,
+   "text": "But there is a problem with building your sense of worth this way.",
+   "start": 117.417,
+   "end": 119.986
+  },
+  {
+   "i": 39,
+   "text": "Other people’s reactions are not under your control.",
+   "start": 120.387,
+   "end": 122.841
+  },
+  {
+   "i": 40,
+   "text": "People can misunderstand you.",
+   "start": 123.269,
+   "end": 124.563
+  },
+  {
+   "i": 41,
+   "text": "They can have a bad day.",
+   "start": 124.983,
+   "end": 125.934
+  },
+  {
+   "i": 42,
+   "text": "They can disagree with you, even when you have done nothing wrong.",
+   "start": 126.347,
+   "end": 129.354
+  },
+  {
+   "i": 43,
+   "text": "And if every negative reaction feels like a verdict on your character, you will never feel completely safe.",
+   "start": 129.82,
+   "end": 135.349
+  },
+  {
+   "i": 44,
+   "text": "There will always be another light to chase.",
+   "start": 135.844,
+   "end": 137.95
+  },
+  {
+   "i": 45,
+   "text": "And while you’re busy chasing those lights, something else begins to happen.",
+   "start": 138.401,
+   "end": 142.001
+  },
+  {
+   "i": 46,
+   "text": "You postpone your own plans.",
+   "start": 143.064,
+   "end": 144.375
+  },
+  {
+   "i": 47,
+   "text": "You ignore your exhaustion.",
+   "start": 144.829,
+   "end": 146.199
+  },
+  {
+   "i": 48,
+   "text": "You hide your opinions.",
+   "start": 146.627,
+   "end": 147.613
+  },
+  {
+   "i": 49,
+   "text": "Sometimes you don’t even know what you want anymore.",
+   "start": 148.071,
+   "end": 150.138
+  },
+  {
+   "i": 50,
+   "text": "You become so familiar with asking what everyone else needs that asking what you need feels strangely uncomfortable.",
+   "start": 150.578,
+   "end": 156.591
+  },
+  {
+   "i": 51,
+   "text": "You might even feel guilty when you finally choose yourself.",
+   "start": 157.029,
+   "end": 159.789
+  },
+  {
+   "i": 52,
+   "text": "And that guilt can be confusing.",
+   "start": 160.301,
+   "end": 161.724
+  },
+  {
+   "i": 53,
+   "text": "You may interpret it as proof that you’ve done something wrong.",
+   "start": 162.159,
+   "end": 164.606
+  },
+  {
+   "i": 54,
+   "text": "But guilt is a feeling, not always a verdict.",
+   "start": 165.458,
+   "end": 168.073
+  },
+  {
+   "i": 55,
+   "text": "Sometimes it appears because you’ve violated your values.",
+   "start": 168.533,
+   "end": 171.235
+  },
+  {
+   "i": 56,
+   "text": "Other times, it appears because you’re doing something unfamiliar.",
+   "start": 171.683,
+   "end": 174.886
+  },
+  {
+   "i": 57,
+   "text": "If you’ve spent years avoiding disappointment, setting a reasonable boundary may feel wrong before it begins to feel natural.",
+   "start": 175.386,
+   "end": 182.698
+  },
+  {
+   "i": 58,
+   "text": "Now imagine a different moment.",
+   "start": 184.498,
+   "end": 185.914
+  },
+  {
+   "i": 59,
+   "text": "Someone asks you for another favor.",
+   "start": 186.369,
+   "end": 187.964
+  },
+  {
+   "i": 60,
+   "text": "You are tired.",
+   "start": 188.401,
+   "end": 188.977
+  },
+  {
+   "i": 61,
+   "text": "You don’t have the energy.",
+   "start": 189.426,
+   "end": 190.489
+  },
+  {
+   "i": 62,
+   "text": "The familiar answer rises to your mouth.",
+   "start": 190.907,
+   "end": 192.817
+  },
+  {
+   "i": 63,
+   "text": "Of course.",
+   "start": 193.357,
+   "end": 193.864
+  },
+  {
+   "i": 64,
+   "text": "But this time, you pause.",
+   "start": 195.222,
+   "end": 196.291
+  },
+  {
+   "i": 65,
+   "text": "You notice the tension in your chest.",
+   "start": 196.739,
+   "end": 198.264
+  },
+  {
+   "i": 66,
+   "text": "You notice the fear that they might be disappointed.",
+   "start": 198.793,
+   "end": 200.802
+  },
+  {
+   "i": 67,
+   "text": "And instead of immediately trying to make that feeling disappear, you allow it to be there.",
+   "start": 201.236,
+   "end": 204.282
+  },
+  {
+   "i": 68,
+   "text": "Then you say:",
+   "start": 204.655,
+   "end": 205.744
+  },
+  {
+   "i": 69,
+   "text": "‘I’m sorry, I can’t today.’",
+   "start": 206.892,
+   "end": 209.264
+  },
+  {
+   "i": 70,
+   "text": "The other person looks disappointed.",
+   "start": 211.193,
+   "end": 212.722
+  },
+  {
+   "i": 71,
+   "text": "And for a moment, you feel the urge to take it back.",
+   "start": 213.16,
+   "end": 215.817
+  },
+  {
+   "i": 72,
+   "text": "You want to explain more.",
+   "start": 216.26,
+   "end": 217.164
+  },
+  {
+   "i": 73,
+   "text": "You want to offer another favor.",
+   "start": 217.6,
+   "end": 218.856
+  },
+  {
+   "i": 74,
+   "text": "You want to make absolutely certain they still like you.",
+   "start": 219.301,
+   "end": 221.574
+  },
+  {
+   "i": 75,
+   "text": "But you wait.",
+   "start": 222.904,
+   "end": 223.396
+  },
+  {
+   "i": 76,
+   "text": "You breathe.",
+   "start": 224.335,
+   "end": 224.785
+  },
+  {
+   "i": 77,
+   "text": "You allow the moment to exist without treating it like an emergency.",
+   "start": 226.814,
+   "end": 230.255
+  },
+  {
+   "i": 78,
+   "text": "Maybe the other person understands.",
+   "start": 230.673,
+   "end": 232.279
+  },
+  {
+   "i": 79,
+   "text": "Maybe they don’t.",
+   "start": 232.738,
+   "end": 234.304
+  },
+  {
+   "i": 80,
+   "text": "Either way, you have learned something important.",
+   "start": 234.682,
+   "end": 235.902
+  },
+  {
+   "i": 81,
+   "text": "Discomfort does not automatically mean danger.",
+   "start": 237.249,
+   "end": 239.591
+  },
+  {
+   "i": 82,
+   "text": "And another person’s disappointment does not automatically mean you have done something wrong.",
+   "start": 240.02,
+   "end": 244.141
+  },
+  {
+   "i": 83,
+   "text": "This doesn’t mean you should stop helping people.",
+   "start": 245.708,
+   "end": 247.614
+  },
+  {
+   "i": 84,
+   "text": "It doesn’t mean every request deserves a no.",
+   "start": 248.051,
+   "end": 250.424
+  },
+  {
+   "i": 85,
+   "text": "And it certainly doesn’t mean you should stop caring.",
+   "start": 250.849,
+   "end": 252.88
+  },
+  {
+   "i": 86,
+   "text": "It means your kindness can become a choice rather than a reflex driven by fear.",
+   "start": 253.357,
+   "end": 257.507
+  },
+  {
+   "i": 87,
+   "text": "You can help because you genuinely want to.",
+   "start": 257.954,
+   "end": 259.893
+  },
+  {
+   "i": 88,
+   "text": "You can listen without becoming responsible for fixing every problem.",
+   "start": 260.29,
+   "end": 263.768
+  },
+  {
+   "i": 89,
+   "text": "You can care about someone’s feelings without allowing those feelings to determine every decision you make.",
+   "start": 264.237,
+   "end": 269.552
+  },
+  {
+   "i": 90,
+   "text": "And when you make a mistake, you can take responsibility without turning yourself into a bad person.",
+   "start": 269.998,
+   "end": 275.242
+  },
+  {
+   "i": 91,
+   "text": "The next time you feel the urge to agree immediately, give yourself a moment.",
+   "start": 276.598,
+   "end": 280.609
+  },
+  {
+   "i": 92,
+   "text": "Ask yourself:",
+   "start": 281.058,
+   "end": 281.652
+  },
+  {
+   "i": 93,
+   "text": "If I knew this person wouldn’t be upset with me, what would I actually choose?",
+   "start": 282.125,
+   "end": 285.728
+  },
+  {
+   "i": 94,
+   "text": "You don’t have to change your entire life today.",
+   "start": 286.592,
+   "end": 288.609
+  },
+  {
+   "i": 95,
+   "text": "You can begin with one honest answer.",
+   "start": 289.012,
+   "end": 290.646
+  },
+  {
+   "i": 96,
+   "text": "One reasonable boundary.",
+   "start": 291.092,
+   "end": 292.342
+  },
+  {
+   "i": 97,
+   "text": "One moment in which you allow someone else to have their feelings without abandoning your own needs.",
+   "start": 292.768,
+   "end": 297.669
+  },
+  {
+   "i": 98,
+   "text": "Because the goal isn’t to become someone who never disappoints anyone.",
+   "start": 299.03,
+   "end": 302.252
+  },
+  {
+   "i": 99,
+   "text": "It’s to become someone who no longer abandons himself just to be liked.",
+   "start": 302.711,
+   "end": 306.802
+  }
+ ],
+ "events": {
+  "opening.r1": 3.3,
+  "opening.n1": 3.92,
+  "opening.r2": 5.1,
+  "opening.n2": 5.72,
+  "opening.r3": 6.156,
+  "opening.n3": 6.776,
+  "opening.r4": 7.266,
+  "opening.n4": 7.886,
+  "opening.r5": 8.796,
+  "opening.n5": 9.416,
+  "opening.r6": 10.696,
+  "opening.n6": 11.316,
+  "opening.r7": 12.774,
+  "opening.n7": 13.394,
+  "opening.r8": 14.274,
+  "opening.n8": 14.894,
+  "opening.r9": 16.153,
+  "opening.n9": 16.773,
+  "opening.r10": 17.7,
+  "opening.n10": 18.32,
+  "opening.r11": 19.221,
+  "opening.n11": 19.841,
+  "opening.r12": 20.021,
+  "opening.n12": 20.641,
+  "opening.r13": 20.821,
+  "opening.n13": 21.441,
+  "opening.r14": 21.521,
+  "opening.n14": 22.141,
+  "opening.freeze": 22.922,
+  "opening.question": 23.222,
+  "opening.title": 29.199,
+  "opening.relief": 17.8,
+  "response.a_walk": 32.741,
+  "response.a_ask": 34.676,
+  "response.a_nod": 37.35,
+  "response.pan_b": 38.243,
+  "response.b_ring": 38.743,
+  "response.b_look": 39.693,
+  "response.b_reach": 40.393,
+  "response.b_answer": 41.393,
+  "response.pan_c": 42.095,
+  "response.c_joke": 42.595,
+  "response.c_hurt": 43.795,
+  "response.c_laugh": 45.595,
+  "response.pan_d": 47.928,
+  "response.d_alone": 48.178,
+  "response.d_replay1": 48.578,
+  "response.d_replay2": 49.378,
+  "response.d_replay3": 50.178,
+  "response.d_think": 51.147,
+  "response.d_frus": 52.967,
+  "response.d_again": 55.546,
+  "response.d_again2": 57.246,
+  "response.why": 59.334,
+  "response.f_rej": 62.123,
+  "response.f_conf": 63.723,
+  "response.f_dis": 65.123,
+  "response.learn": 67.041,
+  "response.f_p1": 68.764,
+  "response.f_p2": 71.414,
+  "response.f_p3": 73.767,
+  "response.smile": 78.526,
+  "response.loop": 80.847,
+  "response.reach": 83.656,
+  "response.ask": 87.146,
+  "response.every": 91.043,
+  "approval.l1": 95.146,
+  "approval.l2": 96.346,
+  "approval.chase": 97.953,
+  "approval.smile1": 100.217,
+  "approval.disap1": 102.955,
+  "approval.fast": 104.855,
+  "approval.explain": 107.588,
+  "approval.apol": 109.041,
+  "approval.repair": 112.642,
+  "approval.borrowed": 117.917,
+  "approval.q": 123.369,
+  "approval.cloud": 125.083,
+  "approval.cross": 126.747,
+  "approval.verdict": 130.42,
+  "approval.flood": 136.044,
+  "approval.slow": 138.601,
+  "disappearing.ticket": 143.064,
+  "disappearing.drop": 143.864,
+  "disappearing.clock": 144.829,
+  "disappearing.mouth": 146.627,
+  "disappearing.choice": 148.171,
+  "disappearing.look1": 148.771,
+  "disappearing.look2": 149.471,
+  "disappearing.mirror": 150.578,
+  "disappearing.masks0": 151.478,
+  "disappearing.masksEnd": 154.178,
+  "disappearing.rm1": 154.678,
+  "disappearing.rm2": 155.278,
+  "disappearing.rm3": 155.778,
+  "disappearing.guilt": 157.229,
+  "disappearing.confuse": 160.501,
+  "disappearing.proof": 162.459,
+  "disappearing.verdictText": 165.458,
+  "disappearing.cloud": 166.358,
+  "disappearing.values": 168.533,
+  "disappearing.unfam": 171.683,
+  "disappearing.tangle": 175.386,
+  "disappearing.breathe": 178.186,
+  "firstNo.enter": 184.798,
+  "firstNo.ask": 186.669,
+  "firstNo.tired": 188.401,
+  "firstNo.energy": 189.426,
+  "firstNo.rises": 190.907,
+  "firstNo.course": 193.357,
+  "firstNo.pause": 195.322,
+  "firstNo.chest": 196.839,
+  "firstNo.fear": 198.993,
+  "firstNo.allow": 201.636,
+  "firstNo.raise": 204.755,
+  "firstNo.say": 207.242,
+  "firstNo.leave": 211.393,
+  "firstNo.urge": 213.46,
+  "firstNo.impulse1": 216.36,
+  "firstNo.impulse2": 217.7,
+  "firstNo.impulse3": 219.401,
+  "firstNo.wait": 222.904,
+  "firstNo.breathe": 224.335,
+  "firstNo.calm": 227.214,
+  "firstNo.maybe1": 230.873,
+  "firstNo.maybe2": 232.738,
+  "firstNo.learned": 234.682,
+  "firstNo.danger": 237.249,
+  "firstNo.loosen": 240.52,
+  "resolution.ask": 245.908,
+  "resolution.sched": 248.151,
+  "resolution.decide": 249.551,
+  "resolution.help": 251.049,
+  "resolution.caring": 251.849,
+  "resolution.pan2": 252.857,
+  "resolution.fall": 253.357,
+  "resolution.masks": 255.357,
+  "resolution.pan3": 257.654,
+  "resolution.tea": 258.254,
+  "resolution.sit": 260.29,
+  "resolution.cloudStay": 261.89,
+  "resolution.pan4": 263.837,
+  "resolution.decline": 264.637,
+  "resolution.react": 266.637,
+  "resolution.plan": 268.037,
+  "resolution.mistake": 270.298,
+  "resolution.sorry": 271.998,
+  "resolution.clean": 273.198,
+  "final.ask": 281.058,
+  "final.own": 282.525,
+  "final.small": 286.592,
+  "final.honest": 289.312,
+  "final.line": 291.292,
+  "final.feel": 293.168,
+  "final.threads": 299.33,
+  "final.hold": 304.211,
+  "final.textIn": 307.702,
+  "final.textOut": 313.002,
+  "final.white": 313.202,
+  "final.logo": 315.802
+ },
+ "scenes": [
+  {
+   "id": "opening",
+   "start": 0.0
+  },
+  {
+   "id": "response",
+   "start": 32.541
+  },
+  {
+   "id": "approval",
+   "start": 94.046
+  },
+  {
+   "id": "disappearing",
+   "start": 142.464
+  },
+  {
+   "id": "firstNo",
+   "start": 183.198
+  },
+  {
+   "id": "resolution",
+   "start": 244.608
+  },
+  {
+   "id": "final",
+   "start": 275.698
+  }
+ ],
+ "sfx": [
+  {
+   "t": 3.3,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r1"
+  },
+  {
+   "t": 3.92,
+   "kind": "nod",
+   "g": 0.5,
+   "id": "opening.n1"
+  },
+  {
+   "t": 5.1,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r2"
+  },
+  {
+   "t": 5.72,
+   "kind": "nodthread",
+   "g": 0.5,
+   "id": "opening.n2"
+  },
+  {
+   "t": 6.156,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r3"
+  },
+  {
+   "t": 6.776,
+   "kind": "nod",
+   "g": 0.5,
+   "id": "opening.n3"
+  },
+  {
+   "t": 7.266,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r4"
+  },
+  {
+   "t": 7.886,
+   "kind": "nodthread",
+   "g": 0.5,
+   "id": "opening.n4"
+  },
+  {
+   "t": 8.796,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r5"
+  },
+  {
+   "t": 9.416,
+   "kind": "nod",
+   "g": 0.5,
+   "id": "opening.n5"
+  },
+  {
+   "t": 10.696,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r6"
+  },
+  {
+   "t": 11.316,
+   "kind": "nodthread",
+   "g": 0.5,
+   "id": "opening.n6"
+  },
+  {
+   "t": 12.774,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r7"
+  },
+  {
+   "t": 13.394,
+   "kind": "nod",
+   "g": 0.5,
+   "id": "opening.n7"
+  },
+  {
+   "t": 14.274,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r8"
+  },
+  {
+   "t": 14.894,
+   "kind": "nodthread",
+   "g": 0.5,
+   "id": "opening.n8"
+  },
+  {
+   "t": 16.153,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r9"
+  },
+  {
+   "t": 16.773,
+   "kind": "nod",
+   "g": 0.5,
+   "id": "opening.n9"
+  },
+  {
+   "t": 17.7,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r10"
+  },
+  {
+   "t": 18.32,
+   "kind": "nodthread",
+   "g": 0.5,
+   "id": "opening.n10"
+  },
+  {
+   "t": 19.221,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r11"
+  },
+  {
+   "t": 19.841,
+   "kind": "nod",
+   "g": 0.5,
+   "id": "opening.n11"
+  },
+  {
+   "t": 20.021,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r12"
+  },
+  {
+   "t": 20.641,
+   "kind": "nodthread",
+   "g": 0.5,
+   "id": "opening.n12"
+  },
+  {
+   "t": 20.821,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r13"
+  },
+  {
+   "t": 21.441,
+   "kind": "nod",
+   "g": 0.5,
+   "id": "opening.n13"
+  },
+  {
+   "t": 21.521,
+   "kind": "whoosh",
+   "g": 0.55,
+   "id": "opening.r14"
+  },
+  {
+   "t": 22.141,
+   "kind": "nodthread",
+   "g": 0.5,
+   "id": "opening.n14"
+  },
+  {
+   "t": 22.922,
+   "kind": "freeze",
+   "g": 1.0,
+   "id": "opening.freeze"
+  },
+  {
+   "t": 29.199,
+   "kind": "title",
+   "g": 1.0,
+   "id": "opening.title"
+  },
+  {
+   "t": 32.741,
+   "kind": "steps",
+   "g": 0.5,
+   "id": "response.a_walk"
+  },
+  {
+   "t": 34.676,
+   "kind": "whoosh",
+   "g": 0.3,
+   "id": "response.a_ask"
+  },
+  {
+   "t": 37.35,
+   "kind": "nodthread",
+   "g": 0.7,
+   "id": "response.a_nod"
+  },
+  {
+   "t": 38.243,
+   "kind": "swish",
+   "g": 0.6,
+   "id": "response.pan_b"
+  },
+  {
+   "t": 38.743,
+   "kind": "buzz",
+   "g": 0.7,
+   "id": "response.b_ring"
+  },
+  {
+   "t": 41.393,
+   "kind": "nodthread",
+   "g": 0.6,
+   "id": "response.b_answer"
+  },
+  {
+   "t": 42.095,
+   "kind": "swish",
+   "g": 0.6,
+   "id": "response.pan_c"
+  },
+  {
+   "t": 43.795,
+   "kind": "hurt",
+   "g": 0.6,
+   "id": "response.c_hurt"
+  },
+  {
+   "t": 45.595,
+   "kind": "nodthread",
+   "g": 0.6,
+   "id": "response.c_laugh"
+  },
+  {
+   "t": 47.928,
+   "kind": "swish",
+   "g": 0.6,
+   "id": "response.pan_d"
+  },
+  {
+   "t": 48.178,
+   "kind": "drone_shift",
+   "g": 0.5,
+   "id": "response.d_alone"
+  },
+  {
+   "t": 48.578,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "response.d_replay1"
+  },
+  {
+   "t": 49.378,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "response.d_replay2"
+  },
+  {
+   "t": 50.178,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "response.d_replay3"
+  },
+  {
+   "t": 51.147,
+   "kind": "scribble",
+   "g": 0.4,
+   "id": "response.d_think"
+  },
+  {
+   "t": 52.967,
+   "kind": "hurt",
+   "g": 0.5,
+   "id": "response.d_frus"
+  },
+  {
+   "t": 55.546,
+   "kind": "nodthread",
+   "g": 0.7,
+   "id": "response.d_again"
+  },
+  {
+   "t": 57.246,
+   "kind": "nodthread",
+   "g": 0.7,
+   "id": "response.d_again2"
+  },
+  {
+   "t": 59.334,
+   "kind": "why",
+   "g": 0.6,
+   "id": "response.why"
+  },
+  {
+   "t": 62.123,
+   "kind": "bubble",
+   "g": 0.5,
+   "id": "response.f_rej"
+  },
+  {
+   "t": 63.723,
+   "kind": "zap",
+   "g": 0.4,
+   "id": "response.f_conf"
+  },
+  {
+   "t": 65.123,
+   "kind": "bubble",
+   "g": 0.5,
+   "id": "response.f_dis"
+  },
+  {
+   "t": 67.041,
+   "kind": "loop",
+   "g": 0.5,
+   "id": "response.learn"
+  },
+  {
+   "t": 68.764,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "response.f_p1"
+  },
+  {
+   "t": 71.414,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "response.f_p2"
+  },
+  {
+   "t": 73.767,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "response.f_p3"
+  },
+  {
+   "t": 78.526,
+   "kind": "light",
+   "g": 0.6,
+   "id": "response.smile"
+  },
+  {
+   "t": 83.656,
+   "kind": "thread",
+   "g": 0.5,
+   "id": "response.reach"
+  },
+  {
+   "t": 87.146,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "response.ask"
+  },
+  {
+   "t": 91.043,
+   "kind": "bubble",
+   "g": 0.5,
+   "id": "response.every"
+  },
+  {
+   "t": 95.146,
+   "kind": "light",
+   "g": 0.8,
+   "id": "approval.l1"
+  },
+  {
+   "t": 96.346,
+   "kind": "light",
+   "g": 0.7,
+   "id": "approval.l2"
+  },
+  {
+   "t": 97.953,
+   "kind": "chase",
+   "g": 0.6,
+   "id": "approval.chase"
+  },
+  {
+   "t": 100.217,
+   "kind": "light",
+   "g": 0.8,
+   "id": "approval.smile1"
+  },
+  {
+   "t": 102.955,
+   "kind": "lightoff",
+   "g": 0.8,
+   "id": "approval.disap1"
+  },
+  {
+   "t": 104.855,
+   "kind": "pulse_start",
+   "g": 0.6,
+   "id": "approval.fast"
+  },
+  {
+   "t": 107.588,
+   "kind": "bubble",
+   "g": 0.5,
+   "id": "approval.explain"
+  },
+  {
+   "t": 109.041,
+   "kind": "bubble",
+   "g": 0.5,
+   "id": "approval.apol"
+  },
+  {
+   "t": 112.642,
+   "kind": "thread",
+   "g": 0.5,
+   "id": "approval.repair"
+  },
+  {
+   "t": 117.917,
+   "kind": "thread",
+   "g": 0.6,
+   "id": "approval.borrowed"
+  },
+  {
+   "t": 123.369,
+   "kind": "bubble",
+   "g": 0.5,
+   "id": "approval.q"
+  },
+  {
+   "t": 125.083,
+   "kind": "bubble",
+   "g": 0.5,
+   "id": "approval.cloud"
+  },
+  {
+   "t": 126.747,
+   "kind": "bubble",
+   "g": 0.5,
+   "id": "approval.cross"
+  },
+  {
+   "t": 130.42,
+   "kind": "hit",
+   "g": 0.8,
+   "id": "approval.verdict"
+  },
+  {
+   "t": 136.044,
+   "kind": "flood",
+   "g": 0.8,
+   "id": "approval.flood"
+  },
+  {
+   "t": 138.601,
+   "kind": "breath",
+   "g": 0.5,
+   "id": "approval.slow"
+  },
+  {
+   "t": 143.064,
+   "kind": "whoosh",
+   "g": 0.5,
+   "id": "disappearing.ticket"
+  },
+  {
+   "t": 143.864,
+   "kind": "drop",
+   "g": 0.6,
+   "id": "disappearing.drop"
+  },
+  {
+   "t": 144.829,
+   "kind": "tick_start",
+   "g": 0.6,
+   "id": "disappearing.clock"
+  },
+  {
+   "t": 146.627,
+   "kind": "hurt",
+   "g": 0.4,
+   "id": "disappearing.mouth"
+  },
+  {
+   "t": 148.171,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "disappearing.choice"
+  },
+  {
+   "t": 150.578,
+   "kind": "mirror",
+   "g": 0.6,
+   "id": "disappearing.mirror"
+  },
+  {
+   "t": 151.478,
+   "kind": "mask",
+   "g": 0.5,
+   "id": "disappearing.masks0"
+  },
+  {
+   "t": 154.678,
+   "kind": "mask",
+   "g": 0.7,
+   "id": "disappearing.rm1"
+  },
+  {
+   "t": 155.278,
+   "kind": "mask",
+   "g": 0.7,
+   "id": "disappearing.rm2"
+  },
+  {
+   "t": 155.778,
+   "kind": "mask",
+   "g": 0.7,
+   "id": "disappearing.rm3"
+  },
+  {
+   "t": 157.229,
+   "kind": "weight",
+   "g": 0.7,
+   "id": "disappearing.guilt"
+  },
+  {
+   "t": 166.358,
+   "kind": "release",
+   "g": 0.5,
+   "id": "disappearing.cloud"
+  },
+  {
+   "t": 175.386,
+   "kind": "thread",
+   "g": 0.5,
+   "id": "disappearing.tangle"
+  },
+  {
+   "t": 184.798,
+   "kind": "steps",
+   "g": 0.5,
+   "id": "firstNo.enter"
+  },
+  {
+   "t": 186.669,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "firstNo.ask"
+  },
+  {
+   "t": 190.907,
+   "kind": "thread",
+   "g": 0.6,
+   "id": "firstNo.rises"
+  },
+  {
+   "t": 193.357,
+   "kind": "low_hit",
+   "g": 0.6,
+   "id": "firstNo.course"
+  },
+  {
+   "t": 195.322,
+   "kind": "freeze",
+   "g": 0.7,
+   "id": "firstNo.pause"
+  },
+  {
+   "t": 196.839,
+   "kind": "heartbeat",
+   "g": 0.8,
+   "id": "firstNo.chest"
+  },
+  {
+   "t": 198.993,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "firstNo.fear"
+  },
+  {
+   "t": 201.636,
+   "kind": "breath",
+   "g": 0.5,
+   "id": "firstNo.allow"
+  },
+  {
+   "t": 204.755,
+   "kind": "rise",
+   "g": 0.6,
+   "id": "firstNo.raise"
+  },
+  {
+   "t": 207.242,
+   "kind": "say",
+   "g": 0.6,
+   "id": "firstNo.say"
+  },
+  {
+   "t": 211.393,
+   "kind": "steps",
+   "g": 0.4,
+   "id": "firstNo.leave"
+  },
+  {
+   "t": 213.46,
+   "kind": "thread",
+   "g": 0.9,
+   "id": "firstNo.urge"
+  },
+  {
+   "t": 216.36,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "firstNo.impulse1"
+  },
+  {
+   "t": 217.7,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "firstNo.impulse2"
+  },
+  {
+   "t": 219.401,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "firstNo.impulse3"
+  },
+  {
+   "t": 222.904,
+   "kind": "settle",
+   "g": 0.6,
+   "id": "firstNo.wait"
+  },
+  {
+   "t": 224.335,
+   "kind": "breath",
+   "g": 0.7,
+   "id": "firstNo.breathe"
+  },
+  {
+   "t": 227.214,
+   "kind": "breath",
+   "g": 0.5,
+   "id": "firstNo.calm"
+  },
+  {
+   "t": 234.682,
+   "kind": "chord",
+   "g": 0.5,
+   "id": "firstNo.learned"
+  },
+  {
+   "t": 240.52,
+   "kind": "loosen",
+   "g": 0.9,
+   "id": "firstNo.loosen"
+  },
+  {
+   "t": 245.908,
+   "kind": "steps",
+   "g": 0.4,
+   "id": "resolution.ask"
+  },
+  {
+   "t": 248.151,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "resolution.sched"
+  },
+  {
+   "t": 249.551,
+   "kind": "light_soft",
+   "g": 0.6,
+   "id": "resolution.decide"
+  },
+  {
+   "t": 251.049,
+   "kind": "lift",
+   "g": 0.5,
+   "id": "resolution.help"
+  },
+  {
+   "t": 251.849,
+   "kind": "light_soft",
+   "g": 0.5,
+   "id": "resolution.caring"
+  },
+  {
+   "t": 252.857,
+   "kind": "swish_soft",
+   "g": 0.5,
+   "id": "resolution.pan2"
+  },
+  {
+   "t": 253.357,
+   "kind": "loosen",
+   "g": 0.9,
+   "id": "resolution.fall"
+  },
+  {
+   "t": 255.357,
+   "kind": "mask",
+   "g": 0.5,
+   "id": "resolution.masks"
+  },
+  {
+   "t": 257.654,
+   "kind": "swish_soft",
+   "g": 0.5,
+   "id": "resolution.pan3"
+  },
+  {
+   "t": 258.254,
+   "kind": "light_soft",
+   "g": 0.5,
+   "id": "resolution.tea"
+  },
+  {
+   "t": 263.837,
+   "kind": "swish_soft",
+   "g": 0.5,
+   "id": "resolution.pan4"
+  },
+  {
+   "t": 264.637,
+   "kind": "bubble",
+   "g": 0.3,
+   "id": "resolution.decline"
+  },
+  {
+   "t": 266.637,
+   "kind": "light_soft",
+   "g": 0.4,
+   "id": "resolution.react"
+  },
+  {
+   "t": 270.298,
+   "kind": "drop",
+   "g": 0.5,
+   "id": "resolution.mistake"
+  },
+  {
+   "t": 281.058,
+   "kind": "bubble",
+   "g": 0.4,
+   "id": "final.ask"
+  },
+  {
+   "t": 282.525,
+   "kind": "light_soft",
+   "g": 0.6,
+   "id": "final.own"
+  },
+  {
+   "t": 289.312,
+   "kind": "light_soft",
+   "g": 0.6,
+   "id": "final.honest"
+  },
+  {
+   "t": 291.292,
+   "kind": "line",
+   "g": 0.5,
+   "id": "final.line"
+  },
+  {
+   "t": 293.168,
+   "kind": "bubble",
+   "g": 0.3,
+   "id": "final.feel"
+  },
+  {
+   "t": 299.33,
+   "kind": "loosen",
+   "g": 0.8,
+   "id": "final.threads"
+  },
+  {
+   "t": 307.702,
+   "kind": "chord_final",
+   "g": 0.9,
+   "id": "final.textIn"
+  },
+  {
+   "t": 313.202,
+   "kind": "swell_white",
+   "g": 0.8,
+   "id": "final.white"
+  },
+  {
+   "t": 315.802,
+   "kind": "logo",
+   "g": 0.8,
+   "id": "final.logo"
+  }
+ ]
+}

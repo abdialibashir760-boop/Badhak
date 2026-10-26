@@ -1,0 +1,23 @@
+{
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "lead": 3.2,
+  "tail": 15.0,
+  "fileGap": 0.5,
+  "extraPause": {
+    "6": 0.3, "7": 0.5, "8": 0.35, "10": 3.4, "19": 0.6, "20": 0.7,
+    "30": 0.6, "38": 0.4, "46": 0.6, "54": 0.4,
+    "58": 1.3, "64": 0.9, "69": 0.7, "70": 1.4, "75": 0.9, "76": 0.5, "77": 1.6,
+    "81": 0.9, "83": 1.1, "91": 0.9, "94": 0.4, "98": 0.9
+  },
+  "scenes": [
+    { "id": "opening",     "sentence": 0,  "preroll": 3.2 },
+    { "id": "response",    "sentence": 10, "preroll": 0.0, "afterPause": true },
+    { "id": "approval",    "sentence": 30, "preroll": 0.6 },
+    { "id": "disappearing","sentence": 46, "preroll": 0.6 },
+    { "id": "firstNo",     "sentence": 58, "preroll": 1.3 },
+    { "id": "resolution",  "sentence": 83, "preroll": 1.1 },
+    { "id": "final",       "sentence": 91, "preroll": 0.9 }
+  ]
+}

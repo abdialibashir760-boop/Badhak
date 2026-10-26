@@ -1,0 +1,5 @@
+node_modules
+work
+out
+*.tsbuildinfo
+zihni-oyunu/dist/*.mp4
