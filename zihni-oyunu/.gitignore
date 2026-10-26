@@ -3,3 +3,4 @@ work
 out
 *.tsbuildinfo
 dist/*.mp4
+__pycache__
