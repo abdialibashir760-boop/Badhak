@@ -3,6 +3,7 @@ import { Composition } from "remotion";
 import { SanJose } from "./san-jose/Main";
 import { TOTAL_SECONDS as SAN_JOSE_SECONDS } from "./san-jose/timeline";
 import { Apollo13, Apollo13Props, apollo13Seconds } from "./apollo13/Main";
+import { Thumbnail } from "./apollo13/Thumbnail";
 import { FPS, H, W } from "./common/math";
 
 const apollo = (id: string, lang: Apollo13Props["lang"], wide: boolean) => (
@@ -24,5 +25,7 @@ export const RemotionRoot: React.FC = () => (
     {apollo("Apollo13TR", "tr", false)}
     {apollo("Apollo13Wide", "en", true)}
     {apollo("Apollo13WideTR", "tr", true)}
+    <Composition id="ThumbEN" component={Thumbnail} durationInFrames={1} fps={FPS} width={1280} height={720} defaultProps={{ lang: "en" as const }} />
+    <Composition id="ThumbTR" component={Thumbnail} durationInFrames={1} fps={FPS} width={1280} height={720} defaultProps={{ lang: "tr" as const }} />
   </>
 );
