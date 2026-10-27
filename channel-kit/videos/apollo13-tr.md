@@ -1,7 +1,7 @@
 # Apollo 13 — Turkish version (Türkçe) upload package
 
-**Files:** `chile-rescue-video/out/apollo13-tr-16x9.mp4` (1920×1080, ≈ 2:34) and, if wanted, the vertical
-`Apollo13TR` composition (1080×1920) for Shorts. Captions: `../captions/apollo13-tr.srt`.
+**Files:** Short: `chile-rescue-video/out/apollo13-tr-final.mp4` (1080×1920, ≈ 2:34). Regular upload: `apollo13-tr-16x9-final.mp4`
+(1920×1080; its title/description are in `apollo13-youtube-package.md`). Captions: `../captions/apollo13-tr.srt`.
 Same story and animation as `apollo13.md`; narration, captions, labels, chips and end card are Turkish.
 **Claim check:** identical to `apollo13.md` (the same S/K table applies). Turkish-specific notes below.
 

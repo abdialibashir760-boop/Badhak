@@ -1,6 +1,6 @@
 # Apollo 13 — upload package
 
-**File:** `chile-rescue-video/out/apollo13.mp4` (1080×1920, ≈ 2:38). Captions: `../captions/apollo13.srt`.
+**File:** `chile-rescue-video/out/apollo13-final.mp4` (1080×1920, ≈ 2:38, loudness-normalized). Captions: `../captions/apollo13.srt`.
 **Format:** YouTube Short (vertical, under 3 min).
 **Hook (first 2 s):** "More than two hundred thousand miles from Earth, three astronauts heard a bang."
 
