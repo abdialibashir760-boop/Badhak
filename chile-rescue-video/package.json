@@ -2,13 +2,14 @@
   "name": "chile-rescue-video",
   "version": "1.0.0",
   "private": true,
-  "description": "2-minute 3:4 vertical explainer on the 2010 San José mine rescue (Part 1), built with Remotion",
+  "description": "9:16 animated true-story rescue Shorts (San Jos\u00e9 mine, Apollo 13), built with Remotion",
   "scripts": {
     "start": "remotion studio",
     "preview": "remotion studio",
     "audio": "python3 -I scripts/make_audio.py",
-    "render": "remotion render src/index.ts SanJose out/san-jose-part1.mp4",
-    "still": "remotion still src/index.ts SanJose out/still.png --frame=1500",
+    "render": "remotion render src/index.ts Apollo13 out/apollo13.mp4",
+    "render:san-jose": "remotion render src/index.ts SanJose out/san-jose-part1.mp4",
+    "still": "remotion still src/index.ts Apollo13 out/still.png --frame=1500",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

@@ -4,6 +4,7 @@ import {
   BOTTOM,
   E,
   FLOOR_OFF,
+  CY,
   H,
   HOLE_TARGET,
   PATH,
@@ -23,7 +24,7 @@ import {
   prog,
   rng,
 } from "./geo";
-import { Camera, Car, Flag, Person, Rig, SKINS, Tent, Truck } from "./Figures";
+import { Camera, Car, Flag, Person, Rig, SKINS, Tent, Truck } from "../common/Figures";
 import {
   LEADER,
   N_MINERS,
@@ -169,7 +170,7 @@ export const World: React.FC<Props> = ({ t, cx, cy, s, shakeX, shakeY }) => {
   return (
     <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute", left: 0, top: 0 }}>
       <defs>
-        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="sky" gradientUnits="userSpaceOnUse" x1={0} y1={-1100} x2={0} y2={0}>
           <stop offset="0" stopColor={skyTop} />
           <stop offset="1" stopColor={skyBot} />
         </linearGradient>
@@ -197,9 +198,9 @@ export const World: React.FC<Props> = ({ t, cx, cy, s, shakeX, shakeY }) => {
         </clipPath>
       </defs>
 
-      <g transform={`translate(${W / 2 + shakeX} ${H / 2 + shakeY}) scale(${s}) translate(${-cx} ${-cy})`}>
+      <g transform={`translate(${W / 2 + shakeX} ${CY + shakeY}) scale(${s}) translate(${-cx} ${-cy})`}>
         {/* ---------- sky ---------- */}
-        <rect x={-1400} y={-1500} width={4200} height={1500} fill="url(#sky)" />
+        <rect x={-1400} y={-3400} width={4200} height={3400} fill="url(#sky)" />
         {day < 0.8 && stars.map((st, i) => <circle key={i} cx={st.x} cy={st.y} r={st.s} fill="#fff" opacity={(1 - day) * 0.8} />)}
         {/* far Andes silhouette */}
         <path d={`M-1200 -330 ${Array.from({ length: 30 }).map((_, i) => `L${-1200 + i * 130} ${-380 - 60 * Math.abs(Math.sin(i * 1.7)) - 30 * Math.sin(i * 0.6)}`).join(" ")} L2700 -330 Z`} fill={mix("#141a33", "#9aa9c4", day)} />
@@ -486,7 +487,7 @@ export const World: React.FC<Props> = ({ t, cx, cy, s, shakeX, shakeY }) => {
         {t >= T("sh3") && t < E("sh3") + 1.2 && <Tag x={570} y={SHELTER.y0 - 34} text="SHELTER" px={36} bg="#f2b705" o={clamp((t - T("sh3")) / 0.3) * (1 - clamp((t - E("sh3")) / 1.0))} />}
 
         {/* pre-dawn tint over the surface */}
-        <rect x={-1400} y={-1500} width={4200} height={1500} fill="#0a1030" opacity={(1 - day) * 0.25} />
+        <rect x={-1400} y={-3400} width={4200} height={3400} fill="#0a1030" opacity={(1 - day) * 0.25} />
       </g>
     </svg>
   );

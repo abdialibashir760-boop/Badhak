@@ -1,17 +1,30 @@
-# San José mine rescue — Part 1 (Remotion)
+# Animated rescue stories (Remotion)
 
-2:18, 1080×1440 (3:4), 30 fps explainer on the 2010 Chilean mine collapse. A new vector cutaway animation
-with a narrated script that follows the same story beats as the reference clip, written in original wording.
+9:16 (1080×1920, 30 fps) animated true-story Shorts with an AI narrator. One folder per story.
 
-## Pipeline
-1. `scripts/make_audio.py` — Kokoro TTS (voice `am_michael`) per line, sound bed (drone, collapse rumble,
-   pipe knocks, drill hum), writes `public/voiceover.mp3`, `src/timeline.ts` (line timings) and `out/captions.srt`.
-   Needs `pip install kokoro-onnx soundfile numpy`, `ffmpeg`, and the model files `kokoro-v1.0.int8.onnx` + `voices-v1.0.bin`
-   (GitHub release `thewh1teagle/kokoro-onnx` → `model-files-v1.0`):
-   `python3 -I scripts/make_audio.py <kokoro.onnx> <voices.bin>`
-2. Everything on screen is driven by that timeline: `src/camera.ts` (camera keyed to narration lines),
-   `src/state.ts` (what exists when), `src/World.tsx` (cutaway scene), `src/Overlay.tsx` (captions, chips, end card).
-3. `npm run render` → `out/san-jose-part1.mp4`. Use `--browser-executable` if Remotion cannot download Chrome.
+| Story | Composition | Source folder | Length |
+|---|---|---|---|
+| Apollo 13 (1970) | `Apollo13` | `src/apollo13/` | ≈ 2:38 |
+| San José mine, Chile 2010 — Part 1 | `SanJose` | `src/san-jose/` | ≈ 2:19 |
 
-Edit the script text in `scripts/make_audio.py` and re-run step 1; animation follows the new timings. Camera moves and
-event timing reference line ids (`h1`…`b14`), so keep ids when rewording.
+Shared code is in `src/common/` (`Overlay` captions/chips/end card, `Figures`, `math`). The channel plan and upload
+packages are in `../channel-kit/`.
+
+## Add a story
+1. `scripts/stories/<story>.py` — `ID`, `LINES` (id, spoken text, on-screen caption, pause), `sound(ctx)` effects.
+2. Generate voice + timeline + captions:
+   `python3 -I scripts/make_audio.py <story> <kokoro.onnx> <voices.bin>`
+   → `public/<id>.mp3`, `src/<id>/timeline.ts`, `out/<id>.srt`.
+   Needs `pip install kokoro-onnx soundfile numpy`, `ffmpeg`, and the Kokoro model files
+   (`kokoro-v1.0.int8.onnx`, `voices-v1.0.bin`) from the `thewh1teagle/kokoro-onnx` GitHub release `model-files-v1.0`.
+3. Build scenes in `src/<id>/` keyed to line ids (`S("e2")` = start of line `e2`), a `Main.tsx` that mounts
+   `<Overlay …/>` and `<Audio src={staticFile("<id>.mp3")} />`, and register a `<Composition>` in `src/Root.tsx`.
+4. `npx remotion render src/index.ts <Composition> out/<id>.mp4`
+   (add `--browser-executable=/path/to/chromium` if Remotion can't download Chrome).
+
+Keep line ids stable when rewording: scenes and chips reference them.
+
+## Notes
+- San José is a camera-driven world scene (`World.tsx`, `camera.ts`, `state.ts`); Apollo 13 is a sequence of
+  crossfaded scenes (`scenesA.tsx`, `scenesB.tsx`).
+- Fact sheets and claim checks live in `../channel-kit/videos/`; check them before publishing.

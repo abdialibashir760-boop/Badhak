@@ -1,10 +1,7 @@
 import { LINES } from "./timeline";
 
-export const FPS = 30;
-export const W = 1080;
-export const H = 1440;
-
-export type Pt = [number, number];
+export * from "../common/math";
+import { Pt, clamp, lerp } from "../common/math";
 
 /** Time helpers keyed by narration line id (seconds). */
 export const T = (id: string): number => {
@@ -13,27 +10,6 @@ export const T = (id: string): number => {
   return l.start;
 };
 export const E = (id: string): number => LINES.find((x) => x.id === id)!.end;
-
-export const clamp = (v: number, a = 0, b = 1) => Math.min(b, Math.max(a, v));
-export const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
-export const easeInOut = (t: number) => {
-  const x = clamp(t);
-  return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
-};
-export const easeOut = (t: number) => 1 - Math.pow(1 - clamp(t), 3);
-/** Progress 0..1 of time t between a and b, eased. */
-export const prog = (t: number, a: number, b: number, ease = easeInOut) => ease((t - a) / (b - a));
-
-export function rng(seed: number) {
-  let s = seed >>> 0;
-  return () => {
-    s = (s + 0x6d2b79f5) >>> 0;
-    let t = s;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
 
 // ---- Terrain -------------------------------------------------------------
 export const SURF: Pt[] = [
