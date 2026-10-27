@@ -27,10 +27,15 @@ Recommendation: pick the one whose handle is free *and* is easy to say aloud. Av
 existing channel (the Part 1 reference clip's channel in particular).
 
 ## 3. Visual + audio identity (already built)
-- 1080×1920 (9:16), 30 fps, flat vector cutaways, caption in the Shorts-safe middle area, top chip for dates/numbers.
+- 9:16 (1080×1920) for Shorts and 16:9 (1920×1080) for regular uploads, 30 fps, flat vector cutaways, caption in the Shorts-safe middle area, top chip for dates/numbers.
 - Narration: Kokoro `am_michael`; ambient drone + story-specific sound effects (`chile-rescue-video/scripts/stories/*.py`).
 - Series tag in the top-left (e.g. `APOLLO 13 · 1970`).
 - End card: "NEXT STORY" + the next title + FOLLOW.
+
+## 3b. Languages
+Apollo 13 exists in English and Turkish (separate uploads, or a second channel/audio track). Turkish uses an offline
+Piper voice and was not reviewed by a native speaker: get a review before publishing and consider a human voice-over
+for the Turkish channel. Details: `videos/apollo13-tr.md`.
 
 ## 4. Production workflow (per story)
 1. **Research:** collect 3+ independent sources; write a fact sheet (like `videos/chile-part2-facts.md`). Mark any

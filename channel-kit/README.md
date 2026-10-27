@@ -7,6 +7,7 @@ uploading, setting monetization). Those are in the checklist at the end of `chan
 |---|---|
 | `channel-plan.md` | Positioning, name options, 90-day calendar, workflow, policy guardrails, setup + upload checklists |
 | `videos/apollo13.md` | Upload package for the Apollo 13 Short: titles, description, tags, pinned comment, sources |
+| `videos/apollo13-tr.md` | Turkish upload package for Apollo 13 (title, description, tags, notes on voice and wording) |
 | `videos/san-jose-part1.md` | Upload package for Chile Part 1 + claims that still need a source check |
 | `videos/chile-part2-facts.md` | Verified fact sheet + outline for Chile Part 2 (promised by Part 1's end card) |
 | `captions/*.srt` | Caption files timed to the narration (upload as subtitles) |

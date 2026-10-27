@@ -1,7 +1,8 @@
 import React from "react";
 import { clamp, easeInOut, easeOut, lerp, prog, rng } from "../common/math";
 import { Astro, Bar, Earth, Label, Moon, Plume, Space, Stack } from "./art";
-import { E, S } from "./time";
+import { Tx, useL } from "./i18n";
+import { useTL } from "./time";
 
 const font = "Inter, 'Helvetica Neue', Arial, sans-serif";
 type P = { t: number };
@@ -10,6 +11,8 @@ const pop = (t: number, at: number, d = 0.45) => easeOut((t - at) / d);
 
 // ---- 7. Into the lifeboat ----------------------------------------------------------------------------------
 export const Dock: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const xs = [400, 540, 680];
   const lmLit = clamp((t - (S("l2") + 1.4)) / 1.2);
   return (
@@ -18,7 +21,7 @@ export const Dock: React.FC<P> = ({ t }) => {
       {/* LM chamber */}
       <rect x={290} y={360} width={500} height={300} rx={46} fill={`rgb(${lerp(14, 40, lmLit)},${lerp(20, 56, lmLit)},${lerp(32, 88, lmLit)})`} stroke="#d9a441" strokeWidth={10} />
       <text x={540} y={420} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={30} fill="#f1d58a" letterSpacing={1}>
-        AQUARIUS · LUNAR MODULE
+        {L.aquarius}
       </text>
       {/* tunnel */}
       <rect x={496} y={660} width={88} height={110} fill="#2b3547" />
@@ -26,14 +29,14 @@ export const Dock: React.FC<P> = ({ t }) => {
       <path d="M440 770 L640 770 L840 1130 L240 1130 Z" fill="#e9edf2" />
       <path d="M470 790 L610 790 L772 1100 L308 1100 Z" fill="#243049" />
       <text x={540} y={1180} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={34} fill="#fff" letterSpacing={3} stroke="#0b0f18" strokeWidth={8} paintOrder="stroke">
-        ODYSSEY · COMMAND MODULE
+        {L.odyssey}
       </text>
       {xs.map((x, i) => {
         const k = prog(t, S("l2") + 0.4 + i * 0.7, S("l2") + 1.7 + i * 0.7);
         const path = k < 0.5 ? { x: lerp(x, 540, k * 2), y: lerp(1050, 760, k * 2) } : { x: lerp(540, 430 + i * 110, k * 2 - 1), y: lerp(760, 590, k * 2 - 1) };
         return <Astro key={i} x={path.x} y={path.y + 60} s={0.5} pose="bust" t={t + i} hair={["#6b5a4a", "#2e2218", "#3b2b20"][i]} skin={["#e5b48f", "#d9a37a", "#f0c9a6"][i]} />;
       })}
-      {t >= S("l2") && <Label x={190} y={730} text="LIFEBOAT" size={34} opacity={pop(t, S("l2") + 1.2)} />}
+      {t >= S("l2") && <Label x={190} y={730} text={L.lifeboat} size={34} opacity={pop(t, S("l2") + 1.2)} />}
       {t < S("l2") && (
         <text x={540} y={560} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={160} fill="#f2b705" opacity={0.85 * (0.6 + 0.4 * Math.sin(t * 4))}>
           ?
@@ -62,6 +65,8 @@ const Days: React.FC<{ x: number; y: number; n: number; color: string; t: number
 );
 
 export const Capacity: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const a1 = pop(t, S("l3"));
   const a2 = pop(t, S("l4"));
   return (
@@ -70,27 +75,27 @@ export const Capacity: React.FC<P> = ({ t }) => {
       <g opacity={a1} transform={`translate(0 ${(1 - a1) * 40})`}>
         <rect x={90} y={380} width={900} height={330} rx={34} fill="#12203d" stroke="#3be28b" strokeWidth={6} />
         <text x={130} y={440} fontFamily={font} fontWeight={900} fontSize={34} fill="#3be28b" letterSpacing={3}>
-          BUILT FOR
+          {L.builtFor}
         </text>
         {[0, 1].map((i) => (
           <Astro key={i} x={200 + i * 110} y={640} s={0.75} pose="bust" t={t + i} skin={["#e5b48f", "#d9a37a"][i]} hair={["#6b5a4a", "#2e2218"][i]} />
         ))}
         <Days x={520} y={500} n={2} color="#3be28b" t={t} at={S("l3") + 0.6} />
         <text x={520} y={640} fontFamily={font} fontWeight={800} fontSize={30} fill="#a9bbd8" letterSpacing={2}>
-          2 MEN · 2 DAYS
+          {L.men2}
         </text>
       </g>
       <g opacity={a2} transform={`translate(0 ${(1 - a2) * 40})`}>
         <rect x={90} y={780} width={900} height={400} rx={34} fill="#2a1620" stroke="#ff3b30" strokeWidth={6} />
         <text x={130} y={840} fontFamily={font} fontWeight={900} fontSize={34} fill="#ff6b61" letterSpacing={3}>
-          NOW NEEDED
+          {L.nowNeeded}
         </text>
         {[0, 1, 2].map((i) => (
           <Astro key={i} x={190 + i * 100} y={1070} s={0.75} pose="bust" t={t + i} skin={["#e5b48f", "#d9a37a", "#f0c9a6"][i]} hair={["#6b5a4a", "#2e2218", "#3b2b20"][i]} />
         ))}
         <Days x={500} y={880} n={4} color="#ff3b30" t={t} at={S("l4") + 0.5} />
         <text x={500} y={1030} fontFamily={font} fontWeight={800} fontSize={30} fill="#ffb3ad" letterSpacing={2}>
-          3 MEN · 4 DAYS
+          {L.men3}
         </text>
       </g>
     </g>
@@ -99,6 +104,8 @@ export const Capacity: React.FC<P> = ({ t }) => {
 
 // ---- 9. Cold, dark, thirsty cabin ---------------------------------------------------------------------------------------------
 export const Cabin: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const off = prog(t, S("l5") + 0.3, E("l5") - 0.2, (v) => clamp(v));
   const cold = prog(t, S("l6"), E("l6"), (v) => clamp(v));
   const water = pop(t, S("l7"));
@@ -106,7 +113,7 @@ export const Cabin: React.FC<P> = ({ t }) => {
   const darkness = 0.1 + 0.5 * off;
   return (
     <g>
-      <rect width={1080} height={1920} fill="#10202b" />
+      <rect x={-1500} y={-1200} width={4200} height={4400} fill="#10202b" />
       <path d="M180 340 L900 340 L820 640 L260 640 Z" fill="#030611" stroke="#51647a" strokeWidth={14} />
       <Earth x={700} y={480} r={64} t={t} uid="cb" />
       {/* switch row */}
@@ -141,16 +148,16 @@ export const Cabin: React.FC<P> = ({ t }) => {
           ❄
         </text>
       </g>
-      {cold > 0.3 && <Label x={540} y={672} text="NEAR FREEZING" size={32} bg="#5bb6ff" opacity={clamp(cold * 2)} />}
+      {cold > 0.3 && <Label x={540} y={672} text={L.nearFreezing} size={32} bg="#5bb6ff" opacity={clamp(cold * 2)} />}
       {/* dim lights */}
-      <rect width={1080} height={1920} fill="#02050a" opacity={darkness} />
+      <rect x={-1500} y={-1200} width={4200} height={4400} fill="#02050a" opacity={darkness} />
       {t >= S("l7") && (
         <g opacity={water} transform={`translate(0 ${(1 - water) * 30})`}>
           <rect x={160} y={560} width={760} height={110} rx={26} fill="#0b1420" stroke="#5bb6ff" strokeWidth={5} />
           <path d="M240 590 Q220 620 240 645 Q260 620 240 590 Z" fill="#5bb6ff" />
           <Bar x={300} y={607} w={520} h={34} v={lerp(0.8, 0.15, prog(t, S("l7"), E("l7") + 0.8, lin))} label="" color="#5bb6ff" />
           <text x={560} y={540} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={30} fill="#bfe4ff" letterSpacing={3}>
-            WATER
+            {L.water}
           </text>
         </g>
       )}
@@ -181,6 +188,8 @@ const trajAt = (k: number): Pt => {
 };
 
 export const Path: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const k = prog(t, S("t1") + 0.3, E("t3"), lin);
   const draw = Math.floor(k * (TRAJ.length - 1));
   const [mx, my] = trajAt(k);
@@ -198,7 +207,7 @@ export const Path: React.FC<P> = ({ t }) => {
             const a = i * 1.57 + t * 0.6;
             return <path key={i} d={`M${790 + Math.cos(a) * 150} ${560 + Math.sin(a) * 150} l${-Math.cos(a) * 26} ${-Math.sin(a) * 26}`} stroke="#f2b705" strokeWidth={7} strokeLinecap="round" />;
           })}
-          <Label x={790} y={372} text="MOON'S GRAVITY" size={28} />
+          <Label x={790} y={372} text={L.moonGravity} size={28} />
         </g>
       )}
       <circle cx={mx} cy={my} r={18} fill="#fff" />
@@ -206,7 +215,7 @@ export const Path: React.FC<P> = ({ t }) => {
       {far > 0 && (
         <g opacity={far}>
           <circle cx={930} cy={560} r={26 + 10 * Math.sin(t * 5)} fill="none" stroke="#f2b705" strokeWidth={6} />
-          <Label x={700} y={1190} text="FARTHEST EVER" size={36} />
+          <Label x={700} y={1190} text={L.farthest} size={36} />
         </g>
       )}
     </g>
@@ -240,16 +249,18 @@ const Item: React.FC<{ kind: "bag" | "card" | "hose" | "tape"; x: number; y: num
 );
 
 export const Scrub: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const rise = prog(t, S("c1") + 0.8, E("c1") + 1.2, lin);
   const fix = prog(t, S("c7") - 0.2, E("c7") + 1.6, lin);
   const co2 = lerp(0.12, 0.92, rise) * (1 - fix) + 0.14 * fix;
   const col = co2 > 0.6 ? "#ff3b30" : co2 > 0.35 ? "#f2b705" : "#3be28b";
   const full = clamp((t - S("c2")) / 1.2);
   const items: { kind: "bag" | "card" | "hose" | "tape"; label: string; x: number }[] = [
-    { kind: "bag", label: "BAG", x: 190 },
-    { kind: "card", label: "CARDBOARD", x: 400 },
-    { kind: "hose", label: "HOSE", x: 640 },
-    { kind: "tape", label: "TAPE", x: 860 },
+    { kind: "bag", label: L.bag, x: 190 },
+    { kind: "card", label: L.cardboard, x: 400 },
+    { kind: "hose", label: L.hose, x: 640 },
+    { kind: "tape", label: L.tape, x: 860 },
   ];
   const merge = prog(t, S("c6"), S("c6") + 2.2, lin);
   const bump = prog(t, S("c3") + 1.4, S("c3") + 2.2, lin);
@@ -257,9 +268,9 @@ export const Scrub: React.FC<P> = ({ t }) => {
   const sqX = t < S("c4") ? lerp(190, 400, approach) - (bump > 0 ? Math.sin(bump * 3.14) * 40 : 0) : 270;
   return (
     <g>
-      <rect width={1080} height={1920} fill="#0e1a24" />
-      <Bar x={140} y={400} w={800} h={56} v={co2} label="CARBON DIOXIDE (CO₂)" color={col} />
-      {co2 > 0.6 && <text x={940} y={372} textAnchor="end" fontFamily={font} fontWeight={900} fontSize={30} fill="#ff6b61" opacity={0.6 + 0.4 * Math.sin(t * 9)}>DANGER</text>}
+      <rect x={-1500} y={-1200} width={4200} height={4400} fill="#0e1a24" />
+      <Bar x={140} y={400} w={800} h={56} v={co2} label={L.co2} color={col} />
+      {co2 > 0.6 && <text x={940} y={372} textAnchor="end" fontFamily={font} fontWeight={900} fontSize={30} fill="#ff6b61" opacity={0.6 + 0.4 * Math.sin(t * 9)}>{L.danger}</text>}
       {/* the two filters */}
       <g transform="translate(0 760)">
         {/* round LM canister (clogged) */}
@@ -267,9 +278,9 @@ export const Scrub: React.FC<P> = ({ t }) => {
           <circle r={110} fill="#2b3a4a" stroke="#8fb4cc" strokeWidth={8} />
           <circle r={110 * Math.max(0.01, full)} fill="#6b6f77" />
           <circle r={64} fill="none" stroke="#1b2733" strokeWidth={6} />
-          <text y={12} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={34} fill="#fff" opacity={full}>FULL</text>
+          <text y={12} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={34} fill="#fff" opacity={full}>{L.full}</text>
         </g>
-        <text x={790} y={290} textAnchor="middle" fontFamily={font} fontWeight={800} fontSize={24} fill="#a9bbd8" letterSpacing={2}>LM FILTER · ROUND</text>
+        <text x={790} y={290} textAnchor="middle" fontFamily={font} fontWeight={800} fontSize={24} fill="#a9bbd8" letterSpacing={2}>{L.lmFilter}</text>
         {/* square CM filter */}
         <g transform={`translate(${sqX} 120)`} opacity={t >= S("c3") - 0.3 ? 1 : 0.0}>
           <rect x={-90} y={-90} width={180} height={180} rx={10} fill="#d8dce2" stroke="#8d939d" strokeWidth={6} />
@@ -278,7 +289,7 @@ export const Scrub: React.FC<P> = ({ t }) => {
           ))}
         </g>
         {t >= S("c3") - 0.3 && t < S("c4") && (
-          <text x={sqX} y={290} textAnchor="middle" fontFamily={font} fontWeight={800} fontSize={24} fill="#a9bbd8" letterSpacing={2}>CM FILTER · SQUARE</text>
+          <text x={sqX} y={290} textAnchor="middle" fontFamily={font} fontWeight={800} fontSize={24} fill="#a9bbd8" letterSpacing={2}>{L.cmFilter}</text>
         )}
         {bump > 0 && bump < 1 && <text x={600} y={150} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={110} fill="#ff3b30">✕</text>}
         {/* adapter once built */}
@@ -295,7 +306,7 @@ export const Scrub: React.FC<P> = ({ t }) => {
       {t >= S("c4") && (
         <g opacity={pop(t, S("c4"))}>
           <Earth x={160} y={620} r={72} t={t} uid="sc" />
-          <Label x={300} y={540} text="GROUND TEAM" size={30} bg="#7cc4ff" anchor="start" />
+          <Label x={300} y={540} text={L.groundTeam} size={30} bg="#7cc4ff" anchor="start" />
           {[0, 1, 2].map((i) => {
             const a = (t * 0.9 + i / 3) % 1;
             return <circle key={i} cx={160} cy={620} r={90 + a * 260} fill="none" stroke="#7cc4ff" strokeWidth={4} opacity={(1 - a) * 0.4} />;
@@ -335,15 +346,15 @@ const CONSOLE = (() => {
 
 export const MissionControl: React.FC<{ t: number; lost?: boolean; children?: React.ReactNode }> = ({ t, lost = false, children }) => (
   <g>
-    <rect width={1080} height={1920} fill="#0b1020" />
+    <rect x={-1500} y={-1200} width={4200} height={4400} fill="#0b1020" />
     <rect x={80} y={330} width={920} height={380} rx={22} fill="#05080f" stroke="#33415f" strokeWidth={10} />
     {lost ? (
       <g>
         <text x={540} y={500} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={84} fill="#ff3b30" opacity={0.55 + 0.45 * (Math.sin(t * 6) > 0 ? 1 : 0)} letterSpacing={6}>
-          SIGNAL LOST
+          <Tx k="signalLost" />
         </text>
         <text x={540} y={580} textAnchor="middle" fontFamily={font} fontWeight={700} fontSize={34} fill="#ff8a82" letterSpacing={4}>
-          NO TELEMETRY
+          <Tx k="noTelemetry" />
         </text>
       </g>
     ) : (
@@ -373,7 +384,9 @@ export const MissionControl: React.FC<{ t: number; lost?: boolean; children?: Re
 );
 
 export const Ground: React.FC<P> = ({ t }) => {
-  const plan = ["POWER UP SEQUENCE", "ORDER OF SWITCHES", "BATTERY BUDGET", "TIMING"];
+  const { S, E } = useTL();
+  const L = useL();
+  const plan = L.plan;
   const toSim = prog(t, S("r2") - 0.3, S("r2") + 0.3, (v) => clamp(v));
   return (
     <g>
@@ -381,7 +394,7 @@ export const Ground: React.FC<P> = ({ t }) => {
         <MissionControl t={t} />
         <g opacity={pop(t, S("r1") + 0.4)}>
           <rect x={290} y={950} width={500} height={250} rx={14} fill="#f3f0e6" />
-          <text x={540} y={1000} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={28} fill="#1b2230" letterSpacing={3}>RESTART PLAN</text>
+          <text x={540} y={1000} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={28} fill="#1b2230" letterSpacing={3}>{L.restartPlan}</text>
           {plan.map((l, i) => (
             <g key={l} opacity={pop(t, S("r1") + 1.2 + i * 0.9, 0.3)}>
               <text x={330} y={1050 + i * 36} fontFamily={font} fontWeight={700} fontSize={24} fill="#1b2230">
@@ -392,7 +405,7 @@ export const Ground: React.FC<P> = ({ t }) => {
         </g>
       </g>
       <g opacity={toSim}>
-        <rect width={1080} height={1920} fill="#101826" />
+        <rect x={-1500} y={-1200} width={4200} height={4400} fill="#101826" />
         <rect x={180} y={430} width={720} height={640} rx={40} fill="#c9ced6" />
         <rect x={220} y={470} width={640} height={560} rx={28} fill="#1c2638" />
         {Array.from({ length: 24 }).map((_, i) => {
@@ -401,7 +414,7 @@ export const Ground: React.FC<P> = ({ t }) => {
         })}
         <Astro x={540} y={1060} s={1.4} pose="bust" t={t} hair="#4a3a2c" skin="#e5b48f" />
         <rect x={220} y={880} width={640} height={150} rx={20} fill="#1c2638" opacity={0.95} />
-        <Label x={540} y={1130} text="SIMULATOR" size={34} bg="#9fb0cf" />
+        <Label x={540} y={1130} text={L.simulator} size={34} bg="#9fb0cf" />
         <Label x={540} y={400} text="KEN MATTINGLY" size={30} bg="#f2b705" />
       </g>
     </g>
@@ -409,6 +422,8 @@ export const Ground: React.FC<P> = ({ t }) => {
 };
 
 export const Wait: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const sec = (t - S("r7")) * 2;
   return (
     <MissionControl t={t} lost>
@@ -426,6 +441,8 @@ export const Wait: React.FC<P> = ({ t }) => {
 
 // ---- 13. Letting go of the service module -----------------------------------------------------------------------------------------------
 export const Sep: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const k = prog(t, S("r3") + 0.5, S("r3") + 3.0, (v) => easeInOut(clamp(v)));
   const hi = pop(t, S("r4") + 0.1);
   return (
@@ -440,7 +457,7 @@ export const Sep: React.FC<P> = ({ t }) => {
       {hi > 0 && (
         <g opacity={hi}>
           <circle cx={432} cy={988} r={104 + 8 * Math.sin(t * 6)} fill="none" stroke="#ff3b30" strokeWidth={8} strokeDasharray="16 12" />
-          <Label x={432} y={1150} text="PANEL MISSING" size={34} bg="#ff3b30" fg="#fff" />
+          <Label x={432} y={1150} text={L.panelMissing} size={34} bg="#ff3b30" fg="#fff" />
         </g>
       )}
     </g>
@@ -449,11 +466,13 @@ export const Sep: React.FC<P> = ({ t }) => {
 
 // ---- 14. Reentry --------------------------------------------------------------------------------------------------------------------------
 export const Reentry: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const sway = Math.sin(t * 1.4) * 4;
   return (
     <g>
       <defs>
-        <linearGradient id="rsky" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="rsky" gradientUnits="userSpaceOnUse" x1={0} y1={0} x2={0} y2={1920}>
           <stop offset="0" stopColor="#04050c" />
           <stop offset="0.6" stopColor="#2c1a3c" />
           <stop offset="1" stopColor="#7b3a30" />
@@ -464,10 +483,10 @@ export const Reentry: React.FC<P> = ({ t }) => {
           <stop offset="1" stopColor="#ff5a2a" stopOpacity="0" />
         </linearGradient>
       </defs>
-      <rect width={1080} height={1920} fill="url(#rsky)" />
-      {Array.from({ length: 40 }).map((_, i) => {
+      <rect x={-1500} y={-1200} width={4200} height={4400} fill="url(#rsky)" />
+      {Array.from({ length: 110 }).map((_, i) => {
         const r = rng(500 + i);
-        return <circle key={i} cx={r() * 1080} cy={r() * 1000} r={1.6} fill="#fff" opacity={0.5} />;
+        return <circle key={i} cx={-1000 + r() * 3100} cy={-300 + r() * 1300} r={1.6} fill="#fff" opacity={0.5} />;
       })}
       <g transform={`translate(540 760) rotate(${sway})`}>
         <path d={`M-150 70 Q-170 -200 -${40 + Math.sin(t * 20) * 8} -520 Q0 -640 ${40 + Math.cos(t * 17) * 8} -520 Q170 -200 150 70 Z`} fill="url(#rfire)" opacity={0.95} />
@@ -486,7 +505,7 @@ export const Reentry: React.FC<P> = ({ t }) => {
         return <rect key={i} x={r() * 700} y={300 + r() * 1000} width={120 + r() * 360} height={3} fill="#fff" opacity={0.12 + r() * 0.12} />;
       })}
       <g opacity={t > S("r5") + 1.4 ? 1 : 0}>
-        <Label x={540} y={400} text="RADIO BLACKOUT" size={44} bg={Math.sin(t * 6) > 0 ? "#ff3b30" : "#8b1f19"} fg="#fff" />
+        <Label x={540} y={400} text={L.radioBlackout} size={44} bg={Math.sin(t * 6) > 0 ? "#ff3b30" : "#8b1f19"} fg="#fff" />
       </g>
     </g>
   );
@@ -494,6 +513,8 @@ export const Reentry: React.FC<P> = ({ t }) => {
 
 // ---- 15. Parachutes and splashdown ---------------------------------------------------------------------------------------------------------------------------------
 export const Splash: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const down = prog(t, S("r8") + 0.2, S("r9") + 1.0, (v) => clamp(v));
   const landed = t >= S("r9") + 1.0;
   const ls = Math.max(0, t - (S("r9") + 1.0));
@@ -511,21 +532,21 @@ export const Splash: React.FC<P> = ({ t }) => {
   return (
     <g>
       <defs>
-        <linearGradient id="ssky" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="ssky" gradientUnits="userSpaceOnUse" x1={0} y1={0} x2={0} y2={1920}>
           <stop offset="0" stopColor="#5fa2dd" />
           <stop offset="1" stopColor="#d6ecf9" />
         </linearGradient>
-        <linearGradient id="ssea" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="ssea" gradientUnits="userSpaceOnUse" x1={0} y1={1000} x2={0} y2={1920}>
           <stop offset="0" stopColor="#2a78a8" />
           <stop offset="1" stopColor="#123f63" />
         </linearGradient>
       </defs>
-      <rect width={1080} height={1920} fill="url(#ssky)" />
-      {[0, 1, 2].map((i) => (
+      <rect x={-1500} y={-1200} width={4200} height={4400} fill="url(#ssky)" />
+      {[-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6].map((i) => (
         <ellipse key={i} cx={200 + i * 330 + Math.sin(t * 0.2 + i) * 20} cy={430 + (i % 2) * 90} rx={130} ry={34} fill="#fff" opacity={0.75} />
       ))}
-      <rect y={1000} width={1080} height={920} fill="url(#ssea)" />
-      {[0, 1, 2, 3, 4, 5].map((i) => (
+      <rect x={-1500} y={1000} width={4200} height={1800} fill="url(#ssea)" />
+      {[-8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => (
         <path key={i} d={`M${60 + i * 190} ${1060 + (i % 3) * 70} q30 -16 60 0 t60 0`} fill="none" stroke="#9cd2ee" strokeWidth={5} opacity={0.5} />
       ))}
       {/* carrier + helicopter */}
@@ -580,10 +601,10 @@ export const Splash: React.FC<P> = ({ t }) => {
         <g transform={`translate(540 560) rotate(-8) scale(${0.6 + 0.4 * stamp})`} opacity={stamp}>
           <rect x={-380} y={-84} width={760} height={168} rx={26} fill="#fff" fillOpacity={0.9} stroke="#c1272d" strokeWidth={10} />
           <text y={-6} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={70} fill="#c1272d" letterSpacing={4}>
-            SUCCESSFUL
+            {L.successful}
           </text>
           <text y={62} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={70} fill="#c1272d" letterSpacing={4}>
-            FAILURE
+            {L.failure}
           </text>
         </g>
       )}

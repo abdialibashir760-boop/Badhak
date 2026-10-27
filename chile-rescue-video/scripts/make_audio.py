@@ -1,8 +1,9 @@
 """Build narration, sound bed, timeline and captions for one story.
 
 Usage:
-  python3 -I scripts/make_audio.py <story> <kokoro.onnx> <voices.bin>
-  <story> is a module in scripts/stories/ (san_jose, apollo13, ...).
+  python3 -I scripts/make_audio.py <story> <kokoro.onnx> <voices.bin>      (English stories, Kokoro)
+  python3 -I scripts/make_audio.py <story> <tr_TR-voice-medium.onnx> -        (Piper stories, e.g. apollo13_tr)
+  <story> is a module in scripts/stories/ (san_jose, apollo13, apollo13_tr, ...).
 
 Writes: public/<id>.mp3, src/<id>/timeline.ts, out/<id>.srt, out/<id>.wav
 Needs: pip install kokoro-onnx soundfile numpy ; ffmpeg on PATH.

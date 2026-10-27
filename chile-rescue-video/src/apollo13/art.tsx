@@ -6,7 +6,7 @@ const font = "Inter, 'Helvetica Neue', Arial, sans-serif";
 // ---- backgrounds ----------------------------------------------------------
 const STARS = (() => {
   const r = rng(42);
-  return Array.from({ length: 150 }).map(() => ({ x: r() * 1080, y: r() * 1920, s: 0.7 + r() * 2, ph: r() * 6, k: 0.6 + r() * 1.8 }));
+  return Array.from({ length: 700 }).map(() => ({ x: -1100 + r() * 3300, y: -500 + r() * 2900, s: 0.7 + r() * 2, ph: r() * 6, k: 0.6 + r() * 1.8 }));
 })();
 
 export const Space: React.FC<{ t: number; top?: string; bottom?: string; stars?: number }> = ({ t, top = "#03050d", bottom = "#0d1530", stars = 1 }) => {
@@ -14,12 +14,12 @@ export const Space: React.FC<{ t: number; top?: string; bottom?: string; stars?:
   return (
     <g>
       <defs>
-        <linearGradient id={id} x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id={id} gradientUnits="userSpaceOnUse" x1={0} y1={0} x2={0} y2={1920}>
           <stop offset="0" stopColor={top} />
           <stop offset="1" stopColor={bottom} />
         </linearGradient>
       </defs>
-      <rect width={1080} height={1920} fill={`url(#${id})`} />
+      <rect x={-1500} y={-1200} width={4200} height={4400} fill={`url(#${id})`} />
       {STARS.map((s, i) => (
         <circle key={i} cx={s.x} cy={s.y} r={s.s} fill="#fff" opacity={stars * (0.35 + 0.45 * Math.sin(t * s.k + s.ph) ** 2)} />
       ))}

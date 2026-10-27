@@ -2,13 +2,27 @@ import React from "react";
 import { Composition } from "remotion";
 import { SanJose } from "./san-jose/Main";
 import { TOTAL_SECONDS as SAN_JOSE_SECONDS } from "./san-jose/timeline";
-import { Apollo13 } from "./apollo13/Main";
-import { TOTAL_SECONDS as APOLLO_SECONDS } from "./apollo13/timeline";
+import { Apollo13, Apollo13Props, apollo13Seconds } from "./apollo13/Main";
 import { FPS, H, W } from "./common/math";
+
+const apollo = (id: string, lang: Apollo13Props["lang"], wide: boolean) => (
+  <Composition
+    id={id}
+    component={Apollo13}
+    durationInFrames={Math.ceil(apollo13Seconds(lang) * FPS)}
+    fps={FPS}
+    width={wide ? 1920 : 1080}
+    height={wide ? 1080 : 1920}
+    defaultProps={{ lang, wide } satisfies Apollo13Props}
+  />
+);
 
 export const RemotionRoot: React.FC = () => (
   <>
     <Composition id="SanJose" component={SanJose} durationInFrames={Math.ceil(SAN_JOSE_SECONDS * FPS)} fps={FPS} width={W} height={H} />
-    <Composition id="Apollo13" component={Apollo13} durationInFrames={Math.ceil(APOLLO_SECONDS * FPS)} fps={FPS} width={W} height={H} />
+    {apollo("Apollo13", "en", false)}
+    {apollo("Apollo13TR", "tr", false)}
+    {apollo("Apollo13Wide", "en", true)}
+    {apollo("Apollo13WideTR", "tr", true)}
   </>
 );

@@ -1,7 +1,8 @@
 import React from "react";
 import { clamp, easeOut, lerp, prog, rng } from "../common/math";
 import { Astro, Bar, Earth, Fade, Label, Moon, Plume, Space, Stack } from "./art";
-import { E, S } from "./time";
+import { Tx, useL } from "./i18n";
+import { useTL } from "./time";
 
 const font = "Inter, 'Helvetica Neue', Arial, sans-serif";
 type P = { t: number };
@@ -9,6 +10,8 @@ const lin = (v: number) => clamp(v);
 
 // ---- 1. The bang (hook) -------------------------------------------------------------------
 export const Bang: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const bang = E("h1") - 0.5;
   const after = t >= bang;
   const dt = Math.max(0, t - bang);
@@ -38,7 +41,7 @@ export const Bang: React.FC<P> = ({ t }) => {
       {t >= S("h4") && (
         <g opacity={arrow}>
           <path d="M560 930 Q650 1010 740 1030" fill="none" stroke="#7cc4ff" strokeWidth={7} strokeDasharray="16 14" strokeDashoffset={-t * 40} strokeLinecap="round" />
-          <Label x={820} y={805} text="HOME" size={40} bg="#7cc4ff" />
+          <Label x={820} y={805} text={L.home} size={40} bg="#7cc4ff" />
         </g>
       )}
     </g>
@@ -78,6 +81,8 @@ const Rocket: React.FC<{ x: number; y: number; t: number; fire: number }> = ({ x
 );
 
 export const Launch: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const lift = Math.pow(prog(t, S("s2") + 0.9, S("s3") + 3.2, lin), 2.2) * 2100;
   const fire = prog(t, S("s2") + 0.3, S("s2") + 1.1, easeOut);
   const smoke = prog(t, S("s2") + 0.4, S("s3") + 4, lin);
@@ -89,14 +94,14 @@ export const Launch: React.FC<P> = ({ t }) => {
   return (
     <g>
       <defs>
-        <linearGradient id="lsky" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="lsky" gradientUnits="userSpaceOnUse" x1={0} y1={0} x2={0} y2={1920}>
           <stop offset="0" stopColor="#1f2c5c" />
           <stop offset="0.7" stopColor="#c9708a" />
           <stop offset="1" stopColor="#f4b57a" />
         </linearGradient>
       </defs>
-      <rect width={1080} height={1920} fill="url(#lsky)" />
-      <rect y={1180} width={1080} height={740} fill="#27332a" />
+      <rect x={-1500} y={-1200} width={4200} height={4400} fill="url(#lsky)" />
+      <rect x={-1500} y={1180} width={4200} height={1600} fill="#27332a" />
       <rect x={270} y={1180} width={540} height={34} fill="#7b8088" />
       {/* umbilical tower */}
       <g transform="translate(380 1180)">
@@ -136,10 +141,12 @@ export const Launch: React.FC<P> = ({ t }) => {
 
 // ---- 3. Crew ------------------------------------------------------------------------------------------------
 export const Crew: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const crew = [
-    { name: "LOVELL", role: ["COMMANDER", ""], x: 270, hair: "#6b5a4a", skin: "#e5b48f", at: S("s4") },
-    { name: "HAISE", role: ["LUNAR MODULE", "PILOT"], x: 540, hair: "#2e2218", skin: "#d9a37a", at: S("s4") + 0.5 },
-    { name: "SWIGERT", role: ["COMMAND MODULE", "PILOT"], x: 810, hair: "#3b2b20", skin: "#f0c9a6", at: S("s4") + 1.0 },
+    { name: "LOVELL", role: [L.commander, ""], x: 270, hair: "#6b5a4a", skin: "#e5b48f", at: S("s4") },
+    { name: "HAISE", role: [L.lmPilotA, L.pilot], x: 540, hair: "#2e2218", skin: "#d9a37a", at: S("s4") + 0.5 },
+    { name: "SWIGERT", role: [L.cmPilotA, L.pilot], x: 810, hair: "#3b2b20", skin: "#f0c9a6", at: S("s4") + 1.0 },
   ];
   const focus = prog(t, S("s5"), S("s5") + 0.5, lin);
   const ghost = prog(t, S("s6") + 0.4, S("s6") + 1.2, easeOut);
@@ -147,7 +154,7 @@ export const Crew: React.FC<P> = ({ t }) => {
     <g>
       <Space t={t} top="#0a1330" bottom="#1d2b57" stars={0.7} />
       <Moon x={540} y={560} r={250} uid="cm" />
-      <rect width={1080} height={1920} fill="#050a1c" opacity={0.55} />
+      <rect x={-1500} y={-1200} width={4200} height={4400} fill="#050a1c" opacity={0.55} />
       {crew.map((c, i) => {
         const a = easeOut((t - c.at) / 0.5);
         const dim = i === 2 ? 1 : 1 - 0.5 * focus;
@@ -167,14 +174,14 @@ export const Crew: React.FC<P> = ({ t }) => {
           </g>
         );
       })}
-      {t >= S("s5") && <Label x={810} y={470} text="LATE REPLACEMENT" size={30} opacity={focus} />}
+      {t >= S("s5") && <Label x={810} y={470} text={L.lateReplacement} size={30} opacity={focus} />}
       {t >= S("s6") && (
         <g opacity={ghost}>
           <Astro x={130} y={600} s={0.9} gray t={t} opacity={0.75} />
           <circle cx={130} cy={505} r={92} fill="none" stroke="#e5352b" strokeWidth={10} />
           <line x1={64} y1={439} x2={196} y2={571} stroke="#e5352b" strokeWidth={10} />
           <Label x={130} y={680} text="MATTINGLY" size={28} bg="#9fb0cf" />
-          <Label x={130} y={730} text="GROUNDED" size={24} bg="#e5352b" fg="#fff" />
+          <Label x={130} y={730} text={L.grounded} size={24} bg="#e5352b" fg="#fff" />
         </g>
       )}
     </g>
@@ -183,6 +190,8 @@ export const Crew: React.FC<P> = ({ t }) => {
 
 // ---- 4. Cruise -----------------------------------------------------------------------------------------------------
 export const Cruise: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const k = prog(t, S("s7"), E("s7") + 0.5, lin);
   const px = lerp(330, 780, k);
   const py = lerp(980, 520, k);
@@ -197,7 +206,7 @@ export const Cruise: React.FC<P> = ({ t }) => {
       <g opacity={tick} transform="translate(540 330)">
         <rect x={-290} y={-40} width={580} height={86} rx={20} fill="#1f7a4d" />
         <text x={0} y={20} textAnchor="middle" fontFamily={font} fontWeight={900} fontSize={42} fill="#fff" letterSpacing={2}>
-          ✓ ALL SYSTEMS NORMAL
+          ✓ {L.allSystems}
         </text>
       </g>
     </g>
@@ -206,6 +215,8 @@ export const Cruise: React.FC<P> = ({ t }) => {
 
 // ---- 5. The tank explodes --------------------------------------------------------------------------------------------
 export const Tank: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const spark = t >= S("e1") + 3.0 && t < S("e2") ? Math.sin(t * 40) > 0 : false;
   const boom = S("e2") + 0.1;
   const dt = Math.max(0, t - boom);
@@ -216,7 +227,7 @@ export const Tank: React.FC<P> = ({ t }) => {
   const wire = (y: number) => <path d={`M470 ${y} Q560 ${y - 40} 640 ${y - 70}`} fill="none" stroke="#e08a2c" strokeWidth={8} strokeLinecap="round" />;
   return (
     <g>
-      <rect width={1080} height={1920} fill="#090d15" />
+      <rect x={-1500} y={-1200} width={4200} height={4400} fill="#090d15" />
       <g transform={`translate(${sx} ${sy})`}>
         <rect x={170} y={290} width={740} height={960} rx={26} fill="#cfd4db" />
         <rect x={196} y={316} width={688} height={908} rx={14} fill="#161c2a" />
@@ -234,7 +245,7 @@ export const Tank: React.FC<P> = ({ t }) => {
           <rect key={x} x={x} y={1050} width={150} height={120} rx={12} fill="#d6a63a" />
         ))}
         <text x={540} y={1200} textAnchor="middle" fontFamily={font} fontWeight={800} fontSize={24} fill="#f1d58a" letterSpacing={3}>
-          FUEL CELLS
+          {L.fuelCells}
         </text>
         {/* oxygen tanks */}
         <circle cx={360} cy={600} r={104} fill="#aab6c8" />
@@ -255,7 +266,7 @@ export const Tank: React.FC<P> = ({ t }) => {
                 <circle r={36} fill="#ffe26a" opacity={0.45} />
               </g>
             )}
-            <Label x={700} y={430} text="OXYGEN TANK 2" size={28} opacity={clamp((t - S("e1") - 0.3) / 0.4)} />
+            <Label x={700} y={430} text={L.oxygenTank2} size={28} opacity={clamp((t - S("e1") - 0.3) / 0.4)} />
           </g>
         )}
         {hole && (
@@ -286,6 +297,8 @@ const PANEL = (() => {
 })();
 
 export const Alarm: React.FC<P> = ({ t }) => {
+  const { S, E } = useTL();
+  const L = useL();
   const blink = Math.sin(t * 15) > 0;
   const drain = prog(t, S("e5"), E("e5") + 0.5, lin);
   const power = lerp(0.88, 0.1, drain);
@@ -293,7 +306,7 @@ export const Alarm: React.FC<P> = ({ t }) => {
   const arcs = [0, 1, 2].map((i) => ((t * 0.9 + i / 3) % 1));
   return (
     <g>
-      <rect width={1080} height={1920} fill="#0b1019" />
+      <rect x={-1500} y={-1200} width={4200} height={4400} fill="#0b1019" />
       {/* window */}
       <path d="M90 330 L990 330 L930 700 L150 700 Z" fill="#030611" stroke="#38445c" strokeWidth={14} />
       <Earth x={800} y={470} r={74} t={t} uid="al" />
@@ -305,8 +318,8 @@ export const Alarm: React.FC<P> = ({ t }) => {
       <Astro x={540} y={870} s={1.1} t={t} hair="#2e2218" skin="#d9a37a" pose="bust" />
       <Astro x={820} y={870} s={1.1} t={t} skin="#f0c9a6" pose="bust" />
       {/* instrument panel */}
-      <path d="M0 780 L1080 780 L1080 1280 L0 1280 Z" fill="#1a2130" />
-      <rect x={0} y={770} width={1080} height={16} fill="#2c3750" />
+      <path d="M-1500 780 L2600 780 L2600 1280 L-1500 1280 Z" fill="#1a2130" />
+      <rect x={-1500} y={770} width={4200} height={16} fill="#2c3750" />
       {PANEL.map((p, i) => (
         <circle key={i} cx={p.x} cy={p.y + 80} r={9} fill={p.c} opacity={0.35 + 0.5 * Math.abs(Math.sin(t * 2 + p.ph))} />
       ))}
@@ -318,8 +331,8 @@ export const Alarm: React.FC<P> = ({ t }) => {
           ALARM
         </text>
       </g>
-      <Bar x={90} y={1090} w={380} h={46} v={power} label="POWER" color={power < 0.35 ? "#ff3b30" : "#3be28b"} />
-      <Bar x={610} y={1090} w={380} h={46} v={oxy} label="OXYGEN" color={oxy < 0.35 ? "#ff3b30" : "#3be28b"} />
+      <Bar x={90} y={1090} w={380} h={46} v={power} label={L.power} color={power < 0.35 ? "#ff3b30" : "#3be28b"} />
+      <Bar x={610} y={1090} w={380} h={46} v={oxy} label={L.oxygen} color={oxy < 0.35 ? "#ff3b30" : "#3be28b"} />
       {/* radio arcs toward Earth */}
       {t < E("e4") + 0.5 &&
         arcs.map((a, i) => (

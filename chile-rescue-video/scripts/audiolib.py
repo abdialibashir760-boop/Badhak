@@ -17,12 +17,37 @@ def srt_time(t: float) -> str:
     return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
 
 
-def build(story, model: str, voices: str, lang: str = "en-us") -> None:
+def make_synth(story, model: str, voices: str):
+    """Return text -> float32 mono samples at SR. `story.ENGINE` picks kokoro (default) or piper."""
+    engine = getattr(story, "ENGINE", "kokoro")
+    if engine == "piper":
+        from piper import PiperVoice, SynthesisConfig
+
+        voice = PiperVoice.load(model, config_path=model + ".json")
+        cfg = SynthesisConfig(length_scale=getattr(story, "LENGTH_SCALE", 1.0))
+        src_sr = voice.config.sample_rate
+
+        def synth(text):
+            x = np.concatenate([c.audio_float_array for c in voice.synthesize(text, syn_config=cfg)]).astype(np.float32)
+            n = int(round(len(x) * SR / src_sr))  # linear resample to SR
+            return np.interp(np.linspace(0, len(x) - 1, n), np.arange(len(x)), x).astype(np.float32)
+
+        return synth
     k = Kokoro(model, voices)
+
+    def synth(text):
+        s, sr = k.create(text, voice=story.VOICE, speed=story.SPEED, lang=getattr(story, "LANG", "en-us"))
+        assert sr == SR
+        return s
+
+    return synth
+
+
+def build(story, model: str, voices: str) -> None:
+    synth = make_synth(story, model, voices)
     clips = []
     for lid, say, cap, gap in story.LINES:
-        s, sr = k.create(say, voice=story.VOICE, speed=story.SPEED, lang=lang)
-        assert sr == SR
+        s = synth(say)
         idx = np.where(np.abs(s) > 0.01)[0]  # trim silence so line timing is tight
         s = s[max(0, idx[0] - int(0.03 * SR)) : idx[-1] + int(0.08 * SR)]
         clips.append((lid, s.astype(np.float32), cap, gap))
@@ -72,7 +97,8 @@ def build(story, model: str, voices: str, lang: str = "en-us") -> None:
 
     out = ROOT / "out"
     out.mkdir(exist_ok=True)
-    (ROOT / "src" / story.ID).mkdir(parents=True, exist_ok=True)
+    src_dir = ROOT / "src" / getattr(story, "SRC_DIR", story.ID)
+    src_dir.mkdir(parents=True, exist_ok=True)
     wav = out / f"{story.ID}.wav"
     sf.write(wav, mix, SR)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-ac", "1", "-b:a", "128k", str(ROOT / "public" / f"{story.ID}.mp3")], check=True)
@@ -81,7 +107,7 @@ def build(story, model: str, voices: str, lang: str = "en-us") -> None:
     ts += "export type Line = { id: string; cap: string; start: number; end: number };\n"
     ts += f"export const NARRATION_END = {narration_end};\nexport const TOTAL_SECONDS = {round(total, 3)};\n"
     ts += "export const LINES: Line[] = " + json.dumps(timeline, ensure_ascii=False, indent=2) + ";\n"
-    (ROOT / "src" / story.ID / "timeline.ts").write_text(ts)
+    (src_dir / getattr(story, "TIMELINE_FILE", "timeline.ts")).write_text(ts)
 
     srt = "".join(f"{i}\n{srt_time(tl['start'])} --> {srt_time(tl['end'])}\n{tl['cap']}\n\n" for i, tl in enumerate(timeline, 1))
     (out / f"{story.ID}.srt").write_text(srt)
