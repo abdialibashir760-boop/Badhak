@@ -1,3 +1,4 @@
 node_modules
 test.mp4
-export.log
+export*.log
+social_battery_no_captions.mp4

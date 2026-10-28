@@ -7,7 +7,9 @@
     "dev": "node server.js",
     "export": "node render.js",
     "export:test": "node render.js --frames 0-239 --out test.mp4",
-    "export:silent": "node render.js --silent"
+    "export:silent": "node render.js --silent",
+    "export:clean": "node render.js --no-captions --out social_battery_no_captions.mp4",
+    "captions": "node captions.js"
   },
   "dependencies": {
     "puppeteer": "^23.0.0"

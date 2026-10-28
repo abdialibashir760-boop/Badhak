@@ -535,6 +535,39 @@
     ctx.globalAlpha = 1;
   }
 
+
+  /* ═══════════════════════════ explanatory captions (bottom of the frame) ═════ */
+  // [from, to, text, colour]. Short, plain-English explanations of what each beat means.
+  const CAPTIONS = [
+    [0.9, 5.7, 'You arrive at the party.\nBattery: 100%.', CFG.FG],
+    [6.3, 8.1, 'Uh oh. Small talk incoming…', CFG.FG],
+    [8.5, 13.7, 'Small talk costs more energy\nthan it looks.  −40%', CFG.FG],
+    [14.4, 16.1, 'Someone you barely know…', CFG.FG],
+    [16.4, 21.6, 'A promise you will never keep\ndrains you twice.  −40%', CFG.AMBER],
+    [22.5, 23.8, 'Running on fumes.', CFG.AMBER],
+    [24.1, 25.4, 'Group photo. Last block gone.\nBattery: 0%.', CFG.RED],
+    [25.6, 27.0, 'Emergency exit.', CFG.RED],
+    [27.2, 29.7, 'Ejected. Time to go home.', CFG.FG],
+    [30.5, 32.0, 'Back home. Silence.', CFG.FG],
+    [32.3, 35.1, 'Plug in. Slowly recharging…\n5%', CFG.MINT],
+  ];
+  const opts = { captions: true };
+
+  function drawCaptions(ctx, t) {
+    if (!opts.captions) return;
+    for (const [a, b, text, color] of CAPTIONS) {
+      if (t < a - 0.01 || t > b + 0.01) continue;
+      const al = Math.min(smooth((t - a) / 0.35), 1 - smooth((t - (b - 0.35)) / 0.35)), lines = text.split('\n');
+      ctx.save(); ctx.globalAlpha = al; ctx.translate(0, (1 - al) * 14);
+      ctx.font = `700 42px ${CFG.FONT}`;
+      const w = Math.max(...lines.map((l) => ctx.measureText(l).width)) + 70, h = lines.length * 56 + 34, y = 1660;
+      rr(ctx, CFG.W / 2 - w / 2, y - h / 2, w, h, 22); ctx.fillStyle = 'rgba(10,10,10,0.9)'; ctx.fill();
+      ctx.lineWidth = 3; ctx.strokeStyle = color; ctx.globalAlpha = al * 0.55; ctx.stroke(); ctx.globalAlpha = al;
+      lines.forEach((l, i) => textC(ctx, l, CFG.W / 2, y - ((lines.length - 1) * 56) / 2 + i * 56, 42, color, 700));
+      ctx.restore();
+    }
+  }
+
   /* ═════════════════════════════════ the frame ═══════════════════════════════ */
   function cameraAt(t, f) {
     const focusX = Math.max(CFG.W * 0.352, f.X);                 // figure enters from the left, then the camera follows
@@ -570,6 +603,7 @@
       chars.forEach((c, i) => { if (i < n) ctx.fillText(c, x, 160); x += wd[i] + sp; });
       ctx.restore();
     }
+    drawCaptions(ctx, t);
     // red-alert vignette
     if (t >= T.b3Hit && t < T.launch + 1.2) {
       const p = 0.5 + 0.5 * Math.sin(t * TAU * 2.4), k = smooth((t - T.b3Hit) / 0.2) * (1 - smooth((t - (T.launch + 0.2)) / 1.0));
@@ -685,5 +719,5 @@
   STEPS.forEach((s) => EVENTS.push({ t: s.t, k: 'step', g: clamp(s.v / 330) * 0.7 + 0.15 }));
   EVENTS.sort((a, b) => a.t - b.t);
 
-  return { CFG, T, SCENES, EVENTS, drawFrame };
+  return { CFG, T, SCENES, EVENTS, CAPTIONS, opts, drawFrame };
 });

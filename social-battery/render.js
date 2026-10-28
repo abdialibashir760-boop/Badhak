@@ -6,6 +6,7 @@
  *   npm run export                     → social_battery.mp4   (1080x1920, 60 fps, 36 s, H.264 + AAC)
  *   npm run export:test                → test.mp4             (first 4 s only)
  *   node render.js --silent            no audio track
+ *   node render.js --no-captions       hide the explanatory captions
  *   node render.js --crf 14 --preset slow --out final.mp4
  *   node render.js --frames 840-1320   render only a frame range (e.g. just scene 3)
  *
@@ -43,7 +44,7 @@ async function main() {
   });
   const page = await browser.newPage();
   page.on('pageerror', (e) => { console.error('page error:', e); process.exit(1); });
-  await page.goto(pathToFileURL(path.join(__dirname, 'index.html')).href + '?render=1');
+  await page.goto(pathToFileURL(path.join(__dirname, 'index.html')).href + '?render=1' + (flag('no-captions') ? '&captions=0' : ''));
   await page.waitForFunction('window.__ready === true');
 
   // 3) ffmpeg

@@ -1,0 +1,48 @@
+1
+00:00:00,900 --> 00:00:05,700
+You arrive at the party.
+Battery: 100%.
+
+2
+00:00:06,300 --> 00:00:08,100
+Uh oh. Small talk incoming…
+
+3
+00:00:08,500 --> 00:00:13,700
+Small talk costs more energy
+than it looks.  −40%
+
+4
+00:00:14,400 --> 00:00:16,100
+Someone you barely know…
+
+5
+00:00:16,400 --> 00:00:21,600
+A promise you will never keep
+drains you twice.  −40%
+
+6
+00:00:22,500 --> 00:00:23,800
+Running on fumes.
+
+7
+00:00:24,100 --> 00:00:25,400
+Group photo. Last block gone.
+Battery: 0%.
+
+8
+00:00:25,600 --> 00:00:27,000
+Emergency exit.
+
+9
+00:00:27,200 --> 00:00:29,700
+Ejected. Time to go home.
+
+10
+00:00:30,500 --> 00:00:32,000
+Back home. Silence.
+
+11
+00:00:32,300 --> 00:00:35,100
+Plug in. Slowly recharging…
+5%

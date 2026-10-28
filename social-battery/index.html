@@ -33,6 +33,7 @@
   const { CFG, SCENES, EVENTS, drawFrame } = SocialBattery;
   const cv = document.getElementById('c'), ctx = cv.getContext('2d'), D = CFG.DURATION, FPS = CFG.FPS, TOTAL = D * FPS;
   const q = new URLSearchParams(location.search);
+  SocialBattery.opts.captions = q.get('captions') !== '0';   // ?captions=0 hides the explanatory captions
 
   /* ── headless mode used by render.js: no UI, no animation loop, just window.renderFrame(n) ── */
   if (q.has('render')) {
