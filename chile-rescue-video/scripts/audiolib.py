@@ -87,7 +87,12 @@ def build(story, model: str, voices: str) -> None:
         k_ = int(SR / cut_hz)
         return np.convolve(w, np.ones(k_) / k_, mode="same").astype(np.float32)
 
-    ctx = SimpleNamespace(n=n, SR=SR, tt=tt, at={tl["id"]: tl for tl in timeline}, total=total, env=env, lowpass_noise=lowpass_noise, rng=rng)
+    at = {tl["id"]: tl for tl in timeline}
+    alias = getattr(story, "ALIAS", {})  # id -> (target id, offset s): beats a shortened script skips
+    for k_, (target, off) in alias.items():
+        a0 = at[target]["start"] + off
+        at[k_] = {"id": k_, "cap": "", "start": a0, "end": a0 + 1.2}
+    ctx = SimpleNamespace(n=n, SR=SR, tt=tt, at=at, total=total, env=env, lowpass_noise=lowpass_noise, rng=rng)
     bed, fx = story.sound(ctx)
 
     # duck bed + fx a little where narration plays
@@ -107,6 +112,7 @@ def build(story, model: str, voices: str) -> None:
     ts += "export type Line = { id: string; cap: string; start: number; end: number };\n"
     ts += f"export const NARRATION_END = {narration_end};\nexport const TOTAL_SECONDS = {round(total, 3)};\n"
     ts += "export const LINES: Line[] = " + json.dumps(timeline, ensure_ascii=False, indent=2) + ";\n"
+    ts += "export const ALIAS: Record<string, [string, number]> = " + json.dumps({k: list(v) for k, v in alias.items()}) + ";\n"
     (src_dir / getattr(story, "TIMELINE_FILE", "timeline.ts")).write_text(ts)
 
     srt = "".join(f"{i}\n{srt_time(tl['start'])} --> {srt_time(tl['end'])}\n{tl['cap']}\n\n" for i, tl in enumerate(timeline, 1))

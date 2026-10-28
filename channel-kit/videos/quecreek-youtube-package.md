@@ -165,3 +165,91 @@ quecreek maden kurtarma, quecreek, mahsur kalan madenciler, maden kazası, maden
 | All nine out by July 28, about 77 hours after the flood | S (one source says 78) |
 | Thai cave: "13 trapped · 18 days" (end card) | K (reported as 17–18 days) |
 | Turkish: litres/metres/centimetres | conversions of the figures above, not sourced |
+
+---
+
+# SHORT CUT (about 55 seconds) — English + Turkish
+
+Condensed version of the story for Shorts / Reels / TikTok. Same facts and scenes; the script is cut to the hook,
+the flood, the nine taps, the bit breaking, the bigger drill and the cage.
+
+| | English | Turkish |
+|---|---|---|
+| Video (9:16, ≈ 0:56) | `chile-rescue-video/out/quecreek-short-final.mp4` | `chile-rescue-video/out/quecreek-short-tr-final.mp4` |
+| Cover (1080×1920) | `thumbnails/quecreek-short-cover-en.png` | `thumbnails/quecreek-short-cover-tr.png` |
+| Subtitles (SRT) | `captions/quecreek-short.srt` | `captions/quecreek-short-tr.srt` |
+
+**Cover use:** YouTube Shorts lets you pick a frame; a custom image is only available in some upload flows (it differs between
+the app and desktop Studio), so use the cover where it is offered and otherwise pick the 0:00 frame (the hook). Use the cover
+as the TikTok / Reels cover. Keep it clear of the bottom ~380 px (app buttons); the cover already does.
+The 1280×720 thumbnails (`quecreek-en.png`, `quecreek-tr.png`) are for the 16:9 uploads only.
+
+## ENGLISH — short
+
+**Title (pick one)**
+1. **9 Miners, 240 Feet Down, and Nine Taps** ← recommended
+2. How 9 Trapped Miners Were Found Alive (Quecreek 2002)
+3. The Pipe, the Air and Nine Taps: Quecreek Mine Rescue
+
+**Description**
+```
+Nine miners trapped 240 feet underground in a flooded mine. Then rescuers heard nine taps. 🔔
+The 2002 Quecreek mine rescue in under a minute.
+
+▶ Full version (2 min): PASTE THE LINK TO THE 16:9 VIDEO
+▶ Next story: the Thai cave rescue. Follow so you don't miss it.
+
+Sources: Wikipedia, Quecreek Mine rescue https://en.wikipedia.org/wiki/Quecreek_Mine_rescue · CBS Pittsburgh timeline https://www.cbsnews.com/amp/pittsburgh/news/20-years-later-timeline-quecreek-mine-rescue/ · CNN fast facts https://ktvz.com/news/national-world/2021/02/21/quecreek-mine-rescue-fast-facts/
+
+Narration is an AI voice. Animation is original.
+#QuecreekMineRescue #TrueStory #Shorts
+```
+
+**Tags**
+```
+quecreek mine rescue, quecreek, nine miners trapped, trapped miners, mine rescue, mine disaster, pennsylvania, 2002, true story, rescue stories, survival stories, mining history, nine taps, shorts
+```
+
+**Post caption for TikTok / Reels (pick one)**
+> 1. Nine miners. 240 feet down. A flooded mine. Then rescuers heard NINE TAPS. 🔔 #quecreek #truestory #minerescue
+> 2. How do you find nine men under 240 feet of rock? A pipe, some air, and nine taps. ⛏️ #truestory #history #rescue
+> 3. Would you survive 77 hours underground? 👇 #quecreek #survival #truestory
+
+**Pinned comment**
+> Which story next: the Thai cave rescue, the Andes flight, or Chile's 33 miners? Reply 1 / 2 / 3.
+
+## TÜRKÇE — short
+
+**Başlık (birini seç)**
+1. **9 Madenci, 73 Metre Aşağıda ve Dokuz Vuruş** ← önerilen
+2. Mahsur Kalan 9 Madenci Nasıl Bulundu? (Quecreek 2002)
+3. Bir Boru, Hava ve Dokuz Vuruş: Quecreek Maden Kurtarma
+
+**Açıklama**
+```
+Su basmış bir madende 73 metre yerin altında mahsur kalan dokuz madenci. Sonra kurtarma ekipleri dokuz vuruş duydu. 🔔
+2002 Quecreek maden kurtarma operasyonu, bir dakikadan kısa sürede.
+
+▶ Uzun versiyon (2 dk): 16:9 VİDEONUN LİNKİNİ YAPIŞTIR
+▶ Sıradaki hikâye: Tayland mağara kurtarması. Kaçırmamak için takip et.
+
+Kaynaklar: Wikipedia, Quecreek Mine rescue https://en.wikipedia.org/wiki/Quecreek_Mine_rescue · CBS Pittsburgh zaman çizelgesi https://www.cbsnews.com/amp/pittsburgh/news/20-years-later-timeline-quecreek-mine-rescue/ · CNN özet bilgiler https://ktvz.com/news/national-world/2021/02/21/quecreek-mine-rescue-fast-facts/
+
+Anlatım yapay zekâ sesidir. Animasyon özgündür.
+#Quecreek #GerçekHikaye #Shorts
+```
+
+**Etiketler**
+```
+quecreek maden kurtarma, quecreek, mahsur kalan madenciler, maden kazası, maden kurtarma, pensilvanya, 2002, gerçek hikaye, kurtarma hikayeleri, hayatta kalma hikayeleri, dokuz vuruş, shorts
+```
+
+**TikTok / Reels paylaşım metni (birini seç)**
+> 1. Dokuz madenci. 73 metre aşağıda. Su basmış bir maden. Sonra aşağıdan DOKUZ VURUŞ geldi. 🔔 #quecreek #gerçekhikaye #madenkurtarma
+> 2. 73 metre kayanın altındaki dokuz kişiyi nasıl bulursun? Bir boru, biraz hava ve dokuz vuruş. ⛏️ #gerçekhikaye #tarih #kurtarma
+> 3. 77 saat yerin altında hayatta kalabilir miydin? 👇 #quecreek #hayattakalma #gerçekhikaye
+
+**Sabitlenecek yorum**
+> Sırada hangi hikâye olsun: Tayland mağarası, Andes uçak kazası ya da Şili'deki 33 madenci? 1 / 2 / 3 yaz.
+
+*Claims in the short cut are a subset of the full video's claim-check table above; "77 hours" and "73 m / 240 ft" are rounded figures.*

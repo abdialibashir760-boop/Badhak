@@ -6,22 +6,33 @@ import { FPS, clamp } from "./math";
 export type Lang = "en" | "tr";
 export type Line = { id: string; cap: string; start: number; end: number };
 
-/** Start/end lookups for one language's narration timeline. */
-export const makeTL = (lines: Line[]) => ({
-  lines,
-  S: (id: string): number => {
+/**
+ * Start/end lookups for one language's narration timeline. `alias` maps ids the script does not contain
+ * (a shortened cut) to [target id, offset seconds], so scenes keyed to the full story still find their cues.
+ */
+export const makeTL = (lines: Line[], alias: Record<string, [string, number]> = {}) => {
+  const startOf = (id: string): number => {
     const l = lines.find((x) => x.id === id);
-    if (!l) throw new Error(`unknown line ${id}`);
-    return l.start;
-  },
-  E: (id: string): number => lines.find((x) => x.id === id)!.end,
-});
+    if (l) return l.start;
+    const a = alias[id];
+    if (!a) throw new Error(`unknown line ${id}`);
+    return startOf(a[0]) + a[1];
+  };
+  return {
+    lines,
+    S: startOf,
+    E: (id: string): number => {
+      const l = lines.find((x) => x.id === id);
+      return l ? l.end : startOf(id) + 1.2;
+    },
+  };
+};
 export type TL = ReturnType<typeof makeTL>;
 export const TLContext = createContext<TL>(makeTL([]));
 export const useTL = () => useContext(TLContext);
 
 export type SceneDef = { from: string; C: React.FC<{ t: number }> };
-export type StoryData = { LINES: Line[]; NARRATION_END: number; TOTAL_SECONDS: number };
+export type StoryData = { LINES: Line[]; NARRATION_END: number; TOTAL_SECONDS: number; ALIAS?: Record<string, [string, number]> };
 
 type Props<S extends { tag: string }> = {
   lang: Lang;
@@ -48,7 +59,7 @@ export function StoryVideo<S extends { tag: string }>({ lang, wide, scenes, data
   const frame = useCurrentFrame();
   const t = frame / FPS;
   const d = data[lang];
-  const tl = useMemo(() => makeTL(d.LINES), [d]);
+  const tl = useMemo(() => makeTL(d.LINES, d.ALIAS), [d]);
   const L = strings[lang];
   const starts = useMemo(() => scenes.map((s, i) => (i === 0 ? 0 : tl.S(s.from) - 0.25)), [tl, scenes]);
   const f0 = flashAt ? flashAt(tl) : Infinity;

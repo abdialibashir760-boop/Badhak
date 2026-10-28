@@ -36,6 +36,12 @@ Keep line ids stable when rewording: scenes and chips reference them.
   (`fettah` and `dfki` are available the same way). Output: `public/apollo13-tr.mp3`, `src/apollo13/timeline.tr.ts`.
 - Render: `npx remotion render src/index.ts Apollo13WideTR out/apollo13-tr-16x9.mp4` (etc.).
 
+## Short cuts
+A condensed script can reuse a story's scenes: list the kept lines in `scripts/stories/<story>_short.py` and map every
+skipped id to a kept one with `ALIAS = {"skipped_id": ("kept_id", offset_seconds)}`. `audiolib` writes the alias into the
+timeline and `makeTL` resolves it, so scenes keyed to the full story keep working. Example: `quecreek_short` (≈ 55 s),
+compositions `QuecreekShort` / `QuecreekShortTR`.
+
 ## Notes
 - San José is a camera-driven world scene (`World.tsx`, `camera.ts`, `state.ts`); Apollo 13 is a sequence of
   crossfaded scenes (`scenesA.tsx`, `scenesB.tsx`).

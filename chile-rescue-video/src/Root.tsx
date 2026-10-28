@@ -5,7 +5,8 @@ import { TOTAL_SECONDS as SAN_JOSE_SECONDS } from "./san-jose/timeline";
 import { Apollo13, Apollo13Props, apollo13Seconds } from "./apollo13/Main";
 import { Thumbnail } from "./apollo13/Thumbnail";
 import { QuecreekThumbnail } from "./quecreek/Thumbnail";
-import { Quecreek, QuecreekProps, quecreekSeconds } from "./quecreek/Main";
+import { QuecreekCover } from "./quecreek/Cover";
+import { Quecreek, QuecreekProps, QuecreekShort, quecreekSeconds, quecreekShortSeconds } from "./quecreek/Main";
 import { FPS, H, W } from "./common/math";
 
 const apollo = (id: string, lang: Apollo13Props["lang"], wide: boolean) => (
@@ -43,6 +44,10 @@ export const RemotionRoot: React.FC = () => (
     {quecreek("QuecreekTR", "tr", false)}
     {quecreek("QuecreekWide", "en", true)}
     {quecreek("QuecreekWideTR", "tr", true)}
+    <Composition id="QuecreekShort" component={QuecreekShort} durationInFrames={Math.ceil(quecreekShortSeconds("en") * FPS)} fps={FPS} width={1080} height={1920} defaultProps={{ lang: "en" as const }} />
+    <Composition id="QuecreekShortTR" component={QuecreekShort} durationInFrames={Math.ceil(quecreekShortSeconds("tr") * FPS)} fps={FPS} width={1080} height={1920} defaultProps={{ lang: "tr" as const }} />
+    <Composition id="CoverQEN" component={QuecreekCover} durationInFrames={1} fps={FPS} width={1080} height={1920} defaultProps={{ lang: "en" as const }} />
+    <Composition id="CoverQTR" component={QuecreekCover} durationInFrames={1} fps={FPS} width={1080} height={1920} defaultProps={{ lang: "tr" as const }} />
     <Composition id="ThumbQEN" component={QuecreekThumbnail} durationInFrames={1} fps={FPS} width={1280} height={720} defaultProps={{ lang: "en" as const }} />
     <Composition id="ThumbQTR" component={QuecreekThumbnail} durationInFrames={1} fps={FPS} width={1280} height={720} defaultProps={{ lang: "tr" as const }} />
     <Composition id="ThumbEN" component={Thumbnail} durationInFrames={1} fps={FPS} width={1280} height={720} defaultProps={{ lang: "en" as const }} />

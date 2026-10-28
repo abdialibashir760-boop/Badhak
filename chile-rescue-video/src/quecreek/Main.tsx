@@ -5,6 +5,8 @@ import { LangContext, STRINGS, Strings } from "./i18n";
 import { Drill, Flood, Hook, Recap, Rescue, Setback, Setting, Super, Taps } from "./scenes";
 import * as EN from "./timeline";
 import * as TR from "./timeline.tr";
+import * as ENS from "./timeline.short";
+import * as TRS from "./timeline.short.tr";
 
 const SCENES = [
   { from: "h1", C: Hook },
@@ -49,4 +51,12 @@ const endCard = (L: Strings, wide: boolean) => (
 
 export const Quecreek: React.FC<QuecreekProps> = ({ lang, wide }) => (
   <StoryVideo lang={lang} wide={wide} scenes={SCENES} data={DATA} audio={AUDIO} strings={STRINGS} StringsContext={LangContext} chips={chips} endCard={endCard} flashAt={({ S }) => S("f1") - 0.1} />
+);
+
+/** Short cut (~55 s, 9:16 only): same scenes, condensed script. See scripts/stories/quecreek_short.py. */
+const SHORT_DATA = { en: ENS, tr: TRS };
+const SHORT_AUDIO = { en: "quecreek-short.mp3", tr: "quecreek-short-tr.mp3" };
+export const quecreekShortSeconds = (lang: Lang) => SHORT_DATA[lang].TOTAL_SECONDS;
+export const QuecreekShort: React.FC<{ lang: Lang }> = ({ lang }) => (
+  <StoryVideo lang={lang} wide={false} scenes={SCENES} data={SHORT_DATA} audio={SHORT_AUDIO} strings={STRINGS} StringsContext={LangContext} chips={chips} endCard={endCard} flashAt={({ S }) => S("f1") - 0.1} />
 );
