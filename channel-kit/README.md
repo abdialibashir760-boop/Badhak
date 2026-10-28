@@ -9,6 +9,8 @@ uploading, setting monetization). Those are in the checklist at the end of `chan
 | `videos/apollo13.md` | Upload package for the Apollo 13 Short: titles, description, tags, pinned comment, sources |
 | `videos/apollo13-youtube-package.md` | **Final** title / description / tags / chapters / pinned comment for the 16:9 English + Turkish uploads |
 | `thumbnails/apollo13-en.png`, `apollo13-tr.png` | 1280×720 thumbnails |
+| `videos/quecreek-youtube-package.md` | Quecreek mine rescue: titles, descriptions, tags, chapters, Short captions, claim check (EN + TR) |
+| `videos/quecreek-facts.md` | Quecreek fact sheet with sources and unresolved conflicts |
 | `videos/apollo13-tr.md` | Turkish upload package for Apollo 13 (title, description, tags, notes on voice and wording) |
 | `videos/san-jose-part1.md` | Upload package for Chile Part 1 + claims that still need a source check |
 | `videos/chile-part2-facts.md` | Verified fact sheet + outline for Chile Part 2 (promised by Part 1's end card) |

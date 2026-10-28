@@ -1,6 +1,7 @@
 import React, { createContext, useContext } from "react";
 
-export type Lang = "en" | "tr";
+import type { Lang } from "../common/story";
+export type { Lang };
 
 export type Strings = {
   tag: string;
