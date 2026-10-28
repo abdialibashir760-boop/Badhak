@@ -1,7 +1,7 @@
 # THE RAILWAY THAT KEPT TURKEY OUT OF WW2
 ### Working title: "The Forgotten Railway That Almost Changed WW2"
 
-**Runtime target:** ~13:30 · **VO length:** ~2,000 words at ~150 wpm · **Format:** 16:9, 2.5D collage + map animation
+**Runtime:** ~12:35 of pure VO at 150 wpm; ~13:30 with silent beats and stingers · **VO length:** ~1,890 words · **Format:** 16:9, 2.5D collage + map animation
 
 **The myth:** Turkey stayed neutral because it was weak, scared, or lucky.
 **The reality:** Turkey stayed neutral because both sides needed what it controlled (a grey ore and the railway lines that carried it) and each feared what would happen if the other got it.
@@ -15,7 +15,7 @@
 
 # SECTION 1 — THE FRONTIER & THE ILLUSION
 
-### SCENE 1 · THE HOOK · 0:00–0:45
+### SCENE 1 · THE HOOK · 0:00–0:50
 
 **VO:**
 > January 30th, 1943. A railway siding at Yenice, a nowhere station on the plain between Adana and Mersin. Two trains stand side by side. In one carriage, Winston Churchill (fresh from Casablanca) is about to ask a neutral country to walk into the world's biggest war.
@@ -37,7 +37,7 @@
 
 ---
 
-### SCENE 2 · THE ILLUSION: A MAP THAT LOOKS LIKE AN INVITATION · 0:45–2:00
+### SCENE 2 · THE ILLUSION: A MAP THAT LOOKS LIKE AN INVITATION · 0:50–1:38
 
 **VO:**
 > Look at the map the way a German planner would in the spring of 1941.
@@ -59,7 +59,7 @@
 
 ---
 
-### SCENE 3 · THE FORGOTTEN RAILWAY · 2:00–3:15
+### SCENE 3 · THE FORGOTTEN RAILWAY · 1:38–2:23
 
 **VO:**
 > The answer begins with a railway.
@@ -83,7 +83,7 @@
 
 # SECTION 2 — THE HIDDEN RESOURCE
 
-### SCENE 4 · THE GREY ROCK · 3:15–4:30
+### SCENE 4 · THE GREY ROCK · 2:23–3:08
 
 **VO:**
 > It is called chromite. It looks like nothing: a heavy, dull, grey-black stone.
@@ -103,7 +103,7 @@
 
 ---
 
-### SCENE 5 · THE CLAUSE · 4:30–5:45
+### SCENE 5 · THE CLAUSE · 3:08–4:02
 
 **VO:**
 > October 1941. In Ankara, a German negotiator named Karl Clodius signs a trade agreement. Turkey will deliver chromite: 45,000 tons in each of the first two years. Then 90,000 tons in 1943. And another 90,000 in 1944. In return, Germany will supply weapons Turkey desperately needs. **[V]**
@@ -125,7 +125,29 @@
 
 ---
 
-### SCENE 6 · THE DOMINO CHAIN · 5:45–6:45
+### SCENE 5B · THE TRAIN OF ROCK · 4:02–5:00
+
+**VO:**
+> Now follow the ore itself.
+>
+> It starts in the mountains of southern and eastern Anatolia, in mines most people have never heard of. Hauled out by truck, by cart, sometimes by animal, down to railheads where it is shovelled into open wagons.
+>
+> And then it needs a railway. The ore has to travel west, to Istanbul and across Thrace, through Bulgaria, and on into the Reich along the same old Orient line that once carried passengers to Paris. **[C]**
+>
+> Every link is a choke point. Turkey does not have enough wagons or locomotives. **[C]** Germany needs those trains to move chrome west. Britain can make Turkey a rival offer. And that is why, at Yenice, Churchill talks about locomotives. In 1943, a freight wagon is a bargaining chip.
+>
+> Whoever controls the rolling stock controls the pace of the war economy. The railway isn't scenery. It is the lever.
+
+| | |
+|---|---|
+| **[MAP]** | Anatolian relief map. Mine sites pulse red; thin truck-route lines feed into railheads; a bold rail line threads west through Istanbul, Edirne, Sofia, Belgrade, Vienna, Berlin. Wagon icons slow to a crawl at each choke point (Istanbul, the Bulgarian border), then back to speed. |
+| **[ARCHIVAL]** | Open ore wagons, steam locomotives in the Balkans, border-station photos; ox-cart and truck mine-haul photos cut out and layered over the map. |
+| **[TEXT]** | `MINE → RAILHEAD → ORIENT LINE → RUHR`, each stage lighting in turn; final line: `THE RAILWAY IS THE LEVER`. |
+| **[SOUND]** | Wagon couplings clank, wheels on rail joints beneath the score; a single brass note rises at "the lever." |
+
+---
+
+### SCENE 6 · THE DOMINO CHAIN · 5:00–5:49
 
 **VO:**
 > Now follow the dominoes.
@@ -149,7 +171,7 @@
 
 # SECTION 3 — THE DOUBLE GAME
 
-### SCENE 7 · A COUNTRY THAT SIGNED WITH BOTH SIDES · 6:45–8:00
+### SCENE 7 · A COUNTRY THAT SIGNED WITH BOTH SIDES · 5:49–6:37
 
 **VO:**
 > Turkey's survival strategy is almost comic in its audacity. It holds a treaty of alliance with Britain and France, signed in 1939. And on June 18th, 1941, it signs a friendship pact with Nazi Germany. Four days later, Hitler invades the Soviet Union. **[V]**
@@ -171,7 +193,7 @@
 
 ---
 
-### SCENE 8 · THE CARRIAGE · 8:00–9:00
+### SCENE 8 · THE CARRIAGE · 6:37–7:27
 
 **VO:**
 > Back to the siding at Yenice.
@@ -193,7 +215,7 @@
 
 ---
 
-### SCENE 9 · THE SPY WHO WAS PAID IN FAKE MONEY · 9:00–10:00
+### SCENE 9 · THE SPY WHO WAS PAID IN FAKE MONEY · 7:27–8:12
 
 **VO:**
 > Meanwhile, in the British embassy in Ankara, something extraordinary is happening.
@@ -215,9 +237,31 @@
 
 ---
 
+### SCENE 9B · WHAT CICERO ACTUALLY BOUGHT · 8:12–9:10
+
+**VO:**
+> Here is the part that never quite works in the movies.
+>
+> Cicero's first deliveries reach the Germans in the autumn of 1943. The papers are astonishing: records of Allied conferences, discussions of strategy, even a code name that sounds like an invasion of France. **[C]**
+>
+> And Berlin shrugs. Some officials believe the material. Others suspect a trap. Some of the best intelligence of the war is read, argued over, and filed. **[C]**
+>
+> Then, in the spring of 1944, a German embassy secretary, Cecilie Kapp, slips away and defects to the Allies. **[C]** The affair collapses. The spy vanishes into private life.
+>
+> Think about what that tells you. In neutral Ankara, every great power has a window into every other. Nobody can hide. Nobody can fully trust what they see. And that, strangely, is exactly the kind of fog Turkey needs to keep the delay game alive.
+
+| | |
+|---|---|
+| **[MAP]** | Ankara close-up. Two embassies, two glowing circles; thin lines of surveillance criss-cross between them and a third circle for the Soviet embassy. Rings of fog fade in around the city. |
+| **[ARCHIVAL]** | Photos of Moyzisch and the Ankara embassies; stills of the documents (recreated typewritten pages with `TOP SECRET` stamps); a slow vignette on a cold-war-style filing cabinet. |
+| **[TEXT]** | `AUTUMN 1943: FIRST DELIVERIES` → `SPRING 1944: THE AFFAIR COLLAPSES`. Footnote: `Details from memoirs of those involved; accounts differ.` |
+| **[SOUND]** | Camera shutter, then paper being filed; muted piano motif; low drone. |
+
+---
+
 # SECTION 4 — THE SHADOW OF THE GREATER ENEMY
 
-### SCENE 10 · THE THIRD PARTY · 10:00–11:15
+### SCENE 10 · THE THIRD PARTY · 9:10–9:52
 
 **VO:**
 > Here's the twist. The thing İnönü fears most isn't Germany.
@@ -239,12 +283,38 @@
 
 ---
 
-### SCENE 11 · THE LEVERAGE FLIPS · 11:15–12:00
+### SCENE 10B · THE ULTIMATUM · 9:52–10:48
+
+**VO:**
+> By the spring of 1944 the Allies stop asking nicely.
+>
+> The message is blunt: end chrome shipments to Germany, or forget about Allied weapons, and forget about a seat at the table when the peace is written. **[V]**
+>
+> Menemencioğlu does what he always does. He stalls. He offers to slow deliveries. To shave the quotas. To delay.
+>
+> The Allies say no.
+>
+> And in late April, Turkey blinks. The chrome stops. **[V]** Soon afterwards, the architect of the whole delay strategy, the man who had made *not yet* an art form, is pushed out of office. **[C]**
+>
+> By then, Germany has been driven back across the Soviet Union, and the invasion of France is weeks away. The ore that once made Turkey priceless is just rock.
+>
+> That is the quiet lesson of the whole story. Leverage lasts only as long as the war is balanced.
+
+| | |
+|---|---|
+| **[MAP]** | Two arrows converge on Turkey: one from London/Washington (labelled `ULTIMATUM`), one from Berlin. The Berlin arrow thins and snaps in April. The Turkish chrome line to Germany turns from red to grey. |
+| **[ARCHIVAL]** | Diplomatic-note facsimiles; Menemencioğlu portrait slowly desaturating; shipping-yard stills with idle wagons. |
+| **[TEXT]** | `APRIL 1944: CHROME EXPORTS TO GERMANY STOP`. Final line, white on black: `LEVERAGE LASTS ONLY AS LONG AS THE WAR IS BALANCED.` |
+| **[SOUND]** | Cello tension line tightens, then stops dead on "The Allies say no." Single heavy thud on "the chrome stops." Silence, then low drone. |
+
+---
+
+### SCENE 11 · THE LEVERAGE FLIPS · 10:48–11:15
 
 **VO:**
 > Then the war turns. Stalingrad. Kursk. The Allies stop asking and start squeezing.
 >
-> April 1944: under Allied pressure, Turkey stops all chrome shipments to Germany. August 1944: it cuts diplomatic relations. **[V]**
+> August 1944: Turkey cuts diplomatic relations with Germany. **[V]**
 >
 > And on February 23rd, 1945, with victory certain and a seat at the new United Nations at stake, Turkey finally declares war on Germany, a war already won. **[V]**
 >
@@ -252,16 +322,16 @@
 
 | | |
 |---|---|
-| **[MAP]** | Allied advances roll across Europe; Turkey's chrome arrow to Germany snaps (red flash) in April 1944; relation lines to Berlin cut in August; flag appears on 23 Feb 1945. |
+| **[MAP]** | Allied advances roll across Europe; relation lines to Berlin cut in August 1944; Turkish flag appears on 23 Feb 1945. |
 | **[ARCHIVAL]** | Headlines announcing embargo/declaration (typeset recreations); San Francisco Conference stills. |
-| **[TEXT]** | `APR 1944: CHROME EXPORTS HALTED` → `AUG 1944: RELATIONS CUT` → `23 FEB 1945: WAR DECLARED`. |
+| **[TEXT]** | `AUG 1944: RELATIONS CUT` → `23 FEB 1945: WAR DECLARED`. |
 | **[SOUND]** | Percussion lock-step with each date; final **stamp thud** on the last date. |
 
 ---
 
 # SECTION 5 — THE COST OF NEUTRALITY
 
-### SCENE 12 · THE BILL · 12:00–13:00
+### SCENE 12 · THE BILL · 11:15–11:59
 
 **VO:**
 > Neutrality kept Turkey's cities standing. It did not make it innocent.
@@ -279,7 +349,7 @@
 
 ---
 
-### SCENE 13 · THE FINAL QUESTION · 13:00–13:30
+### SCENE 13 · THE FINAL QUESTION · 11:59–12:35
 
 **VO:**
 > So what was Turkey's neutrality? A masterclass in survival? Or the most successful hedge in modern history, one that kept a nation alive while the world burned?
