@@ -91,7 +91,7 @@ const studioApi = (): Plugin => {
             // Accepts {composition, props} or a bare props object (legacy: the first film).
             const composition: string = body?.props ? body.composition : 'ZihniOyunu';
             const props = body?.props ?? body;
-            if (!['ZihniOyunu', 'StoneAge', 'StoneAgeTR'].includes(composition)) return json(res, 400, {error: `Unknown composition "${composition}".`});
+            if (!['ZihniOyunu', 'StoneAge', 'StoneAgeTR', 'FiveMinuteRule'].includes(composition)) return json(res, 400, {error: `Unknown composition "${composition}".`});
             if (!Array.isArray(props?.scenes) || props.scenes.length < 1) return json(res, 400, {error: 'Invalid project props (expected a list of scenes).'});
             if (typeof props.narrationSrc === 'string' && props.narrationSrc.startsWith('blob:')) return json(res, 400, {error: 'Narration is only loaded in the browser (blob URL). Re-import it so it can be uploaded.'});
             mkdirSync(outDir, {recursive: true});

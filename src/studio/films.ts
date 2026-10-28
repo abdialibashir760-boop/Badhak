@@ -3,6 +3,8 @@ import {DEFAULT_PROPS} from '../config/defaults';
 import type {VideoProps} from '../config/types';
 import {STONE_PROPS, STONE_PROPS_TR} from '../stone/config';
 import {StoneVideo, StoneVideoTR} from '../stone/StoneVideo';
+import {FiveVideo} from '../five/FiveVideo';
+import {FIVE_PROPS} from '../five/config';
 import {Video} from '../video/Video';
 
 export type FilmEntry = {
@@ -48,6 +50,16 @@ export const FILMS: FilmEntry[] = [
     renderScript: 'npm run render:stone-tr',
     renderPropsScript: 'npm run render:stone-tr:props',
     propsFile: 'out/stone-tr-props.json',
+  },
+  {
+    id: 'five',
+    composition: 'FiveMinuteRule',
+    title: 'THE 5-MINUTE RULE (silent short)',
+    component: FiveVideo,
+    defaults: FIVE_PROPS,
+    renderScript: 'npm run render:five',
+    renderPropsScript: 'npm run render:five',
+    propsFile: 'out/five-props.json',
   },
 ];
 

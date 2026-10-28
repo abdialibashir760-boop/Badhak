@@ -76,9 +76,9 @@ const SceneShell: React.FC<{index: number; props: VideoProps; def: FilmDef}> = (
   const enterSpec = index > 0 ? def.boundaries[index - 1] : {kind: 'pulse' as const, frames: 24};
   const eFrames = exitSpec?.frames ?? 36;
   const exitAmt = exitSpec
-    ? seg(frame, dur - eFrames, dur - 1, easeIn)
+    ? exitSpec.kind === 'cut' ? 0 : seg(frame, dur - eFrames, dur - 1, easeIn)
     : seg(frame, dur - 40, dur - 2, easeIn); // final fade to black
-  const enterAmt = 1 - seg(frame, 0, enterSpec.frames ?? 16, easeOut);
+  const enterAmt = enterSpec.kind === 'cut' ? 0 : 1 - seg(frame, 0, enterSpec.frames ?? 16, easeOut);
 
   return (
     <div style={{position: 'absolute', inset: 0, background: '#000', overflow: 'hidden'}}>

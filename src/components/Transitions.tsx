@@ -2,7 +2,7 @@ import React from 'react';
 import {HEIGHT, WIDTH} from '../config/types';
 import {rng} from '../lib/anim';
 
-export type TransitionKind = 'iris' | 'blink' | 'glitch' | 'wipe' | 'pulse';
+export type TransitionKind = 'iris' | 'blink' | 'glitch' | 'wipe' | 'pulse' | 'cut';
 export type TransitionSpec = {kind: TransitionKind; x?: number; y?: number; frames?: number};
 
 /**
@@ -14,7 +14,7 @@ export type TransitionSpec = {kind: TransitionKind; x?: number; y?: number; fram
  *  - pulse: a heartbeat dip
  */
 export const Transition: React.FC<{spec: TransitionSpec; amount: number; frame: number}> = ({spec, amount, frame}) => {
-  if (amount <= 0.001) return null;
+  if (amount <= 0.001 || spec.kind === 'cut') return null;
   const W = WIDTH;
   const H = HEIGHT;
   const black = '#000';
