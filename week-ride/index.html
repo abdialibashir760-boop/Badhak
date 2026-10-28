@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What a week feels like — preview</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; color: #888; font: 13px/1.4 ui-monospace, Menlo, Consolas, monospace; }
+  body { display: flex; align-items: center; justify-content: center; gap: 24px; }
+  canvas { height: 94vh; aspect-ratio: 9 / 16; background: #0a0a0a; box-shadow: 0 0 0 1px #222; }
+  #hud { position: fixed; left: 14px; bottom: 12px; white-space: pre; }
+  #hud b { color: #fff; font-weight: 600; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<div id="hud"></div>
+<script src="src/scene.js"></script>
+<script>
+  // Keys:  space = pause/play · ← / → = step one frame (shift = 1 s) · R = restart · 0-9 = jump to 0…90 % · 1/2/4 hold = slow-mo
+  //        URL options:  ?t=8.5 (freeze at 8.5 s)   ?speed=0.25 (slow motion)
+  const cv = document.getElementById('c'), ctx = cv.getContext('2d'), hud = document.getElementById('hud');
+  const { CFG, drawFrame } = WeekRide, D = CFG.DURATION;
+  const q = new URLSearchParams(location.search);
+  let speed = parseFloat(q.get('speed') || '1'), paused = q.has('t'), t = parseFloat(q.get('t') || '0'), last = null;
+  const show = () => {
+    drawFrame(ctx, t);
+    hud.innerHTML = `<b>t = ${t.toFixed(2)} s</b>  frame ${Math.round(t * CFG.FPS)}/${D * CFG.FPS}   speed ${speed}x ${paused ? '(paused)' : ''}\n` +
+                    `space pause · ←/→ frame · shift+←/→ 1 s · 0-9 jump · [ ] speed`;
+  };
+  function tick(now) {
+    if (last !== null && !paused) t = (t + ((now - last) / 1000) * speed) % D;
+    last = now; show(); requestAnimationFrame(tick);
+  }
+  addEventListener('keydown', (e) => {
+    const f = 1 / CFG.FPS;
+    if (e.code === 'Space') { paused = !paused; e.preventDefault(); }
+    else if (e.key === 'ArrowRight') { paused = true; t = (t + (e.shiftKey ? 1 : f)) % D; }
+    else if (e.key === 'ArrowLeft') { paused = true; t = (t - (e.shiftKey ? 1 : f) + D) % D; }
+    else if (e.key.toLowerCase() === 'r') t = 0;
+    else if (/^[0-9]$/.test(e.key)) t = (parseInt(e.key, 10) / 10) * D;
+    else if (e.key === '[') speed = Math.max(0.05, speed / 2);
+    else if (e.key === ']') speed = Math.min(4, speed * 2);
+  });
+  requestAnimationFrame(tick);
+</script>
+</body>
+</html>
