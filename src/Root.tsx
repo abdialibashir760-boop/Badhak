@@ -8,6 +8,8 @@ import {StoneVideo, StoneVideoTR} from './stone/StoneVideo';
 import {STONE_PROPS, STONE_PROPS_TR} from './stone/config';
 import {FiveVideo} from './five/FiveVideo';
 import {FIVE_PROPS} from './five/config';
+import {TimeVideo} from './time/TimeVideo';
+import {TIME_PROPS} from './time/config';
 import {Thumbnail} from './stone/Thumbnail';
 
 export const RemotionRoot: React.FC = () => (
@@ -50,6 +52,16 @@ export const RemotionRoot: React.FC = () => (
     fps={FPS}
     durationInFrames={totalFrames(FIVE_PROPS.scenes)}
     defaultProps={FIVE_PROPS as unknown as Record<string, unknown>}
+    calculateMetadata={({props}) => ({durationInFrames: totalFrames((props as unknown as VideoProps).scenes)})}
+  />
+  <Composition
+    id="TimeFlies"
+    component={TimeVideo as React.FC<Record<string, unknown>>}
+    width={WIDTH}
+    height={HEIGHT}
+    fps={FPS}
+    durationInFrames={totalFrames(TIME_PROPS.scenes)}
+    defaultProps={TIME_PROPS as unknown as Record<string, unknown>}
     calculateMetadata={({props}) => ({durationInFrames: totalFrames((props as unknown as VideoProps).scenes)})}
   />
   <Composition
