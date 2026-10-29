@@ -65,7 +65,7 @@ Scores are vidIQ's click-through score (0–100). Only three were scored, to sav
 
 ## 3. Thumbnails
 
-All three are built from the video's own map engine and artwork. No real people's likenesses are used (the carriage figures are silhouettes).
+All three are built from the video's own map engine and artwork. They still use illustrations. After the real-photo update, you could swap in a licensed photo (see `image_credits.md`) for a stronger face-led thumbnail.
 
 | File | Concept | Text | Use with |
 |---|---|---|---|
@@ -79,7 +79,7 @@ All three are built from the video's own map engine and artwork. No real people'
 - A light-to-dark layout puts the text on one side and the image on the other.
 - Each thumbnail should look good at the size YouTube shows in search results (about 160 px wide). Check this yourself by shrinking each one before you upload.
 
-**Honest limits:** these are illustrations, not photos. Real documentary thumbnails often use a face or archival photo, which tends to raise clicks. I have no archival photos available here. If you add a licensed photo of Churchill or İnönü on one side, check the licence first.
+**Honest limits:** these are illustrations, not photos. Real documentary thumbnails often use a face or archival photo, which tends to raise clicks. The public-domain photo of Churchill at Adana (in `image_credits.md`) would work well on thumbnail A or C; check the licence on its Commons page first.
 
 ---
 
@@ -130,8 +130,8 @@ SOURCES AND FURTHER READING
 • Operation Bernhard: https://en.wikipedia.org/wiki/Operation_Bernhard
 
 NOTES
-• Maps use modern borders; 1941 control is shown approximately.
-• People appear as illustrative silhouettes, not photographs.
+• Archival photographs are from Wikimedia Commons (public domain or CC0); full credits are at the end of the video.
+• Maps use modern borders; 1941 control is shown approximately. Silhouettes are used where no free photograph was found.
 • Some figures (for example the German chromite stockpile estimate and the locomotive/wagon numbers promised at Yenice) are contested in the historical record, and the video says so on screen.
 • Narration is a synthetic voice.
 
