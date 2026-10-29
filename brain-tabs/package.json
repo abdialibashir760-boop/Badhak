@@ -1,0 +1,16 @@
+{
+  "name": "brain-tabs",
+  "version": "1.0.0",
+  "description": "9:16 vector animation: why unfinished tasks haunt you at 3 a.m. (1080x1920, 60 fps, 50 s)",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "export": "node render.js",
+    "export:test": "node render.js --frames 0-239 --out test.mp4",
+    "export:silent": "node render.js --silent"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brain tabs — preview</title>
+<style>
+  :root { color-scheme: dark; }
+  html, body { margin: 0; height: 100%; background: #000; color: #9a9a9a; font: 13px/1.4 ui-monospace, Menlo, Consolas, monospace; overflow: hidden; }
+  body { display: flex; flex-direction: column; align-items: center; }
+  #stage { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 10px 0 0; }
+  canvas { height: 100%; max-height: calc(100vh - 96px); aspect-ratio: 9 / 16; background: #0a0a0a; box-shadow: 0 0 0 1px #222; }
+  #bar { width: min(760px, 96vw); padding: 8px 0 12px; display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; }
+  button { background: #151515; color: #ddd; border: 1px solid #333; border-radius: 6px; padding: 5px 10px; font: inherit; cursor: pointer; }
+  button:hover { border-color: #888; } button.on { color: #fff; border-color: #fff; }
+  input[type=range] { width: 100%; accent-color: #fff; }
+  #scenes { grid-column: 1 / -1; display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+  .hide { display: none !important; }
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="c" width="1080" height="1920"></canvas></div>
+<div id="bar">
+  <button id="play">⏸ pause</button>
+  <input id="seek" type="range" min="0" max="3419" step="1" value="0">
+  <span id="time">0.00 / 36.00 s</span>
+  <div id="scenes"></div>
+  <button id="snd">🔊 sound: off</button><span style="grid-column: 2 / 4">space play/pause · ←/→ frame (shift = 1 s) · [ ] speed · 1–8 scenes · ?t=17 freezes at 17 s</span>
+</div>
+<script src="src/scene.js"></script>
+<script src="src/sfx.js"></script>
+<script>
+  const { CFG, S, EVENTS, drawFrame } = BrainTabs; const SCENES = Object.entries(S).map(([k, v]) => ({ name: k, t: v[0] }));
+  const cv = document.getElementById('c'), ctx = cv.getContext('2d'), D = CFG.DURATION, FPS = CFG.FPS, TOTAL = D * FPS;
+  const q = new URLSearchParams(location.search);
+  
+
+  /* ── headless mode used by render.js: no UI, no animation loop, just window.renderFrame(n) ── */
+  if (q.has('render')) {
+    document.getElementById('bar').classList.add('hide');
+    document.body.style.cssText = 'margin:0;background:#0a0a0a;display:block;overflow:hidden';
+    document.getElementById('stage').style.cssText = 'padding:0;display:block';
+    cv.style.cssText = 'width:1080px;height:1920px;max-height:none;box-shadow:none';
+    window.renderFrame = (n) => { drawFrame(ctx, n / FPS); };
+    window.__ready = true;
+  } else {
+    let t = parseFloat(q.get('t') || '0'), speed = 1, playing = !q.has('t'), last = null, soundOn = false;
+    const play = document.getElementById('play'), seek = document.getElementById('seek'), time = document.getElementById('time'), snd = document.getElementById('snd');
+    SCENES.forEach((s, i) => { const b = document.createElement('button'); b.textContent = `${i + 1} ${s.name}`; b.onclick = () => jump(s.t); document.getElementById('scenes').appendChild(b); });
+
+    /* ── optional sound: the same synth that render.js muxes into the MP4 ── */
+    let audioCtx = null, buffer = null, src = null;
+    function startAudio() {
+      stopAudio(); if (!soundOn) return;
+      if (!audioCtx) { audioCtx = new AudioContext(); const sr = audioCtx.sampleRate, data = SfxSynth.renderSfx(EVENTS, D, sr); buffer = audioCtx.createBuffer(1, data.length, sr); buffer.copyToChannel(data, 0); }
+      audioCtx.resume(); src = audioCtx.createBufferSource(); src.buffer = buffer; src.playbackRate.value = speed; src.connect(audioCtx.destination); src.start(0, t);
+    }
+    function stopAudio() { if (src) { try { src.stop(); } catch (e) {} src = null; } }
+    snd.onclick = () => { soundOn = !soundOn; snd.textContent = '🔊 sound: ' + (soundOn ? 'on' : 'off'); snd.classList.toggle('on', soundOn); if (playing) startAudio(); };
+
+    function jump(to) { t = ((to % D) + D) % D; if (playing) startAudio(); }
+    function setPlaying(p) { playing = p; play.textContent = p ? '⏸ pause' : '▶ play'; p ? startAudio() : stopAudio(); }
+    play.onclick = () => setPlaying(!playing);
+    seek.oninput = () => { jump(seek.value / FPS); };
+    function frame(now) {
+      if (last !== null && playing) { t += ((now - last) / 1000) * speed; if (t >= D) { t -= D; startAudio(); } }
+      last = now;
+      drawFrame(ctx, t);
+      seek.value = Math.round(t * FPS); time.textContent = `${t.toFixed(2)} / ${D.toFixed(2)} s · frame ${Math.round(t * FPS)}`;
+      requestAnimationFrame(frame);
+    }
+    addEventListener('keydown', (e) => {
+      const f = 1 / FPS;
+      if (e.code === 'Space') { setPlaying(!playing); e.preventDefault(); }
+      else if (e.key === 'ArrowRight') { setPlaying(false); t = (t + (e.shiftKey ? 1 : f)) % D; }
+      else if (e.key === 'ArrowLeft') { setPlaying(false); t = (t - (e.shiftKey ? 1 : f) + D) % D; }
+      else if (e.key === '[') { speed = Math.max(0.1, speed / 2); if (playing) startAudio(); }
+      else if (e.key === ']') { speed = Math.min(4, speed * 2); if (playing) startAudio(); }
+      else if (/^[1-8]$/.test(e.key)) jump(SCENES[+e.key - 1].t);
+    });
+    setPlaying(playing); requestAnimationFrame(frame);
+  }
+</script>
+</body>
+</html>
