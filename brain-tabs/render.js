@@ -69,7 +69,7 @@ async function main() {
   const args = ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'png', '-i', '-'];
   if (wav) args.push('-ss', String(from / FPS), '-t', String((to - from + 1) / FPS), '-i', wav);
   args.push('-c:v', 'libx264', '-preset', PRESET, '-crf', CRF, '-pix_fmt', 'yuv420p', '-r', String(FPS));
-  if (wav) args.push('-c:a', 'aac', '-b:a', '192k', '-shortest');
+  if (wav) args.push('-af', 'loudnorm=I=-15:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-shortest');
   args.push('-movflags', '+faststart', OUT);
   const ff = spawn('ffmpeg', args, { stdio: ['pipe', 'inherit', 'inherit'] });
   const done = new Promise((res, rej) => { ff.on('close', (c) => (c === 0 ? res() : rej(new Error('ffmpeg exited with code ' + c)))); ff.on('error', rej); });
