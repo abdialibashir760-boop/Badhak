@@ -14,8 +14,23 @@
   'use strict';
 
   /* ═════════════════════════════ configuration ═════════════════════════════ */
+  // The film is authored on an estimated timeline (AUTH_*). If a voice-over has been aligned
+  // (scripts/align_vo.py → src/voice_anchors.js) every line start is mapped onto the real recording, so cuts, captions and
+  // sound effects all land on the spoken words; without it the film plays on the authored timing.
+  const ANCH = (typeof module === 'object' && module.exports) ? (function () { try { return require('./voice_anchors.js'); } catch (e) { return null; } })()
+    : (typeof self !== 'undefined' && self.VOICE_ANCHORS) || null;
+  const AUTH_STARTS = [0.4, 1.5, 5.9, 7.2, 8.9, 11.4, 14.3, 16.5, 19.3, 21.2, 26.5, 28.5, 32.7, 36.6, 39.2, 41.9, 44.3, 47.4, 49.3, 52.2, 53.6];
+  const AUTH_END_VOICE = 56.0, AUTH_TOTAL = 57;
+  const WARP_A = [0].concat(AUTH_STARTS, [AUTH_END_VOICE, AUTH_TOTAL]);                       // authored times
+  const WARP_R = ANCH ? [0].concat(ANCH.starts, [ANCH.end, ANCH.total]) : WARP_A;             // real (voice) times
+  function mapPW(x, from, to) {
+    if (x <= from[0]) return to[0] + (x - from[0]);
+    for (let i = 1; i < from.length; i++) if (x <= from[i]) return to[i - 1] + ((x - from[i - 1]) / (from[i] - from[i - 1])) * (to[i] - to[i - 1]);
+    return to[to.length - 1] + (x - from[from.length - 1]);
+  }
+  const realToAuth = (t) => mapPW(t, WARP_R, WARP_A), authToReal = (t) => mapPW(t, WARP_A, WARP_R);
   const CFG = {
-    W: 1080, H: 1920, FPS: 60, DURATION: 57,
+    W: 1080, H: 1920, FPS: 60, DURATION: ANCH ? ANCH.total : AUTH_TOTAL,
     BG: '#0a0a0a', FG: '#ffffff', AMBER: '#ffb703', MINT: '#9dffcf', RED: '#ff4d6d',
     FONT: '"JetBrains Mono","SF Mono","Menlo","Consolas","DejaVu Sans Mono","Liberation Mono",monospace',
   };
@@ -403,7 +418,7 @@
   /* ═════════════════════════════════ the frame ═══════════════════════════════ */
   const CUTS = [S.B[0], S.C[0], S.D[0], S.E[0], S.F[0], S.G[0], S.H[0]];
   function drawFrame(ctx, tIn) {
-    const t = clamp(tIn, 0, CFG.DURATION - 1e-6);
+    const t = Math.min(realToAuth(clamp(tIn, 0, CFG.DURATION - 1e-6)), AUTH_TOTAL - 1e-6);   // authored time
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.fillStyle = CFG.BG; ctx.fillRect(0, 0, CFG.W, CFG.H); ctx.lineCap = 'round'; ctx.lineJoin = 'round';
 
     // a slow push-in on the stage + punch on key beats
@@ -420,8 +435,8 @@
     CAPTIONS.forEach((c) => drawCaption(ctx, t, c));
 
     // thin progress line (retention) + tiny dip-to-black on every cut
-    ctx.fillStyle = 'rgba(255,255,255,0.55)'; ctx.fillRect(0, 1906, CFG.W * (t / CFG.DURATION), 4);
-    let a = Math.max(1 - easeInOutCubic(t / 0.4), easeInOutCubic((t - (CFG.DURATION - 0.7)) / 0.6));
+    ctx.fillStyle = 'rgba(255,255,255,0.55)'; ctx.fillRect(0, 1906, CFG.W * (t / AUTH_TOTAL), 4);
+    let a = Math.max(1 - easeInOutCubic(t / 0.4), easeInOutCubic((t - (AUTH_TOTAL - 0.7)) / 0.6));
     CUTS.forEach((c) => { const d = Math.abs(t - c); if (d < 0.1) a = Math.max(a, 1 - d / 0.1); });
     if (a > 0.002) { ctx.globalAlpha = clamp(a); ctx.fillStyle = CFG.BG; ctx.fillRect(0, 0, CFG.W, CFG.H); ctx.globalAlpha = 1; }
   }
@@ -438,7 +453,9 @@
   [39.3, 40.0, 40.7, 42.2, 43.3, 44.4].forEach((t) => EVENTS.push({ t, k: 'type' }));
   EVENTS.push({ t: 47.4, k: 'stamp' }, { t: 48.85, k: 'chime' }, { t: 49.6, k: 'note' }, { t: 51.2, k: 'lullaby' }, { t: 56.0, k: 'soft' });
   EVENTS.push({ t: 0.0, k: 'tension', d: 32 }, { t: 32.4, k: 'warm', d: 24.5 });
+  // authored times → real (voice) times for the sound track
+  EVENTS.forEach((e) => { const t0 = e.t; e.t = authToReal(t0); if (e.d) e.d = authToReal(t0 + e.d) - e.t; });
   EVENTS.sort((x, y) => x.t - y.t);
 
-  return { CFG, S, CAPTIONS, EVENTS, openCount, drawFrame };
+  return { CFG, S, CAPTIONS, EVENTS, ANCH, authToReal, realToAuth, openCount, drawFrame };
 });

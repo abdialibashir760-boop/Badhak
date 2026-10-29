@@ -22,15 +22,16 @@
 <div id="stage"><canvas id="c" width="1080" height="1920"></canvas></div>
 <div id="bar">
   <button id="play">⏸ pause</button>
-  <input id="seek" type="range" min="0" max="3419" step="1" value="0">
+  <input id="seek" type="range" min="0" max="3563" step="1" value="0">
   <span id="time">0.00 / 36.00 s</span>
   <div id="scenes"></div>
   <button id="snd">🔊 sound: off</button><span style="grid-column: 2 / 4">space play/pause · ←/→ frame (shift = 1 s) · [ ] speed · 1–8 scenes · ?t=17 freezes at 17 s</span>
 </div>
+<script src="src/voice_anchors.js"></script>
 <script src="src/scene.js"></script>
 <script src="src/sfx.js"></script>
 <script>
-  const { CFG, S, EVENTS, drawFrame } = BrainTabs; const SCENES = Object.entries(S).map(([k, v]) => ({ name: k, t: v[0] }));
+  const { CFG, S, EVENTS, drawFrame, authToReal } = BrainTabs; const SCENES = Object.entries(S).map(([k, v]) => ({ name: k, t: authToReal(v[0]) }));
   const cv = document.getElementById('c'), ctx = cv.getContext('2d'), D = CFG.DURATION, FPS = CFG.FPS, TOTAL = D * FPS;
   const q = new URLSearchParams(location.search);
   
@@ -49,13 +50,14 @@
     SCENES.forEach((s, i) => { const b = document.createElement('button'); b.textContent = `${i + 1} ${s.name}`; b.onclick = () => jump(s.t); document.getElementById('scenes').appendChild(b); });
 
     /* ── optional sound: the same synth that render.js muxes into the MP4 ── */
-    let audioCtx = null, buffer = null, src = null;
+    let audioCtx = null, buffer = null, src = null; const voice = new Audio('vo/voiceover.wav');
     function startAudio() {
       stopAudio(); if (!soundOn) return;
       if (!audioCtx) { audioCtx = new AudioContext(); const sr = audioCtx.sampleRate, data = SfxSynth.renderSfx(EVENTS, D, sr); buffer = audioCtx.createBuffer(1, data.length, sr); buffer.copyToChannel(data, 0); }
-      audioCtx.resume(); src = audioCtx.createBufferSource(); src.buffer = buffer; src.playbackRate.value = speed; src.connect(audioCtx.destination); src.start(0, t);
+      audioCtx.resume(); src = audioCtx.createBufferSource(); src.buffer = buffer; src.playbackRate.value = speed; const gn = audioCtx.createGain(); gn.gain.value = 0.5; src.connect(gn); gn.connect(audioCtx.destination); src.start(0, t);
+      voice.currentTime = t; voice.playbackRate = speed; voice.play().catch(() => {});
     }
-    function stopAudio() { if (src) { try { src.stop(); } catch (e) {} src = null; } }
+    function stopAudio() { if (src) { try { src.stop(); } catch (e) {} src = null; } voice.pause(); }
     snd.onclick = () => { soundOn = !soundOn; snd.textContent = '🔊 sound: ' + (soundOn ? 'on' : 'off'); snd.classList.toggle('on', soundOn); if (playing) startAudio(); };
 
     function jump(to) { t = ((to % D) + D) % D; if (playing) startAudio(); }

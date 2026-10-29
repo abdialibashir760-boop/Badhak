@@ -13,7 +13,7 @@
  * set PUPPETEER_EXECUTABLE_PATH to use an existing Chrome/Chromium instead.
  */
 const puppeteer = require('puppeteer');
-const { spawn } = require('child_process');
+const { spawn, spawnSync } = require('child_process');
 const fs = require('fs'), os = require('os'), path = require('path');
 const { pathToFileURL } = require('url');
 const { CFG, EVENTS } = require('./src/scene.js');
@@ -21,18 +21,37 @@ const Sfx = require('./src/sfx.js');
 
 const arg = (n, d) => { const i = process.argv.indexOf('--' + n); return i > -1 ? process.argv[i + 1] : d; };
 const flag = (n) => process.argv.includes('--' + n);
-const FPS = CFG.FPS, TOTAL = CFG.DURATION * FPS;
+const FPS = CFG.FPS, TOTAL = Math.round(CFG.DURATION * FPS);
 const OUT = arg('out', 'brain_tabs.mp4'), CRF = arg('crf', '16'), PRESET = arg('preset', 'medium');
 let [from, to] = arg('frames', `0-${TOTAL - 1}`).split('-').map(Number);
 to = Math.min(to, TOTAL - 1);
 
 async function main() {
-  // 1) sound effects → wav (offset so a partial render still lines up)
+  // 1) audio: your voice-over + synthesised sound effects (ducked under the speech), mixed to one track
   let wav = null;
   if (!flag('silent')) {
-    const sr = 44100, pcm = Sfx.renderSfx(EVENTS, CFG.DURATION, sr);
+    const sr = 44100, N = Math.ceil(CFG.DURATION * sr);
+    const sfx = Sfx.renderSfx(EVENTS, CFG.DURATION, sr);
+    const mix = new Float32Array(N);
+    const voiceFile = path.join(__dirname, 'vo', 'voiceover.wav');
+    if (fs.existsSync(voiceFile)) {
+      const dec = spawnSync('ffmpeg', ['-v', 'error', '-i', voiceFile, '-f', 'f32le', '-ac', '1', '-ar', String(sr), '-'], { maxBuffer: 1 << 29 });
+      const raw = dec.stdout, vo = new Float32Array(raw.buffer, raw.byteOffset, Math.floor(raw.length / 4));
+      let peak = 1e-6; for (let i = 0; i < vo.length; i++) peak = Math.max(peak, Math.abs(vo[i]));
+      const vg = 0.88 / peak;
+      // envelope follower @100 Hz: fast attack (look-ahead), ~0.5 s release → duck the effects while he speaks
+      const blk = sr / 100, nb = Math.ceil(N / blk), duck = new Float32Array(nb);
+      for (let b = 0; b < nb; b++) { let m = 0; for (let i = b * blk; i < Math.min(N, (b + 1) * blk) && i < vo.length; i++) m = Math.max(m, Math.abs(vo[i]) * vg); duck[b] = Math.min(1, m / 0.12); }
+      for (let b = 1; b < nb; b++) duck[b] = Math.max(duck[b], duck[b - 1] * 0.97);
+      for (let b = nb - 2; b >= 0; b--) duck[b] = Math.max(duck[b], duck[b + 1] * 0.85);
+      for (let i = 0; i < N; i++) mix[i] = (i < vo.length ? vo[i] * vg : 0) + (sfx[i] || 0) * 0.55 * (1 - 0.62 * duck[Math.min(nb - 1, Math.floor(i / blk))]);
+    } else {
+      for (let i = 0; i < N; i++) mix[i] = sfx[i] || 0;
+      console.log('(no vo/voiceover.wav found: exporting sound effects only)');
+    }
+    for (let i = 0; i < N; i++) mix[i] = Math.tanh(mix[i] * 1.05) * 0.95;   // soft limiter
     wav = path.join(os.tmpdir(), `brain_tabs_${process.pid}.wav`);
-    fs.writeFileSync(wav, Sfx.toWav(pcm, sr));
+    fs.writeFileSync(wav, Sfx.toWav(mix, sr));
   }
 
   // 2) browser
@@ -68,6 +87,6 @@ async function main() {
   }
   ff.stdin.end(); await done; await browser.close();
   if (wav) fs.unlinkSync(wav);
-  console.log(`\nsaved ${OUT}  (${(count / FPS).toFixed(1)} s, ${CFG.W}x${CFG.H} @ ${FPS} fps${wav ? ', with sound' : ''})`);
+  console.log(`\nsaved ${OUT}  (${(count / FPS).toFixed(1)} s, ${CFG.W}x${CFG.H} @ ${FPS} fps${wav ? ', with voice-over + sound' : ''})`);
 }
 main().catch((e) => { console.error(e); process.exit(1); });
