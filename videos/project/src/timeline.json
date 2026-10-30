@@ -1,0 +1,1113 @@
+{
+ "total": 899.1886666666667,
+ "scenes": [
+  {
+   "id": "1",
+   "title": "THE HOOK",
+   "start": 0.0,
+   "sentences": [
+    {
+     "text": "January 30th, 1943.",
+     "start": 0.0,
+     "dur": 3.0933333333333333
+    },
+    {
+     "text": "A railway siding at Yenice, a nowhere station on the plain between Adana and Mersin.",
+     "start": 3.373333333333333,
+     "dur": 6.8693333333333335
+    },
+    {
+     "text": "Two trains stand side by side.",
+     "start": 10.522666666666666,
+     "dur": 2.9226666666666667
+    },
+    {
+     "text": "In one carriage, Winston Churchill (fresh from Casablanca) is about to ask a neutral country to walk into the world's biggest war.",
+     "start": 13.725333333333332,
+     "dur": 9.109333333333334
+    },
+    {
+     "text": "Across the table sits İsmet İnönü, Turkey's president: patient, courteous, and, by reputation, conveniently hard of hearing when a question gets uncomfortable.",
+     "start": 23.384666666666668,
+     "dur": 11.328
+    },
+    {
+     "text": "Most people assume Turkey stayed out of the war because it was weak.",
+     "start": 34.992666666666665,
+     "dur": 4.522666666666667
+    },
+    {
+     "text": "Or frightened.",
+     "start": 39.79533333333333,
+     "dur": 1.216
+    },
+    {
+     "text": "Or lucky.",
+     "start": 41.291333333333334,
+     "dur": 1.0453333333333332
+    },
+    {
+     "text": "They are wrong.",
+     "start": 42.61666666666667,
+     "dur": 1.152
+    },
+    {
+     "text": "Turkey stayed out because everyone needed something it owned.",
+     "start": 44.318666666666665,
+     "dur": 3.8613333333333335
+    },
+    {
+     "text": "A dull grey ore.",
+     "start": 48.46,
+     "dur": 1.472
+    },
+    {
+     "text": "A line of steel track.",
+     "start": 50.212,
+     "dur": 1.8133333333333332
+    },
+    {
+     "text": "And a spy who was paid in counterfeit money.",
+     "start": 52.30533333333334,
+     "dur": 3.2
+    },
+    {
+     "text": "This is the story of the railway that nobody invaded.",
+     "start": 56.05533333333334,
+     "dur": 3.8826666666666667
+    },
+    {
+     "text": "And why.",
+     "start": 60.218,
+     "dur": 1.0453333333333332
+    }
+   ],
+   "dur": 62.36333333333334
+  },
+  {
+   "id": "2",
+   "title": "THE ILLUSION: A MAP THAT LOOKS LIKE AN INVITATION",
+   "start": 62.36333333333334,
+   "sentences": [
+    {
+     "text": "Look at the map the way a German planner would in the spring of 1941.",
+     "start": 0.0,
+     "dur": 5.418666666666667
+    },
+    {
+     "text": "Bulgaria has joined the Axis.",
+     "start": 5.968666666666671,
+     "dur": 2.538666666666667
+    },
+    {
+     "text": "German troops stand along the Turkish frontier.",
+     "start": 8.787333333333343,
+     "dur": 3.2213333333333334
+    },
+    {
+     "text": "Greece has fallen.",
+     "start": 12.288666666666678,
+     "dur": 1.536
+    },
+    {
+     "text": "Crete has fallen.",
+     "start": 14.104666666666681,
+     "dur": 1.4506666666666668
+    },
+    {
+     "text": "Italian-held islands sit a few miles off Turkey's coast.",
+     "start": 15.835333333333345,
+     "dur": 4.16
+    },
+    {
+     "text": "This is a country surrounded on almost every side.",
+     "start": 20.275333333333343,
+     "dur": 3.712
+    },
+    {
+     "text": "And behind it lies everything Hitler wants.",
+     "start": 24.537333333333343,
+     "dur": 3.1573333333333333
+    },
+    {
+     "text": "The Straits, the gateway to the Black Sea.",
+     "start": 27.97466666666667,
+     "dur": 2.752
+    },
+    {
+     "text": "The road to Iraq's oil.",
+     "start": 31.006666666666668,
+     "dur": 2.1546666666666665
+    },
+    {
+     "text": "And beyond the Caucasus, the oilfields of Baku.",
+     "start": 33.44133333333334,
+     "dur": 3.477333333333333
+    },
+    {
+     "text": "Turkey's army is large, roughly a million men, but much of it is poorly equipped.",
+     "start": 37.46866666666667,
+     "dur": 5.525333333333333
+    },
+    {
+     "text": "Its cities have almost no air defence.",
+     "start": 43.27400000000001,
+     "dur": 2.986666666666667
+    },
+    {
+     "text": "If the Wehrmacht had simply rolled south, the standard story goes, nothing could stop it.",
+     "start": 46.540666666666674,
+     "dur": 5.9093333333333335
+    },
+    {
+     "text": "So why didn't it?",
+     "start": 53.00000000000001,
+     "dur": 1.536
+    }
+   ],
+   "dur": 55.636
+  },
+  {
+   "id": "3",
+   "title": "THE FORGOTTEN RAILWAY",
+   "start": 117.99933333333334,
+   "sentences": [
+    {
+     "text": "The answer begins with a railway.",
+     "start": 0.0,
+     "dur": 2.688
+    },
+    {
+     "text": "Forty years earlier, Kaiser Wilhelm II decided Germany would reach the Middle East by rail: Berlin, Constantinople, Baghdad.",
+     "start": 3.2379999999999995,
+     "dur": 9.941333333333333
+    },
+    {
+     "text": "German banks and German engineers carved a line through the Taurus mountains, one blasted tunnel at a time.",
+     "start": 13.45933333333332,
+     "dur": 7.850666666666666
+    },
+    {
+     "text": "The Great War strangled the dream.",
+     "start": 21.859999999999985,
+     "dur": 2.3893333333333335
+    },
+    {
+     "text": "The gaps weren't finished until 1940, when the first through train from Baghdad left for Istanbul.",
+     "start": 24.529333333333312,
+     "dur": 7.445333333333333
+    },
+    {
+     "text": "So in the middle of the war, a railway Germany had started now ran through a country that belonged to neither side.",
+     "start": 32.25466666666665,
+     "dur": 7.808
+    },
+    {
+     "text": "A line that could carry troops to Iraq.",
+     "start": 40.342666666666645,
+     "dur": 2.6666666666666665
+    },
+    {
+     "text": "Or carry something far heavier, westward, to the factories of the Reich.",
+     "start": 43.2893333333333,
+     "dur": 4.714666666666667
+    },
+    {
+     "text": "Cargo trains.",
+     "start": 48.553999999999974,
+     "dur": 1.344
+    },
+    {
+     "text": "Full of rock.",
+     "start": 50.17799999999997,
+     "dur": 1.152
+    }
+   ],
+   "dur": 52.42999999999998
+  },
+  {
+   "id": "4",
+   "title": "THE GREY ROCK",
+   "start": 170.42933333333332,
+   "sentences": [
+    {
+     "text": "It is called chromite.",
+     "start": 0.0,
+     "dur": 1.856
+    },
+    {
+     "text": "It looks like nothing: a heavy, dull, grey-black stone.",
+     "start": 2.1359999999999957,
+     "dur": 3.6693333333333333
+    },
+    {
+     "text": "But melt chromium into steel and you get armour plate that shells bounce off.",
+     "start": 6.355333333333334,
+     "dur": 4.992
+    },
+    {
+     "text": "Engine parts that survive red-hot temperatures.",
+     "start": 11.627333333333326,
+     "dur": 3.477333333333333
+    },
+    {
+     "text": "Cutting tools that don't dull.",
+     "start": 15.384666666666647,
+     "dur": 2.368
+    },
+    {
+     "text": "A modern war machine does not run without it.",
+     "start": 18.032666666666643,
+     "dur": 3.328
+    },
+    {
+     "text": "Germany had almost none of its own.",
+     "start": 21.910666666666657,
+     "dur": 2.5813333333333333
+    },
+    {
+     "text": "Before the war it bought most of it from far away.",
+     "start": 24.77199999999999,
+     "dur": 3.4346666666666668
+    },
+    {
+     "text": "Then the blockade cut those routes.",
+     "start": 28.48666666666665,
+     "dur": 2.474666666666667
+    },
+    {
+     "text": "By 1941, Germany was leaning on the Balkans, on Finland, and on one fast-growing supplier.",
+     "start": 31.24133333333333,
+     "dur": 7.722666666666667
+    },
+    {
+     "text": "Turkey, one of the world's leading chromite producers.",
+     "start": 39.244,
+     "dur": 3.562666666666667
+    },
+    {
+     "text": "So the \"empty\" mountains of Anatolia were not empty at all.",
+     "start": 43.356666666666655,
+     "dur": 4.437333333333333
+    },
+    {
+     "text": "They were the pantry of the German war economy.",
+     "start": 48.073999999999984,
+     "dur": 3.264
+    }
+   ],
+   "dur": 52.43799999999999
+  },
+  {
+   "id": "5",
+   "title": "THE CLAUSE",
+   "start": 222.8673333333333,
+   "sentences": [
+    {
+     "text": "October 1941.",
+     "start": 0.0,
+     "dur": 2.3893333333333335
+    },
+    {
+     "text": "In Ankara, a German negotiator named Karl Clodius signs a trade agreement.",
+     "start": 2.669333333333327,
+     "dur": 6.165333333333334
+    },
+    {
+     "text": "Turkey will deliver chromite: 45,000 tons in each of the first two years.",
+     "start": 9.114666666666665,
+     "dur": 5.973333333333334
+    },
+    {
+     "text": "Then 90,000 tons in 1943.",
+     "start": 15.367999999999995,
+     "dur": 3.776
+    },
+    {
+     "text": "And another 90,000 in 1944.",
+     "start": 19.424000000000007,
+     "dur": 3.6693333333333333
+    },
+    {
+     "text": "In return, Germany will supply weapons Turkey desperately needs.",
+     "start": 23.373333333333335,
+     "dur": 4.778666666666667
+    },
+    {
+     "text": "It looks like a simple trade deal.",
+     "start": 28.432000000000016,
+     "dur": 2.2826666666666666
+    },
+    {
+     "text": "It is a loaded gun.",
+     "start": 30.99466666666669,
+     "dur": 1.8133333333333332
+    },
+    {
+     "text": "Because the deliveries are back-loaded.",
+     "start": 33.358000000000004,
+     "dur": 2.7946666666666666
+    },
+    {
+     "text": "The big shipments are scheduled for later, when the war is at its hungriest.",
+     "start": 36.43266666666665,
+     "dur": 4.906666666666666
+    },
+    {
+     "text": "And Britain and the United States know it.",
+     "start": 41.619333333333316,
+     "dur": 3.1573333333333333
+    },
+    {
+     "text": "So they do something strange.",
+     "start": 45.326666666666654,
+     "dur": 2.176
+    },
+    {
+     "text": "They buy Turkish chrome themselves, more than they need, simply to keep it away from Germany.",
+     "start": 47.78266666666667,
+     "dur": 6.229333333333333
+    },
+    {
+     "text": "Pre-emptive buying: starving the enemy by outbidding him.",
+     "start": 54.29200000000003,
+     "dur": 3.7973333333333334
+    },
+    {
+     "text": "One clause in a trade agreement.",
+     "start": 58.36933333333337,
+     "dur": 2.6453333333333333
+    },
+    {
+     "text": "And suddenly a mineral deposit in the Anatolian mountains is a front line.",
+     "start": 61.29466666666673,
+     "dur": 5.824
+    }
+   ],
+   "dur": 68.21866666666676
+  },
+  {
+   "id": "5B",
+   "title": "THE TRAIN OF ROCK",
+   "start": 291.08600000000007,
+   "sentences": [
+    {
+     "text": "Now follow the ore itself.",
+     "start": 0.0,
+     "dur": 2.048
+    },
+    {
+     "text": "It starts in the mountains of southern and eastern Anatolia, in mines most people have never heard of.",
+     "start": 2.598000000000013,
+     "dur": 6.762666666666667
+    },
+    {
+     "text": "Hauled out by truck, by cart, sometimes by animal, down to railheads where it is shovelled into open wagons.",
+     "start": 9.640666666666675,
+     "dur": 7.552
+    },
+    {
+     "text": "And then it needs a railway.",
+     "start": 17.74266666666665,
+     "dur": 1.92
+    },
+    {
+     "text": "The ore has to travel west, to Istanbul and across Thrace, through Bulgaria, and on into the Reich along the same old Orient line that once carried passengers to Paris.",
+     "start": 19.94266666666664,
+     "dur": 12.352
+    },
+    {
+     "text": "Every link is a choke point.",
+     "start": 32.574666666666644,
+     "dur": 2.176
+    },
+    {
+     "text": "Turkey does not have enough wagons or locomotives.",
+     "start": 35.03066666666666,
+     "dur": 3.648
+    },
+    {
+     "text": "Germany needs those trains to move chrome west.",
+     "start": 38.95866666666666,
+     "dur": 3.584
+    },
+    {
+     "text": "Britain can make Turkey a rival offer.",
+     "start": 42.822666666666635,
+     "dur": 3.0933333333333333
+    },
+    {
+     "text": "And that is why, at Yenice, Churchill talks about locomotives.",
+     "start": 46.19599999999997,
+     "dur": 5.034666666666666
+    },
+    {
+     "text": "In 1943, a freight wagon is a bargaining chip.",
+     "start": 51.51066666666662,
+     "dur": 4.416
+    },
+    {
+     "text": "Whoever controls the rolling stock controls the pace of the war economy.",
+     "start": 56.47666666666663,
+     "dur": 5.397333333333333
+    },
+    {
+     "text": "The railway isn't scenery.",
+     "start": 62.15399999999994,
+     "dur": 2.1333333333333333
+    },
+    {
+     "text": "It is the lever.",
+     "start": 64.5673333333333,
+     "dur": 1.408
+    }
+   ],
+   "dur": 67.07533333333333
+  },
+  {
+   "id": "6",
+   "title": "THE DOMINO CHAIN",
+   "start": 358.1613333333334,
+   "sentences": [
+    {
+     "text": "Now follow the dominoes.",
+     "start": 0.0,
+     "dur": 1.984
+    },
+    {
+     "text": "Chrome from Anatolia means alloy steel in the Ruhr.",
+     "start": 2.533999999999992,
+     "dur": 3.9466666666666668
+    },
+    {
+     "text": "Alloy steel means armour plate for tanks and parts for aircraft engines.",
+     "start": 6.76066666666668,
+     "dur": 5.1626666666666665
+    },
+    {
+     "text": "Tanks and aircraft are what decide Kursk, Normandy, the Bulge.",
+     "start": 12.203333333333319,
+     "dur": 4.437333333333333
+    },
+    {
+     "text": "Albert Speer, Hitler's armaments minister, later claimed that without Turkish chromite the German war machine would grind to a halt within months.",
+     "start": 17.19066666666663,
+     "dur": 9.749333333333333
+    },
+    {
+     "text": "The truth is messier.",
+     "start": 27.21999999999997,
+     "dur": 1.984
+    },
+    {
+     "text": "American experts estimated that by early 1944 German stockpiles held around 230,000 tons, with only some 46,000 coming from Turkey.",
+     "start": 29.48399999999998,
+     "dur": 12.992
+    },
+    {
+     "text": "Germany could economise.",
+     "start": 42.75599999999997,
+     "dur": 2.005333333333333
+    },
+    {
+     "text": "Substitute.",
+     "start": 45.041333333333284,
+     "dur": 1.152
+    },
+    {
+     "text": "Stretch.",
+     "start": 46.4733333333333,
+     "dur": 0.8106666666666666
+    },
+    {
+     "text": "But Berlin couldn't know how much stretch there was.",
+     "start": 47.563999999999965,
+     "dur": 3.029333333333333
+    },
+    {
+     "text": "So it dared not scare Turkey off.",
+     "start": 50.87333333333328,
+     "dur": 2.3253333333333335
+    },
+    {
+     "text": "And the Allies, for their part, couldn't know how far Turkey would bend.",
+     "start": 53.478666666666584,
+     "dur": 4.522666666666667
+    },
+    {
+     "text": "Which means one thing: neither side dared invade.",
+     "start": 58.28133333333324,
+     "dur": 3.498666666666667
+    }
+   ],
+   "dur": 62.87999999999994
+  },
+  {
+   "id": "7",
+   "title": "A COUNTRY THAT SIGNED WITH BOTH SIDES",
+   "start": 421.04133333333334,
+   "sentences": [
+    {
+     "text": "Turkey's survival strategy is almost comic in its audacity.",
+     "start": 0.0,
+     "dur": 4.565333333333333
+    },
+    {
+     "text": "It holds a treaty of alliance with Britain and France, signed in 1939.",
+     "start": 4.845333333333315,
+     "dur": 5.738666666666667
+    },
+    {
+     "text": "And on June 18th, 1941, it signs a friendship pact with Nazi Germany.",
+     "start": 10.863999999999976,
+     "dur": 6.4
+    },
+    {
+     "text": "Four days later, Hitler invades the Soviet Union.",
+     "start": 17.543999999999983,
+     "dur": 3.6906666666666665
+    },
+    {
+     "text": "Two sets of promises.",
+     "start": 21.514666666666642,
+     "dur": 1.7066666666666668
+    },
+    {
+     "text": "One chair.",
+     "start": 23.50133333333332,
+     "dur": 1.1733333333333333
+    },
+    {
+     "text": "The man playing this game is Foreign Minister Numan Menemencioğlu, a cautious, cold, precise diplomat, whose whole method is delay.",
+     "start": 25.22466666666668,
+     "dur": 9.792
+    },
+    {
+     "text": "Smile, agree in principle, and ask for more time.",
+     "start": 35.29666666666668,
+     "dur": 3.498666666666667
+    },
+    {
+     "text": "Across the table, Germany's ambassador, Franz von Papen, a former chancellor, a smooth operator who has survived every regime change since the Kaiser, is doing the same thing in reverse.",
+     "start": 39.34533333333337,
+     "dur": 13.589333333333334
+    },
+    {
+     "text": "The whole of Turkish diplomacy comes down to one sentence: not yet.",
+     "start": 53.484666666666726,
+     "dur": 5.013333333333334
+    }
+   ],
+   "dur": 59.59800000000007
+  },
+  {
+   "id": "8",
+   "title": "THE CARRIAGE",
+   "start": 480.6393333333334,
+   "sentences": [
+    {
+     "text": "Back to the siding at Yenice.",
+     "start": 0.0,
+     "dur": 2.7733333333333334
+    },
+    {
+     "text": "Churchill's pitch is simple: join us, and Turkey gets modern weapons.",
+     "start": 3.3233333333333235,
+     "dur": 4.906666666666666
+    },
+    {
+     "text": "Aircraft.",
+     "start": 8.509999999999991,
+     "dur": 1.024
+    },
+    {
+     "text": "Tanks.",
+     "start": 9.813999999999965,
+     "dur": 0.8106666666666666
+    },
+    {
+     "text": "Even the rolling stock a modern army needs, locomotives and freight wagons: a reported ten engines and two hundred and fifty wagons among the promises.",
+     "start": 10.904666666666628,
+     "dur": 10.944
+    },
+    {
+     "text": "İnönü's answer is just as simple: weapons first.",
+     "start": 22.128666666666618,
+     "dur": 4.288
+    },
+    {
+     "text": "Then we talk.",
+     "start": 26.6966666666666,
+     "dur": 1.3226666666666667
+    },
+    {
+     "text": "Because he knows the arithmetic.",
+     "start": 28.569333333333248,
+     "dur": 2.517333333333333
+    },
+    {
+     "text": "If Turkey enters the war with an army of horses against an air force of Stukas, Istanbul burns.",
+     "start": 31.36666666666656,
+     "dur": 7.488
+    },
+    {
+     "text": "And if Turkey does nothing, everyone keeps paying for the privilege.",
+     "start": 39.13466666666659,
+     "dur": 4.16
+    },
+    {
+     "text": "The conference ends politely.",
+     "start": 43.844666666666626,
+     "dur": 2.304
+    },
+    {
+     "text": "No promises.",
+     "start": 46.42866666666657,
+     "dur": 1.3653333333333333
+    },
+    {
+     "text": "And the carriage stays on that siding, then in a rail yard, then, depending on whose account you believe, in a museum.",
+     "start": 48.073999999999955,
+     "dur": 7.616
+    },
+    {
+     "text": "Nobody quite agrees where it ended up.",
+     "start": 55.969999999999914,
+     "dur": 2.8586666666666667
+    }
+   ],
+   "dur": 59.65866666666659
+  },
+  {
+   "id": "9",
+   "title": "THE SPY WHO WAS PAID IN FAKE MONEY",
+   "start": 540.298,
+   "sentences": [
+    {
+     "text": "Meanwhile, in the British embassy in Ankara, something extraordinary is happening.",
+     "start": 0.0,
+     "dur": 5.568
+    },
+    {
+     "text": "A valet named Elyesa Bazna, codename Cicero, is photographing the ambassador's secret papers and selling them to German intelligence.",
+     "start": 6.118000000000052,
+     "dur": 10.133333333333333
+    },
+    {
+     "text": "Documents about Allied conferences.",
+     "start": 16.53133333333335,
+     "dur": 2.986666666666667
+    },
+    {
+     "text": "Hints about the invasion of France.",
+     "start": 19.798000000000002,
+     "dur": 2.5813333333333333
+    },
+    {
+     "text": "A neutral capital turned into a marketplace.",
+     "start": 22.65933333333328,
+     "dur": 3.2
+    },
+    {
+     "text": "And the Germans pay him in pounds sterling: crisp, perfect, hundreds of thousands of them.",
+     "start": 26.40933333333328,
+     "dur": 6.1866666666666665
+    },
+    {
+     "text": "Except the notes are forged.",
+     "start": 32.875999999999976,
+     "dur": 2.2826666666666666
+    },
+    {
+     "text": "They come from Operation Bernhard, a secret SS counterfeiting workshop.",
+     "start": 35.43866666666668,
+     "dur": 5.226666666666667
+    },
+    {
+     "text": "Bazna spends years afterwards trying to live off a fortune that was never real.",
+     "start": 40.94533333333334,
+     "dur": 5.525333333333333
+    },
+    {
+     "text": "Even Berlin never fully trusted what Cicero delivered.",
+     "start": 47.02066666666667,
+     "dur": 4.437333333333333
+    },
+    {
+     "text": "In Ankara everyone is spying on everyone else, and nobody quite believes what they steal.",
+     "start": 51.738000000000056,
+     "dur": 6.037333333333334
+    }
+   ],
+   "dur": 58.8753333333334
+  },
+  {
+   "id": "9B",
+   "title": "WHAT CICERO ACTUALLY BOUGHT",
+   "start": 599.1733333333334,
+   "sentences": [
+    {
+     "text": "Here is the part that never quite works in the movies.",
+     "start": 0.0,
+     "dur": 3.52
+    },
+    {
+     "text": "Cicero's first deliveries reach the Germans in the autumn of 1943.",
+     "start": 4.07000000000005,
+     "dur": 6.08
+    },
+    {
+     "text": "The papers are astonishing: records of Allied conferences, discussions of strategy, even a code name that sounds like an invasion of France.",
+     "start": 10.430000000000064,
+     "dur": 10.325333333333333
+    },
+    {
+     "text": "And Berlin shrugs.",
+     "start": 21.03533333333337,
+     "dur": 1.5786666666666667
+    },
+    {
+     "text": "Some officials believe the material.",
+     "start": 22.894000000000005,
+     "dur": 2.752
+    },
+    {
+     "text": "Others suspect a trap.",
+     "start": 25.926000000000045,
+     "dur": 2.1546666666666665
+    },
+    {
+     "text": "Some of the best intelligence of the war is read, argued over, and filed.",
+     "start": 28.360666666666702,
+     "dur": 5.184
+    },
+    {
+     "text": "Then, in the spring of 1944, a German embassy secretary, Cecilie Kapp, slips away and defects to the Allies.",
+     "start": 33.82466666666676,
+     "dur": 8.554666666666666
+    },
+    {
+     "text": "The affair collapses.",
+     "start": 42.65933333333339,
+     "dur": 1.792
+    },
+    {
+     "text": "The spy vanishes into private life.",
+     "start": 44.731333333333396,
+     "dur": 2.986666666666667
+    },
+    {
+     "text": "Think about what that tells you.",
+     "start": 48.26800000000003,
+     "dur": 2.112
+    },
+    {
+     "text": "In neutral Ankara, every great power has a window into every other.",
+     "start": 50.66000000000008,
+     "dur": 4.714666666666667
+    },
+    {
+     "text": "Nobody can hide.",
+     "start": 55.6546666666668,
+     "dur": 1.6
+    },
+    {
+     "text": "Nobody can fully trust what they see.",
+     "start": 57.534666666666794,
+     "dur": 2.7946666666666666
+    },
+    {
+     "text": "And that, strangely, is exactly the kind of fog Turkey needs to keep the delay game alive.",
+     "start": 60.60933333333344,
+     "dur": 6.1866666666666665
+    }
+   ],
+   "dur": 67.89600000000007
+  },
+  {
+   "id": "10",
+   "title": "THE THIRD PARTY",
+   "start": 667.0693333333335,
+   "sentences": [
+    {
+     "text": "Here's the twist.",
+     "start": 0.0,
+     "dur": 1.408
+    },
+    {
+     "text": "The thing İnönü fears most isn't Germany.",
+     "start": 1.6879999999999882,
+     "dur": 3.648
+    },
+    {
+     "text": "It's the Soviet Union.",
+     "start": 5.885999999999967,
+     "dur": 1.7493333333333334
+    },
+    {
+     "text": "In November 1940, Molotov told Berlin that Russia wanted bases on the Turkish Straits.",
+     "start": 8.185333333333347,
+     "dur": 7.125333333333334
+    },
+    {
+     "text": "Turkey heard about it.",
+     "start": 15.59066666666672,
+     "dur": 1.6213333333333333
+    },
+    {
+     "text": "Turkey never forgot.",
+     "start": 17.492000000000075,
+     "dur": 1.8133333333333332
+    },
+    {
+     "text": "So think about İnönü's nightmare.",
+     "start": 19.585333333333438,
+     "dur": 3.008
+    },
+    {
+     "text": "If Turkey joins the Allies and the Allies win, the Red Army is the greatest land power in Europe, and it is sitting next door, with a long memory and a map in its pocket.",
+     "start": 22.87333333333345,
+     "dur": 11.392
+    },
+    {
+     "text": "Neutrality isn't cowardice.",
+     "start": 34.815333333333456,
+     "dur": 2.3466666666666667
+    },
+    {
+     "text": "It is a buffer.",
+     "start": 37.44200000000012,
+     "dur": 1.408
+    },
+    {
+     "text": "A way to keep every great power close enough to deter the others, and none of them close enough to swallow Turkey whole.",
+     "start": 39.13000000000011,
+     "dur": 7.445333333333333
+    }
+   ],
+   "dur": 47.675333333333356
+  },
+  {
+   "id": "10B",
+   "title": "THE ULTIMATUM",
+   "start": 714.7446666666668,
+   "sentences": [
+    {
+     "text": "By the spring of 1944 the Allies stop asking nicely.",
+     "start": 0.0,
+     "dur": 4.736
+    },
+    {
+     "text": "The message is blunt: end chrome shipments to Germany, or forget about Allied weapons, and forget about a seat at the table when the peace is written.",
+     "start": 5.2859999999999445,
+     "dur": 10.069333333333333
+    },
+    {
+     "text": "Menemencioğlu does what he always does.",
+     "start": 15.635333333333278,
+     "dur": 3.2853333333333334
+    },
+    {
+     "text": "He stalls.",
+     "start": 19.20066666666662,
+     "dur": 1.1733333333333333
+    },
+    {
+     "text": "He offers to slow deliveries.",
+     "start": 20.653999999999996,
+     "dur": 2.1333333333333333
+    },
+    {
+     "text": "To shave the quotas.",
+     "start": 23.067333333333295,
+     "dur": 1.8133333333333332
+    },
+    {
+     "text": "To delay.",
+     "start": 25.160666666666657,
+     "dur": 1.1306666666666667
+    },
+    {
+     "text": "The Allies say no.",
+     "start": 26.841333333333296,
+     "dur": 1.6426666666666667
+    },
+    {
+     "text": "And in late April, Turkey blinks.",
+     "start": 29.033999999999992,
+     "dur": 2.496
+    },
+    {
+     "text": "The chrome stops.",
+     "start": 31.809999999999945,
+     "dur": 1.5573333333333332
+    },
+    {
+     "text": "Soon afterwards, the architect of the whole delay strategy, the man who had made not yet an art form, is pushed out of office.",
+     "start": 33.64733333333322,
+     "dur": 8.576
+    },
+    {
+     "text": "By then, Germany has been driven back across the Soviet Union, and the invasion of France is weeks away.",
+     "start": 42.50333333333322,
+     "dur": 7.317333333333333
+    },
+    {
+     "text": "The ore that once made Turkey priceless is just rock.",
+     "start": 50.1006666666666,
+     "dur": 3.648
+    },
+    {
+     "text": "That is the quiet lesson of the whole story.",
+     "start": 54.29866666666658,
+     "dur": 3.1573333333333333
+    },
+    {
+     "text": "Leverage lasts only as long as the war is balanced.",
+     "start": 57.735999999999876,
+     "dur": 4.053333333333334
+    }
+   ],
+   "dur": 62.889333333333184
+  },
+  {
+   "id": "11",
+   "title": "THE LEVERAGE FLIPS",
+   "start": 777.634,
+   "sentences": [
+    {
+     "text": "Then the war turns.",
+     "start": 0.0,
+     "dur": 1.664
+    },
+    {
+     "text": "Stalingrad.",
+     "start": 1.94399999999996,
+     "dur": 1.28
+    },
+    {
+     "text": "Kursk.",
+     "start": 3.5039999999999054,
+     "dur": 0.8106666666666666
+    },
+    {
+     "text": "The Allies stop asking and start squeezing.",
+     "start": 4.594666666666626,
+     "dur": 3.029333333333333
+    },
+    {
+     "text": "August 1944: Turkey cuts diplomatic relations with Germany.",
+     "start": 8.173999999999978,
+     "dur": 5.632
+    },
+    {
+     "text": "And on February 23rd, 1945, with victory certain and a seat at the new United Nations at stake, Turkey finally declares war on Germany, a war already won.",
+     "start": 14.086000000000013,
+     "dur": 12.949333333333334
+    },
+    {
+     "text": "The country that stayed out of everything walks in at the very end, and signs for the peace.",
+     "start": 27.315333333333342,
+     "dur": 5.589333333333333
+    }
+   ],
+   "dur": 34.004666666666594
+  },
+  {
+   "id": "12",
+   "title": "THE BILL",
+   "start": 811.6386666666666,
+   "sentences": [
+    {
+     "text": "Neutrality kept Turkey's cities standing.",
+     "start": 0.0,
+     "dur": 2.986666666666667
+    },
+    {
+     "text": "It did not make it innocent.",
+     "start": 3.2666666666666515,
+     "dur": 2.0693333333333332
+    },
+    {
+     "text": "In 1942, as the war raged, the government imposed a wealth tax that fell hardest on non-Muslim minorities, many of whom were forced to sell their property to pay it.",
+     "start": 5.885999999999967,
+     "dur": 12.416
+    },
+    {
+     "text": "A country can avoid the battlefield and still wage a war at home.",
+     "start": 18.581999999999994,
+     "dur": 4.522666666666667
+    },
+    {
+     "text": "And the peace brought its own bill.",
+     "start": 23.654666666666685,
+     "dur": 2.176
+    },
+    {
+     "text": "In 1945 and 1946 the Soviet Union pressed its claims on Turkey's eastern provinces and the Straits.",
+     "start": 26.110666666666702,
+     "dur": 9.152
+    },
+    {
+     "text": "Turkey's answer was to run to the West, first the Truman Doctrine, then NATO in 1952.",
+     "start": 35.54266666666672,
+     "dur": 7.210666666666667
+    },
+    {
+     "text": "The chromite, the railway and the double game had bought Turkey time.",
+     "start": 43.03333333333342,
+     "dur": 4.330666666666667
+    },
+    {
+     "text": "They had not bought it safety.",
+     "start": 47.64400000000012,
+     "dur": 1.92
+    }
+   ],
+   "dur": 50.6640000000001
+  },
+  {
+   "id": "13",
+   "title": "THE FINAL QUESTION",
+   "start": 862.3026666666667,
+   "sentences": [
+    {
+     "text": "So what was Turkey's neutrality?",
+     "start": 0.0,
+     "dur": 2.517333333333333
+    },
+    {
+     "text": "A masterclass in survival?",
+     "start": 2.797333333333313,
+     "dur": 2.4106666666666667
+    },
+    {
+     "text": "Or the most successful hedge in modern history, one that kept a nation alive while the world burned?",
+     "start": 5.487999999999943,
+     "dur": 6.485333333333333
+    },
+    {
+     "text": "If you sell the steel that armour is made of to both sides, are you neutral?",
+     "start": 12.523333333333312,
+     "dur": 4.650666666666667
+    },
+    {
+     "text": "Or are you simply the one country in the war with its hands out, and its eyes open?",
+     "start": 17.45399999999995,
+     "dur": 5.376
+    },
+    {
+     "text": "Tell me in the comments.",
+     "start": 23.379999999999995,
+     "dur": 1.664
+    },
+    {
+     "text": "And if you want to know how a single treaty clause turned an entire country into a battlefield without a shot, watch this next.",
+     "start": 25.323999999999955,
+     "dur": 8.512
+    }
+   ],
+   "dur": 36.88599999999997
+  }
+ ]
+}

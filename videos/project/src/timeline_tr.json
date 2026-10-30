@@ -1,0 +1,1113 @@
+{
+ "total": 899.1886666666667,
+ "scenes": [
+  {
+   "id": "1",
+   "title": "THE HOOK",
+   "start": 0.0,
+   "sentences": [
+    {
+     "text": "30 Ocak 1943.",
+     "start": 0.0,
+     "dur": 3.0933333333333333
+    },
+    {
+     "text": "Yenice, Adana ile Mersin arasındaki ovada, ıssız bir istasyonun yan hattı.",
+     "start": 3.373333333333333,
+     "dur": 6.8693333333333335
+    },
+    {
+     "text": "İki tren yan yana duruyor.",
+     "start": 10.522666666666666,
+     "dur": 2.9226666666666667
+    },
+    {
+     "text": "Vagonlardan birinde Winston Churchill, Kazablanka'dan yeni dönmüş, tarafsız bir ülkeden dünyanın en büyük savaşına girmesini isteyecek.",
+     "start": 13.725333333333332,
+     "dur": 9.109333333333334
+    },
+    {
+     "text": "Masanın karşısında Cumhurbaşkanı İsmet İnönü oturuyor: sabırlı, kibar ve rivayete göre, soru zorlaştığında işitme güçlüğü işine gelen biri.",
+     "start": 23.384666666666668,
+     "dur": 11.328
+    },
+    {
+     "text": "Çoğu kişi, Türkiye'nin savaşın dışında kalmasını zayıf olmasına bağlar.",
+     "start": 34.992666666666665,
+     "dur": 4.522666666666667
+    },
+    {
+     "text": "Ya da korkmasına.",
+     "start": 39.79533333333333,
+     "dur": 1.216
+    },
+    {
+     "text": "Ya da şansına.",
+     "start": 41.291333333333334,
+     "dur": 1.0453333333333332
+    },
+    {
+     "text": "Yanılıyorlar.",
+     "start": 42.61666666666667,
+     "dur": 1.152
+    },
+    {
+     "text": "Türkiye savaşın dışında kaldı, çünkü herkesin onun elindeki bir şeye ihtiyacı vardı.",
+     "start": 44.318666666666665,
+     "dur": 3.8613333333333335
+    },
+    {
+     "text": "Donuk gri bir cevher.",
+     "start": 48.46,
+     "dur": 1.472
+    },
+    {
+     "text": "Bir hat çelik ray.",
+     "start": 50.212,
+     "dur": 1.8133333333333332
+    },
+    {
+     "text": "Ve sahte parayla ödenen bir casus.",
+     "start": 52.30533333333334,
+     "dur": 3.2
+    },
+    {
+     "text": "Bu, kimsenin saldırmadığı demiryolunun hikâyesi.",
+     "start": 56.05533333333334,
+     "dur": 3.8826666666666667
+    },
+    {
+     "text": "Ve nedeninin.",
+     "start": 60.218,
+     "dur": 1.0453333333333332
+    }
+   ],
+   "dur": 62.36333333333334
+  },
+  {
+   "id": "2",
+   "title": "THE ILLUSION: A MAP THAT LOOKS LIKE AN INVITATION",
+   "start": 62.36333333333334,
+   "sentences": [
+    {
+     "text": "Haritaya, 1941 baharında bir Alman planlamacı gibi bakın.",
+     "start": 0.0,
+     "dur": 5.418666666666667
+    },
+    {
+     "text": "Bulgaristan Mihver'e katıldı.",
+     "start": 5.968666666666671,
+     "dur": 2.538666666666667
+    },
+    {
+     "text": "Alman birlikleri Türk sınırı boyunca konuşlandı.",
+     "start": 8.787333333333343,
+     "dur": 3.2213333333333334
+    },
+    {
+     "text": "Yunanistan düştü.",
+     "start": 12.288666666666678,
+     "dur": 1.536
+    },
+    {
+     "text": "Girit düştü.",
+     "start": 14.104666666666681,
+     "dur": 1.4506666666666668
+    },
+    {
+     "text": "İtalyan elindeki adalar, Türkiye kıyılarından birkaç mil açıkta duruyor.",
+     "start": 15.835333333333345,
+     "dur": 4.16
+    },
+    {
+     "text": "Bu, neredeyse her yandan çevrilmiş bir ülke.",
+     "start": 20.275333333333343,
+     "dur": 3.712
+    },
+    {
+     "text": "Ve arkasında, Hitler'in istediği her şey var.",
+     "start": 24.537333333333343,
+     "dur": 3.1573333333333333
+    },
+    {
+     "text": "Karadeniz'in kapısı olan Boğazlar.",
+     "start": 27.97466666666667,
+     "dur": 2.752
+    },
+    {
+     "text": "Irak petrolüne giden yol.",
+     "start": 31.006666666666668,
+     "dur": 2.1546666666666665
+    },
+    {
+     "text": "Ve Kafkaslar'ın ötesinde, Bakü'nün petrol sahaları.",
+     "start": 33.44133333333334,
+     "dur": 3.477333333333333
+    },
+    {
+     "text": "Türkiye'nin ordusu büyük, yaklaşık bir milyon kişi, ama büyük bölümü kötü donatılmış.",
+     "start": 37.46866666666667,
+     "dur": 5.525333333333333
+    },
+    {
+     "text": "Şehirlerinde neredeyse hiç hava savunması yok.",
+     "start": 43.27400000000001,
+     "dur": 2.986666666666667
+    },
+    {
+     "text": "Wehrmacht güneye doğru ilerleseydi, bilinen anlatıya göre, onu hiçbir şey durduramazdı.",
+     "start": 46.540666666666674,
+     "dur": 5.9093333333333335
+    },
+    {
+     "text": "Peki neden ilerlemedi?",
+     "start": 53.00000000000001,
+     "dur": 1.536
+    }
+   ],
+   "dur": 55.636
+  },
+  {
+   "id": "3",
+   "title": "THE FORGOTTEN RAILWAY",
+   "start": 117.99933333333334,
+   "sentences": [
+    {
+     "text": "Cevap bir demiryoluyla başlıyor.",
+     "start": 0.0,
+     "dur": 2.688
+    },
+    {
+     "text": "Kırk yıl önce Kayzer II. Wilhelm, Almanya'nın Ortadoğu'ya demiryoluyla ulaşmasına karar verdi: Berlin, İstanbul, Bağdat.",
+     "start": 3.2379999999999995,
+     "dur": 9.941333333333333
+    },
+    {
+     "text": "Alman bankaları ve Alman mühendisler, Toros Dağları'ndan bir hat açtı, her seferinde tek bir tüneli patlatarak.",
+     "start": 13.45933333333332,
+     "dur": 7.850666666666666
+    },
+    {
+     "text": "Büyük Savaş bu hayali boğdu.",
+     "start": 21.859999999999985,
+     "dur": 2.3893333333333335
+    },
+    {
+     "text": "Boşluklar ancak 1940'ta kapandı; Bağdat'tan İstanbul'a ilk kesintisiz tren o zaman yola çıktı.",
+     "start": 24.529333333333312,
+     "dur": 7.445333333333333
+    },
+    {
+     "text": "Böylece savaşın ortasında, Almanya'nın başlattığı bir demiryolu, iki tarafa da ait olmayan bir ülkeden geçer oldu.",
+     "start": 32.25466666666665,
+     "dur": 7.808
+    },
+    {
+     "text": "Irak'a asker taşıyabilecek bir hat.",
+     "start": 40.342666666666645,
+     "dur": 2.6666666666666665
+    },
+    {
+     "text": "Ya da çok daha ağır bir şeyi, batıya, Reich'ın fabrikalarına taşıyabilecek.",
+     "start": 43.2893333333333,
+     "dur": 4.714666666666667
+    },
+    {
+     "text": "Yük trenleri.",
+     "start": 48.553999999999974,
+     "dur": 1.344
+    },
+    {
+     "text": "Taş dolu.",
+     "start": 50.17799999999997,
+     "dur": 1.152
+    }
+   ],
+   "dur": 52.42999999999998
+  },
+  {
+   "id": "4",
+   "title": "THE GREY ROCK",
+   "start": 170.42933333333332,
+   "sentences": [
+    {
+     "text": "Adı kromit.",
+     "start": 0.0,
+     "dur": 1.856
+    },
+    {
+     "text": "Hiçbir şeye benzemiyor: ağır, mat, gri-siyah bir taş.",
+     "start": 2.1359999999999957,
+     "dur": 3.6693333333333333
+    },
+    {
+     "text": "Ama kromu çeliğe katarsanız, mermilerin sekip döndüğü zırh levhası elde edersiniz.",
+     "start": 6.355333333333334,
+     "dur": 4.992
+    },
+    {
+     "text": "Kızgın sıcaklıklara dayanan motor parçaları.",
+     "start": 11.627333333333326,
+     "dur": 3.477333333333333
+    },
+    {
+     "text": "Körelmeyen kesici aletler.",
+     "start": 15.384666666666647,
+     "dur": 2.368
+    },
+    {
+     "text": "Modern bir savaş makinesi onsuz çalışmaz.",
+     "start": 18.032666666666643,
+     "dur": 3.328
+    },
+    {
+     "text": "Almanya'nın kendi topraklarında neredeyse hiç yoktu.",
+     "start": 21.910666666666657,
+     "dur": 2.5813333333333333
+    },
+    {
+     "text": "Savaştan önce çoğunu çok uzaklardan satın alıyordu.",
+     "start": 24.77199999999999,
+     "dur": 3.4346666666666668
+    },
+    {
+     "text": "Sonra abluka bu yolları kesti.",
+     "start": 28.48666666666665,
+     "dur": 2.474666666666667
+    },
+    {
+     "text": "1941'e gelindiğinde Almanya, Balkanlar'a, Finlandiya'ya ve hızla büyüyen bir tedarikçiye yaslanıyordu.",
+     "start": 31.24133333333333,
+     "dur": 7.722666666666667
+    },
+    {
+     "text": "Türkiye, dünyanın önde gelen kromit üreticilerinden biri.",
+     "start": 39.244,
+     "dur": 3.562666666666667
+    },
+    {
+     "text": "Yani Anadolu'nun “boş” dağları hiç de boş değildi.",
+     "start": 43.356666666666655,
+     "dur": 4.437333333333333
+    },
+    {
+     "text": "Alman savaş ekonomisinin kileriydi.",
+     "start": 48.073999999999984,
+     "dur": 3.264
+    }
+   ],
+   "dur": 52.43799999999999
+  },
+  {
+   "id": "5",
+   "title": "THE CLAUSE",
+   "start": 222.8673333333333,
+   "sentences": [
+    {
+     "text": "Ekim 1941.",
+     "start": 0.0,
+     "dur": 2.3893333333333335
+    },
+    {
+     "text": "Ankara'da Karl Clodius adlı bir Alman müzakereci, bir ticaret anlaşması imzalıyor.",
+     "start": 2.669333333333327,
+     "dur": 6.165333333333334
+    },
+    {
+     "text": "Türkiye kromit teslim edecek: ilk iki yıl boyunca her yıl 45 bin ton.",
+     "start": 9.114666666666665,
+     "dur": 5.973333333333334
+    },
+    {
+     "text": "Sonra 1943'te 90 bin ton.",
+     "start": 15.367999999999995,
+     "dur": 3.776
+    },
+    {
+     "text": "Ve 1944'te bir 90 bin ton daha.",
+     "start": 19.424000000000007,
+     "dur": 3.6693333333333333
+    },
+    {
+     "text": "Karşılığında Almanya, Türkiye'nin çaresizce ihtiyaç duyduğu silahları verecek.",
+     "start": 23.373333333333335,
+     "dur": 4.778666666666667
+    },
+    {
+     "text": "Basit bir ticaret anlaşması gibi görünüyor.",
+     "start": 28.432000000000016,
+     "dur": 2.2826666666666666
+    },
+    {
+     "text": "Aslında dolu bir tabanca.",
+     "start": 30.99466666666669,
+     "dur": 1.8133333333333332
+    },
+    {
+     "text": "Çünkü teslimatlar sona yığılmış.",
+     "start": 33.358000000000004,
+     "dur": 2.7946666666666666
+    },
+    {
+     "text": "Büyük sevkiyatlar, savaşın en aç olduğu döneme planlanmış.",
+     "start": 36.43266666666665,
+     "dur": 4.906666666666666
+    },
+    {
+     "text": "Ve İngiltere ile Amerika bunu biliyor.",
+     "start": 41.619333333333316,
+     "dur": 3.1573333333333333
+    },
+    {
+     "text": "Bu yüzden tuhaf bir şey yapıyorlar.",
+     "start": 45.326666666666654,
+     "dur": 2.176
+    },
+    {
+     "text": "Türk kromunu kendileri satın alıyorlar, ihtiyaçlarından fazlasını, sırf Almanya'ya gitmesin diye.",
+     "start": 47.78266666666667,
+     "dur": 6.229333333333333
+    },
+    {
+     "text": "Önceden satın alma: düşmanı, onun üzerine fiyat vererek aç bırakmak.",
+     "start": 54.29200000000003,
+     "dur": 3.7973333333333334
+    },
+    {
+     "text": "Bir ticaret anlaşmasında tek bir madde.",
+     "start": 58.36933333333337,
+     "dur": 2.6453333333333333
+    },
+    {
+     "text": "Ve birden Anadolu dağlarındaki bir maden yatağı, bir cephe hattına dönüşüyor.",
+     "start": 61.29466666666673,
+     "dur": 5.824
+    }
+   ],
+   "dur": 68.21866666666676
+  },
+  {
+   "id": "5B",
+   "title": "THE TRAIN OF ROCK",
+   "start": 291.08600000000007,
+   "sentences": [
+    {
+     "text": "Şimdi cevherin kendisini izleyin.",
+     "start": 0.0,
+     "dur": 2.048
+    },
+    {
+     "text": "Güney ve doğu Anadolu'nun dağlarında başlıyor, çoğu insanın adını duymadığı madenlerde.",
+     "start": 2.598000000000013,
+     "dur": 6.762666666666667
+    },
+    {
+     "text": "Kamyonla, arabayla, bazen hayvanla taşınıyor; kürekle açık vagonlara boşaltıldığı demiryolu başlarına iniyor.",
+     "start": 9.640666666666675,
+     "dur": 7.552
+    },
+    {
+     "text": "Ve sonra bir demiryoluna ihtiyacı var.",
+     "start": 17.74266666666665,
+     "dur": 1.92
+    },
+    {
+     "text": "Cevher batıya gitmeli: İstanbul'a, Trakya'dan geçip Bulgaristan üzerinden, bir zamanlar yolcuları Paris'e taşıyan o eski Orient hattıyla Reich'a.",
+     "start": 19.94266666666664,
+     "dur": 12.352
+    },
+    {
+     "text": "Her halka bir darboğaz.",
+     "start": 32.574666666666644,
+     "dur": 2.176
+    },
+    {
+     "text": "Türkiye'nin yeterli vagonu ya da lokomotifi yok.",
+     "start": 35.03066666666666,
+     "dur": 3.648
+    },
+    {
+     "text": "Almanya, kromu batıya taşımak için o trenlere muhtaç.",
+     "start": 38.95866666666666,
+     "dur": 3.584
+    },
+    {
+     "text": "İngiltere, Türkiye'ye rakip bir teklif sunabilir.",
+     "start": 42.822666666666635,
+     "dur": 3.0933333333333333
+    },
+    {
+     "text": "İşte bu yüzden Yenice'de Churchill lokomotiflerden söz ediyor.",
+     "start": 46.19599999999997,
+     "dur": 5.034666666666666
+    },
+    {
+     "text": "1943'te bir yük vagonu, pazarlık kozudur.",
+     "start": 51.51066666666662,
+     "dur": 4.416
+    },
+    {
+     "text": "Vagon filosunu kim denetlerse, savaş ekonomisinin hızını da o denetler.",
+     "start": 56.47666666666663,
+     "dur": 5.397333333333333
+    },
+    {
+     "text": "Demiryolu dekor değil.",
+     "start": 62.15399999999994,
+     "dur": 2.1333333333333333
+    },
+    {
+     "text": "O bir manivela.",
+     "start": 64.5673333333333,
+     "dur": 1.408
+    }
+   ],
+   "dur": 67.07533333333333
+  },
+  {
+   "id": "6",
+   "title": "THE DOMINO CHAIN",
+   "start": 358.1613333333334,
+   "sentences": [
+    {
+     "text": "Şimdi domino taşlarını izleyin.",
+     "start": 0.0,
+     "dur": 1.984
+    },
+    {
+     "text": "Anadolu'dan gelen krom, Ruhr'da alaşımlı çelik demek.",
+     "start": 2.533999999999992,
+     "dur": 3.9466666666666668
+    },
+    {
+     "text": "Alaşımlı çelik, tanklar için zırh levhası ve uçak motorları için parça demek.",
+     "start": 6.76066666666668,
+     "dur": 5.1626666666666665
+    },
+    {
+     "text": "Kursk'u, Normandiya'yı, Ardenler'i belirleyen şey tanklar ve uçaklar.",
+     "start": 12.203333333333319,
+     "dur": 4.437333333333333
+    },
+    {
+     "text": "Hitler'in silahlanma bakanı Albert Speer, sonradan, Türk kromu olmasaydı Alman savaş makinesinin aylar içinde duracağını iddia etti.",
+     "start": 17.19066666666663,
+     "dur": 9.749333333333333
+    },
+    {
+     "text": "Gerçek daha karışık.",
+     "start": 27.21999999999997,
+     "dur": 1.984
+    },
+    {
+     "text": "Amerikalı uzmanlar, 1944 başında Alman stoklarının yaklaşık 230 bin ton olduğunu, bunun yalnızca 46 bin tonunun Türkiye'den geldiğini tahmin etti.",
+     "start": 29.48399999999998,
+     "dur": 12.992
+    },
+    {
+     "text": "Almanya tasarruf edebilirdi.",
+     "start": 42.75599999999997,
+     "dur": 2.005333333333333
+    },
+    {
+     "text": "İkame edebilirdi.",
+     "start": 45.041333333333284,
+     "dur": 1.152
+    },
+    {
+     "text": "Uzatabilirdi.",
+     "start": 46.4733333333333,
+     "dur": 0.8106666666666666
+    },
+    {
+     "text": "Ama Berlin, ne kadar uzatabileceğini bilemiyordu.",
+     "start": 47.563999999999965,
+     "dur": 3.029333333333333
+    },
+    {
+     "text": "Bu yüzden Türkiye'yi ürkütmeye cesaret edemedi.",
+     "start": 50.87333333333328,
+     "dur": 2.3253333333333335
+    },
+    {
+     "text": "Müttefikler de, Türkiye'nin ne kadar esneyeceğini bilemiyordu.",
+     "start": 53.478666666666584,
+     "dur": 4.522666666666667
+    },
+    {
+     "text": "Bu da tek bir anlama geliyor: hiçbir taraf saldırmaya cesaret edemedi.",
+     "start": 58.28133333333324,
+     "dur": 3.498666666666667
+    }
+   ],
+   "dur": 62.87999999999994
+  },
+  {
+   "id": "7",
+   "title": "A COUNTRY THAT SIGNED WITH BOTH SIDES",
+   "start": 421.04133333333334,
+   "sentences": [
+    {
+     "text": "Türkiye'nin hayatta kalma stratejisi, cüretiyle neredeyse komik.",
+     "start": 0.0,
+     "dur": 4.565333333333333
+    },
+    {
+     "text": "İngiltere ve Fransa ile, 1939'da imzalanmış bir ittifak antlaşması var.",
+     "start": 4.845333333333315,
+     "dur": 5.738666666666667
+    },
+    {
+     "text": "Ve 18 Haziran 1941'de, Nazi Almanyası ile bir dostluk paktı imzalıyor.",
+     "start": 10.863999999999976,
+     "dur": 6.4
+    },
+    {
+     "text": "Dört gün sonra Hitler, Sovyetler Birliği'ne saldırıyor.",
+     "start": 17.543999999999983,
+     "dur": 3.6906666666666665
+    },
+    {
+     "text": "İki ayrı söz.",
+     "start": 21.514666666666642,
+     "dur": 1.7066666666666668
+    },
+    {
+     "text": "Tek sandalye.",
+     "start": 23.50133333333332,
+     "dur": 1.1733333333333333
+    },
+    {
+     "text": "Bu oyunu oynayan adam Dışişleri Bakanı Numan Menemencioğlu: temkinli, soğukkanlı, titiz bir diplomat; bütün yöntemi oyalamak.",
+     "start": 25.22466666666668,
+     "dur": 9.792
+    },
+    {
+     "text": "Gülümse, ilkesel olarak kabul et ve biraz daha zaman iste.",
+     "start": 35.29666666666668,
+     "dur": 3.498666666666667
+    },
+    {
+     "text": "Masanın öbür yanında Almanya'nın büyükelçisi, eski şansölye Franz von Papen, Kayzer'den beri her rejim değişikliğinden sağ çıkmış kurnaz bir adam, aynısını tersinden yapıyor.",
+     "start": 39.34533333333337,
+     "dur": 13.589333333333334
+    },
+    {
+     "text": "Türk diplomasisinin tamamı tek bir cümleye iniyor: henüz değil.",
+     "start": 53.484666666666726,
+     "dur": 5.013333333333334
+    }
+   ],
+   "dur": 59.59800000000007
+  },
+  {
+   "id": "8",
+   "title": "THE CARRIAGE",
+   "start": 480.6393333333334,
+   "sentences": [
+    {
+     "text": "Yeniden Yenice'deki yan hatta.",
+     "start": 0.0,
+     "dur": 2.7733333333333334
+    },
+    {
+     "text": "Churchill'in önerisi basit: bize katılın, Türkiye modern silahlar alsın.",
+     "start": 3.3233333333333235,
+     "dur": 4.906666666666666
+    },
+    {
+     "text": "Uçaklar.",
+     "start": 8.509999999999991,
+     "dur": 1.024
+    },
+    {
+     "text": "Tanklar.",
+     "start": 9.813999999999965,
+     "dur": 0.8106666666666666
+    },
+    {
+     "text": "Modern bir ordunun ihtiyaç duyduğu demiryolu araçları bile: vaatler arasında, aktarıldığına göre, on lokomotif ve iki yüz elli vagon.",
+     "start": 10.904666666666628,
+     "dur": 10.944
+    },
+    {
+     "text": "İnönü'nün cevabı da aynı derecede basit: önce silah.",
+     "start": 22.128666666666618,
+     "dur": 4.288
+    },
+    {
+     "text": "Sonra konuşuruz.",
+     "start": 26.6966666666666,
+     "dur": 1.3226666666666667
+    },
+    {
+     "text": "Çünkü hesabı biliyor.",
+     "start": 28.569333333333248,
+     "dur": 2.517333333333333
+    },
+    {
+     "text": "Türkiye savaşa, atlardan oluşan bir orduyla, Stuka'lardan oluşan bir hava gücüne karşı girerse, İstanbul yanar.",
+     "start": 31.36666666666656,
+     "dur": 7.488
+    },
+    {
+     "text": "Ve Türkiye hiçbir şey yapmazsa, herkes bu ayrıcalık için ödemeye devam eder.",
+     "start": 39.13466666666659,
+     "dur": 4.16
+    },
+    {
+     "text": "Konferans kibarca sona eriyor.",
+     "start": 43.844666666666626,
+     "dur": 2.304
+    },
+    {
+     "text": "Söz yok.",
+     "start": 46.42866666666657,
+     "dur": 1.3653333333333333
+    },
+    {
+     "text": "Vagon o yan hatta kalıyor, sonra bir demiryolu deposunda, sonra, kimin anlatımına inandığınıza göre, bir müzede.",
+     "start": 48.073999999999955,
+     "dur": 7.616
+    },
+    {
+     "text": "Sonunda nereye gittiği konusunda kimse tam olarak hemfikir değil.",
+     "start": 55.969999999999914,
+     "dur": 2.8586666666666667
+    }
+   ],
+   "dur": 59.65866666666659
+  },
+  {
+   "id": "9",
+   "title": "THE SPY WHO WAS PAID IN FAKE MONEY",
+   "start": 540.298,
+   "sentences": [
+    {
+     "text": "Bu arada, Ankara'daki İngiliz büyükelçiliğinde olağanüstü bir şey oluyor.",
+     "start": 0.0,
+     "dur": 5.568
+    },
+    {
+     "text": "Elyesa Bazna adlı bir uşak, kod adı Cicero, büyükelçinin gizli belgelerini fotoğraflıyor ve Alman istihbaratına satıyor.",
+     "start": 6.118000000000052,
+     "dur": 10.133333333333333
+    },
+    {
+     "text": "Müttefik konferanslarıyla ilgili belgeler.",
+     "start": 16.53133333333335,
+     "dur": 2.986666666666667
+    },
+    {
+     "text": "Fransa çıkarması hakkında ipuçları.",
+     "start": 19.798000000000002,
+     "dur": 2.5813333333333333
+    },
+    {
+     "text": "Tarafsız bir başkent, bir pazar yerine dönüşüyor.",
+     "start": 22.65933333333328,
+     "dur": 3.2
+    },
+    {
+     "text": "Almanlar ona İngiliz sterlini ödüyor: pırıl pırıl, kusursuz, yüz binlercesi.",
+     "start": 26.40933333333328,
+     "dur": 6.1866666666666665
+    },
+    {
+     "text": "Ama banknotlar sahte.",
+     "start": 32.875999999999976,
+     "dur": 2.2826666666666666
+    },
+    {
+     "text": "Gizli bir SS sahtecilik atölyesi olan Bernhard Operasyonu'ndan geliyorlar.",
+     "start": 35.43866666666668,
+     "dur": 5.226666666666667
+    },
+    {
+     "text": "Bazna yıllarca, hiç gerçek olmamış bir servetle yaşamaya çalışıyor.",
+     "start": 40.94533333333334,
+     "dur": 5.525333333333333
+    },
+    {
+     "text": "Berlin bile, Cicero'nun getirdiklerine hiçbir zaman tam güvenmedi.",
+     "start": 47.02066666666667,
+     "dur": 4.437333333333333
+    },
+    {
+     "text": "Ankara'da herkes herkesi gözetliyor ve kimse, çaldıklarına tam olarak inanmıyor.",
+     "start": 51.738000000000056,
+     "dur": 6.037333333333334
+    }
+   ],
+   "dur": 58.8753333333334
+  },
+  {
+   "id": "9B",
+   "title": "WHAT CICERO ACTUALLY BOUGHT",
+   "start": 599.1733333333334,
+   "sentences": [
+    {
+     "text": "İşte filmlerde hiç tam oturmayan kısım.",
+     "start": 0.0,
+     "dur": 3.52
+    },
+    {
+     "text": "Cicero'nun ilk teslimatları Almanlara 1943 sonbaharında ulaşıyor.",
+     "start": 4.07000000000005,
+     "dur": 6.08
+    },
+    {
+     "text": "Belgeler şaşırtıcı: Müttefik konferanslarının tutanakları, strateji tartışmaları, hatta Fransa çıkarmasını andıran bir kod adı.",
+     "start": 10.430000000000064,
+     "dur": 10.325333333333333
+    },
+    {
+     "text": "Ve Berlin omuz silkiyor.",
+     "start": 21.03533333333337,
+     "dur": 1.5786666666666667
+    },
+    {
+     "text": "Bazı yetkililer malzemeye inanıyor.",
+     "start": 22.894000000000005,
+     "dur": 2.752
+    },
+    {
+     "text": "Diğerleri tuzak olduğundan şüpheleniyor.",
+     "start": 25.926000000000045,
+     "dur": 2.1546666666666665
+    },
+    {
+     "text": "Savaşın en iyi istihbaratlarından bazıları okunuyor, tartışılıyor ve dosyalanıyor.",
+     "start": 28.360666666666702,
+     "dur": 5.184
+    },
+    {
+     "text": "Sonra, 1944 baharında, bir Alman büyükelçilik sekreteri olan Cecilie Kapp ortadan kayboluyor ve Müttefiklere sığınıyor.",
+     "start": 33.82466666666676,
+     "dur": 8.554666666666666
+    },
+    {
+     "text": "Olay çöküyor.",
+     "start": 42.65933333333339,
+     "dur": 1.792
+    },
+    {
+     "text": "Casus, sıradan hayata karışıp kayboluyor.",
+     "start": 44.731333333333396,
+     "dur": 2.986666666666667
+    },
+    {
+     "text": "Bunun size ne söylediğini düşünün.",
+     "start": 48.26800000000003,
+     "dur": 2.112
+    },
+    {
+     "text": "Tarafsız Ankara'da her büyük güç, diğerlerinin içine bir pencere açmış.",
+     "start": 50.66000000000008,
+     "dur": 4.714666666666667
+    },
+    {
+     "text": "Kimse saklanamıyor.",
+     "start": 55.6546666666668,
+     "dur": 1.6
+    },
+    {
+     "text": "Kimse gördüğüne tam olarak güvenemiyor.",
+     "start": 57.534666666666794,
+     "dur": 2.7946666666666666
+    },
+    {
+     "text": "Ve işte bu, garip biçimde, Türkiye'nin oyalama oyununu sürdürmek için tam da ihtiyaç duyduğu türden bir sis.",
+     "start": 60.60933333333344,
+     "dur": 6.1866666666666665
+    }
+   ],
+   "dur": 67.89600000000007
+  },
+  {
+   "id": "10",
+   "title": "THE THIRD PARTY",
+   "start": 667.0693333333335,
+   "sentences": [
+    {
+     "text": "İşte sürpriz.",
+     "start": 0.0,
+     "dur": 1.408
+    },
+    {
+     "text": "İnönü'nün en çok korktuğu şey Almanya değil.",
+     "start": 1.6879999999999882,
+     "dur": 3.648
+    },
+    {
+     "text": "Sovyetler Birliği.",
+     "start": 5.885999999999967,
+     "dur": 1.7493333333333334
+    },
+    {
+     "text": "Kasım 1940'ta Molotov Berlin'e, Rusya'nın Türk Boğazları'nda üs istediğini söyledi.",
+     "start": 8.185333333333347,
+     "dur": 7.125333333333334
+    },
+    {
+     "text": "Türkiye bunu duydu.",
+     "start": 15.59066666666672,
+     "dur": 1.6213333333333333
+    },
+    {
+     "text": "Türkiye bunu hiç unutmadı.",
+     "start": 17.492000000000075,
+     "dur": 1.8133333333333332
+    },
+    {
+     "text": "Şimdi İnönü'nün kâbusunu düşünün.",
+     "start": 19.585333333333438,
+     "dur": 3.008
+    },
+    {
+     "text": "Türkiye Müttefiklere katılır ve Müttefikler kazanırsa, Kızıl Ordu Avrupa'nın en büyük kara gücü olur ve hemen yan kapıda, uzun bir hafızayla ve cebinde bir haritayla durur.",
+     "start": 22.87333333333345,
+     "dur": 11.392
+    },
+    {
+     "text": "Tarafsızlık korkaklık değil.",
+     "start": 34.815333333333456,
+     "dur": 2.3466666666666667
+    },
+    {
+     "text": "O bir tampon.",
+     "start": 37.44200000000012,
+     "dur": 1.408
+    },
+    {
+     "text": "Her büyük gücü, diğerlerini caydıracak kadar yakında, ama hiçbirini Türkiye'yi bütünüyle yutacak kadar yakında tutmanın bir yolu.",
+     "start": 39.13000000000011,
+     "dur": 7.445333333333333
+    }
+   ],
+   "dur": 47.675333333333356
+  },
+  {
+   "id": "10B",
+   "title": "THE ULTIMATUM",
+   "start": 714.7446666666668,
+   "sentences": [
+    {
+     "text": "1944 baharında Müttefikler artık kibarca istemeyi bırakıyor.",
+     "start": 0.0,
+     "dur": 4.736
+    },
+    {
+     "text": "Mesaj açık: Almanya'ya krom sevkiyatını durdurun, yoksa Müttefik silahlarını unutun, barış yazılırken masada bir yeri de unutun.",
+     "start": 5.2859999999999445,
+     "dur": 10.069333333333333
+    },
+    {
+     "text": "Menemencioğlu her zaman yaptığını yapıyor.",
+     "start": 15.635333333333278,
+     "dur": 3.2853333333333334
+    },
+    {
+     "text": "Oyalıyor.",
+     "start": 19.20066666666662,
+     "dur": 1.1733333333333333
+    },
+    {
+     "text": "Teslimatları yavaşlatmayı öneriyor.",
+     "start": 20.653999999999996,
+     "dur": 2.1333333333333333
+    },
+    {
+     "text": "Kotaları kırpmayı.",
+     "start": 23.067333333333295,
+     "dur": 1.8133333333333332
+    },
+    {
+     "text": "Ertelemeyi.",
+     "start": 25.160666666666657,
+     "dur": 1.1306666666666667
+    },
+    {
+     "text": "Müttefikler hayır diyor.",
+     "start": 26.841333333333296,
+     "dur": 1.6426666666666667
+    },
+    {
+     "text": "Ve Nisan sonunda Türkiye gözünü kırpıyor.",
+     "start": 29.033999999999992,
+     "dur": 2.496
+    },
+    {
+     "text": "Krom duruyor.",
+     "start": 31.809999999999945,
+     "dur": 1.5573333333333332
+    },
+    {
+     "text": "Kısa süre sonra, bütün oyalama stratejisinin mimarı, “henüz değil”i bir sanata çevirmiş adam, görevden uzaklaştırılıyor.",
+     "start": 33.64733333333322,
+     "dur": 8.576
+    },
+    {
+     "text": "O zamana gelindiğinde Almanya, Sovyetler Birliği'nde geri püskürtülmüş durumda ve Fransa çıkarması haftalar uzakta.",
+     "start": 42.50333333333322,
+     "dur": 7.317333333333333
+    },
+    {
+     "text": "Bir zamanlar Türkiye'yi paha biçilmez kılan cevher, artık sadece taş.",
+     "start": 50.1006666666666,
+     "dur": 3.648
+    },
+    {
+     "text": "Bütün hikâyenin sessiz dersi bu.",
+     "start": 54.29866666666658,
+     "dur": 3.1573333333333333
+    },
+    {
+     "text": "Koz, ancak savaş dengedeyken geçerlidir.",
+     "start": 57.735999999999876,
+     "dur": 4.053333333333334
+    }
+   ],
+   "dur": 62.889333333333184
+  },
+  {
+   "id": "11",
+   "title": "THE LEVERAGE FLIPS",
+   "start": 777.634,
+   "sentences": [
+    {
+     "text": "Sonra savaş dönüyor.",
+     "start": 0.0,
+     "dur": 1.664
+    },
+    {
+     "text": "Stalingrad.",
+     "start": 1.94399999999996,
+     "dur": 1.28
+    },
+    {
+     "text": "Kursk.",
+     "start": 3.5039999999999054,
+     "dur": 0.8106666666666666
+    },
+    {
+     "text": "Müttefikler istemeyi bırakıp sıkıştırmaya başlıyor.",
+     "start": 4.594666666666626,
+     "dur": 3.029333333333333
+    },
+    {
+     "text": "Ağustos 1944: Türkiye, Almanya ile diplomatik ilişkilerini kesiyor.",
+     "start": 8.173999999999978,
+     "dur": 5.632
+    },
+    {
+     "text": "Ve 23 Şubat 1945'te, zafer kesinleşmişken ve yeni Birleşmiş Milletler'de bir koltuk söz konusuyken, Türkiye sonunda Almanya'ya savaş ilan ediyor, çoktan kazanılmış bir savaşa.",
+     "start": 14.086000000000013,
+     "dur": 12.949333333333334
+    },
+    {
+     "text": "Her şeyin dışında kalan ülke, en sonda içeri giriyor ve barışı imzalıyor.",
+     "start": 27.315333333333342,
+     "dur": 5.589333333333333
+    }
+   ],
+   "dur": 34.004666666666594
+  },
+  {
+   "id": "12",
+   "title": "THE BILL",
+   "start": 811.6386666666666,
+   "sentences": [
+    {
+     "text": "Tarafsızlık, Türkiye'nin şehirlerini ayakta tuttu.",
+     "start": 0.0,
+     "dur": 2.986666666666667
+    },
+    {
+     "text": "Onu masum yapmadı.",
+     "start": 3.2666666666666515,
+     "dur": 2.0693333333333332
+    },
+    {
+     "text": "1942'de, savaş kızışırken, hükümet gayrimüslim azınlıklara en ağır şekilde yansıyan bir varlık vergisi getirdi; birçoğu bunu ödemek için mallarını satmak zorunda kaldı.",
+     "start": 5.885999999999967,
+     "dur": 12.416
+    },
+    {
+     "text": "Bir ülke savaş alanından kaçınıp yine de içeride bir savaş sürdürebilir.",
+     "start": 18.581999999999994,
+     "dur": 4.522666666666667
+    },
+    {
+     "text": "Ve barış kendi faturasını getirdi.",
+     "start": 23.654666666666685,
+     "dur": 2.176
+    },
+    {
+     "text": "1945 ve 1946'da Sovyetler Birliği, Türkiye'nin doğu illeri ve Boğazlar üzerindeki taleplerini dayattı.",
+     "start": 26.110666666666702,
+     "dur": 9.152
+    },
+    {
+     "text": "Türkiye'nin cevabı Batı'ya yönelmek oldu: önce Truman Doktrini, sonra 1952'de NATO.",
+     "start": 35.54266666666672,
+     "dur": 7.210666666666667
+    },
+    {
+     "text": "Kromit, demiryolu ve çifte oyun, Türkiye'ye zaman kazandırmıştı.",
+     "start": 43.03333333333342,
+     "dur": 4.330666666666667
+    },
+    {
+     "text": "Ona güvenlik kazandırmamıştı.",
+     "start": 47.64400000000012,
+     "dur": 1.92
+    }
+   ],
+   "dur": 50.6640000000001
+  },
+  {
+   "id": "13",
+   "title": "THE FINAL QUESTION",
+   "start": 862.3026666666667,
+   "sentences": [
+    {
+     "text": "Peki Türkiye'nin tarafsızlığı neydi?",
+     "start": 0.0,
+     "dur": 2.517333333333333
+    },
+    {
+     "text": "Hayatta kalma ustalığı mı?",
+     "start": 2.797333333333313,
+     "dur": 2.4106666666666667
+    },
+    {
+     "text": "Yoksa modern tarihin en başarılı risk dengelemesi mi; dünya yanarken bir ulusu ayakta tutan?",
+     "start": 5.487999999999943,
+     "dur": 6.485333333333333
+    },
+    {
+     "text": "Zırhın yapıldığı çeliği iki tarafa da satıyorsanız, tarafsız mısınız?",
+     "start": 12.523333333333312,
+     "dur": 4.650666666666667
+    },
+    {
+     "text": "Yoksa savaştaki tek ülke mi, eli uzanmış ve gözü açık?",
+     "start": 17.45399999999995,
+     "dur": 5.376
+    },
+    {
+     "text": "Yorumlarda söyleyin.",
+     "start": 23.379999999999995,
+     "dur": 1.664
+    },
+    {
+     "text": "Ve tek bir antlaşma maddesinin koskoca bir ülkeyi nasıl tek kurşun sıkmadan savaş alanına çevirdiğini merak ediyorsanız, bunu izleyin.",
+     "start": 25.323999999999955,
+     "dur": 8.512
+    }
+   ],
+   "dur": 36.88599999999997
+  }
+ ]
+}
