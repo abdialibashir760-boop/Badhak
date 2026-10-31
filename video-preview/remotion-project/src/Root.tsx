@@ -2,6 +2,7 @@ import React from "react";
 import { Composition } from "remotion";
 import { CaseFile } from "./Composition";
 import { Daydream, DD_FPS, DD_FRAMES, DD_H, DD_W } from "./Daydream";
+import { Story2D, S2_FPS, S2_FRAMES } from "./Story2D";
 import { Story3D, ST_FPS, ST_FRAMES, ST_H, ST_W } from "./Story3D";
 import { Wire3D, W3_FPS, W3_FRAMES, W3_H, W3_W } from "./Wire3D";
 import { FPS, HEIGHT, TOTAL_FRAMES, WIDTH } from "./script";
@@ -40,6 +41,14 @@ export const RemotionRoot: React.FC = () => {
         fps={ST_FPS}
         width={ST_W}
         height={ST_H}
+      />
+      <Composition
+        id="Story2D"
+        component={Story2D}
+        durationInFrames={S2_FRAMES}
+        fps={S2_FPS}
+        width={1280}
+        height={720}
       />
     </>
   );
