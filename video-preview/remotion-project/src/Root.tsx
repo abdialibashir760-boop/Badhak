@@ -2,6 +2,7 @@ import React from "react";
 import { Composition } from "remotion";
 import { CaseFile } from "./Composition";
 import { Daydream, DD_FPS, DD_FRAMES, DD_H, DD_W } from "./Daydream";
+import { Wire3D, W3_FPS, W3_FRAMES, W3_H, W3_W } from "./Wire3D";
 import { FPS, HEIGHT, TOTAL_FRAMES, WIDTH } from "./script";
 
 export const RemotionRoot: React.FC = () => {
@@ -22,6 +23,14 @@ export const RemotionRoot: React.FC = () => {
         fps={DD_FPS}
         width={DD_W}
         height={DD_H}
+      />
+      <Composition
+        id="Wire3D"
+        component={Wire3D}
+        durationInFrames={W3_FRAMES}
+        fps={W3_FPS}
+        width={W3_W}
+        height={W3_H}
       />
     </>
   );
