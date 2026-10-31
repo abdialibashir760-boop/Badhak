@@ -21,12 +21,13 @@ const seg = (t: number, a: number, b: number, from = 0, to = 1) =>
   interpolate(t, [a, b], [from, to], { easing: ease, ...clamp });
 
 // ---------------- pose timeline ----------------
-type Pose = {
+export type Pose = {
   pos: [number, number, number];
   rotY: number;
   walk: number; // amplitude 0..1
   phase: number;
   sit: number; // 0..1
+  flat?: number; // legs straight out (lying)
   lean: number; // torso rotation about x (negative = back)
   headYaw: number;
   headPitch: number;
@@ -74,15 +75,18 @@ const poseAt = (t: number): Pose => {
     eyeY,
     blink,
     bubbles: seg(t, 8.3, 9.2),
+    flat: 0,
   };
 };
 
 // ---------------- building blocks ----------------
-const WireMat: React.FC<{ color?: string }> = ({ color = ORANGE }) => (
-  <meshBasicMaterial color={color} wireframe />
-);
+export const ColorCtx = React.createContext(ORANGE);
+export const WireMat: React.FC<{ color?: string }> = ({ color }) => {
+  const c = React.useContext(ColorCtx);
+  return <meshBasicMaterial color={color ?? c} wireframe />;
+};
 
-const Limb: React.FC<{ len: number; r0: number; r1: number; color?: string }> = ({ len, r0, r1, color = ORANGE }) => (
+const Limb: React.FC<{ len: number; r0: number; r1: number; color?: string }> = ({ len, r0, r1, color }) => (
   <group position={[0, -len / 2, 0]}>
     <mesh>
       <cylinderGeometry args={[r0, r1, len, 8, 4]} />
@@ -95,7 +99,7 @@ const Limb: React.FC<{ len: number; r0: number; r1: number; color?: string }> = 
   </group>
 );
 
-const Ball: React.FC<{ r: number; seg?: number; color?: string }> = ({ r, seg = 14, color = ORANGE }) => (
+export const Ball: React.FC<{ r: number; seg?: number; color?: string }> = ({ r, seg = 14, color }) => (
   <group>
     <mesh>
       <sphereGeometry args={[r, seg, seg - 4]} />
@@ -108,7 +112,7 @@ const Ball: React.FC<{ r: number; seg?: number; color?: string }> = ({ r, seg = 
   </group>
 );
 
-const Person: React.FC<{ p: Pose }> = ({ p }) => {
+export const Person: React.FC<{ p: Pose }> = ({ p }) => {
   const swing = Math.sin(p.phase) * 0.65 * p.walk;
   const swing2 = Math.sin(p.phase + Math.PI) * 0.65 * p.walk;
   const sitA = (Math.PI / 2) * p.sit;
@@ -124,7 +128,7 @@ const Person: React.FC<{ p: Pose }> = ({ p }) => {
         { x: -0.1, sw: swing, kn: kneeL },
         { x: 0.1, sw: swing2, kn: kneeR },
       ].map((l, i) => (
-        <group key={i} position={[l.x, -0.05, 0]} rotation={[-sitA + l.sw, 0, 0]}>
+        <group key={i} position={[l.x, -0.05, 0]} rotation={[-sitA - (p.flat ?? 0) * (Math.PI / 2) + l.sw, 0, 0]}>
           <Limb len={0.45} r0={0.075} r1={0.06} />
           <group position={[0, -0.45, 0]} rotation={[l.kn, 0, 0]}>
             <Limb len={0.45} r0={0.06} r1={0.045} />
