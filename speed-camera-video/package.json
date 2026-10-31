@@ -1,0 +1,25 @@
+{
+  "name": "speed-camera-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "90-second explainer: How speed cameras work and what happens to the fine (Remotion, EN + TR)",
+  "scripts": {
+    "start": "remotion studio",
+    "render:en": "remotion render src/index.ts SpeedCameraEN out/speed-camera-en.mp4",
+    "render:tr": "remotion render src/index.ts SpeedCameraTR out/speed-camera-tr.mp4",
+    "still": "remotion still src/index.ts SpeedCameraEN out/frame.png --frame=300",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "@remotion/media": "4.0.538",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.9.3"
+  }
+}
