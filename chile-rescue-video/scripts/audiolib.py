@@ -66,8 +66,39 @@ def build(story, model: str, voices: str) -> None:
     for (_, s, _, _), tl in zip(clips, timeline):
         a = int(tl["start"] * SR)
         voice[a : a + len(s)] += s
-    voice *= 0.89 / np.abs(voice).max()
+    finish(story, voice, timeline)
 
+
+def build_supplied(story, wav_path: str, align_json: str) -> None:
+    """Use a supplied narration recording. `align_json` lists each present line's start/end (seconds) in that recording;
+    ids the recording lacks must be covered by story.ALIAS."""
+    import json as _json
+
+    import soundfile as _sf
+
+    x, sr = _sf.read(wav_path, dtype="float32")
+    if x.ndim > 1:
+        x = x.mean(axis=1)
+    if sr != SR:
+        x = np.interp(np.linspace(0, len(x) - 1, int(round(len(x) * SR / sr))), np.arange(len(x)), x).astype(np.float32)
+    al = _json.loads(Path(align_json).read_text())
+    cap = {lid: c for lid, _, c, _ in story.LINES}
+    lead = getattr(story, "LEAD", 0.5)
+    timeline = [{"id": o["id"], "cap": cap[o["id"]], "start": round(o["start"] + lead, 3), "end": round(o["end"] + lead, 3)} for o in al["present"]]
+    narration_end = timeline[-1]["end"]
+    total = narration_end + story.TAIL
+    voice = np.zeros(int(total * SR), dtype=np.float32)
+    a = int(lead * SR)
+    voice[a : a + len(x)] = x[: len(voice) - a]
+    voice *= 0.89 / np.abs(voice).max()
+    finish(story, voice, timeline)
+
+
+def finish(story, voice, timeline) -> None:
+    """Mix the narration with the story's sound design; write mp3, timeline.ts and SRT."""
+    narration_end = timeline[-1]["end"]
+    total = len(voice) / SR
+    n = len(voice)
     rng = np.random.default_rng(7)
     tt = np.arange(n) / SR
 
@@ -90,6 +121,8 @@ def build(story, model: str, voices: str) -> None:
     at = {tl["id"]: tl for tl in timeline}
     alias = getattr(story, "ALIAS", {})  # id -> (target id, offset s): beats a shortened script skips
     for k_, (target, off) in alias.items():
+        if k_ in at:  # a real recorded line wins over its placeholder alias
+            continue
         a0 = at[target]["start"] + off
         at[k_] = {"id": k_, "cap": "", "start": a0, "end": a0 + 1.2}
     ctx = SimpleNamespace(n=n, SR=SR, tt=tt, at=at, total=total, env=env, lowpass_noise=lowpass_noise, rng=rng)
