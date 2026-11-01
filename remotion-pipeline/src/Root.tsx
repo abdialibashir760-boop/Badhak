@@ -1,12 +1,12 @@
 import { Composition } from "remotion";
-import { Main, FPS, HEIGHT, WIDTH } from "./Composition";
+import { Main, DURATION, FPS, HEIGHT, WIDTH } from "./Composition";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <Composition
       id="Main"
       component={Main}
-      durationInFrames={FPS * 15}
+      durationInFrames={DURATION}
       fps={FPS}
       width={WIDTH}
       height={HEIGHT}
