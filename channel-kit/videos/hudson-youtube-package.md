@@ -1,18 +1,17 @@
 # Hudson River landing (US Airways Flight 1549) — upload package (English)
 
-**Status:** the narration you recorded stops after "Everyone was rescued." Seven lines (r4, e1–e5, n1) are still to come, so the
-videos made so far are **drafts** (placeholder voice for those seven lines). When the rest of your recording arrives I re-time
-everything, render the final videos, and **regenerate the chapters below** (the first five are fixed; later ones may shift).
+**Status:** final. The narration is your full recording (111 s, all 33 lines), mixed with the sound design.
 
-| | Draft now | Final (after your remaining audio) |
-|---|---|---|
-| Short (9:16) | `chile-rescue-video/out/hudson-draft-final.mp4` | `…/hudson-final.mp4` |
-| Regular (16:9) | `chile-rescue-video/out/hudson-draft-16x9-final.mp4` | `…/hudson-16x9-final.mp4` |
-| Thumbnail (16:9) | `thumbnails/hudson-en.png` | same |
-| Cover (9:16) | `thumbnails/hudson-short-cover-en.png` | same |
-| Subtitles | — (made from the final timeline) | `captions/hudson.srt` |
+| | English |
+|---|---|
+| Short (9:16, 1080×1920, ≈ 1:56) | `chile-rescue-video/out/hudson-final.mp4` |
+| Regular (16:9, 1920×1080) | `chile-rescue-video/out/hudson-16x9-final.mp4` |
+| Thumbnail (16:9, 1280×720) | `thumbnails/hudson-en.png` |
+| Cover (9:16, 1080×1920) | `thumbnails/hudson-short-cover-en.png` |
+| Subtitles (SRT) | `captions/hudson.srt` |
 
-Turkish thumbnail/cover are ready (`hudson-tr.png`, `hudson-short-cover-tr.png`); a Turkish video needs a Turkish recording.
+Turkish thumbnail/cover are ready (`hudson-tr.png`, `hudson-short-cover-tr.png`); a Turkish video needs a Turkish recording
+(the Turkish script is in `../scripts/hudson-1549-script.md`).
 
 ## Title (16:9; pick one)
 1. **Miracle on the Hudson: 155 People, 3½ Minutes** ← recommended
@@ -25,14 +24,13 @@ On January 15, 2009, US Airways Flight 1549 lost both engines minutes after take
 
 ▶ Next story: the Thai cave rescue. Subscribe so you don't miss it.
 
-CHAPTERS (draft timings — regenerate after the final audio)
+CHAPTERS
 0:00 Both engines fail
-0:16 Flight 1549
-0:33 The birds
-0:50 The decision
-1:10 Touchdown on the Hudson
-1:21 The rescue
-1:31 What investigators found
+0:15 Flight 1549
+0:31 The birds
+0:48 The decision
+1:08 Touchdown and rescue
+1:27 What investigators found
 
 SOURCES
 • NTSB — Loss of thrust in both engines after encountering a flock of birds and subsequent ditching on the Hudson River
