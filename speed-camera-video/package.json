@@ -7,6 +7,8 @@
     "start": "remotion studio",
     "render:en": "remotion render src/index.ts SpeedCameraEN out/speed-camera-en.mp4",
     "render:tr": "remotion render src/index.ts SpeedCameraTR out/speed-camera-tr.mp4",
+    "render:short-en": "remotion render src/index.ts SpeedCameraShortEN out/speed-camera-short-en.mp4",
+    "render:short-tr": "remotion render src/index.ts SpeedCameraShortTR out/speed-camera-short-tr.mp4",
     "still": "remotion still src/index.ts SpeedCameraEN out/frame.png --frame=300",
     "typecheck": "tsc --noEmit"
   },

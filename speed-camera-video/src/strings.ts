@@ -49,6 +49,17 @@ export const STR = {
     min: "min",
     sec: "s",
     place: "Main Road, km 12",
+    headlines: [
+      "Did that camera catch you?",
+      "Speed = Distance ÷ Time",
+      "RADAR: the Doppler effect",
+      "LASER: light pulses",
+      "Sensors in the road",
+      "Average speed cameras",
+      "The evidence photo",
+      "From photo to fine",
+      "It's just maths",
+    ],
   },
   tr: {
     title: "Hız Kameraları Nasıl Çalışır",
@@ -98,8 +109,19 @@ export const STR = {
     min: "dk",
     sec: "sn",
     place: "Ana Cadde, km 12",
+    headlines: [
+      "Kamera seni yakaladı mı?",
+      "Hız = Mesafe ÷ Süre",
+      "RADAR: Doppler etkisi",
+      "LAZER: ışık darbeleri",
+      "Yoldaki sensörler",
+      "Ortalama hız kameraları",
+      "Delil fotoğrafı",
+      "Fotoğraftan cezaya",
+      "Sadece matematik",
+    ],
   },
 };
 
-export type Strings = (typeof STR)["en"];
+export type Strings = Omit<(typeof STR)["en"], "headlines"> & { headlines: string[] };
 export const getStrings = (lang: Lang): Strings => STR[lang];

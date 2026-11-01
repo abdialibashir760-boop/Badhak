@@ -6,7 +6,7 @@ import type { Word } from "./timing";
 type Group = { words: Word[]; start: number; end: number };
 
 /** Split the word list into short caption lines (break at punctuation, max ~7 words). */
-const makeGroups = (words: Word[]): Group[] => {
+const makeGroups = (words: Word[], maxWords: number): Group[] => {
   const groups: Group[] = [];
   let cur: Word[] = [];
   const flush = () => {
@@ -18,18 +18,24 @@ const makeGroups = (words: Word[]): Group[] => {
   for (const w of words) {
     cur.push(w);
     const hard = /[.?:;]$/.test(w.text);
-    const soft = /,$/.test(w.text) && cur.length >= 4;
-    if (hard || soft || cur.length >= 7) flush();
+    const soft = /,$/.test(w.text) && cur.length >= Math.min(4, maxWords - 1);
+    if (hard || soft || cur.length >= maxWords) flush();
   }
   flush();
   return groups;
 };
 
-export const Captions: React.FC<{ words: Word[] }> = ({ words }) => {
+export const Captions: React.FC<{
+  words: Word[];
+  fontSize?: number;
+  maxWords?: number;
+  top?: number;
+  pad?: number;
+}> = ({ words, fontSize = 58, maxWords = 7, top, pad = 120 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
-  const groups = useMemo(() => makeGroups(words), [words]);
+  const groups = useMemo(() => makeGroups(words, maxWords), [words, maxWords]);
   let gi = groups.findIndex((g, i) => t >= g.start - 0.05 && (t < groups[i + 1]?.start - 0.05 || i === groups.length - 1));
   if (gi < 0) gi = 0;
   const g = groups[gi];
@@ -40,10 +46,10 @@ export const Captions: React.FC<{ words: Word[] }> = ({ words }) => {
         position: "absolute",
         left: 0,
         right: 0,
-        bottom: 54,
+        ...(top !== undefined ? { top } : { bottom: 54 }),
         display: "flex",
         justifyContent: "center",
-        padding: "0 120px",
+        padding: `0 ${pad}px`,
       }}
     >
       <div
@@ -53,11 +59,16 @@ export const Captions: React.FC<{ words: Word[] }> = ({ words }) => {
           padding: "16px 38px",
           fontFamily: FONT,
           fontWeight: 800,
-          fontSize: 58,
+          fontSize,
           color: C.text,
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          columnGap: fontSize * 0.28,
           textAlign: "center",
           lineHeight: 1.2,
           maxWidth: 1620,
+          boxSizing: "border-box",
           border: "2px solid rgba(255,255,255,0.08)",
         }}
       >
@@ -68,8 +79,9 @@ export const Captions: React.FC<{ words: Word[] }> = ({ words }) => {
             <span
               key={i}
               style={{
+                display: "inline-block",
+                scale: active ? "1.1" : "1",
                 color: active ? C.accent : past ? C.text : "rgba(248,250,252,0.55)",
-                marginRight: i < g.words.length - 1 ? 16 : 0,
               }}
             >
               {w.text}

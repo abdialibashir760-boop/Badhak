@@ -18,7 +18,7 @@ import {
   type SceneProps,
 } from "./scenes";
 
-const SCENES: React.FC<SceneProps>[] = [
+export const SCENES: React.FC<SceneProps>[] = [
   SceneHook,
   SceneCore,
   SceneRadar,
