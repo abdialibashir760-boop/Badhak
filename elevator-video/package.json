@@ -1,0 +1,23 @@
+{
+  "name": "elevator-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "9:16 animated explainer: how an elevator works (counterweight, balance, safety clamps), Remotion",
+  "scripts": {
+    "start": "remotion studio",
+    "render": "remotion render src/index.ts Elevator out/elevator.mp4",
+    "still": "remotion still src/index.ts Elevator out/poster.png --frame=500",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.538",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.9.3"
+  }
+}
