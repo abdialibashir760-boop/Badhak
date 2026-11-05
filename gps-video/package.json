@@ -1,0 +1,26 @@
+{
+  "name": "gps-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "10 s technology explainer: how GPS satellites locate your phone (Remotion, SVG, custom 3D projection)",
+  "scripts": {
+    "start": "remotion studio",
+    "render": "remotion render src/index.ts GpsExplainer out/gps-explainer.mp4",
+    "still": "remotion still src/index.ts GpsExplainer out/poster.png --frame=285",
+    "typecheck": "tsc --noEmit",
+    "build:land": "node scripts/build-land.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.538",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "topojson-client": "^3.1.0",
+    "typescript": "^5.9.3",
+    "world-atlas": "^2.0.2"
+  }
+}
