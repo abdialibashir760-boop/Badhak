@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Expansion of the Roman Empire — preview</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #0b0805; color: #a89572; font: 13px/1.4 ui-monospace, Menlo, Consolas, monospace; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { width: min(100vw, 177.78vh); aspect-ratio: 16 / 9; background: #20160c; box-shadow: 0 0 0 1px #3a2a18; }
+  #hud { position: fixed; left: 14px; bottom: 10px; white-space: pre; text-shadow: 0 1px 3px #000; }
+  #hud b { color: #f1e3c0; font-weight: 600; }
+  #msg { position: fixed; inset: 0; display: grid; place-items: center; color: #d9c79d; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<div id="hud"></div>
+<div id="msg">building the map…</div>
+<script src="src/geo.js"></script>
+<script src="src/scene.js"></script>
+<script>
+  // Keys: space = pause/play · ←/→ = one frame (shift = 1 s) · R = restart · 0-9 = jump to 0…90 % · [ ] = speed
+  // URL:  ?t=8.5 freezes at 8.5 s · ?speed=0.25 slow motion · ?q=1 full-resolution territory pass (default 0.6 for smoother playback)
+  const cv = document.getElementById('c'), ctx = cv.getContext('2d'), hud = document.getElementById('hud'), msg = document.getElementById('msg');
+  const q = new URLSearchParams(location.search), D = RomeScene.CFG.DURATION, FPS = RomeScene.CFG.FPS;
+  let speed = parseFloat(q.get('speed') || '1'), paused = q.has('t'), t = parseFloat(q.get('t') || '0'), last = null, scene = null;
+  const mk = (w, h) => { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; };
+  setTimeout(() => {                                   // let the "building" message paint first
+    scene = RomeScene.create({ makeCanvas: mk, quality: parseFloat(q.get('q') || '0.6') }); msg.remove(); requestAnimationFrame(tick);
+  }, 30);
+  const show = () => {
+    scene.draw(ctx, t);
+    hud.innerHTML = `<b>t = ${t.toFixed(2)} s</b>  frame ${Math.round(t * FPS)}/${D * FPS}   speed ${speed}x ${paused ? '(paused)' : ''}\nspace pause · ←/→ frame · shift+←/→ 1 s · 0-9 jump · [ ] speed`;
+  };
+  function tick(now) {
+    if (last !== null && !paused) t = (t + ((now - last) / 1000) * speed) % D;
+    last = now; show(); requestAnimationFrame(tick);
+  }
+  addEventListener('keydown', (e) => {
+    const f = 1 / FPS;
+    if (e.code === 'Space') { paused = !paused; e.preventDefault(); }
+    else if (e.key === 'ArrowRight') { paused = true; t = (t + (e.shiftKey ? 1 : f)) % D; }
+    else if (e.key === 'ArrowLeft') { paused = true; t = (t - (e.shiftKey ? 1 : f) + D) % D; }
+    else if (e.key.toLowerCase() === 'r') t = 0;
+    else if (/^[0-9]$/.test(e.key)) t = (parseInt(e.key, 10) / 10) * D;
+    else if (e.key === '[') speed = Math.max(0.05, speed / 2);
+    else if (e.key === ']') speed = Math.min(4, speed * 2);
+  });
+</script>
+</body>
+</html>

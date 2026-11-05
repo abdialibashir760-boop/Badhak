@@ -1,0 +1,23 @@
+{
+  "name": "roman-empire",
+  "version": "1.0.0",
+  "description": "10-second parchment-map documentary animation: the expansion of the Roman Empire (1920x1080, 30 fps), drawn entirely in code.",
+  "private": true,
+  "scripts": {
+    "preview": "node preview.js",
+    "render": "node render.js",
+    "render:test": "node render.js --frames 0-89 --out test.mp4",
+    "stills": "node render.js --png stills --times 0.5,1.8,3,4.5,6,7.2,8,9,10",
+    "build:geo": "node scripts/build-geo.js"
+  },
+  "dependencies": {
+    "canvas": "^3.2.3"
+  },
+  "devDependencies": {
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
