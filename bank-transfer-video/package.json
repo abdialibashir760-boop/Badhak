@@ -1,0 +1,24 @@
+{
+  "name": "bank-transfer-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "10-second 16:9 animated explainer: how money moves between banks (Remotion, SVG + CSS only)",
+  "scripts": {
+    "start": "remotion studio",
+    "preview": "remotion studio",
+    "render": "remotion render src/index.ts BankTransfer out/bank-transfer.mp4 --crf=16",
+    "still": "remotion still src/index.ts BankTransfer out/frame.png --frame=150",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.538",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.9.3"
+  }
+}
