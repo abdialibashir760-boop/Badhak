@@ -10,6 +10,8 @@ import {FiveVideo} from './five/FiveVideo';
 import {FIVE_PROPS} from './five/config';
 import {TimeVideo} from './time/TimeVideo';
 import {TIME_PROPS} from './time/config';
+import {LustVideo} from './lust/LustVideo';
+import {LUST_PROPS} from './lust/config';
 import {Thumbnail} from './stone/Thumbnail';
 
 export const RemotionRoot: React.FC = () => (
@@ -62,6 +64,16 @@ export const RemotionRoot: React.FC = () => (
     fps={FPS}
     durationInFrames={totalFrames(TIME_PROPS.scenes)}
     defaultProps={TIME_PROPS as unknown as Record<string, unknown>}
+    calculateMetadata={({props}) => ({durationInFrames: totalFrames((props as unknown as VideoProps).scenes)})}
+  />
+  <Composition
+    id="LustFilm"
+    component={LustVideo as React.FC<Record<string, unknown>>}
+    width={WIDTH}
+    height={HEIGHT}
+    fps={FPS}
+    durationInFrames={totalFrames(LUST_PROPS.scenes)}
+    defaultProps={LUST_PROPS as unknown as Record<string, unknown>}
     calculateMetadata={({props}) => ({durationInFrames: totalFrames((props as unknown as VideoProps).scenes)})}
   />
   <Composition
