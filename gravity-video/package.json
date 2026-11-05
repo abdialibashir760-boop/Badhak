@@ -1,0 +1,23 @@
+{
+  "name": "gravity-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "10-second animated explainer: how gravity bends spacetime (Earth + Moon on a curved grid), Remotion + SVG",
+  "scripts": {
+    "start": "remotion studio",
+    "render": "remotion render src/index.ts SpacetimeGravity out/gravity-spacetime.mp4",
+    "still": "remotion still src/index.ts SpacetimeGravity out/poster.png --frame=240",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.538",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.9.3"
+  }
+}
