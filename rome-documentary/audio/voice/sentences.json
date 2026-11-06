@@ -1,0 +1,251 @@
+{
+ "sr": 24000,
+ "sentences": [
+  {
+   "id": "hook-0",
+   "section": "hook",
+   "text": "At its height, Rome controlled territories across three continents, Europe, Africa and Asia, and ruled tens of millions of people.",
+   "seconds": 8.96
+  },
+  {
+   "id": "hook-1",
+   "section": "hook",
+   "text": "But the empire that came to dominate the ancient world began as a small city on the banks of the river Tiber, in central Italy.",
+   "seconds": 8.619
+  },
+  {
+   "id": "hook-2",
+   "section": "hook",
+   "text": "How did it happen?",
+   "seconds": 1.414
+  },
+  {
+   "id": "beginning-0",
+   "section": "beginning",
+   "text": "Rome stood a short way inland from the sea, at a river crossing among low hills.",
+   "seconds": 5.483
+  },
+  {
+   "id": "beginning-1",
+   "section": "beginning",
+   "text": "The site offered fertile land, trade routes and natural defence.",
+   "seconds": 4.693
+  },
+  {
+   "id": "beginning-2",
+   "section": "beginning",
+   "text": "Roman tradition says the city was founded by Romulus in seven hundred and fifty-three BCE.",
+   "seconds": 7.168
+  },
+  {
+   "id": "beginning-3",
+   "section": "beginning",
+   "text": "That date belongs to legend, not archaeology.",
+   "seconds": 3.281
+  },
+  {
+   "id": "beginning-4",
+   "section": "beginning",
+   "text": "But excavations do reveal villages on these hills by the eighth century BCE, slowly merging into a town, shaped by Etruscan neighbours to the north.",
+   "seconds": 10.959
+  },
+  {
+   "id": "beginning-5",
+   "section": "beginning",
+   "text": "Then, by tradition in five hundred and nine BCE, the Romans drove out their last king and created a Republic, governed by elected magistrates and a Senate.",
+   "seconds": 11.136
+  },
+  {
+   "id": "republic-0",
+   "section": "republic",
+   "text": "The Republic turned its citizens into soldiers.",
+   "seconds": 3.324
+  },
+  {
+   "id": "republic-1",
+   "section": "republic",
+   "text": "It also made allies of defeated neighbours, gaining vast reserves of manpower, and by two hundred and sixty-four BCE it controlled most of the Italian peninsula.",
+   "seconds": 11.691
+  },
+  {
+   "id": "republic-2",
+   "section": "republic",
+   "text": "Then came Carthage, a wealthy naval power in North Africa.",
+   "seconds": 4.395
+  },
+  {
+   "id": "republic-3",
+   "section": "republic",
+   "text": "In the First Punic War, Rome built a fleet and won Sicily.",
+   "seconds": 4.367
+  },
+  {
+   "id": "republic-4",
+   "section": "republic",
+   "text": "In two hundred and eighteen, the general Hannibal marched an army across the Alps, and at Cannae he inflicted one of the worst defeats Rome ever suffered.",
+   "seconds": 10.129
+  },
+  {
+   "id": "republic-5",
+   "section": "republic",
+   "text": "Yet Rome refused to surrender.",
+   "seconds": 2.494
+  },
+  {
+   "id": "republic-6",
+   "section": "republic",
+   "text": "Scipio carried the war to Africa and beat Hannibal at Zama.",
+   "seconds": 4.288
+  },
+  {
+   "id": "republic-7",
+   "section": "republic",
+   "text": "In one hundred and forty-six BCE, Carthage was destroyed.",
+   "seconds": 4.805
+  },
+  {
+   "id": "caesar-0",
+   "section": "caesar",
+   "text": "But conquest abroad strained politics at home.",
+   "seconds": 3.276
+  },
+  {
+   "id": "caesar-1",
+   "section": "caesar",
+   "text": "Ambitious generals now commanded armies loyal to them, rather than to the state.",
+   "seconds": 5.696
+  },
+  {
+   "id": "caesar-2",
+   "section": "caesar",
+   "text": "Between fifty-eight and fifty BCE, Julius Caesar conquered Gaul.",
+   "seconds": 4.949
+  },
+  {
+   "id": "caesar-3",
+   "section": "caesar",
+   "text": "When the Senate demanded he give up his command, he led his soldiers across the Rubicon in January of forty-nine BCE.",
+   "seconds": 8.533
+  },
+  {
+   "id": "caesar-4",
+   "section": "caesar",
+   "text": "Ancient writers say he declared that the die was cast.",
+   "seconds": 4.001
+  },
+  {
+   "id": "caesar-5",
+   "section": "caesar",
+   "text": "We cannot be certain of his words.",
+   "seconds": 2.532
+  },
+  {
+   "id": "caesar-6",
+   "section": "caesar",
+   "text": "Civil war followed.",
+   "seconds": 1.723
+  },
+  {
+   "id": "caesar-7",
+   "section": "caesar",
+   "text": "Caesar defeated his rival Pompey and became dictator, until senators assassinated him on the Ides of March, forty-four BCE.",
+   "seconds": 9.941
+  },
+  {
+   "id": "caesar-8",
+   "section": "caesar",
+   "text": "The Republic was fatally weakened.",
+   "seconds": 2.571
+  },
+  {
+   "id": "empire-0",
+   "section": "empire",
+   "text": "Caesar's death did not save the Republic.",
+   "seconds": 3.037
+  },
+  {
+   "id": "empire-1",
+   "section": "empire",
+   "text": "It brought thirteen more years of civil war.",
+   "seconds": 3.067
+  },
+  {
+   "id": "empire-2",
+   "section": "empire",
+   "text": "Caesar's adopted heir, Octavian, defeated Mark Antony and Cleopatra at Actium, and annexed Egypt.",
+   "seconds": 7.595
+  },
+  {
+   "id": "empire-3",
+   "section": "empire",
+   "text": "In twenty-seven BCE, the Senate granted him the name Augustus.",
+   "seconds": 4.971
+  },
+  {
+   "id": "empire-4",
+   "section": "empire",
+   "text": "He claimed to have restored the Republic, but he held supreme power.",
+   "seconds": 4.255
+  },
+  {
+   "id": "empire-5",
+   "section": "empire",
+   "text": "Rome had its first emperor, and the Republic was over.",
+   "seconds": 3.79
+  },
+  {
+   "id": "empire-6",
+   "section": "empire",
+   "text": "Augustus built a professional army, secured the frontiers, and invested in roads, ports and cities.",
+   "seconds": 7.168
+  },
+  {
+   "id": "empire-7",
+   "section": "empire",
+   "text": "Peace and trade spread across the Mediterranean, an age later remembered as the Pax Romana.",
+   "seconds": 6.676
+  },
+  {
+   "id": "legacy-0",
+   "section": "legacy",
+   "text": "Under Trajan, in one hundred and seventeen CE, the empire reached its greatest extent, about five million square kilometres, from Britain to Mesopotamia.",
+   "seconds": 11.285
+  },
+  {
+   "id": "legacy-1",
+   "section": "legacy",
+   "text": "Paved roads linked its provinces, aqueducts fed its cities, and legions guarded frontiers thousands of kilometres long.",
+   "seconds": 8.499
+  },
+  {
+   "id": "legacy-2",
+   "section": "legacy",
+   "text": "Yet size was also a burden.",
+   "seconds": 2.432
+  },
+  {
+   "id": "legacy-3",
+   "section": "legacy",
+   "text": "Messages took weeks, defence was costly, and succession was often violent.",
+   "seconds": 5.389
+  },
+  {
+   "id": "legacy-4",
+   "section": "legacy",
+   "text": "Rome did not become powerful overnight.",
+   "seconds": 3.004
+  },
+  {
+   "id": "legacy-5",
+   "section": "legacy",
+   "text": "It grew through centuries of military expansion, political transformation and extraordinary organisation.",
+   "seconds": 7.399
+  },
+  {
+   "id": "legacy-6",
+   "section": "legacy",
+   "text": "Its influence can still be seen in the world today.",
+   "seconds": 3.77
+  }
+ ]
+}

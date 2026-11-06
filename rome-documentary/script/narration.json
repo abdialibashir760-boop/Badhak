@@ -1,0 +1,48 @@
+{
+  "title": "How Rome Became the Most Powerful Empire in the Ancient World",
+  "voice": "bm_george",
+  "sections": [
+    {
+      "id": "hook",
+      "label": "The Hook",
+      "start": 0,
+      "end": 25,
+      "text": "At its height, Rome controlled territories across three continents, Europe, Africa and Asia, and ruled tens of millions of people. But the empire that came to dominate the ancient world began as a small city on the banks of the river Tiber, in central Italy. How did it happen?"
+    },
+    {
+      "id": "beginning",
+      "label": "The Beginning",
+      "start": 25,
+      "end": 65,
+      "text": "Rome stood a short way inland from the sea, at a river crossing among low hills. The site offered fertile land, trade routes and natural defence. Roman tradition says the city was founded by Romulus in seven hundred and fifty-three BCE. That date belongs to legend, not archaeology. But excavations do reveal villages on these hills by the eighth century BCE, slowly merging into a town, shaped by Etruscan neighbours to the north. Then, by tradition in five hundred and nine BCE, the Romans drove out their last king and created a Republic, governed by elected magistrates and a Senate."
+    },
+    {
+      "id": "republic",
+      "label": "The Republic Expands",
+      "start": 65,
+      "end": 110,
+      "text": "The Republic turned its citizens into soldiers. It also made allies of defeated neighbours, gaining vast reserves of manpower, and by two hundred and sixty-four BCE it controlled most of the Italian peninsula. Then came Carthage, a wealthy naval power in North Africa. In the First Punic War, Rome built a fleet and won Sicily. In two hundred and eighteen, the general Hannibal marched an army across the Alps, and at Cannae he inflicted one of the worst defeats Rome ever suffered. Yet Rome refused to surrender. Scipio carried the war to Africa and beat Hannibal at Zama. In one hundred and forty-six BCE, Carthage was destroyed."
+    },
+    {
+      "id": "caesar",
+      "label": "Julius Caesar and Political Turmoil",
+      "start": 110,
+      "end": 155,
+      "text": "But conquest abroad strained politics at home. Ambitious generals now commanded armies loyal to them, rather than to the state. Between fifty-eight and fifty BCE, Julius Caesar conquered Gaul. When the Senate demanded he give up his command, he led his soldiers across the Rubicon in January of forty-nine BCE. Ancient writers say he declared that the die was cast. We cannot be certain of his words. Civil war followed. Caesar defeated his rival Pompey and became dictator, until senators assassinated him on the Ides of March, forty-four BCE. The Republic was fatally weakened."
+    },
+    {
+      "id": "empire",
+      "label": "The Birth of the Empire",
+      "start": 155,
+      "end": 200,
+      "text": "Caesar's death did not save the Republic. It brought thirteen more years of civil war. Caesar's adopted heir, Octavian, defeated Mark Antony and Cleopatra at Actium, and annexed Egypt. In twenty-seven BCE, the Senate granted him the name Augustus. He claimed to have restored the Republic, but he held supreme power. Rome had its first emperor, and the Republic was over. Augustus built a professional army, secured the frontiers, and invested in roads, ports and cities. Peace and trade spread across the Mediterranean, an age later remembered as the Pax Romana."
+    },
+    {
+      "id": "legacy",
+      "label": "The Legacy",
+      "start": 200,
+      "end": 240,
+      "text": "Under Trajan, in one hundred and seventeen CE, the empire reached its greatest extent, about five million square kilometres, from Britain to Mesopotamia. Paved roads linked its provinces, aqueducts fed its cities, and legions guarded frontiers thousands of kilometres long. Yet size was also a burden. Messages took weeks, defence was costly, and succession was often violent. Rome did not become powerful overnight. It grew through centuries of military expansion, political transformation and extraordinary organisation. Its influence can still be seen in the world today."
+    }
+  ]
+}
