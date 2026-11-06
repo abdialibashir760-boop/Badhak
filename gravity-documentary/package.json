@@ -1,0 +1,27 @@
+{
+  "name": "gravity-documentary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "What Gravity Actually Is – And Why Einstein Changed Everything. 4-minute science documentary (Remotion, React, SVG).",
+  "scripts": {
+    "start": "remotion studio",
+    "render": "remotion render src/index.ts Documentary out/gravity-documentary.mp4 --codec=h264",
+    "thumbnail": "remotion still src/index.ts Thumbnail out/thumbnail.png",
+    "typecheck": "tsc --noEmit",
+    "docs": "node scripts/gen-docs.mjs",
+    "audio": "python3 scripts/synth_audio.py && node scripts/gen-cues.mjs",
+    "narration:sync": "node scripts/sync-narration.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.538",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3"
+  }
+}

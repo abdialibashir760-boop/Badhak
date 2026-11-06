@@ -1,0 +1,77 @@
+[
+ {
+  "id": "b01",
+  "section": "hook",
+  "text": "Every time you drop something, you witness one of the universe's most familiar mysteries. Gravity."
+ },
+ {
+  "id": "b02",
+  "section": "hook",
+  "text": "It feels simple. Let go, and the ball falls. But what if our everyday understanding of gravity is only part of the story? To find out, we must leave the ground behind."
+ },
+ {
+  "id": "b03",
+  "section": "newton",
+  "text": "In sixteen eighty-seven, Isaac Newton gave us the first great scientific answer. Every object with mass attracts every other object. The more massive they are, and the closer they sit, the stronger the pull between them."
+ },
+ {
+  "id": "b04",
+  "section": "newton",
+  "text": "That one idea explains an apple falling from a tree, the Moon circling the Earth, and the Earth circling the Sun. It still guides spacecraft across the solar system today. Yet Newton himself admitted he could not say how one mass reaches across empty space to pull on another."
+ },
+ {
+  "id": "b05",
+  "section": "einstein",
+  "text": "In nineteen fifteen, Albert Einstein proposed a radically different picture. In general relativity, gravity is not a force reaching across space. It is the geometry of space and time, woven together as spacetime."
+ },
+ {
+  "id": "b06",
+  "section": "einstein",
+  "text": "Mass and energy change that geometry. The physicist John Wheeler put it simply: spacetime tells matter how to move; matter tells spacetime how to curve."
+ },
+ {
+  "id": "b07",
+  "section": "einstein",
+  "text": "You may have seen this pictured as a heavy ball on a stretched rubber sheet. It is a useful analogy, but only an analogy: real spacetime has four dimensions, and it is not a fabric. A small object near a massive one follows the straightest path through curved geometry."
+ },
+ {
+  "id": "b08",
+  "section": "orbits",
+  "text": "This is why planets orbit. The Sun's enormous mass curves the spacetime around it. A planet is not tugged on a rope. It is coasting along the straightest possible path."
+ },
+ {
+  "id": "b09",
+  "section": "orbits",
+  "text": "So why doesn't it fall straight into the Sun? Because it is also moving sideways, fast. Its path keeps bending, and its sideways motion keeps carrying it onward. The result is a fall that never lands. An orbit."
+ },
+ {
+  "id": "b10",
+  "section": "orbits",
+  "text": "Planets nearer the Sun move faster, and distant ones more slowly. And Einstein's theory even explained a small, stubborn shift in Mercury's orbit that Newton's could not."
+ },
+ {
+  "id": "b11",
+  "section": "time",
+  "text": "Einstein's theory predicts something stranger: gravity affects time. Clocks tick at different rates, depending on how deep they sit in a gravitational field."
+ },
+ {
+  "id": "b12",
+  "section": "time",
+  "text": "A clock on Earth's surface runs very slightly slower than one far above it. The difference is tiny, but real: atomic clocks have measured it across a height of about a third of a metre."
+ },
+ {
+  "id": "b13",
+  "section": "time",
+  "text": "It matters for GPS. Satellites orbit some twenty thousand kilometres up, where weaker gravity speeds their clocks, while their motion slows them a little. The net: about thirty-eight microseconds a day. Uncorrected, positions would drift by over ten kilometres daily."
+ },
+ {
+  "id": "b14",
+  "section": "finale",
+  "text": "So, return to the falling ball. Nothing is pulling it through empty space. It follows the straightest path through spacetime that Earth's mass has curved. That is free fall."
+ },
+ {
+  "id": "b15",
+  "section": "finale",
+  "text": "Our theories are still incomplete. Gravity and quantum physics do not yet fit together. But the lesson stands. The force that keeps your feet on the ground also shapes the movement of planets, stars and even the passage of time."
+ }
+]

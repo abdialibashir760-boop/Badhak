@@ -1,0 +1,344 @@
+{
+ "chapters": [
+  {
+   "id": "s07",
+   "start": 25.0
+  },
+  {
+   "id": "s16",
+   "start": 65.0
+  },
+  {
+   "id": "s25",
+   "start": 115.0
+  },
+  {
+   "id": "s33",
+   "start": 160.0
+  }
+ ],
+ "shots": [
+  {
+   "id": "s01",
+   "section": "hook",
+   "start": 0.0,
+   "dur": 4.0,
+   "title": "The drop"
+  },
+  {
+   "id": "s02",
+   "section": "hook",
+   "start": 4.0,
+   "dur": 3.5,
+   "title": "Follow the fall"
+  },
+  {
+   "id": "s03",
+   "section": "hook",
+   "start": 7.5,
+   "dur": 3.5,
+   "title": "It feels simple"
+  },
+  {
+   "id": "s04",
+   "section": "hook",
+   "start": 11.0,
+   "dur": 4.5,
+   "title": "Leaving the ground"
+  },
+  {
+   "id": "s05",
+   "section": "hook",
+   "start": 15.5,
+   "dur": 4.5,
+   "title": "The question"
+  },
+  {
+   "id": "s06",
+   "section": "hook",
+   "start": 20.0,
+   "dur": 5.0,
+   "title": "Zoom to the universe"
+  },
+  {
+   "id": "s07",
+   "section": "newton",
+   "start": 25.0,
+   "dur": 4.5,
+   "title": "Chapter I: Newton"
+  },
+  {
+   "id": "s08",
+   "section": "newton",
+   "start": 29.5,
+   "dur": 5.5,
+   "title": "Masses attract"
+  },
+  {
+   "id": "s09",
+   "section": "newton",
+   "start": 35.0,
+   "dur": 3.5,
+   "title": "The law"
+  },
+  {
+   "id": "s10",
+   "section": "newton",
+   "start": 38.5,
+   "dur": 4.5,
+   "title": "Inverse-square"
+  },
+  {
+   "id": "s11",
+   "section": "newton",
+   "start": 43.0,
+   "dur": 4.5,
+   "title": "The apple"
+  },
+  {
+   "id": "s12",
+   "section": "newton",
+   "start": 47.5,
+   "dur": 4.5,
+   "title": "The Moon"
+  },
+  {
+   "id": "s13",
+   "section": "newton",
+   "start": 52.0,
+   "dur": 4.0,
+   "title": "The Earth"
+  },
+  {
+   "id": "s14",
+   "section": "newton",
+   "start": 56.0,
+   "dur": 5.5,
+   "title": "Newton's cannon"
+  },
+  {
+   "id": "s15",
+   "section": "newton",
+   "start": 61.5,
+   "dur": 3.5,
+   "title": "How does it reach?"
+  },
+  {
+   "id": "s16",
+   "section": "einstein",
+   "start": 65.0,
+   "dur": 4.5,
+   "title": "Chapter II: Einstein"
+  },
+  {
+   "id": "s17",
+   "section": "einstein",
+   "start": 69.5,
+   "dur": 5.5,
+   "title": "Spacetime diagram"
+  },
+  {
+   "id": "s18",
+   "section": "einstein",
+   "start": 75.0,
+   "dur": 6.0,
+   "title": "Mass bends the grid"
+  },
+  {
+   "id": "s19",
+   "section": "einstein",
+   "start": 81.0,
+   "dur": 4.5,
+   "title": "Wheeler's summary"
+  },
+  {
+   "id": "s20",
+   "section": "einstein",
+   "start": 85.5,
+   "dur": 5.0,
+   "title": "Rubber sheet"
+  },
+  {
+   "id": "s21",
+   "section": "einstein",
+   "start": 90.5,
+   "dur": 6.0,
+   "title": "Where the analogy stops"
+  },
+  {
+   "id": "s22",
+   "section": "einstein",
+   "start": 96.5,
+   "dur": 6.0,
+   "title": "Straightest paths"
+  },
+  {
+   "id": "s23",
+   "section": "einstein",
+   "start": 102.5,
+   "dur": 6.5,
+   "title": "Paths on a globe"
+  },
+  {
+   "id": "s24",
+   "section": "einstein",
+   "start": 109.0,
+   "dur": 6.0,
+   "title": "A small object near a big one"
+  },
+  {
+   "id": "s25",
+   "section": "orbits",
+   "start": 115.0,
+   "dur": 4.0,
+   "title": "Chapter III: Orbits"
+  },
+  {
+   "id": "s26",
+   "section": "orbits",
+   "start": 119.0,
+   "dur": 6.0,
+   "title": "The Sun curves spacetime"
+  },
+  {
+   "id": "s27",
+   "section": "orbits",
+   "start": 125.0,
+   "dur": 6.0,
+   "title": "Coasting"
+  },
+  {
+   "id": "s28",
+   "section": "orbits",
+   "start": 131.0,
+   "dur": 8.0,
+   "title": "Why not fall in?"
+  },
+  {
+   "id": "s29",
+   "section": "orbits",
+   "start": 139.0,
+   "dur": 8.0,
+   "title": "The solar system"
+  },
+  {
+   "id": "s30",
+   "section": "orbits",
+   "start": 147.0,
+   "dur": 5.0,
+   "title": "Faster near, slower far"
+  },
+  {
+   "id": "s31",
+   "section": "orbits",
+   "start": 152.0,
+   "dur": 5.0,
+   "title": "Mercury's shift"
+  },
+  {
+   "id": "s32",
+   "section": "orbits",
+   "start": 157.0,
+   "dur": 3.0,
+   "title": "Descend to Earth"
+  },
+  {
+   "id": "s33",
+   "section": "time",
+   "start": 160.0,
+   "dur": 4.0,
+   "title": "Chapter IV: Time"
+  },
+  {
+   "id": "s34",
+   "section": "time",
+   "start": 164.0,
+   "dur": 6.0,
+   "title": "Two clocks"
+  },
+  {
+   "id": "s35",
+   "section": "time",
+   "start": 170.0,
+   "dur": 6.0,
+   "title": "Deeper = slower"
+  },
+  {
+   "id": "s36",
+   "section": "time",
+   "start": 176.0,
+   "dur": 6.0,
+   "title": "The readings drift"
+  },
+  {
+   "id": "s37",
+   "section": "time",
+   "start": 182.0,
+   "dur": 5.0,
+   "title": "Measured over 33 cm"
+  },
+  {
+   "id": "s38",
+   "section": "time",
+   "start": 187.0,
+   "dur": 7.0,
+   "title": "GPS constellation"
+  },
+  {
+   "id": "s39",
+   "section": "time",
+   "start": 194.0,
+   "dur": 6.0,
+   "title": "The clock budget"
+  },
+  {
+   "id": "s40",
+   "section": "time",
+   "start": 200.0,
+   "dur": 5.0,
+   "title": "Drift"
+  },
+  {
+   "id": "s41",
+   "section": "finale",
+   "start": 205.0,
+   "dur": 6.0,
+   "title": "Back to the ball"
+  },
+  {
+   "id": "s42",
+   "section": "finale",
+   "start": 211.0,
+   "dur": 6.0,
+   "title": "Worldlines"
+  },
+  {
+   "id": "s43",
+   "section": "finale",
+   "start": 217.0,
+   "dur": 6.0,
+   "title": "One idea, many effects"
+  },
+  {
+   "id": "s44",
+   "section": "finale",
+   "start": 223.0,
+   "dur": 6.0,
+   "title": "Earth, Moon, Sun"
+  },
+  {
+   "id": "s45",
+   "section": "finale",
+   "start": 229.0,
+   "dur": 6.0,
+   "title": "The galaxy"
+  },
+  {
+   "id": "s46",
+   "section": "finale",
+   "start": 235.0,
+   "dur": 5.0,
+   "title": "End title"
+  }
+ ]
+}
