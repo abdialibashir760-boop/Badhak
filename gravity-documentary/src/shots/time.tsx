@@ -35,10 +35,10 @@ export const TwoClocksSync: React.FC<ShotProps> = ({ t, dur }) => {
       <svg width={W} height={H} style={{ position: 'absolute' }}>
         <EarthLimb top={880} />
         <line x1={1420} y1={430} x2={1420} y2={880} stroke={DIM} strokeDasharray="6 10" strokeOpacity={0.6} />
-        <Clock cx={560} cy={690} r={110} seconds={t} label="On Earth's surface" opacity={a} color={CYAN} />
+        <Clock cx={560} cy={600} r={110} seconds={t} label="On Earth's surface" opacity={a} color={CYAN} />
         <Clock cx={1420} cy={330} r={110} seconds={t} label="Far above the Earth" opacity={b} color={GOLD} />
       </svg>
-      <Readout x={560} y={690 + 214} s={t} />
+      <Readout x={560} y={600 + 214} s={t} />
       <Readout x={1420} y={330 + 214} s={t} />
       <Tag x={W / 2} y={150} text="Two identical clocks, perfectly synchronised" color={INK} size={50} opacity={window01(t, 0.3, dur, 0.5)} />
       <Vignette />
