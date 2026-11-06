@@ -1,0 +1,30 @@
+PASS  orbit radius = 26,560 km (altitude ≈ 20,189 km) — alt 20189 km
+PASS  orbit inclination 55° (max |latitude| over a full orbit)
+PASS  orbital period = 11 h 58 min (Kepler, a = 26,560 km) → two orbits per sidereal day — 11 h 58 min, 2.000 laps/day
+PASS  GPS 1 stays above the horizon during the shots — min elevation 44°
+PASS  GPS 2 stays above the horizon during the shots — min elevation 57°
+PASS  GPS 3 stays above the horizon during the shots — min elevation 40°
+PASS  GPS 4 stays above the horizon during the shots — min elevation 40°
+PASS  slant ranges ≈ 21,000 km (narration example) — 21499, 20790, 21731, 21894 km
+PASS  travel times ≈ 0.07 s — 71.7, 69.3, 72.5, 73.0 ms
+PASS  travel time bounds: 67 ms overhead … 86 ms at the horizon
+PASS  light laps the Earth ≈ 7.5×/s — 7.48
+PASS  1 ns ≈ 30 cm
+PASS  1 ms ≈ 300 km
+PASS  three spheres recover the phone exactly (lower solution) — error 9.7e-11 km
+PASS  the other solution is far from Earth — 16147 km above the surface
+PASS  a common range bias displaces the 3-sphere solution — 105 km bias → 293 km off
+PASS  …and the fourth sphere then disagrees — 115 km mismatch
+PASS  removing the bias makes four spheres meet at one point
+PASS  constellation: 24 satellites in 6 planes (4 each)
+PASS  all constellation satellites at orbit radius
+PASS  a phone sees a sensible number of the 24 satellites — 8 above 5°
+PASS  city: at least one satellite clear, at least one blocked — GPS 1:bounce +11 m  GPS 2:clear  GPS 3:blocked  GPS 4:bounce +10 m
+PASS  city: a blocked satellite has a valid single-bounce path
+PASS  narration length 500–540 words — 505 words
+PASS  film length 4:00
+PASS  45–60 unique shots — 54 shots
+PASS  shots tile the timeline without gaps
+PASS  shortest shot ≥ 1.5 s — min 1.7 s
+
+all checks passed

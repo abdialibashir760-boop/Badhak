@@ -1,0 +1,30 @@
+{
+  "name": "gps-documentary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "4-minute technology documentary: How GPS Knows Exactly Where You Are (Remotion, SVG, custom 3D projection)",
+  "scripts": {
+    "start": "remotion studio",
+    "render": "remotion render src/index.ts GpsDocumentary out/gps-documentary.mp4",
+    "thumbnail": "remotion still src/index.ts Thumbnail out/thumbnail.png",
+    "typecheck": "tsc --noEmit",
+    "audio": "python3 scripts/make_audio.py",
+    "docs": "node scripts/gen-docs.mjs",
+    "retime": "node scripts/retime.mjs",
+    "build:land": "node scripts/build-land.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.538",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "esbuild": "^0.25.0",
+    "topojson-client": "^3.1.0",
+    "typescript": "^5.9.3",
+    "world-atlas": "^2.0.2"
+  }
+}
