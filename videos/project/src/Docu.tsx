@@ -26,7 +26,7 @@ type Cfg = { timeline: Timeline; scenes: Record<string, React.FC>; credits: Cred
 
 const TEXT = {
   en: { locale: "en-US", silhouette: "Illustrative silhouette", title: "IMAGE CREDITS", sub: "ARCHIVAL IMAGES VIA WIKIMEDIA COMMONS · ILLUSTRATIONS, MAPS & NARRATION ARE ORIGINAL / SYNTHETIC", foot: "MODERN BORDERS SHOWN ON MAPS · 1941 CONTROL APPROXIMATE · NATURAL EARTH DATA" },
-  tr: { locale: "tr-TR", silhouette: "Sembolik siluet", title: "GÖRSEL KAYNAKLAR", sub: "ARŞİV GÖRSELLERİ WİKİMEDYA COMMONS ÜZERİNDEN · İLLÜSTRASYONLAR VE HARİTALAR ÖZGÜNDÜR", foot: "HARİTALARDA MODERN SINIRLAR · 1941 KONTROLÜ YAKLAŞIK · NATURAL EARTH VERİLERİ" },
+  tr: { locale: "tr-TR", silhouette: "Sembolik siluet", title: "GÖRSEL KAYNAKLAR", sub: "ARŞİV GÖRSELLERİ WİKİMEDYA COMMONS ÜZERİNDEN · İLLÜSTRASYONLAR VE HARİTALAR ÖZGÜNDÜR · SESLENDİRME: YAPAY ZEKÂ SESİ", foot: "HARİTALARDA MODERN SINIRLAR · 1941 KONTROLÜ YAKLAŞIK · NATURAL EARTH VERİLERİ" },
 };
 
 // [scene id, sentence index, seconds of near-silence]
