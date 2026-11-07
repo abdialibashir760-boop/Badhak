@@ -1,0 +1,15 @@
+.cache/
+__pycache__/
+*.pyc
+# downloaded media stays local; metadata sidecars (*.json) and scene_map.json are tracked
+library/**/*.mp4
+library/**/*.webm
+library/**/*.ogv
+library/**/*.mov
+library/**/*.jpg
+library/**/*.jpeg
+library/**/*.png
+library/**/*.tif
+library/**/*.tiff
+library/**/*.svg
+library/**/*.part

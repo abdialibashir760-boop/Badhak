@@ -1,0 +1,20 @@
+{
+  "source_file": "ne_10m_admin_0_countries.geojson",
+  "polygon_count": 1,
+  "area_km2_computed": 30143,
+  "perimeter_km_computed": 785,
+  "border_vertices": 323,
+  "vertices_shared_with_ZAF": 323,
+  "share_with_ZAF": 1.0,
+  "neighbours_by_shared_vertices": {
+    "ZAF": 324
+  },
+  "bbox_lon_lat": [
+    27.002,
+    -30.659,
+    29.436,
+    -28.571
+  ],
+  "fully_enclaved": true,
+  "note": "Natural Earth 10m is generalised; compare with national figures (CIA Factbook 30,355 km2) and record disagreements. Border length differs by source (e.g. 909 km vs 1,106 km)."
+}
