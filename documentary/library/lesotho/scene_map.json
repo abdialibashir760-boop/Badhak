@@ -1,0 +1,354 @@
+{
+  "scenes": {
+    "s02": {
+      "assets": [
+        {
+          "file": "s02/s02_drone-mountain-landscape-mountains-aerial-cloudy_pixabay-50986.mp4",
+          "metadata": "s02/s02_drone-mountain-landscape-mountains-aerial-cloudy_pixabay-50986.mp4.json",
+          "ref": "pixabay:50986",
+          "role": "primary",
+          "source": "pixabay",
+          "license_status": "clear"
+        }
+      ],
+      "updated": "2026-11-07T18:16:39+00:00",
+      "status": "filled",
+      "title": "Ana soru",
+      "search_log": [
+        {
+          "source": "pexels",
+          "status": "skipped",
+          "note": "NOT CONFIGURED - set PEXELS_API_KEY"
+        },
+        {
+          "source": "pixabay",
+          "query": "Lesotho mountains sunrise",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 12,
+          "new": 12
+        },
+        {
+          "source": "pixabay",
+          "query": "Lesotho mountains sunrise",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 12,
+          "new": 12
+        },
+        {
+          "source": "pixabay",
+          "query": "Maloti mountains aerial",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 12,
+          "new": 12
+        },
+        {
+          "source": "pixabay",
+          "query": "Maloti mountains aerial",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 12,
+          "new": 12
+        },
+        {
+          "source": "pixabay",
+          "query": "Drakensberg clouds",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 12,
+          "new": 12
+        },
+        {
+          "source": "pixabay",
+          "query": "Drakensberg clouds",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 12,
+          "new": 12
+        },
+        {
+          "source": "coverr",
+          "status": "skipped",
+          "note": "NOT CONFIGURED - set COVERR_API_KEY"
+        },
+        {
+          "source": "commons",
+          "query": "Maloti Mountains Lesotho",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "commons",
+          "query": "Maloti Mountains Lesotho",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 12,
+          "new": 12
+        },
+        {
+          "source": "commons",
+          "query": "Drakensberg escarpment panorama",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "commons",
+          "query": "Drakensberg escarpment panorama",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 12,
+          "new": 12
+        },
+        {
+          "source": "commons",
+          "query": "Lesotho mountains sunrise",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "commons",
+          "query": "Lesotho mountains sunrise",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "commons",
+          "query": "Maloti mountains aerial",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "commons",
+          "query": "Maloti mountains aerial",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "commons",
+          "query": "Drakensberg clouds",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 3,
+          "new": 3
+        },
+        {
+          "source": "commons",
+          "query": "Drakensberg clouds",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 12,
+          "new": 12
+        },
+        {
+          "source": "archive",
+          "query": "Lesotho mountains sunrise",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "archive",
+          "query": "Lesotho mountains sunrise",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "archive",
+          "query": "Maloti mountains aerial",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "archive",
+          "query": "Maloti mountains aerial",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "archive",
+          "query": "Drakensberg clouds",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "archive",
+          "query": "Drakensberg clouds",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "nasa",
+          "query": "Lesotho mountains sunrise",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "nasa",
+          "query": "Lesotho mountains sunrise",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "nasa",
+          "query": "Maloti mountains aerial",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "nasa",
+          "query": "Maloti mountains aerial",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "nasa",
+          "query": "Drakensberg clouds",
+          "media_type": "video",
+          "status": "ok",
+          "hits": 0,
+          "new": 0
+        },
+        {
+          "source": "nasa",
+          "query": "Drakensberg clouds",
+          "media_type": "image",
+          "status": "ok",
+          "hits": 1,
+          "new": 1
+        },
+        {
+          "source": "mixkit",
+          "status": "manual",
+          "note": "no API; see suggestions for a search link"
+        }
+      ],
+      "download_failures": [],
+      "review": [
+        {
+          "ref": "pixabay:50988",
+          "title": "mountain rural africa cloudy road mountain pass",
+          "relevance": 1.0,
+          "license_status": "clear",
+          "why_review": [
+            "platform licence (https://pixabay.com/service/license-summary/); Free for commercial use, no attribution needed. No identifiable people/brands/trademarks implied endorsement; do not resell unaltered. Check for 'AI-generated' label on item page.",
+            "matched 'lesotho'"
+          ],
+          "url": "https://pixabay.com/videos/id-50988/"
+        },
+        {
+          "ref": "pixabay:50990",
+          "title": "mountain rural 4x4 truck mountain pass road",
+          "relevance": 1.0,
+          "license_status": "clear",
+          "why_review": [
+            "platform licence (https://pixabay.com/service/license-summary/); Free for commercial use, no attribution needed. No identifiable people/brands/trademarks implied endorsement; do not resell unaltered. Check for 'AI-generated' label on item page.",
+            "matched 'lesotho'"
+          ],
+          "url": "https://pixabay.com/videos/id-50990/"
+        },
+        {
+          "ref": "commons:164456473",
+          "title": "Clouds Highlight the Border Between Lesotho and South Africa (CIRA 2024-02-26 - labels).webm",
+          "relevance": 1.0,
+          "license_status": "clear",
+          "why_review": [
+            "public domain / CC0",
+            "matched 'lesotho'"
+          ],
+          "url": "https://commons.wikimedia.org/wiki/File:Clouds_Highlight_the_Border_Between_Lesotho_and_South_Africa_(CIRA_2024-02-26_-_labels).webm"
+        },
+        {
+          "ref": "commons:164456479",
+          "title": "Clouds Highlight the Border Between Lesotho and South Africa (CIRA 2024-02-26 - nolabels).webm",
+          "relevance": 1.0,
+          "license_status": "clear",
+          "why_review": [
+            "public domain / CC0",
+            "matched 'lesotho'"
+          ],
+          "url": "https://commons.wikimedia.org/wiki/File:Clouds_Highlight_the_Border_Between_Lesotho_and_South_Africa_(CIRA_2024-02-26_-_nolabels).webm"
+        },
+        {
+          "ref": "commons:164456512",
+          "title": "Clouds Highlight the Border Between Lesotho and South Africa (CIRA 2024-02-26 - nolabels portrait).webm",
+          "relevance": 1.0,
+          "license_status": "clear",
+          "why_review": [
+            "public domain / CC0",
+            "matched 'lesotho'"
+          ],
+          "url": "https://commons.wikimedia.org/wiki/File:Clouds_Highlight_the_Border_Between_Lesotho_and_South_Africa_(CIRA_2024-02-26_-_nolabels_portrait).webm"
+        },
+        {
+          "ref": "pixabay:765064",
+          "title": "tent mountains nature sani pass south africa lesotho",
+          "relevance": 1.0,
+          "license_status": "clear",
+          "why_review": [
+            "platform licence (https://pixabay.com/service/license-summary/); Free for commercial use, no attribution needed. No identifiable people/brands/trademarks implied endorsement; do not resell unaltered. Check for 'AI-generated' label on item page.",
+            "matched 'lesotho'"
+          ],
+          "url": "https://pixabay.com/photos/tent-mountains-sani-pass-765064/"
+        },
+        {
+          "ref": "pixabay:2060411",
+          "title": "drakensberg royal national park brown park drakensberg",
+          "relevance": 1.0,
+          "license_status": "clear",
+          "why_review": [
+            "platform licence (https://pixabay.com/service/license-summary/); Free for commercial use, no attribution needed. No identifiable people/brands/trademarks implied endorsement; do not resell unaltered. Check for 'AI-generated' label on item page.",
+            "matched 'drakensberg'"
+          ],
+          "url": "https://pixabay.com/photos/drakensberg-royal-national-park-2060411/"
+        },
+        {
+          "ref": "pixabay:2368541",
+          "title": "clouds mountains nature drakensberg mountains south africa heaven",
+          "relevance": 1.0,
+          "license_status": "clear",
+          "why_review": [
+            "platform licence (https://pixabay.com/service/license-summary/); Free for commercial use, no attribution needed. No identifiable people/brands/trademarks implied endorsement; do not resell unaltered. Check for 'AI-generated' label on item page.",
+            "matched 'drakensberg'"
+          ],
+          "url": "https://pixabay.com/photos/clouds-mountains-2368541/"
+        }
+      ],
+      "suggestions": [],
+      "ai_fallback": null
+    }
+  },
+  "generated": "2026-11-07T18:16:39+00:00"
+}

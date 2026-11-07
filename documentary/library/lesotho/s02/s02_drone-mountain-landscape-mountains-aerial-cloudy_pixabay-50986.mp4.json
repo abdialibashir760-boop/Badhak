@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "scene_id": "s02",
+  "role": "primary",
+  "selected_how": "auto",
+  "retrieved_at": "2026-11-07T18:16:39+00:00",
+  "asset": {
+    "file": "s02_drone-mountain-landscape-mountains-aerial-cloudy_pixabay-50986.mp4",
+    "media_type": "video",
+    "content_type": "video/mp4",
+    "bytes": 44933500,
+    "sha256": "60f900d9b2d2dc13d107a471d0b641815d06c8024fdd0886d7bb4c77fe320b4b",
+    "width": 4096,
+    "height": 2160,
+    "dimensions_verified": true,
+    "duration_s": 16.641625,
+    "ai_generated": false
+  },
+  "provenance": {
+    "ref": "pixabay:50986",
+    "source": "pixabay",
+    "source_name": "Pixabay Content License",
+    "original_url": "https://pixabay.com/videos/id-50986/",
+    "download_url": "https://cdn.pixabay.com/video/2020/09/27/50986-463810594_large.mp4",
+    "title": "drone mountain landscape mountains aerial cloudy",
+    "creator": "iShootWhatiLike",
+    "credit_line": "",
+    "date": "",
+    "description": "",
+    "tags": [
+      "drone",
+      "mountain",
+      "landscape",
+      "mountains",
+      "aerial",
+      "cloudy",
+      "lesotho",
+      "africa"
+    ],
+    "search_query": "Lesotho mountains sunrise",
+    "fingerprint": "ishootwhatilike|17|4096|2160|video"
+  },
+  "license": {
+    "name": "Pixabay Content License",
+    "url": "https://pixabay.com/service/license-summary/",
+    "rights_text": "",
+    "status": "clear",
+    "notes": [
+      "platform licence (https://pixabay.com/service/license-summary/); Free for commercial use, no attribution needed. No identifiable people/brands/trademarks implied endorsement; do not resell unaltered. Check for 'AI-generated' label on item page."
+    ],
+    "commercial_use": "yes",
+    "youtube_monetization": "yes",
+    "attribution_required": false,
+    "attribution_text": "\"drone mountain landscape mountains aerial cloudy\" — iShootWhatiLike — pixabay — Pixabay Content License — https://pixabay.com/videos/id-50986/",
+    "checked_against": "https://pixabay.com/service/license-summary/",
+    "note": "Automated check of recorded metadata only; verify the item page before publishing. Not legal advice."
+  },
+  "match": {
+    "relevance": 1.0,
+    "notes": [
+      "matched 'lesotho'"
+    ],
+    "flags": [
+      "watermark-unchecked-visually"
+    ]
+  },
+  "checks": {
+    "watermark": "metadata-screened only; confirm visually in the edit",
+    "location_accuracy": "per scene `must` terms in metadata; confirm visually"
+  }
+}
