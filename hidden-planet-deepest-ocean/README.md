@@ -15,4 +15,4 @@ Start with `01`: every fact is traced to a source, with conflicts listed.
 | `06-publish-pack.md` | 3 thumbnails, 3 titles, SEO description, tags |
 | `shots.json` | Machine-readable shot list |
 
-Status: written deliverables and diagrams are done. Real/stock/generated footage is not sourced yet, and no video has been rendered. Waiting for the voiceover (two parts) so shot lengths can be retimed to the recording.
+Status: `video/hidden-planet-v1.mp4` is a **first draft** (8:05, 1920×1080, your voiceover, no music). It uses NASA and US Navy archive photos (public domain), Pixabay stock clips, and the 35 drawn diagram cards. 59 shots that name a specific animal or vehicle still show placeholder stock; see `NEEDS-IMAGES.md`. Your part 1A recording read the twilight-zone lines twice; the second reading was cut. No generated images have been used yet.
