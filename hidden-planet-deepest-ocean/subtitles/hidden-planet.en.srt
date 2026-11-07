@@ -1,0 +1,707 @@
+1
+00:00:00,600 --> 00:00:02,460
+Somewhere beneath the western Pacific,
+
+2
+00:00:02,620 --> 00:00:04,960
+there is a place that sunlight has never touched.
+
+3
+00:00:05,260 --> 00:00:07,860
+It lies at the southern end of the Mariana Trench,
+
+4
+00:00:07,920 --> 00:00:09,600
+almost eleven kilometres down.
+
+5
+00:00:09,980 --> 00:00:11,540
+This is the Challenger Deep,
+
+6
+00:00:11,840 --> 00:00:13,900
+the deepest known point in Earth's ocean.
+
+7
+00:00:14,520 --> 00:00:17,390
+Here, the water presses down with more than a thousand times the
+
+8
+00:00:17,420 --> 00:00:18,440
+pressure at the surface.
+
+9
+00:00:18,780 --> 00:00:19,430
+It is cold.
+
+10
+00:00:19,460 --> 00:00:21,140
+And it is completely dark.
+
+11
+00:00:21,700 --> 00:00:23,760
+So what could possibly live here?
+
+12
+00:00:24,240 --> 00:00:26,310
+The truth is stranger, and more fragile,
+
+13
+00:00:26,340 --> 00:00:28,020
+than any monster we could invent.
+
+14
+00:00:32,500 --> 00:00:34,780
+Our descent begins in sunlit water.
+
+15
+00:00:35,280 --> 00:00:37,680
+Near the surface, there is enough light for photosynthesis,
+
+16
+00:00:37,940 --> 00:00:40,460
+the energy source behind most of the ocean's food webs.
+
+17
+00:00:41,000 --> 00:00:42,450
+By two hundred metres,
+
+18
+00:00:42,480 --> 00:00:45,300
+so little light remains that photosynthesis is no longer possible.
+
+19
+00:00:45,880 --> 00:00:48,620
+Light can still be detected as far as a thousand metres down,
+
+20
+00:00:48,760 --> 00:00:49,540
+but it is faint.
+
+21
+00:00:50,100 --> 00:00:52,960
+Below one thousand metres, sunlight does not reach at all.
+
+22
+00:00:53,800 --> 00:00:56,500
+At four thousand metres we enter the abyss.
+
+23
+00:00:56,880 --> 00:00:59,800
+At six thousand, the seafloor drops away into the trenches.
+
+24
+00:01:00,160 --> 00:01:02,840
+This is the hadal zone, named after Hades,
+
+25
+00:01:02,900 --> 00:01:04,060
+the Greek god of the underworld.
+
+26
+00:01:04,640 --> 00:01:05,760
+These trenches are rare.
+
+27
+00:01:06,080 --> 00:01:08,690
+The forty-six known hadal habitats cover less than a quarter
+
+28
+00:01:08,720 --> 00:01:10,480
+of one percent of the seafloor,
+
+29
+00:01:10,540 --> 00:01:13,480
+yet they make up over forty percent of the ocean's depth range.
+
+30
+00:01:14,280 --> 00:01:15,810
+At the very bottom of the deepest of them,
+
+31
+00:01:15,840 --> 00:01:17,210
+we reach the Challenger Deep:
+
+32
+00:01:17,240 --> 00:01:21,150
+about ten thousand, nine hundred and thirty-five metres.
+
+33
+00:01:21,180 --> 00:01:22,450
+If Mount Everest were placed here,
+
+34
+00:01:22,480 --> 00:01:24,860
+its summit would still be more than two kilometres underwater.
+
+35
+00:01:25,760 --> 00:01:28,770
+Every ten metres adds roughly one more atmosphere of pressure.
+
+36
+00:01:28,800 --> 00:01:30,020
+At the bottom,
+
+37
+00:01:30,180 --> 00:01:32,420
+that comes to more than one thousand atmospheres,
+
+38
+00:01:32,620 --> 00:01:35,400
+about sixteen thousand pounds on every square inch.
+
+39
+00:01:35,960 --> 00:01:38,340
+The temperature is just one to four degrees Celsius.
+
+40
+00:01:39,520 --> 00:01:41,270
+Back above us, in the twilight zone,
+
+41
+00:01:41,300 --> 00:01:44,140
+the last traces of sunlight still reach the animals that live there.
+
+42
+00:01:44,620 --> 00:01:46,500
+Further down, in total darkness,
+
+43
+00:01:46,860 --> 00:01:50,550
+the only light is the light that animals make themselves.
+
+44
+00:01:50,580 --> 00:01:52,130
+Bioluminescence is a chemical reaction,
+
+45
+00:01:52,160 --> 00:01:54,000
+and it is widespread among deep-sea animals.
+
+46
+00:01:54,610 --> 00:01:57,300
+These animals live in different depth zones,
+
+47
+00:01:57,330 --> 00:01:59,470
+thousands of metres above the Challenger Deep.
+
+48
+00:01:59,830 --> 00:02:02,670
+As we go deeper, the cast of characters changes.
+
+49
+00:02:03,730 --> 00:02:05,810
+In the trench, there are no plants.
+
+50
+00:02:06,190 --> 00:02:08,130
+So where does the energy come from?
+
+51
+00:02:08,810 --> 00:02:11,510
+Mostly, from above. Dead plankton,
+
+52
+00:02:11,730 --> 00:02:14,500
+fragments of animals and other organic matter sink slowly
+
+53
+00:02:14,530 --> 00:02:15,390
+through the water,
+
+54
+00:02:15,510 --> 00:02:17,550
+in what scientists call marine snow.
+
+55
+00:02:18,230 --> 00:02:21,310
+Much of it is eaten or broken down before it arrives,
+
+56
+00:02:21,590 --> 00:02:23,110
+but trenches act like traps.
+
+57
+00:02:23,750 --> 00:02:24,810
+In the Challenger Deep,
+
+58
+00:02:24,970 --> 00:02:27,880
+scientists measured oxygen use by microbes in the sediment
+
+59
+00:02:27,910 --> 00:02:31,790
+at twice the rate of a nearby site six thousand metres deep.
+
+60
+00:02:32,470 --> 00:02:33,690
+Earthquakes may help.
+
+61
+00:02:34,070 --> 00:02:36,900
+They can shake material loose from the trench walls and send
+
+62
+00:02:36,930 --> 00:02:38,130
+it sliding to the bottom.
+
+63
+00:02:38,790 --> 00:02:41,190
+Even sunken plant material may be food.
+
+64
+00:02:41,830 --> 00:02:44,560
+Amphipods caught at nearly eleven thousand metres carry
+
+65
+00:02:44,590 --> 00:02:47,010
+enzymes that can digest cellulose,
+
+66
+00:02:47,190 --> 00:02:49,310
+the main material in wood and plant fibres.
+
+67
+00:02:49,930 --> 00:02:50,660
+Elsewhere,
+
+68
+00:02:50,690 --> 00:02:53,670
+some seafloor communities run on chemistry instead of light.
+
+69
+00:02:54,130 --> 00:02:55,190
+Around hot vents,
+
+70
+00:02:55,410 --> 00:02:58,770
+bacteria turn chemicals like hydrogen sulphide into energy.
+
+71
+00:02:59,290 --> 00:03:01,230
+These vents are a different environment,
+
+72
+00:03:01,330 --> 00:03:03,770
+but they show that life does not always need the sun.
+
+73
+00:03:04,570 --> 00:03:06,990
+So, who actually lives at the bottom?
+
+74
+00:03:07,490 --> 00:03:08,910
+Here is what has been documented.
+
+75
+00:03:09,830 --> 00:03:13,180
+Amphipods. Small, shrimp-like crustaceans. In 2009,
+
+76
+00:03:13,210 --> 00:03:16,320
+Japanese researchers lowered a baited trap into the
+
+77
+00:03:16,350 --> 00:03:19,490
+Challenger Deep and brought up one hundred and eighty-five of them.
+
+78
+00:03:19,910 --> 00:03:22,470
+The species is called Hirondellea gigas.
+
+79
+00:03:23,030 --> 00:03:24,400
+Single-celled giants called xenophyophores.
+
+80
+00:03:24,430 --> 00:03:27,420
+Some can grow as large as a saucer.
+
+81
+00:03:27,450 --> 00:03:29,920
+They have been seen on the floor of the Challenger Deep,
+
+82
+00:03:29,950 --> 00:03:32,440
+and related single-celled organisms have been found at
+
+83
+00:03:32,470 --> 00:03:34,690
+around ten thousand six hundred metres.
+
+84
+00:03:35,650 --> 00:03:37,790
+Sea cucumbers. In 2012,
+
+85
+00:03:37,950 --> 00:03:40,420
+camera footage from the Challenger Deep showed a small grey
+
+86
+00:03:40,450 --> 00:03:43,250
+sea cucumber, unlike any scientists had seen.
+
+87
+00:03:43,910 --> 00:03:45,480
+Several of them faced the same direction,
+
+88
+00:03:45,510 --> 00:03:48,310
+as if letting the current carry food to their tentacles.
+
+89
+00:03:49,130 --> 00:03:51,390
+Worms. In 2009,
+
+90
+00:03:51,590 --> 00:03:54,950
+the robot Nereus spotted a polychaete worm about an inch long.
+
+91
+00:03:55,390 --> 00:03:56,430
+Years before that,
+
+92
+00:03:56,570 --> 00:03:59,070
+Japan's Kaiko robot had recorded a sea cucumber,
+
+93
+00:03:59,210 --> 00:04:00,510
+a scale worm and a shrimp.
+
+94
+00:04:01,490 --> 00:04:04,270
+And fish? Not at the very bottom.
+
+95
+00:04:04,790 --> 00:04:08,630
+The deepest fish ever documented live thousands of metres higher up.
+
+96
+00:04:09,410 --> 00:04:12,660
+The Mariana snailfish is known from about six thousand to
+
+97
+00:04:12,690 --> 00:04:13,670
+eight thousand metres.
+
+98
+00:04:14,270 --> 00:04:15,700
+It is pale, tadpole-like,
+
+99
+00:04:15,730 --> 00:04:17,910
+and reaches about twenty-nine centimetres.
+
+100
+00:04:18,570 --> 00:04:21,550
+In parts of the trench, it appears to be the top predator,
+
+101
+00:04:21,790 --> 00:04:23,630
+feeding on small crustaceans.
+
+102
+00:04:24,190 --> 00:04:28,260
+In 1960, the crew of the Trieste reported seeing a flatfish on the
+
+103
+00:04:28,290 --> 00:04:29,790
+bottom. Today,
+
+104
+00:04:29,990 --> 00:04:33,470
+some scientists suggest it may have been a sea cucumber instead.
+
+105
+00:04:33,970 --> 00:04:36,290
+Science does not always settle things quickly.
+
+106
+00:04:37,170 --> 00:04:39,110
+Beyond animals, there are microbes.
+
+107
+00:04:39,630 --> 00:04:41,530
+They are abundant in trench sediments,
+
+108
+00:04:41,650 --> 00:04:43,850
+and they may be the base of the whole system.
+
+109
+00:04:44,730 --> 00:04:46,850
+How do animals cope with this much pressure?
+
+110
+00:04:47,530 --> 00:04:49,270
+Mostly, by not fighting it.
+
+111
+00:04:49,770 --> 00:04:52,400
+Animals without gas-filled spaces have pressure on the
+
+112
+00:04:52,430 --> 00:04:54,590
+inside equal to the pressure outside.
+
+113
+00:04:55,470 --> 00:04:56,870
+The challenge is chemistry.
+
+114
+00:04:57,550 --> 00:05:00,400
+Pressure bends proteins out of shape.
+
+115
+00:05:00,430 --> 00:05:03,230
+Many deep-sea animals counter it with small molecules,
+
+116
+00:05:03,390 --> 00:05:05,430
+such as trimethylamine N-oxide,
+
+117
+00:05:05,630 --> 00:05:07,310
+that help proteins keep their form.
+
+118
+00:05:08,150 --> 00:05:10,860
+In fish, the amount of that molecule rises with depth.
+
+119
+00:05:10,890 --> 00:05:14,640
+Measurements on snailfish from seven thousand metres suggest
+
+120
+00:05:14,670 --> 00:05:19,220
+a limit. Around eight thousand two hundred metres,
+
+121
+00:05:19,250 --> 00:05:22,310
+a fish's body fluids would match the saltiness of seawater.
+
+122
+00:05:22,430 --> 00:05:25,360
+That is a hypothesis, supported by evidence,
+
+123
+00:05:25,390 --> 00:05:27,350
+and not an unbreakable law.
+
+124
+00:05:27,850 --> 00:05:30,570
+Fish have been filmed deeper than eight thousand metres.
+
+125
+00:05:30,870 --> 00:05:33,450
+But as far as published research shows,
+
+126
+00:05:33,770 --> 00:05:36,610
+no fish have been found in the deepest quarter of the ocean.
+
+127
+00:05:37,410 --> 00:05:38,430
+Other tricks help,
+
+128
+00:05:38,510 --> 00:05:41,780
+like slower metabolisms and cell membranes built to stay
+
+129
+00:05:41,810 --> 00:05:43,030
+flexible under pressure.
+
+130
+00:05:43,470 --> 00:05:44,470
+In the lab,
+
+131
+00:05:44,510 --> 00:05:47,570
+the amphipod's enzyme even works better at high pressure.
+
+132
+00:05:48,090 --> 00:05:51,530
+The Challenger Deep is named after the ship HMS Challenger,
+
+133
+00:05:51,670 --> 00:05:56,830
+whose crew first sounded the trench in 1875. In 1951,
+
+134
+00:05:56,890 --> 00:06:00,060
+a second ship named Challenger confirmed its great depth
+
+135
+00:06:00,090 --> 00:06:01,070
+using sonar.
+
+136
+00:06:01,750 --> 00:06:04,340
+On the twenty-third of January 1960, two men,
+
+137
+00:06:04,370 --> 00:06:06,870
+Jacques Piccard and Don Walsh,
+
+138
+00:06:06,990 --> 00:06:09,010
+descended in the bathyscaphe Trieste.
+
+139
+00:06:09,590 --> 00:06:11,590
+The trip down took almost five hours.
+
+140
+00:06:12,330 --> 00:06:15,000
+They spent about twenty minutes on the bottom,
+
+141
+00:06:15,030 --> 00:06:16,770
+then began the three-hour climb home.
+
+142
+00:06:17,510 --> 00:06:20,810
+Robots followed. Japan's Kaiko in 1995.
+
+143
+00:06:21,490 --> 00:06:24,130
+The hybrid vehicle Nereus in 2009.
+
+144
+00:06:24,570 --> 00:06:27,900
+In 2012, filmmaker James Cameron made the first solo dive,
+
+145
+00:06:27,930 --> 00:06:28,660
+in Deepsea Challenger.
+
+146
+00:06:28,690 --> 00:06:32,690
+It reached ten thousand, nine hundred and eight metres.
+
+147
+00:06:33,530 --> 00:06:37,120
+From 2019, the submersible Limiting Factor made repeated dives.
+
+148
+00:06:37,150 --> 00:06:38,700
+In June 2020,
+
+149
+00:06:38,730 --> 00:06:42,000
+former astronaut Kathy Sullivan became the first woman to
+
+150
+00:06:42,030 --> 00:06:42,940
+reach the Challenger Deep.
+
+151
+00:06:42,970 --> 00:06:44,540
+In November that year,
+
+152
+00:06:44,570 --> 00:06:47,680
+China's Fendouzhe took three scientists to about ten thousand,
+
+153
+00:06:47,710 --> 00:06:50,330
+nine hundred and nine metres.
+
+154
+00:06:51,090 --> 00:06:55,290
+By mid-2022, twenty-seven people had reached the Challenger Deep.
+
+155
+00:06:55,870 --> 00:06:57,180
+Even the depth is not settled.
+
+156
+00:06:57,210 --> 00:06:59,100
+The best estimate is ten thousand,
+
+157
+00:06:59,130 --> 00:07:03,500
+nine hundred and thirty-five metres, give or take six.
+
+158
+00:07:03,530 --> 00:07:05,520
+Different surveys give slightly different answers,
+
+159
+00:07:05,550 --> 00:07:07,160
+and measuring through cold, salty,
+
+160
+00:07:07,190 --> 00:07:09,110
+pressurised water is hard.
+
+161
+00:07:09,990 --> 00:07:11,480
+As of April 2026,
+
+162
+00:07:11,510 --> 00:07:14,720
+only about twenty-nine percent of the global seafloor has
+
+163
+00:07:14,750 --> 00:07:16,890
+been mapped in modern high resolution.
+
+164
+00:07:17,490 --> 00:07:21,280
+And explorers have directly seen less than one thousandth of
+
+165
+00:07:21,310 --> 00:07:23,290
+one percent of the deep seafloor.
+
+166
+00:07:23,390 --> 00:07:25,650
+That is roughly the area of Rhode Island.
+
+167
+00:07:26,610 --> 00:07:30,380
+More than four hundred species are known from hadal ecosystems,
+
+168
+00:07:30,410 --> 00:07:32,070
+and new ones are still being found.
+
+169
+00:07:32,690 --> 00:07:34,570
+Others, like that grey sea cucumber,
+
+170
+00:07:34,750 --> 00:07:36,890
+cannot be confirmed without physical samples.
+
+171
+00:07:37,550 --> 00:07:39,500
+How do living things cope at the extremes,
+
+172
+00:07:39,530 --> 00:07:41,530
+and how far down can animals go?
+
+173
+00:07:42,090 --> 00:07:43,650
+Those questions are still open.
+
+174
+00:07:44,590 --> 00:07:48,990
+We return now to the darkness. No sunlight. Crushing pressure.
+
+175
+00:07:49,590 --> 00:07:51,110
+Almost no one has been here.
+
+176
+00:07:51,630 --> 00:07:53,710
+The deepest place on Earth is not empty.
+
+177
+00:07:54,190 --> 00:07:56,750
+It is a world we have only just begun to see.
