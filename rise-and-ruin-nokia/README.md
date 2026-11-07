@@ -1,5 +1,7 @@
 # Rise & Ruin — Episode 1: How Nokia Lost the Smartphone War
 
+**Final video:** `How-Nokia-Lost-the-Smartphone-War.mp4` (1920×1080, 30 fps, 9:30 = 9:21 narration + 9 s credits end card; H.264/AAC; kept out of git). Rebuild: `cd video && npm i && ./render_chunks.sh`, then mux with `audio/mix.m4a` (score from `tools/synth_score.py`). Stock clips are gitignored; re-fetch with `tools/pixabay_fetch.py` (ids in `video/src/clips.json` names, e.g. c40054 = Pixabay 40054).
+
 Documentary production package. **Narration is written for you to record; send the audio and the storyboard and edit timeline get re-timed to it.**
 
 | # | File | What it is |
