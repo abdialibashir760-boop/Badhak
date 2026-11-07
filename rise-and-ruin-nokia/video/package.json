@@ -1,0 +1,21 @@
+{
+  "name": "rise-and-ruin-nokia-video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "remotion studio",
+    "render": "remotion render src/index.ts Film out/film-silent.mp4 --codec=h264 --crf=22",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3"
+  }
+}

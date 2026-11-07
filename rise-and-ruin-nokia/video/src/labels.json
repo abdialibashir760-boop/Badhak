@@ -1,0 +1,62 @@
+[
+ {
+  "start": 169.86,
+  "end": 181.96,
+  "label": "INTERPRETATION"
+ },
+ {
+  "start": 195.58,
+  "end": 213.24,
+  "label": "INTERPRETATION"
+ },
+ {
+  "start": 213.24,
+  "end": 226.92,
+  "label": "FACT"
+ },
+ {
+  "start": 286.08,
+  "end": 303.8,
+  "label": "INTERPRETATION"
+ },
+ {
+  "start": 303.8,
+  "end": 321.98,
+  "label": "INTERPRETATION"
+ },
+ {
+  "start": 338.46,
+  "end": 349.84,
+  "label": "INTERPRETATION"
+ },
+ {
+  "start": 403.58,
+  "end": 414.52,
+  "label": "FACT: stated reasoning"
+ },
+ {
+  "start": 414.52,
+  "end": 438.46,
+  "label": "INTERPRETATION \u2014 both views"
+ },
+ {
+  "start": 467.98,
+  "end": 481.46,
+  "label": "FACT"
+ },
+ {
+  "start": 518.32,
+  "end": 529.06,
+  "label": "INTERPRETATION"
+ },
+ {
+  "start": 529.06,
+  "end": 536.92,
+  "label": "INTERPRETATION"
+ },
+ {
+  "start": 536.92,
+  "end": 545.72,
+  "label": "INTERPRETATION"
+ }
+]
