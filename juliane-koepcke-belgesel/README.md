@@ -15,4 +15,4 @@ Kanal: Son Ana Kadar · Dil: Türkçe · 16:9, 1920×1080 · Tahmini süre: 8:52
 | `06-yayin-paketi.md` | 3 thumbnail, 3 başlık, SEO açıklaması, etiketler |
 | `shots.json` | Plan verisi (makine okunur) |
 
-Durum: yazılı teslimatlar tamam. Görseller ve seslendirme henüz üretilmedi; video render edilmedi.
+Durum: yazılı teslimatlar tamam. `video/juliane-koepcke-belgesel-taslak-v1.mp4` ilk görsel taslaktır: 8:52, 1920×1080, sessiz, Türkçe altyazılı. Görüntüler Pixabay stok klipleridir (46 benzersiz klip) ve 7 çizilmiş karttır (başlık, harita, diyagramlar, kaynaklar). Stok arşivde 1971 uçağı, kabin ve Juliane yok; bu nedenle uçak/kaza/orman planları atmosferik yer tutucudur. Juliane'li planlar için üretim (yapay zekâ canlandırması) ve seslendirme henüz yapılmadı.
