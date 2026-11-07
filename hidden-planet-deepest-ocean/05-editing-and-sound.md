@@ -1,6 +1,6 @@
 # 05 · Editing Timeline, Camera Movement and Sound Design
 
-**Total:** 9:17 · **Shots:** 139 · **Format:** 1920×1080, 30 fps, H.264 MP4
+**Total:** 9:15 · **Shots:** 139 · **Format:** 1920×1080, 30 fps, H.264 MP4
 
 ## Rules
 
@@ -23,5 +23,5 @@
 | 5. Strange Survivors | 3:50–5:42 | 27 | Almost none. Gentle low tone on each new organism (-32 dB). | Close, intimate ambience; a slow pulse under the snailfish. | Macro shots with shallow depth; each animal gets 5–7 s and a depth caption. |
 | 6. The Pressure Problem | 5:42–6:49 | 17 | Curious, light pulse (-28 dB). | Subtle electronic texture on diagram reveals. | Diagrams on dark navy; one idea per screen. |
 | 7. Human Exploration | 6:49–7:56 | 16 | Warmer motif in strings (-26 dB) — human achievement, not triumph. | Hull creaks, sonar pings, an old-radio crackle for 1960. | Archive stills with slow Ken Burns; modern vehicles in motion. |
-| 8. What Remains Unknown | 7:56–8:53 | 15 | Music thins; long reverb notes (-30 dB). | Quiet sonar pings, a single low drone. | Maps and counters; slow tension. |
-| 9. Back to the Dark | 8:53–9:17 | 5 | Final held chord fading to silence. | Return to the same drone as the opening; 8 s of ambience on the end card. | Lights dim to full black. |
+| 8. What Remains Unknown | 7:56–8:51 | 15 | Music thins; long reverb notes (-30 dB). | Quiet sonar pings, a single low drone. | Maps and counters; slow tension. |
+| 9. Back to the Dark | 8:51–9:15 | 5 | Final held chord fading to silence. | Return to the same drone as the opening; 8 s of ambience on the end card. | Lights dim to full black. |

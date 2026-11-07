@@ -30,7 +30,7 @@ Chapters:
 5:42 The Pressure Problem
 6:49 Human Exploration
 7:56 What Remains Unknown
-8:53 Back to the Dark
+8:51 Back to the Dark
 
 All animals shown are real, documented organisms, labelled with their documented depth ranges. Some visuals are generated or stock illustrations and are marked on screen.
 Sources: NOAA Ocean Service; JAMSTEC; Glud et al. 2013 (Nature Geoscience); Yancey et al. 2014 (PNAS); Gerringer et al. 2017 (Zootaxa); Deepsea Challenge; Wikipedia articles on the Challenger Deep, Mariana Trench and hadal zone.

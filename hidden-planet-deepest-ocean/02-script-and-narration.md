@@ -1,7 +1,7 @@
 # 02 · Script and Timestamped Narration
 
 **Title:** What Lives in the Deepest Part of the Ocean?  ·  **Channel:** The Hidden Planet  
-**Language:** English  ·  **Target length:** 9:17 (139 shots, ~1261 words of narration)  
+**Language:** English  ·  **Target length:** 9:15 (139 shots, ~1257 words of narration)  
 **Delivery:** calm, low, immersive; ~150 words per minute; leave a full beat of silence after the lines marked `[beat]`.
 
 > Every factual claim in this script is traced to a source in `01-research-and-sources.md`. Where science is uncertain, the narration says so.
@@ -114,7 +114,7 @@
 **[7:52]** By mid-2022, twenty-seven people had reached the Challenger Deep.
 
 
-## 8. What Remains Unknown  `[7:56 – 8:53]`
+## 8. What Remains Unknown  `[7:56 – 8:51]`
 
 **[7:56]** Even the depth is not settled. The best estimate is ten thousand, nine hundred and thirty-five metres, give or take six. Different surveys give slightly different answers, and measuring through cold, salty, pressurised water is hard.
 
@@ -124,13 +124,13 @@
 
 **[8:30]** More than four hundred species are known from hadal ecosystems, and new ones are still being found. Others, like that grey sea cucumber, cannot be confirmed without physical samples.
 
-**[8:42]** What is life like at the extremes? How does it start there, and how far down can it go? Those questions are still open.
+**[8:42]** How do living things cope at the extremes, and how far down can animals go? Those questions are still open.
 
 
-## 9. Back to the Dark  `[8:53 – 9:17]`
+## 9. Back to the Dark  `[8:51 – 9:15]`
 
-**[8:53]** We return now to the darkness. No sunlight. Crushing pressure. Almost no one has been here.
+**[8:51]** We return now to the darkness. No sunlight. Crushing pressure. Almost no one has been here.
 
-**[9:00]** The deepest place on Earth is not empty. It is a world we have only just begun to see.
+**[8:59]** The deepest place on Earth is not empty. It is a world we have only just begun to see.
 
-**[9:09]** *(silent, 8 s)* End card: sources, credits.
+**[9:07]** *(silent, 8 s)* End card: sources, credits.

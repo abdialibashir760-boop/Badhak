@@ -1,6 +1,6 @@
 # 03 · Scene-by-Scene Storyboard and Image Prompts
 
-139 shots · 9:17 · average 4.0 s/shot.  
+139 shots · 9:15 · average 4.0 s/shot.  
 Source key: **R** real archive · **S** stock · **G** generated · **D** diagram card. Prefer **R** for any real species: the animals must look like the real documented organisms.
 
 **Source mix:** R 44, S 37, G 23, D 35.
@@ -1132,7 +1132,7 @@ Photorealistic natural-history documentary frame, deep navy and black water, sub
 - **Diagram:** see `04-diagram-specs.md` → `count27`
 
 
-## 8. What Remains Unknown  `[7:56 – 8:53]`
+## 8. What Remains Unknown  `[7:56 – 8:51]`
 
 ### Shot 120 · 7:56–8:00 · 3.8 s · **D**
 - **Narration:** Even the depth is not settled. The best estimate is ten thousand, nine hundred and thirty-five metres, give or take six. Different surveys give slightly different answers, and measuring through cold, salty, pressurised water is hard.
@@ -1239,8 +1239,8 @@ Photorealistic natural-history documentary frame, deep navy and black water, sub
 Photorealistic natural-history documentary frame, deep navy and black water, subtle cyan, natural bioluminescent colours, floating marine-snow particles, volumetric light from a submersible, 35mm film look, sharp realistic detail, 16:9, no text, no watermark. Scene: marine specimen under a microscope in dark field illumination. Intended camera motion for animation: slow push-in. Avoid: fantasy monsters, giant sea serpents, invented creatures, anatomically wrong animals, glowing cartoon colours, human faces, readable text, logos, gore, generic AI-monster aesthetic.
 ```
 
-### Shot 132 · 8:42–8:46 · 3.5 s · **S**
-- **Narration:** What is life like at the extremes? How does it start there, and how far down can it go? Those questions are still open.
+### Shot 132 · 8:42–8:45 · 2.9 s · **S**
+- **Narration:** How do living things cope at the extremes, and how far down can animals go? Those questions are still open.
 - **Visual:** Dark water, a single point of light.
 - **Source:** STOCK (Pixabay, vetted by eye) — `bioluminescence dark water light`
 - **Camera:** slow pull-back
@@ -1249,7 +1249,7 @@ Photorealistic natural-history documentary frame, deep navy and black water, sub
 Photorealistic natural-history documentary frame, deep navy and black water, subtle cyan, natural bioluminescent colours, floating marine-snow particles, volumetric light from a submersible, 35mm film look, sharp realistic detail, 16:9, no text, no watermark. Scene: black water with a faint blue-green point of light far away. Intended camera motion for animation: slow pull-back. Avoid: fantasy monsters, giant sea serpents, invented creatures, anatomically wrong animals, glowing cartoon colours, human faces, readable text, logos, gore, generic AI-monster aesthetic.
 ```
 
-### Shot 133 · 8:46–8:49 · 3.5 s · **S**
+### Shot 133 · 8:45–8:48 · 2.9 s · **S**
 - **Narration:** ↳ (sentence continues / silent)
 - **Visual:** Night ocean, moonlight on the water.
 - **Source:** STOCK (Pixabay, vetted by eye) — `night ocean waves moonlight`
@@ -1259,7 +1259,7 @@ Photorealistic natural-history documentary frame, deep navy and black water, sub
 Photorealistic natural-history documentary frame, deep navy and black water, subtle cyan, natural bioluminescent colours, floating marine-snow particles, volumetric light from a submersible, 35mm film look, sharp realistic detail, 16:9, no text, no watermark. Scene: night ocean with moonlight on gentle waves. Intended camera motion for animation: almost static, subtle drift. Avoid: fantasy monsters, giant sea serpents, invented creatures, anatomically wrong animals, glowing cartoon colours, human faces, readable text, logos, gore, generic AI-monster aesthetic.
 ```
 
-### Shot 134 · 8:49–8:53 · 3.5 s · **R**
+### Shot 134 · 8:48–8:51 · 2.9 s · **R**
 - **Narration:** ↳ (sentence continues / silent)
 - **Visual:** Submersible in the distance, descending.
 - **Source:** REAL archive (NASA / NOAA / US Navy / Wikimedia Commons) — `submersible descending NOAA`
@@ -1270,9 +1270,9 @@ Photorealistic natural-history documentary frame, deep navy and black water, sub
 ```
 
 
-## 9. Back to the Dark  `[8:53 – 9:17]`
+## 9. Back to the Dark  `[8:51 – 9:15]`
 
-### Shot 135 · 8:53–8:57 · 3.7 s · **G**
+### Shot 135 · 8:51–8:55 · 3.7 s · **G**
 - **Narration:** We return now to the darkness. No sunlight. Crushing pressure. Almost no one has been here.
 - **Visual:** Submersible lights switching off, black.
 - **Source:** GENERATED (photoreal) — `gen:lights_off`
@@ -1282,7 +1282,7 @@ Photorealistic natural-history documentary frame, deep navy and black water, sub
 Photorealistic natural-history documentary frame, deep navy and black water, subtle cyan, natural bioluminescent colours, floating marine-snow particles, volumetric light from a submersible, 35mm film look, sharp realistic detail, 16:9, no text, no watermark. Scene: submersible lights dimming to total darkness in black water. Intended camera motion for animation: slow pull-back. Avoid: fantasy monsters, giant sea serpents, invented creatures, anatomically wrong animals, glowing cartoon colours, human faces, readable text, logos, gore, generic AI-monster aesthetic.
 ```
 
-### Shot 136 · 8:57–9:00 · 3.7 s · **S**
+### Shot 136 · 8:55–8:59 · 3.7 s · **S**
 - **Narration:** ↳ (sentence continues / silent)
 - **Visual:** Black frame with faint particles.
 - **Source:** STOCK (Pixabay, vetted by eye) — `dark water particles`
@@ -1292,7 +1292,7 @@ Photorealistic natural-history documentary frame, deep navy and black water, sub
 Photorealistic natural-history documentary frame, deep navy and black water, subtle cyan, natural bioluminescent colours, floating marine-snow particles, volumetric light from a submersible, 35mm film look, sharp realistic detail, 16:9, no text, no watermark. Scene: pure black frame with a few drifting particles. Intended camera motion for animation: almost static, subtle drift. Avoid: fantasy monsters, giant sea serpents, invented creatures, anatomically wrong animals, glowing cartoon colours, human faces, readable text, logos, gore, generic AI-monster aesthetic.
 ```
 
-### Shot 137 · 9:00–9:05 · 4.3 s · **S**
+### Shot 137 · 8:59–9:03 · 4.3 s · **S**
 - **Narration:** The deepest place on Earth is not empty. It is a world we have only just begun to see.
 - **Visual:** One last glowing animal in the distance.
 - **Source:** STOCK (Pixabay, vetted by eye) — `bioluminescence deep sea`
@@ -1302,7 +1302,7 @@ Photorealistic natural-history documentary frame, deep navy and black water, sub
 Photorealistic natural-history documentary frame, deep navy and black water, subtle cyan, natural bioluminescent colours, floating marine-snow particles, volumetric light from a submersible, 35mm film look, sharp realistic detail, 16:9, no text, no watermark. Scene: single tiny glowing animal in the far distance in black water. Intended camera motion for animation: slow pull-back. Avoid: fantasy monsters, giant sea serpents, invented creatures, anatomically wrong animals, glowing cartoon colours, human faces, readable text, logos, gore, generic AI-monster aesthetic.
 ```
 
-### Shot 138 · 9:05–9:09 · 4.3 s · **S**
+### Shot 138 · 9:03–9:07 · 4.3 s · **S**
 - **Narration:** ↳ (sentence continues / silent)
 - **Visual:** Cyan particles fading in black water.
 - **Source:** STOCK (Pixabay, vetted by eye) — `dark water particles cyan`
@@ -1312,7 +1312,7 @@ Photorealistic natural-history documentary frame, deep navy and black water, sub
 Photorealistic natural-history documentary frame, deep navy and black water, subtle cyan, natural bioluminescent colours, floating marine-snow particles, volumetric light from a submersible, 35mm film look, sharp realistic detail, 16:9, no text, no watermark. Scene: cyan particles drifting and fading in black water. Intended camera motion for animation: slow pull-back. Avoid: fantasy monsters, giant sea serpents, invented creatures, anatomically wrong animals, glowing cartoon colours, human faces, readable text, logos, gore, generic AI-monster aesthetic.
 ```
 
-### Shot 139 · 9:09–9:17 · 8.0 s · **D**
+### Shot 139 · 9:07–9:15 · 8.0 s · **D**
 - **Narration:** ↳ (sentence continues / silent)
 - **Visual:** End card: sources, credits.
 - **Source:** DIAGRAM card (drawn) — `end`
