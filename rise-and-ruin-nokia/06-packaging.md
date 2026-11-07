@@ -29,15 +29,15 @@ Design rules: black/gold/white/dark red; max 4 words; one focal object; legible 
 >
 > ⏱ CHAPTERS
 > 0:00 The peak
-> 0:43 The empire
-> 1:46 The golden years
-> 2:47 A new competitor
-> 3:43 The platform problem
-> 4:51 Inside the company
-> 6:06 The wrong turn?
-> 7:38 The sale
-> 8:36 The lesson
-> *(Re-time to the final cut.)*
+> 0:39 The empire
+> 1:41 The golden years
+> 2:41 A new competitor
+> 3:33 The platform problem
+> 4:37 Inside the company
+> 5:50 The wrong turn?
+> 7:18 The sale
+> 8:15 The lesson
+> *(Re-check after final cut.)*
 >
 > 📚 SOURCES
 > Doz & Wilson, *Ringtone* (OUP, 2017) · Vuori & Huy, *Administrative Science Quarterly* (2016) · Huy & Vuori, INSEAD Knowledge (2014) · Nokia annual results (2007) · Strategy Analytics Q1 2012 · Canalys Q4 2010 · Microsoft 8-K (July 2015) · Engadget (memo, 8 Feb 2011). Full list and fact-check notes: *(link to your blog/pinned comment — paste `07-research-and-bibliography.md`)*
