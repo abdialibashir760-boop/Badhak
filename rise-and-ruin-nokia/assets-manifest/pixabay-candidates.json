@@ -1,0 +1,646 @@
+{
+ "S01_factory_assembly": {
+  "query": "factory assembly line electronics",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 40054,
+    "pageURL": "https://pixabay.com/videos/id-40054/",
+    "duration": 48,
+    "type": "film",
+    "tags": "industry, factory, steel, iron, iron bars, workers, hard work, work, engineer, a",
+    "max_width": 1920
+   },
+   {
+    "id": 199788,
+    "pageURL": "https://pixabay.com/videos/id-199788/",
+    "duration": 17,
+    "type": "film",
+    "tags": "sunrise, clouds, chimney, smoke, industry, sun, sunlight, factory, production",
+    "max_width": 3840
+   },
+   {
+    "id": 166808,
+    "pageURL": "https://pixabay.com/videos/id-166808/",
+    "duration": 8,
+    "type": "film",
+    "tags": "carpenter, tool, handmade, industry, factory, wood, woodwork, planer, slicer",
+    "max_width": 1920
+   },
+   {
+    "id": 91282,
+    "pageURL": "https://pixabay.com/videos/id-91282/",
+    "duration": 16,
+    "type": "film",
+    "tags": "factory, sunset, smoke, sugar beet factory, sugar, clouds, work, electricity, en",
+    "max_width": 3840
+   },
+   {
+    "id": 3975,
+    "pageURL": "https://pixabay.com/videos/id-3975/",
+    "duration": 19,
+    "type": "animation",
+    "tags": "robot, animation, technology, machine, industry, rendering, sequence, motion stu",
+    "max_width": 0
+   }
+  ]
+ },
+ "S02_factory_industrial_wide": {
+  "query": "industrial factory interior",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 384515,
+    "pageURL": "https://pixabay.com/videos/id-384515/",
+    "duration": 8,
+    "type": "animation",
+    "tags": "halloween, zombie monster, mutant creature, horror character, post apocalyptic b",
+    "max_width": 2560
+   },
+   {
+    "id": 199788,
+    "pageURL": "https://pixabay.com/videos/id-199788/",
+    "duration": 17,
+    "type": "film",
+    "tags": "sunrise, clouds, chimney, smoke, industry, sun, sunlight, factory, production",
+    "max_width": 3840
+   },
+   {
+    "id": 166808,
+    "pageURL": "https://pixabay.com/videos/id-166808/",
+    "duration": 8,
+    "type": "film",
+    "tags": "carpenter, tool, handmade, industry, factory, wood, woodwork, planer, slicer",
+    "max_width": 1920
+   },
+   {
+    "id": 88240,
+    "pageURL": "https://pixabay.com/videos/id-88240/",
+    "duration": 11,
+    "type": "film",
+    "tags": "chimney, factory, industrial, pollution, clouds, organic, facts, smoke, nature",
+    "max_width": 1920
+   },
+   {
+    "id": 34126,
+    "pageURL": "https://pixabay.com/videos/id-34126/",
+    "duration": 36,
+    "type": "film",
+    "tags": "pollution, smoke, industry, ecology, chemical, earth, environment, industrial, t",
+    "max_width": 1920
+   }
+  ]
+ },
+ "S03_pulp_forest_river": {
+  "query": "forest river mill",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 87599,
+    "pageURL": "https://pixabay.com/videos/id-87599/",
+    "duration": 17,
+    "type": "film",
+    "tags": "mill, river, waterfalls, lake, water, dolomites, alpine, waves, nature, landscap",
+    "max_width": 3840
+   },
+   {
+    "id": 118549,
+    "pageURL": "https://pixabay.com/videos/id-118549/",
+    "duration": 60,
+    "type": "animation",
+    "tags": "waterfall, stream, river, trees, forest, water, landscape, scenic, waves, scener",
+    "max_width": 1920
+   },
+   {
+    "id": 87598,
+    "pageURL": "https://pixabay.com/videos/id-87598/",
+    "duration": 24,
+    "type": "film",
+    "tags": "mill, river, waterfalls, lake, water, dolomites, alpine, waves, nature, landscap",
+    "max_width": 3840
+   },
+   {
+    "id": 217825,
+    "pageURL": "https://pixabay.com/videos/id-217825/",
+    "duration": 25,
+    "type": "animation",
+    "tags": "village, river, water, spring, building, forest, bridge, calm, mill, wheel, pond",
+    "max_width": 3840
+   },
+   {
+    "id": 174860,
+    "pageURL": "https://pixabay.com/videos/id-174860/",
+    "duration": 28,
+    "type": "film",
+    "tags": "river, stream, waterfall, trees, forest, mountain river, landscape, nature",
+    "max_width": 3840
+   }
+  ]
+ },
+ "S04_city_people_phones": {
+  "query": "people using mobile phones city",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 38084,
+    "pageURL": "https://pixabay.com/videos/id-38084/",
+    "duration": 8,
+    "type": "film",
+    "tags": "woman, phone, smartphone, technology, mobile, telephone, cellphone, person, fema",
+    "max_width": 1920
+   },
+   {
+    "id": 202987,
+    "pageURL": "https://pixabay.com/videos/id-202987/",
+    "duration": 15,
+    "type": "film",
+    "tags": "phone, smartphone, mobile, portable, screen, digital, communication, texting, bu",
+    "max_width": 3840
+   },
+   {
+    "id": 1360,
+    "pageURL": "https://pixabay.com/videos/id-1360/",
+    "duration": 20,
+    "type": "film",
+    "tags": "social media, smart phone, mobile, internet, technology, media, business, networ",
+    "max_width": 1920
+   },
+   {
+    "id": 6590,
+    "pageURL": "https://pixabay.com/videos/id-6590/",
+    "duration": 9,
+    "type": "film",
+    "tags": "guy, phone, city, street, mobile phone, wait, italy",
+    "max_width": 1920
+   },
+   {
+    "id": 3180,
+    "pageURL": "https://pixabay.com/videos/id-3180/",
+    "duration": 13,
+    "type": "film",
+    "tags": "smartphone, scrolling, app, mobile, device, modern, communication, internet, wir",
+    "max_width": 1920
+   }
+  ]
+ },
+ "S05_keypad_typing": {
+  "query": "typing text message phone",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 348444,
+    "pageURL": "https://pixabay.com/videos/id-348444/",
+    "duration": 25,
+    "type": "film",
+    "tags": "text, business, technology, communication, message, phone, internet, mobile, peo",
+    "max_width": 3840
+   },
+   {
+    "id": 3188,
+    "pageURL": "https://pixabay.com/videos/id-3188/",
+    "duration": 14,
+    "type": "film",
+    "tags": "computer keyboard, typing, white, keyboard, computer, technology, business, offi",
+    "max_width": 1920
+   },
+   {
+    "id": 204527,
+    "pageURL": "https://pixabay.com/videos/id-204527/",
+    "duration": 8,
+    "type": "film",
+    "tags": "smartphone, cellphone, text, message, woman, discuss, technology",
+    "max_width": 3840
+   },
+   {
+    "id": 202987,
+    "pageURL": "https://pixabay.com/videos/id-202987/",
+    "duration": 15,
+    "type": "film",
+    "tags": "phone, smartphone, mobile, portable, screen, digital, communication, texting, bu",
+    "max_width": 3840
+   },
+   {
+    "id": 204526,
+    "pageURL": "https://pixabay.com/videos/id-204526/",
+    "duration": 9,
+    "type": "film",
+    "tags": "smartphone, cellphone, text, message, woman, discuss, technology",
+    "max_width": 3840
+   }
+  ]
+ },
+ "S06_touchscreen_hands": {
+  "query": "swiping smartphone touchscreen",
+  "totalHits": 266,
+  "hits": [
+   {
+    "id": 202987,
+    "pageURL": "https://pixabay.com/videos/id-202987/",
+    "duration": 15,
+    "type": "film",
+    "tags": "phone, smartphone, mobile, portable, screen, digital, communication, texting, bu",
+    "max_width": 3840
+   },
+   {
+    "id": 38084,
+    "pageURL": "https://pixabay.com/videos/id-38084/",
+    "duration": 8,
+    "type": "film",
+    "tags": "woman, phone, smartphone, technology, mobile, telephone, cellphone, person, fema",
+    "max_width": 1920
+   },
+   {
+    "id": 8255,
+    "pageURL": "https://pixabay.com/videos/id-8255/",
+    "duration": 15,
+    "type": "film",
+    "tags": "iphone, photo, photography, pictures, smartphone, app, touchscreen, device, elec",
+    "max_width": 1920
+   },
+   {
+    "id": 3180,
+    "pageURL": "https://pixabay.com/videos/id-3180/",
+    "duration": 13,
+    "type": "film",
+    "tags": "smartphone, scrolling, app, mobile, device, modern, communication, internet, wir",
+    "max_width": 1920
+   },
+   {
+    "id": 735,
+    "pageURL": "https://pixabay.com/videos/id-735/",
+    "duration": 14,
+    "type": "film",
+    "tags": "iphone, scrolling, technology, touchscreen, cellphone, digital, smartphone, comm",
+    "max_width": 1920
+   }
+  ]
+ },
+ "S07_corporate_office": {
+  "query": "corporate office glass building",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 220941,
+    "pageURL": "https://pixabay.com/videos/id-220941/",
+    "duration": 10,
+    "type": "film",
+    "tags": "buildings, skyscrapers, tower, business, architecture, city, office, sky, glass,",
+    "max_width": 4094
+   },
+   {
+    "id": 272519,
+    "pageURL": "https://pixabay.com/videos/id-272519/",
+    "duration": 13,
+    "type": "film",
+    "tags": "building, architecture, glass, skyscraper, office, reflection, business, city, u",
+    "max_width": 3840
+   },
+   {
+    "id": 110924,
+    "pageURL": "https://pixabay.com/videos/id-110924/",
+    "duration": 10,
+    "type": "film",
+    "tags": "cloud, window, sky, advertisement, finance, financial, glasses, skyscraper, offi",
+    "max_width": 2560
+   },
+   {
+    "id": 45985,
+    "pageURL": "https://pixabay.com/videos/id-45985/",
+    "duration": 7,
+    "type": "film",
+    "tags": "office, skyscraper, ray, sun, windows, business, urban, glass, sky, tall, archit",
+    "max_width": 1920
+   },
+   {
+    "id": 45986,
+    "pageURL": "https://pixabay.com/videos/id-45986/",
+    "duration": 8,
+    "type": "film",
+    "tags": "office, windows, skyscraper, ray, startup, sun, business, modern, urban, glass, ",
+    "max_width": 1920
+   }
+  ]
+ },
+ "S08_stock_chart_falling": {
+  "query": "stock market chart falling",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 166289,
+    "pageURL": "https://pixabay.com/videos/id-166289/",
+    "duration": 20,
+    "type": "animation",
+    "tags": "graph, decline, economy, finance, inflation, value, stock, stock market, graph b",
+    "max_width": 3840
+   },
+   {
+    "id": 349089,
+    "pageURL": "https://pixabay.com/videos/id-349089/",
+    "duration": 15,
+    "type": "film",
+    "tags": "finance, money, currency, growth, investment, success, financial, banking, accou",
+    "max_width": 3840
+   },
+   {
+    "id": 349091,
+    "pageURL": "https://pixabay.com/videos/id-349091/",
+    "duration": 17,
+    "type": "film",
+    "tags": "finance, money, currency, growth, investment, success, financial, banking, accou",
+    "max_width": 3840
+   },
+   {
+    "id": 5372,
+    "pageURL": "https://pixabay.com/videos/id-5372/",
+    "duration": 18,
+    "type": "animation",
+    "tags": "profits, stock market, money, gold, business, graph, growth, disagram, wealth",
+    "max_width": 0
+   },
+   {
+    "id": 204306,
+    "pageURL": "https://pixabay.com/videos/id-204306/",
+    "duration": 14,
+    "type": "animation",
+    "tags": "market, values, stock, exchange, financial, graphics, silver, currency, company,",
+    "max_width": 3840
+   }
+  ]
+ },
+ "S09_telecom_tower": {
+  "query": "telecom tower antenna",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 199377,
+    "pageURL": "https://pixabay.com/videos/id-199377/",
+    "duration": 14,
+    "type": "film",
+    "tags": "radio tower, antenna, sunset, sky",
+    "max_width": 3840
+   },
+   {
+    "id": 218246,
+    "pageURL": "https://pixabay.com/videos/id-218246/",
+    "duration": 15,
+    "type": "film",
+    "tags": "tower, antenna, telecommunications, radio, transmission, infrastructure",
+    "max_width": 3840
+   },
+   {
+    "id": 29483,
+    "pageURL": "https://pixabay.com/videos/id-29483/",
+    "duration": 30,
+    "type": "film",
+    "tags": "television, broadcasting, satellite, antenna, corrupted, screen, retro, contact,",
+    "max_width": 3840
+   },
+   {
+    "id": 38944,
+    "pageURL": "https://pixabay.com/videos/id-38944/",
+    "duration": 11,
+    "type": "film",
+    "tags": "time lapse, sunset, orange, mountain, mast, sky, sun, clouds, landscape, evening",
+    "max_width": 1920
+   },
+   {
+    "id": 179775,
+    "pageURL": "https://pixabay.com/videos/id-179775/",
+    "duration": 46,
+    "type": "film",
+    "tags": "telescope, radio telescope, astronomy, radio antenna, antenna, sky, space, stars",
+    "max_width": 4096
+   }
+  ]
+ },
+ "S10_container_port": {
+  "query": "container port shipping",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 23544,
+    "pageURL": "https://pixabay.com/videos/id-23544/",
+    "duration": 32,
+    "type": "film",
+    "tags": "bridge, terminal, architecture, traffic, cargo, lights, city, container, evening",
+    "max_width": 3840
+   },
+   {
+    "id": 23008,
+    "pageURL": "https://pixabay.com/videos/id-23008/",
+    "duration": 20,
+    "type": "film",
+    "tags": "container terminal, harbor, container, cargo, port, export, shipping, terminal, ",
+    "max_width": 3840
+   },
+   {
+    "id": 23215,
+    "pageURL": "https://pixabay.com/videos/id-23215/",
+    "duration": 15,
+    "type": "film",
+    "tags": "container ship, transport, logistics, cargo, container, shipping, export, ship, ",
+    "max_width": 3840
+   },
+   {
+    "id": 216619,
+    "pageURL": "https://pixabay.com/videos/id-216619/",
+    "duration": 36,
+    "type": "film",
+    "tags": "shipping, import, export, port, container, trade, industry, transport",
+    "max_width": 3840
+   },
+   {
+    "id": 24255,
+    "pageURL": "https://pixabay.com/videos/id-24255/",
+    "duration": 18,
+    "type": "film",
+    "tags": "container terminal, container ship, cargo, shipping, port, logistics, export, lo",
+    "max_width": 3840
+   }
+  ]
+ },
+ "S11_empty_office": {
+  "query": "empty office corridor",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 73531,
+    "pageURL": "https://pixabay.com/videos/id-73531/",
+    "duration": 60,
+    "type": "film",
+    "tags": "man, corridor, coffee, phone, break, business, work, team, people, office, emplo",
+    "max_width": 2732
+   },
+   {
+    "id": 846,
+    "pageURL": "https://pixabay.com/videos/id-846/",
+    "duration": 13,
+    "type": "film",
+    "tags": "library, books, the corridor, window, rack, the culture, reading, classic, new i",
+    "max_width": 2560
+   },
+   {
+    "id": 2340,
+    "pageURL": "https://pixabay.com/videos/id-2340/",
+    "duration": 44,
+    "type": "film",
+    "tags": "meeting, planning, marketing, business, team, people, office, teamwork, group, d",
+    "max_width": 1920
+   },
+   {
+    "id": 49375,
+    "pageURL": "https://pixabay.com/videos/id-49375/",
+    "duration": 17,
+    "type": "animation",
+    "tags": "library, books, corridor, reading, education, knowledge",
+    "max_width": 1920
+   },
+   {
+    "id": 261898,
+    "pageURL": "https://pixabay.com/videos/id-261898/",
+    "duration": 50,
+    "type": "animation",
+    "tags": "corridor, hallway, tunnel, loop, science fiction",
+    "max_width": 3840
+   }
+  ]
+ },
+ "S12_handshake": {
+  "query": "handshake business deal",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 63846,
+    "pageURL": "https://pixabay.com/videos/id-63846/",
+    "duration": 10,
+    "type": "animation",
+    "tags": "handshake, agreement, contract, deal, opportunity, cooperation, hands, negotiati",
+    "max_width": 1920
+   },
+   {
+    "id": 358512,
+    "pageURL": "https://pixabay.com/videos/id-358512/",
+    "duration": 8,
+    "type": "animation",
+    "tags": "handshake, business deal, silhouette, hello, korea, agreement agreement, success",
+    "max_width": 3840
+   },
+   {
+    "id": 63845,
+    "pageURL": "https://pixabay.com/videos/id-63845/",
+    "duration": 5,
+    "type": "animation",
+    "tags": "handshake, hands, agreement, trust, cooperation, teamwork, partnership, deal, te",
+    "max_width": 1920
+   },
+   {
+    "id": 146071,
+    "pageURL": "https://pixabay.com/videos/id-146071/",
+    "duration": 10,
+    "type": "animation",
+    "tags": "online meeting, virtual meeting, meeting, agreement, business, handshake, partne",
+    "max_width": 1920
+   },
+   {
+    "id": 290192,
+    "pageURL": "https://pixabay.com/videos/id-290192/",
+    "duration": 10,
+    "type": "animation",
+    "tags": "business, agreement, handshake, partnership, hello, deal, collaboration, contrac",
+    "max_width": 1920
+   }
+  ]
+ },
+ "S13_timelapse_city_night": {
+  "query": "timelapse city traffic night",
+  "totalHits": 500,
+  "hits": [
+   {
+    "id": 321831,
+    "pageURL": "https://pixabay.com/videos/id-321831/",
+    "duration": 5,
+    "type": "animation",
+    "tags": "highway timelapse, traffic timelapse, motorway timelapse, urban timelapse, city ",
+    "max_width": 2582
+   },
+   {
+    "id": 303794,
+    "pageURL": "https://pixabay.com/videos/id-303794/",
+    "duration": 30,
+    "type": "film",
+    "tags": "dubai, architecture, city, building, uae, tourism, travel, timelapse video, duba",
+    "max_width": 1440
+   },
+   {
+    "id": 130331,
+    "pageURL": "https://pixabay.com/videos/id-130331/",
+    "duration": 29,
+    "type": "film",
+    "tags": "bokeh lights, road, city, lights, street, night, urban, travel, traffic, transpo",
+    "max_width": 1920
+   },
+   {
+    "id": 324817,
+    "pageURL": "https://pixabay.com/videos/id-324817/",
+    "duration": 8,
+    "type": "animation",
+    "tags": "city night, urban night, night cityscape, city timelapse, urban timelapse, night",
+    "max_width": 4136
+   },
+   {
+    "id": 321830,
+    "pageURL": "https://pixabay.com/videos/id-321830/",
+    "duration": 5,
+    "type": "animation",
+    "tags": "highway timelapse, traffic timelapse, motorway timelapse, urban timelapse, city ",
+    "max_width": 2582
+   }
+  ]
+ },
+ "S14_chess": {
+  "query": "chess pieces strategy",
+  "totalHits": 231,
+  "hits": [
+   {
+    "id": 19600,
+    "pageURL": "https://pixabay.com/videos/id-19600/",
+    "duration": 6,
+    "type": "film",
+    "tags": "chess, chess board, strategy, play, board game, chess pieces, think, challenge, ",
+    "max_width": 3840
+   },
+   {
+    "id": 19598,
+    "pageURL": "https://pixabay.com/videos/id-19598/",
+    "duration": 11,
+    "type": "film",
+    "tags": "chess, chess pieces, chess board, strategy, game board, chess game, playing fiel",
+    "max_width": 1920
+   },
+   {
+    "id": 19459,
+    "pageURL": "https://pixabay.com/videos/id-19459/",
+    "duration": 12,
+    "type": "film",
+    "tags": "chess, strategy, chess pieces, chess board, strategy game, board game, king, far",
+    "max_width": 1920
+   },
+   {
+    "id": 19457,
+    "pageURL": "https://pixabay.com/videos/id-19457/",
+    "duration": 7,
+    "type": "film",
+    "tags": "chess board, chess, chess chess game, chess game, chess pieces, characters, thin",
+    "max_width": 3840
+   },
+   {
+    "id": 94180,
+    "pageURL": "https://pixabay.com/videos/id-94180/",
+    "duration": 10,
+    "type": "animation",
+    "tags": "bishop, chess, theme, particles, background, intro, titles, motion background, c",
+    "max_width": 1920
+   }
+  ]
+ }
+}

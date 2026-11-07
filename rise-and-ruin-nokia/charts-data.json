@@ -1,0 +1,105 @@
+{
+  "_note": "Every number here is traced to a source ID in 07-research-and-bibliography.md. Points from different trackers are NOT a continuous series; the chart specs in 04-charts-and-timeline.md say how to draw them honestly.",
+  "chart_A_nokia_handset_share": {
+    "unit": "percent of global handset units",
+    "points": [
+      {"label": "2000", "value": 30, "approximate": true, "tracker": "as stated in S1", "source": "F6"},
+      {"label": "Q1 2004", "value": 28.9, "tracker": "as stated in S1", "source": "S1"},
+      {"label": "Q4 2007", "value": 40, "approximate": true, "tracker": "Nokia's own estimate (S1 gives 40.4)", "source": "F12"},
+      {"label": "2007 full year", "value": 37.8, "tracker": "Gartner", "source": "F12"},
+      {"label": "Q1 2012", "value": 22.5, "tracker": "Strategy Analytics", "source": "F27"}
+    ]
+  },
+  "chart_B_q4_2010_smartphone_platforms": {
+    "unit": "million smartphones shipped, Q4 2010",
+    "tracker": "Canalys",
+    "bars": [
+      {"label": "Android", "value": 32.9, "note": "some outlets print 33.3; see F18"},
+      {"label": "Symbian", "value": 31.0},
+      {"label": "iPhone", "value": 16.2}
+    ],
+    "total": 101.2,
+    "source": "F18"
+  },
+  "chart_C_symbian_share_of_smartphones": {
+    "unit": "percent of smartphones sold",
+    "points": [
+      {"label": "2006", "value": [67, 73], "note": "S10 gives both figures; draw as a range", "tracker": "as stated in S10"},
+      {"label": "2008", "value": 52.4, "tracker": "Canalys via S10"},
+      {"label": "2009", "value": 47.2, "tracker": "Canalys via S10"},
+      {"label": "2010", "value": 37.6, "tracker": "Canalys via S10"},
+      {"label": "Q2 2011", "value": 22.1, "tracker": "as stated in S10"},
+      {"label": "Q2 2012", "value": 4.4, "tracker": "IDC via S10"}
+    ],
+    "source": "F16, F17",
+    "annotation": [
+      {"at": "Q3 to Q4 2010", "text": "Share falls 39% to 31% (S10) - before the Microsoft announcement"}
+    ]
+  },
+  "chart_D_nokia_smartphone_units": {
+    "unit": "million smartphones shipped by Nokia, single quarter",
+    "points": [
+      {"label": "Q4 2010", "value": 28.0, "note": "as stated in coverage of Q4 2011 results; verify in Nokia Q4 2010 report"},
+      {"label": "Q3 2011", "value": 16.8},
+      {"label": "Q4 2011", "value": 19.6},
+      {"label": "Q3 2012", "value": 6.3, "of_which": {"Lumia": 2.9, "Symbian": 3.4}}
+    ],
+    "annotation": [
+      {"between": "Q4 2010 and Q3 2011", "text": "11 Feb 2011: Windows Phone partnership announced"}
+    ],
+    "source": "F26"
+  },
+  "chart_E_first_place_changes_hands_q1_2012": {
+    "unit": "million handsets shipped, Q1 2012",
+    "tracker": "Strategy Analytics",
+    "bars": [
+      {"label": "Samsung", "value": 93.5},
+      {"label": "Nokia", "value": 82.7}
+    ],
+    "cross_check_IDC": {"Samsung": 93.8, "Nokia": 82.7, "Apple": 35.1},
+    "source": "F27"
+  },
+  "chart_F_microsoft_deal_breakdown": {
+    "unit": "billion euros",
+    "parts": [
+      {"label": "Devices & Services business", "value": 3.79},
+      {"label": "Patent licence", "value": 1.65}
+    ],
+    "total": 5.44,
+    "announced": "2013-09-03",
+    "closed": "2014-04-25",
+    "footnote": "Final price slightly higher after balance-sheet adjustments (S30)",
+    "source": "F28"
+  },
+  "chart_G_peak_year_2007": {
+    "tiles": [
+      {"label": "Handsets shipped", "value": "437.1 million", "source": "F11"},
+      {"label": "Net sales", "value": "EUR 51.1 billion", "source": "F13"},
+      {"label": "Operating profit", "value": "EUR 7.99 billion", "footnote": "includes EUR 858M net special items", "source": "F13"}
+    ]
+  },
+  "timeline": [
+    {"date": "1865-05-12", "text": "Founded as a pulp mill near Tampere", "source": "F1"},
+    {"date": "1967", "text": "Merger with Finnish Cable Works and Finnish Rubber Works", "source": "F2"},
+    {"date": "1991-07-01", "text": "First GSM call, on a Nokia-built network", "source": "F4"},
+    {"date": "1992-01", "text": "Jorma Ollila becomes CEO", "source": "F3"},
+    {"date": "1992-11", "text": "Nokia 1011, first commercial GSM phone", "source": "F4"},
+    {"date": "1998-10", "text": "Overtakes Motorola as best-selling brand", "source": "F5"},
+    {"date": "2003-08-27", "text": "Nokia 1100 announced", "source": "F8"},
+    {"date": "2007-01-09", "text": "iPhone unveiled", "source": "F14"},
+    {"date": "2007-06-29", "text": "iPhone US release", "source": "F14"},
+    {"date": "2007-11-05", "text": "Android announced (Open Handset Alliance)", "source": "F15"},
+    {"date": "2008-06", "text": "Nokia announces Symbian acquisition", "source": "F17"},
+    {"date": "2008-10", "text": "First Android phone (T-Mobile G1) goes on sale", "source": "F15"},
+    {"date": "2010-09-10", "text": "Stephen Elop named CEO", "source": "F22"},
+    {"date": "2010-Q4", "text": "Android passes Symbian (Canalys)", "source": "F18"},
+    {"date": "2011-02-08", "text": "'Burning platform' memo leaks", "source": "F23"},
+    {"date": "2011-02-11", "text": "Microsoft partnership announced in London", "source": "F24"},
+    {"date": "2012-Q1", "text": "Samsung overtakes Nokia", "source": "F27"},
+    {"date": "2013-09-03", "text": "Microsoft deal announced", "source": "F28"},
+    {"date": "2014-04-25", "text": "Deal completed", "source": "F28"},
+    {"date": "2015-07", "text": "Microsoft takes ~$7.6bn impairment, 7,800 job cuts", "source": "F30"},
+    {"date": "2015-08-03", "text": "HERE maps sale agreed (EUR 2.8bn)", "source": "F31"},
+    {"date": "2016-05-18", "text": "Feature-phone business sold to HMD Global", "source": "F33"}
+  ]
+}
