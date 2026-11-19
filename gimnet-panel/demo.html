@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GİM NET – Properties panel demo</title>
+<link rel="stylesheet" href="panel.css">
+<style>
+  body { font-family: system-ui, sans-serif; margin: 16px; display: flex; gap: 16px; flex-wrap: wrap; }
+  svg { border: 1px solid #c9d3cc; border-radius: 10px; background: #f7faf7; max-width: 100%; }
+  .node { cursor: pointer; } .pipe { cursor: pointer; stroke: #357; stroke-width: 4; }
+  line.sel { stroke: #d62; stroke-width: 6; } circle.sel { fill: #fc9; }
+  button { padding: 6px 10px; }
+</style>
+</head>
+<body>
+<div>
+  <p><button id="lang">English / Türkçe</button> Click a node or a pipe.</p>
+  <svg id="map" width="420" height="260" viewBox="-20 -20 420 260"></svg>
+  <pre id="log" style="font-size:12px;max-width:420px;white-space:pre-wrap"></pre>
+</div>
+<div id="panel"></div>
+<script type="module">
+import { createPropertiesPanel } from './properties-panel.js';
+
+// Tiny example network (NOT the official sample file). The drawing code below is only a stand-in
+// for the real drawing area; what matters is the three calls on `panel`.
+let network = {
+  format: 'GIMNET', version: '0.1', meta: { title: 'demo' }, options: { headloss: 'HW' },
+  junctions: [
+    { id: 'J1', x: 150, y: 20, elevation: 50, demand: 10 },
+    { id: 'J2', x: 300, y: 20, elevation: 48, demand: 20 },
+    { id: 'J3', x: 225, y: 180, elevation: 45, demand: 15 }],
+  reservoirs: [{ id: 'R1', x: 0, y: 20, head: 100 }], tanks: [],
+  pipes: [
+    { id: 'P1', from: 'R1', to: 'J1', length: 500, diameter: 300, roughness: 130, minor_loss: 0, status: 'OPEN' },
+    { id: 'P2', from: 'J1', to: 'J2', length: 400, diameter: 200, roughness: 130, minor_loss: 0, status: 'OPEN' },
+    { id: 'P3', from: 'J2', to: 'J3', length: 450, diameter: 200, roughness: 130, minor_loss: 0, status: 'OPEN' },
+    { id: 'P4', from: 'J1', to: 'J3', length: 450, diameter: 150, roughness: 130, minor_loss: 0, status: 'OPEN' }],
+  pumps: [], valves: [], patterns: [], results: null,
+};
+
+const svg = document.getElementById('map');
+const panel = createPropertiesPanel(document.getElementById('panel'), {
+  getNetwork: () => network,
+  onChange: (newNetwork, info) => {            // called after every valid edit
+    network = newNetwork;
+    document.getElementById('log').textContent = JSON.stringify(info);
+  },
+});
+
+let selected = null;
+const NS = 'http://www.w3.org/2000/svg';
+const make = (tag, attrs) => {
+  const n = document.createElementNS(NS, tag);
+  for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+  return n;
+};
+
+function draw() {
+  svg.replaceChildren();
+  const pos = Object.fromEntries([...network.junctions, ...network.reservoirs, ...network.tanks].map((n) => [n.id, n]));
+  for (const p of network.pipes) {
+    svg.append(make('line', {
+      x1: pos[p.from].x, y1: pos[p.from].y, x2: pos[p.to].x, y2: pos[p.to].y,
+      'data-id': p.id, tabindex: 0, role: 'button', 'aria-label': 'Pipe ' + p.id,
+      class: 'pipe' + (p.id === selected ? ' sel' : ''),
+    }));
+  }
+  for (const n of Object.values(pos)) {
+    svg.append(make('circle', {
+      cx: n.x, cy: n.y, r: 12, fill: n.id.startsWith('R') ? '#7ab' : '#fff', stroke: '#357', 'stroke-width': 3,
+      'data-id': n.id, tabindex: 0, role: 'button', 'aria-label': 'Node ' + n.id,
+      class: 'node' + (n.id === selected ? ' sel' : ''),
+    }));
+    const t = make('text', { x: n.x + 16, y: n.y + 4 });
+    t.textContent = n.id;
+    svg.append(t);
+  }
+}
+
+const pick = (e) => {
+  selected = (e.target.dataset && e.target.dataset.id) || null;
+  panel.select(selected);                      // <- tell the panel what is selected
+  draw();
+};
+svg.addEventListener('click', pick);
+svg.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') pick(e); });
+
+let lang = 'en';
+document.getElementById('lang').onclick = () => { lang = lang === 'en' ? 'tr' : 'en'; panel.setLanguage(lang); };
+
+draw();
+panel.select(null);
+</script>
+</body>
+</html>
